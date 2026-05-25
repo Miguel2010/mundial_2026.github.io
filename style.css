@@ -37,6 +37,14 @@ Bronce:          #CD7F32
   color: white;
 }
 
+.actualizacion {
+  text-align: center;
+  font-size: 14px;
+  color: #002868;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
 /* ============================
    PANTALLA DE LOGIN
    ============================ */
@@ -174,14 +182,6 @@ th {
 
 tr:nth-child(even) {
   background: #f7faff;
-}
-
-.actualizacion {
-  text-align: center;
-  font-size: 14px;
-  color: #002868;
-  margin-bottom: 15px;
-  font-weight: bold;
 }
 
 /* ============================
