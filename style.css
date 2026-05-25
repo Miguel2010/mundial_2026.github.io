@@ -1,29 +1,137 @@
-/* LOGIN */
+/* ============================
+   PANTALLA DE LOGIN
+   ============================ */
 #loginScreen {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+#loginScreen h2 {
+  margin-bottom: 10px;
 }
 
 #loginScreen input {
   display: block;
   margin: 10px auto;
-  padding: 10px;
-  width: 250px;
+  padding: 12px;
+  width: 80%;
   font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
 }
 
 #btnLogin {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 16px;
   cursor: pointer;
+  background: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+#btnLogin:hover {
+  background: #005bb5;
 }
 
 .error {
   color: red;
   margin-top: 10px;
+  font-weight: bold;
 }
 
-/* TOP 10 Y PODIO */
+/* ============================
+   CONTENIDO PRINCIPAL
+   ============================ */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ============================
+   ZONA DE ADMINISTRADOR
+   ============================ */
+.upload-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #0074D9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#csvFile {
+  display: none;
+}
+
+/* ============================
+   DRAG & DROP
+   ============================ */
+.drop-zone {
+  margin: 20px auto;
+  width: 60%;
+  padding: 30px;
+  border: 3px dashed #0074D9;
+  border-radius: 10px;
+  background: #eef6ff;
+  color: #0074D9;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.drop-zone.dragover {
+  background: #cfe8ff;
+  border-color: #005bb5;
+}
+
+/* ============================
+   TABLA DE CLASIFICACIÓN
+   ============================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 15px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #0074D9;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* ============================
+   COLORES ESPECIALES
+   ============================ */
 .top10 {
   background-color: #fff3b0 !important;
   font-weight: bold;
@@ -42,21 +150,4 @@
 .bronce {
   background-color: #cd7f32 !important;
   font-weight: bold;
-}
-
-/* DROPZONE Y TABLA (igual que antes) */
-.drop-zone {
-  margin: 20px auto;
-  width: 60%;
-  padding: 30px;
-  border: 3px dashed #0074D9;
-  border-radius: 10px;
-  background: #eef6ff;
-  color: #0074D9;
-  font-size: 18px;
-}
-
-.drop-zone.dragover {
-  background: #cfe8ff;
-  border-color: #005bb5;
 }
