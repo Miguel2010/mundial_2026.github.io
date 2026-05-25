@@ -64,10 +64,10 @@ logoutBtn.addEventListener("click", () => {
 // ===============================
 // LECTURA DEL CSV LOCAL (ADMIN)
 // ===============================
-const csvFile = document.getElementById("csvFile");
+/*const csvFile = document.getElementById("csvFile");
 csvFile.addEventListener("change", (e) => {
   readCSV(e.target.files[0]);
-});
+});*/
 
 // DRAG & DROP
 const dropZone = document.getElementById("dropZone");
@@ -94,7 +94,7 @@ dropZone.addEventListener("drop", (e) => {
 // ===============================
 // LEER CSV LOCAL (ADMIN)
 // ===============================
-function readCSV(file) {
+/*function readCSV(file) {
   const reader = new FileReader();
 
   reader.onload = function (event) {
@@ -108,7 +108,7 @@ function readCSV(file) {
   };
 
   reader.readAsText(file);
-}
+}*/
 
 // ===============================
 // LEER CSV DESDE GITHUB (TODOS)
