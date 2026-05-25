@@ -176,6 +176,14 @@ tr:nth-child(even) {
   background: #f7faff;
 }
 
+.actualizacion {
+  text-align: center;
+  font-size: 14px;
+  color: #002868;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
 /* ============================
    COLORES ESPECIALES (PODIO)
    ============================ */
