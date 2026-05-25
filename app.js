@@ -114,7 +114,7 @@ function readCSV(file) {
 // LEER CSV DESDE GITHUB (TODOS)
 // ===============================
 async function cargarCSVDesdeGitHub() {
-  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/main/clasificacion.csv";
+  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/blob/main/clasificacion.csv";
 
   try {
     const res = await fetch(url);
@@ -203,23 +203,37 @@ function renderTable(data) {
 // ===============================
 // MOSTRAR FECHA DE ACTUALIZACIÓN
 // ===============================
-function mostrarUltimaActualizacion() {
-  const texto = localStorage.getItem("ultimaActualizacion");
+async function mostrarUltimaActualizacion() {
+  const usuario = "Miguel2010";
+  const repo = "mundial_2026.github.io";
+  const ruta = "blob/main/clasificacion.csv";
 
-  function intentarPintar() {
-    const elemento = document.getElementById("ultimaActualizacion");
+  const url = `https://api.github.com/repos/${usuario}/${repo}/commits?path=${ruta}&per_page=1`;
 
-    if (!elemento) {
-      setTimeout(intentarPintar, 50);
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      console.warn("No se pudo obtener la fecha de actualización del CSV");
       return;
     }
 
-    if (texto) {
-      elemento.textContent = `Última actualización: ${texto}`;
-    } else {
-      elemento.textContent = "";
-    }
-  }
+    const commits = await res.json();
+    if (commits.length === 0) return;
 
-  intentarPintar();
+    const fechaISO = commits[0].commit.author.date;
+    const fecha = new Date(fechaISO);
+
+    const fechaFormateada = fecha.toLocaleDateString("es-ES");
+    const horaFormateada = fecha.toLocaleTimeString("es-ES", {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    const elemento = document.getElementById("ultimaActualizacion");
+    elemento.textContent = `Última actualización del CSV: ${fechaFormateada} ${horaFormateada}`;
+
+  } catch (e) {
+    console.error("Error obteniendo fecha del CSV:", e);
+  }
 }
+
