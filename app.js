@@ -1,3 +1,5 @@
+console.log("JS cargado correctamente");
+
 // --- LOGIN ---
 document.getElementById("btnLogin").addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
