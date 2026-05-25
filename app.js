@@ -9,6 +9,14 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   mostrarUltimaActualizacion();
+
+  // Recuperar sesión
+  const usuario = localStorage.getItem("usuarioLogado");
+  if (usuario) {
+    loginScreen.style.display = "none";
+    mainContent.style.display = "block";
+    logoutBtn.style.display = "block";
+  }
 });
 
 // ===============================
@@ -18,6 +26,7 @@ const btnLogin = document.getElementById("btnLogin");
 const loginScreen = document.getElementById("loginScreen");
 const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
+const logoutBtn = document.getElementById("logoutBtn");
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -35,10 +44,27 @@ btnLogin.addEventListener("click", () => {
   loginScreen.style.display = "none";
   mainContent.style.display = "block";
 
+  // Guardar sesión
+  localStorage.setItem("usuarioLogado", nombre + " " + apellido);
+
+  // Mostrar botón logout
+  logoutBtn.style.display = "block";
+
   // Si es Juan Navarro, activar zona de carga
   if (nombre === "juan" && apellido === "navarro") {
     adminTools.style.display = "block";
   }
+});
+
+// ===============================
+// CERRAR SESIÓN
+// ===============================
+logoutBtn.addEventListener("click", () => {
+  localStorage.removeItem("usuarioLogado");
+
+  logoutBtn.style.display = "none";
+  loginScreen.style.display = "block";
+  mainContent.style.display = "none";
 });
 
 // ===============================
@@ -93,7 +119,7 @@ function readCSV(file) {
     renderTable(data);
     mostrarUltimaActualizacion();
 
-    // SOLUCIÓN: permitir volver a seleccionar el mismo archivo
+    // Permitir volver a seleccionar el mismo archivo
     csvFile.value = "";
   };
 
@@ -184,7 +210,6 @@ function mostrarUltimaActualizacion() {
     const elemento = document.getElementById("ultimaActualizacion");
 
     if (!elemento) {
-      // Si el elemento aún no existe, reintentar en 50ms
       setTimeout(intentarPintar, 50);
       return;
     }
@@ -198,6 +223,7 @@ function mostrarUltimaActualizacion() {
 
   intentarPintar();
 }
+
 
 
 
