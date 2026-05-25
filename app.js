@@ -1,8 +1,27 @@
-// --- LOGIN ---
-document.getElementById("btnLogin").addEventListener("click", () => {
+// ===============================
+// CARGAR CLASIFICACIÓN AL INICIAR
+// ===============================
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("clasificacion");
+  if (saved) {
+    const data = JSON.parse(saved);
+    renderTable(data);
+  }
+
+  mostrarUltimaActualizacion();
+});
+
+// ===============================
+// LOGIN
+// ===============================
+const btnLogin = document.getElementById("btnLogin");
+const loginScreen = document.getElementById("loginScreen");
+const mainContent = document.getElementById("mainContent");
+const adminTools = document.getElementById("adminTools");
+
+btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
   const apellido = document.getElementById("apellido").value.trim().toLowerCase();
-
   const loginError = document.getElementById("loginError");
 
   if (!nombre || !apellido) {
@@ -10,25 +29,27 @@ document.getElementById("btnLogin").addEventListener("click", () => {
     return;
   }
 
-  const esAdmin = (nombre === "juan" && apellido === "navarro");
+  loginError.textContent = "";
 
-  // Ocultar login y mostrar contenido
-  document.getElementById("loginScreen").style.display = "none";
-  document.getElementById("mainContent").style.display = "block";
+  // Mostrar contenido principal
+  loginScreen.style.display = "none";
+  mainContent.style.display = "block";
 
-  // Si es admin, mostrar herramientas
-  if (esAdmin) {
-    document.getElementById("adminTools").style.display = "block";
+  // Si es Juan Navarro, activar zona de carga
+  if (nombre === "juan" && apellido === "navarro") {
+    adminTools.style.display = "block";
   }
 });
 
-// --- Selección de archivo ---
-document.getElementById("csvFile").addEventListener("change", function (e) {
-  const file = e.target.files[0];
-  if (file) readCSV(file);
+// ===============================
+// LECTURA DEL CSV
+// ===============================
+const csvFile = document.getElementById("csvFile");
+csvFile.addEventListener("change", (e) => {
+  readCSV(e.target.files[0]);
 });
 
-// --- Drag & Drop ---
+// DRAG & DROP
 const dropZone = document.getElementById("dropZone");
 
 dropZone.addEventListener("dragover", (e) => {
@@ -47,12 +68,12 @@ dropZone.addEventListener("drop", (e) => {
   const file = e.dataTransfer.files[0];
   if (file && file.name.endsWith(".csv")) {
     readCSV(file);
-  } else {
-    alert("Por favor, arrastra un archivo CSV válido.");
   }
 });
 
-// --- Leer CSV ---
+// ===============================
+// LEER CSV
+// ===============================
 function readCSV(file) {
   const reader = new FileReader();
 
@@ -60,7 +81,7 @@ function readCSV(file) {
     const text = event.target.result;
     const data = parseCSV(text);
 
-    // Guardar clasificación
+    // Guardar clasificación para todos
     localStorage.setItem("clasificacion", JSON.stringify(data));
 
     // Guardar fecha y hora
@@ -76,13 +97,22 @@ function readCSV(file) {
   reader.readAsText(file);
 }
 
-// --- Convertir CSV a objetos ---
+// ===============================
+// PARSEAR CSV ROBUSTO
+// ===============================
 function parseCSV(csv) {
-  const lines = csv.trim().split("\n");
-  const headers = lines[0].split(";").map(h => h.trim());
+
+  // Eliminar BOM
+  csv = csv.replace(/^\uFEFF/, "");
+
+  // Saltos de línea Windows o Unix
+  const lines = csv.trim().split(/\r?\n/);
+
+  // Separar por coma o punto y coma
+  const headers = lines[0].split(/[,;]+/).map(h => h.trim());
 
   const rows = lines.slice(1).map(line => {
-    const values = line.split(";").map(v => v.trim());
+    const values = line.split(/[,;]+/).map(v => v.trim());
     const obj = {};
 
     headers.forEach((h, i) => {
@@ -108,58 +138,51 @@ function parseCSV(csv) {
   return rows;
 }
 
-// --- Renderizar tabla ---
+// ===============================
+// MOSTRAR TABLA
+// ===============================
 function renderTable(data) {
   const tbody = document.querySelector("#tabla tbody");
   tbody.innerHTML = "";
 
-  data.forEach((j, index) => {
-    let clase = "";
+  data.forEach((row, index) => {
+    const tr = document.createElement("tr");
 
-    if (index === 0) clase = "oro";
-    else if (index === 1) clase = "plata";
-    else if (index === 2) clase = "bronce";
-    else if (index < 10) clase = "top10";
+    // Podio
+    if (index === 0) tr.classList.add("oro");
+    else if (index === 1) tr.classList.add("plata");
+    else if (index === 2) tr.classList.add("bronce");
+    else if (index < 10) tr.classList.add("top10");
 
-    const fila = `
-      <tr class="${clase}">
-        <td>${index + 1}</td>
-        <td>${j.nombre}</td>
-        <td>${j.grupos}</td>
-        <td>${j.dieciseisavos}</td>
-        <td>${j.octavos}</td>
-        <td>${j.cuartos}</td>
-        <td>${j.semifinales}</td>
-        <td>${j.final}</td>
-        <td>${j.tercer_cuarto}</td>
-        <td><strong>${j.total}</strong></td>
-      </tr>
+    tr.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${row.nombre}</td>
+      <td>${row.grupos}</td>
+      <td>${row.dieciseisavos}</td>
+      <td>${row.octavos}</td>
+      <td>${row.cuartos}</td>
+      <td>${row.semifinales}</td>
+      <td>${row.final}</td>
+      <td>${row.tercer_cuarto}</td>
+      <td><strong>${row.total}</strong></td>
     `;
-    tbody.innerHTML += fila;
-  });
 
-  // --- Mostrar actialización ---
-  function mostrarUltimaActualizacion() {
-    const texto = localStorage.getItem("ultimaActualizacion");
-    const elemento = document.getElementById("ultimaActualizacion");
-  
-    if (texto) {
-      elemento.textContent = `Última actualización: ${texto}`;
-    } else {
-      elemento.textContent = "";
-    }
-  }
-
-  // --- Iniciar la página  ---
-  window.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("clasificacion");
-    if (saved) {
-      const data = JSON.parse(saved);
-      renderTable(data);
-    }
-  
-    mostrarUltimaActualizacion();
+    tbody.appendChild(tr);
   });
-  
 }
+
+// ===============================
+// MOSTRAR FECHA DE ACTUALIZACIÓN
+// ===============================
+function mostrarUltimaActualizacion() {
+  const texto = localStorage.getItem("ultimaActualizacion");
+  const elemento = document.getElementById("ultimaActualizacion");
+
+  if (texto) {
+    elemento.textContent = `Última actualización: ${texto}`;
+  } else {
+    elemento.textContent = "";
+  }
+}
+
 
