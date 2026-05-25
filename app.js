@@ -86,9 +86,20 @@ logoutBtn.addEventListener("click", () => {
 // BOTÓN REINICIAR TABLA (solo Juan)
 // ===============================
 resetTablaBtn.addEventListener("click", () => {
-  const confirmar = confirm("¿Seguro que quieres reiniciar la tabla? Esta acción no se puede deshacer.");
+  document.getElementById("modalConfirm").style.display = "flex";
+});
 
-  if (!confirmar) return;
+// Botones del modal
+const modal = document.getElementById("modalConfirm");
+const modalCancel = document.getElementById("modalCancel");
+const modalOk = document.getElementById("modalOk");
+
+modalCancel.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+modalOk.addEventListener("click", () => {
+  modal.style.display = "none";
 
   // Borrar datos guardados
   localStorage.removeItem("clasificacion");
