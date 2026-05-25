@@ -70,3 +70,19 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 
+.oro {
+  background-color: #ffd700 !important;
+  font-weight: bold;
+}
+
+.plata {
+  background-color: #c0c0c0 !important;
+  font-weight: bold;
+}
+
+.bronce {
+  background-color: #cd7f32 !important;
+  font-weight: bold;
+}
+
+
