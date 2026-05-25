@@ -92,6 +92,9 @@ function readCSV(file) {
 
     renderTable(data);
     mostrarUltimaActualizacion();
+
+    // SOLUCIÓN: permitir volver a seleccionar el mismo archivo
+    csvFile.value = "";
   };
 
   reader.readAsText(file);
