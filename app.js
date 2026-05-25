@@ -179,13 +179,25 @@ function renderTable(data) {
 // ===============================
 function mostrarUltimaActualizacion() {
   const texto = localStorage.getItem("ultimaActualizacion");
-  const elemento = document.getElementById("ultimaActualizacion");
 
-  if (texto) {
-    elemento.textContent = `Última actualización: ${texto}`;
-  } else {
-    elemento.textContent = "";
+  function intentarPintar() {
+    const elemento = document.getElementById("ultimaActualizacion");
+
+    if (!elemento) {
+      // Si el elemento aún no existe, reintentar en 50ms
+      setTimeout(intentarPintar, 50);
+      return;
+    }
+
+    if (texto) {
+      elemento.textContent = `Última actualización: ${texto}`;
+    } else {
+      elemento.textContent = "";
+    }
   }
+
+  intentarPintar();
 }
+
 
 
