@@ -21,10 +21,10 @@ window.addEventListener("DOMContentLoaded", () => {
     logoutBtn.style.display = "block";
 
     // Si el usuario logado es Juan Navarro → mostrar zona de carga y botón reset
-    if (usuario.toLowerCase() === "juan navarro") {
+    /*if (usuario.toLowerCase() === "juan navarro") {
       adminTools.style.display = "block";
       resetTablaBtn.style.display = "block";
-    }
+    }*/
   }
 });
 
@@ -36,7 +36,7 @@ const loginScreen = document.getElementById("loginScreen");
 const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
 const logoutBtn = document.getElementById("logoutBtn");
-const resetTablaBtn = document.getElementById("resetTablaBtn");
+//const resetTablaBtn = document.getElementById("resetTablaBtn");
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -62,10 +62,10 @@ btnLogin.addEventListener("click", () => {
   logoutBtn.style.display = "block";
 
   // Si es Juan Navarro, activar zona de carga y botón reset
-  if (usuarioCompleto === "juan navarro") {
+  /*if (usuarioCompleto === "juan navarro") {
     adminTools.style.display = "block";
     resetTablaBtn.style.display = "block";
-  }
+  }*/
 });
 
 // ===============================
@@ -85,12 +85,12 @@ logoutBtn.addEventListener("click", () => {
 // ===============================
 // BOTÓN REINICIAR TABLA (solo Juan)
 // ===============================
-resetTablaBtn.addEventListener("click", () => {
+/*resetTablaBtn.addEventListener("click", () => {
   document.getElementById("modalConfirm").style.display = "flex";
-});
+});*/
 
 // Botones del modal
-const modal = document.getElementById("modalConfirm");
+/*const modal = document.getElementById("modalConfirm");
 const modalCancel = document.getElementById("modalCancel");
 const modalOk = document.getElementById("modalOk");
 
@@ -113,7 +113,7 @@ modalOk.addEventListener("click", () => {
   document.getElementById("ultimaActualizacion").textContent = "";
 
   alert("La tabla ha sido reiniciada.");
-});
+});*/
 
 // ===============================
 // LECTURA DEL CSV
