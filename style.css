@@ -1,70 +1,29 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f4f4f4;
-}
-
-h1 {
+/* LOGIN */
+#loginScreen {
   text-align: center;
-  margin-bottom: 25px;
+  margin-top: 50px;
 }
 
-.upload-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background: #0074D9;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
+#loginScreen input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
   font-size: 16px;
 }
 
-#csvFile {
-  display: none;
+#btnLogin {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.drop-zone {
-  margin: 20px auto;
-  width: 60%;
-  padding: 30px;
-  border: 3px dashed #0074D9;
-  border-radius: 10px;
-  background: #eef6ff;
-  color: #0074D9;
-  font-size: 18px;
+.error {
+  color: red;
+  margin-top: 10px;
 }
 
-.drop-zone.dragover {
-  background: #cfe8ff;
-  border-color: #005bb5;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
-  font-size: 15px;
-}
-
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-th {
-  background: #0074D9;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
+/* TOP 10 Y PODIO */
 .top10 {
   background-color: #fff3b0 !important;
   font-weight: bold;
@@ -85,4 +44,19 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 
+/* DROPZONE Y TABLA (igual que antes) */
+.drop-zone {
+  margin: 20px auto;
+  width: 60%;
+  padding: 30px;
+  border: 3px dashed #0074D9;
+  border-radius: 10px;
+  background: #eef6ff;
+  color: #0074D9;
+  font-size: 18px;
+}
 
+.drop-zone.dragover {
+  background: #cfe8ff;
+  border-color: #005bb5;
+}
