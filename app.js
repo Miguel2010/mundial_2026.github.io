@@ -20,9 +20,10 @@ window.addEventListener("DOMContentLoaded", () => {
     mainContent.style.display = "block";
     logoutBtn.style.display = "block";
 
-    // Si el usuario logado es Juan Navarro → mostrar zona de carga
+    // Si el usuario logado es Juan Navarro → mostrar zona de carga y botón reset
     if (usuario.toLowerCase() === "juan navarro") {
       adminTools.style.display = "block";
+      resetTablaBtn.style.display = "block";
     }
   }
 });
@@ -35,6 +36,7 @@ const loginScreen = document.getElementById("loginScreen");
 const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
 const logoutBtn = document.getElementById("logoutBtn");
+const resetTablaBtn = document.getElementById("resetTablaBtn");
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -59,9 +61,10 @@ btnLogin.addEventListener("click", () => {
   // Mostrar botón logout
   logoutBtn.style.display = "block";
 
-  // Si es Juan Navarro, activar zona de carga
+  // Si es Juan Navarro, activar zona de carga y botón reset
   if (usuarioCompleto === "juan navarro") {
     adminTools.style.display = "block";
+    resetTablaBtn.style.display = "block";
   }
 });
 
@@ -73,9 +76,32 @@ logoutBtn.addEventListener("click", () => {
 
   logoutBtn.style.display = "none";
   adminTools.style.display = "none";
+  resetTablaBtn.style.display = "none";
 
   loginScreen.style.display = "block";
   mainContent.style.display = "none";
+});
+
+// ===============================
+// BOTÓN REINICIAR TABLA (solo Juan)
+// ===============================
+resetTablaBtn.addEventListener("click", () => {
+  const confirmar = confirm("¿Seguro que quieres reiniciar la tabla? Esta acción no se puede deshacer.");
+
+  if (!confirmar) return;
+
+  // Borrar datos guardados
+  localStorage.removeItem("clasificacion");
+  localStorage.removeItem("ultimaActualizacion");
+
+  // Vaciar tabla
+  const tbody = document.querySelector("#tabla tbody");
+  tbody.innerHTML = "";
+
+  // Borrar fecha en pantalla
+  document.getElementById("ultimaActualizacion").textContent = "";
+
+  alert("La tabla ha sido reiniciada.");
 });
 
 // ===============================
@@ -234,5 +260,3 @@ function mostrarUltimaActualizacion() {
 
   intentarPintar();
 }
-
-
