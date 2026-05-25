@@ -114,7 +114,7 @@ function readCSV(file) {
 // LEER CSV DESDE GITHUB (TODOS)
 // ===============================
 async function cargarCSVDesdeGitHub() {
-  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/blob/main/clasificacion.csv";
+  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/clasificacion.csv";
 
   try {
     const res = await fetch(url);
