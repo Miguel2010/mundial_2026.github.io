@@ -157,7 +157,7 @@ function renderTable(data) {
 async function mostrarUltimaActualizacion() {
   const usuario = "Miguel2010";
   const repo = "mundial_2026.github.io";
-  const ruta = "main/data/clasificacion.csv";
+  const ruta = "data/clasificacion.csv";
 
   const url = `https://api.github.com/repos/${usuario}/${repo}/commits?path=${ruta}&per_page=1`;
 
