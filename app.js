@@ -3,12 +3,8 @@
 // ===============================
 window.addEventListener("DOMContentLoaded", () => {
 
-  // Cargar tabla si existe
-  const saved = localStorage.getItem("clasificacion");
-  if (saved) {
-    const data = JSON.parse(saved);
-    renderTable(data);
-  }
+  // Cargar tabla desde GitHub
+  cargarCSVDesdeGitHub();
 
   mostrarUltimaActualizacion();
 
@@ -19,12 +15,6 @@ window.addEventListener("DOMContentLoaded", () => {
     loginScreen.style.display = "none";
     mainContent.style.display = "block";
     logoutBtn.style.display = "block";
-
-    // Si el usuario logado es Juan Navarro → mostrar zona de carga y botón reset
-    /*if (usuario.toLowerCase() === "juan navarro") {
-      adminTools.style.display = "block";
-      resetTablaBtn.style.display = "block";
-    }*/
   }
 });
 
@@ -36,7 +26,6 @@ const loginScreen = document.getElementById("loginScreen");
 const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
 const logoutBtn = document.getElementById("logoutBtn");
-//const resetTablaBtn = document.getElementById("resetTablaBtn");
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -50,22 +39,13 @@ btnLogin.addEventListener("click", () => {
 
   loginError.textContent = "";
 
-  // Mostrar contenido principal
   loginScreen.style.display = "none";
   mainContent.style.display = "block";
 
-  // Guardar sesión
   const usuarioCompleto = nombre + " " + apellido;
   localStorage.setItem("usuarioLogado", usuarioCompleto);
 
-  // Mostrar botón logout
   logoutBtn.style.display = "block";
-
-  // Si es Juan Navarro, activar zona de carga y botón reset
-  /*if (usuarioCompleto === "juan navarro") {
-    adminTools.style.display = "block";
-    resetTablaBtn.style.display = "block";
-  }*/
 });
 
 // ===============================
@@ -76,47 +56,13 @@ logoutBtn.addEventListener("click", () => {
 
   logoutBtn.style.display = "none";
   adminTools.style.display = "none";
-  resetTablaBtn.style.display = "none";
 
   loginScreen.style.display = "block";
   mainContent.style.display = "none";
 });
 
 // ===============================
-// BOTÓN REINICIAR TABLA (solo Juan)
-// ===============================
-/*resetTablaBtn.addEventListener("click", () => {
-  document.getElementById("modalConfirm").style.display = "flex";
-});*/
-
-// Botones del modal
-/*const modal = document.getElementById("modalConfirm");
-const modalCancel = document.getElementById("modalCancel");
-const modalOk = document.getElementById("modalOk");
-
-modalCancel.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-modalOk.addEventListener("click", () => {
-  modal.style.display = "none";
-
-  // Borrar datos guardados
-  localStorage.removeItem("clasificacion");
-  localStorage.removeItem("ultimaActualizacion");
-
-  // Vaciar tabla
-  const tbody = document.querySelector("#tabla tbody");
-  tbody.innerHTML = "";
-
-  // Borrar fecha en pantalla
-  document.getElementById("ultimaActualizacion").textContent = "";
-
-  alert("La tabla ha sido reiniciada.");
-});*/
-
-// ===============================
-// LECTURA DEL CSV
+// LECTURA DEL CSV LOCAL (ADMIN)
 // ===============================
 const csvFile = document.getElementById("csvFile");
 csvFile.addEventListener("change", (e) => {
@@ -146,7 +92,7 @@ dropZone.addEventListener("drop", (e) => {
 });
 
 // ===============================
-// LEER CSV
+// LEER CSV LOCAL (ADMIN)
 // ===============================
 function readCSV(file) {
   const reader = new FileReader();
@@ -155,19 +101,9 @@ function readCSV(file) {
     const text = event.target.result;
     const data = parseCSV(text);
 
-    // Guardar clasificación para todos
-    localStorage.setItem("clasificacion", JSON.stringify(data));
-
-    // Guardar fecha y hora
-    const ahora = new Date();
-    const fecha = ahora.toLocaleDateString("es-ES");
-    const hora = ahora.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" });
-    localStorage.setItem("ultimaActualizacion", `${fecha} ${hora}`);
-
     renderTable(data);
     mostrarUltimaActualizacion();
 
-    // Permitir volver a seleccionar el mismo archivo
     csvFile.value = "";
   };
 
@@ -175,17 +111,36 @@ function readCSV(file) {
 }
 
 // ===============================
+// LEER CSV DESDE GITHUB (TODOS)
+// ===============================
+async function cargarCSVDesdeGitHub() {
+  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/main/clasificacion.csv";
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      console.warn("No se encontró el CSV en GitHub");
+      return;
+    }
+
+    const texto = await res.text();
+    const data = parseCSV(texto);
+    renderTable(data);
+
+  } catch (e) {
+    console.error("Error cargando CSV desde GitHub:", e);
+  }
+}
+
+// ===============================
 // PARSEAR CSV ROBUSTO
 // ===============================
 function parseCSV(csv) {
 
-  // Eliminar BOM
   csv = csv.replace(/^\uFEFF/, "");
 
-  // Saltos de línea Windows o Unix
   const lines = csv.trim().split(/\r?\n/);
 
-  // Separar por coma o punto y coma
   const headers = lines[0].split(/[,;]+/).map(h => h.trim());
 
   const rows = lines.slice(1).map(line => {
@@ -196,7 +151,6 @@ function parseCSV(csv) {
       obj[h] = isNaN(values[i]) ? values[i] : Number(values[i]);
     });
 
-    // Calcular total
     obj.total =
       obj.grupos +
       obj.dieciseisavos +
@@ -209,7 +163,6 @@ function parseCSV(csv) {
     return obj;
   });
 
-  // Ordenar por total descendente
   rows.sort((a, b) => b.total - a.total);
 
   return rows;
@@ -225,7 +178,6 @@ function renderTable(data) {
   data.forEach((row, index) => {
     const tr = document.createElement("tr");
 
-    // Podio
     if (index === 0) tr.classList.add("oro");
     else if (index === 1) tr.classList.add("plata");
     else if (index === 2) tr.classList.add("bronce");
