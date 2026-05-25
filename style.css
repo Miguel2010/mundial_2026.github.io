@@ -1,4 +1,51 @@
 /* ============================
+   PALETA MUNDIAL 2026
+   ============================ */
+/*
+Azul USA:        #002868
+Rojo México/USA: #BF0A30
+Verde México:    #006847
+Blanco Canadá:   #FFFFFF
+Negro suave:     #1A1A1A
+Dorado podio:    #FFD700
+Plata:           #C0C0C0
+Bronce:          #CD7F32
+*/
+
+/* ============================
+   HEADER MUNDIAL 2026
+   ============================ */
+#header2026 {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #002868, #BF0A30, #006847);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#header2026 .flags {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+#header2026 .flags img {
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+.titulo2026 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ============================
    PANTALLA DE LOGIN
    ============================ */
 #loginScreen {
@@ -9,12 +56,15 @@
   width: 350px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #cccccc;
+  border-radius: 12px;
+  border: 3px solid #002868;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 #loginScreen h2 {
   margin-bottom: 10px;
+  color: #002868;
+  font-weight: bold;
 }
 
 #loginScreen input {
@@ -23,7 +73,7 @@
   padding: 12px;
   width: 80%;
   font-size: 16px;
-  border: 1px solid #aaa;
+  border: 2px solid #006847;
   border-radius: 6px;
 }
 
@@ -31,19 +81,20 @@
   padding: 12px 25px;
   font-size: 16px;
   cursor: pointer;
-  background: #0074D9;
+  background: #BF0A30;
   color: white;
   border: none;
   border-radius: 6px;
   margin-top: 10px;
+  transition: 0.2s;
 }
 
 #btnLogin:hover {
-  background: #005bb5;
+  background: #8c0824;
 }
 
 .error {
-  color: red;
+  color: #BF0A30;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -54,12 +105,8 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #f4f4f4;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 25px;
+  background: #f0f4f8;
+  color: #1A1A1A;
 }
 
 /* ============================
@@ -71,12 +118,17 @@ h1 {
 }
 
 .btn {
-  background: #0074D9;
+  background: #006847;
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #004f34;
 }
 
 #csvFile {
@@ -90,17 +142,17 @@ h1 {
   margin: 20px auto;
   width: 60%;
   padding: 30px;
-  border: 3px dashed #0074D9;
+  border: 3px dashed #BF0A30;
   border-radius: 10px;
-  background: #eef6ff;
-  color: #0074D9;
+  background: #ffecec;
+  color: #BF0A30;
   font-size: 18px;
   transition: 0.2s;
 }
 
 .drop-zone.dragover {
-  background: #cfe8ff;
-  border-color: #005bb5;
+  background: #ffd4d4;
+  border-color: #8c0824;
 }
 
 /* ============================
@@ -112,6 +164,8 @@ table {
   background: white;
   font-size: 15px;
   box-shadow: 0 0 10px #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
@@ -121,33 +175,38 @@ th, td {
 }
 
 th {
-  background: #0074D9;
+  background: #002868;
   color: white;
-}
-
-tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-/* ============================
-   COLORES ESPECIALES
-   ============================ */
-.top10 {
-  background-color: #fff3b0 !important;
   font-weight: bold;
 }
 
+tr:nth-child(even) {
+  background: #f7faff;
+}
+
+/* ============================
+   COLORES ESPECIALES (PODIO)
+   ============================ */
 .oro {
-  background-color: #ffd700 !important;
+  background-color: #FFD700 !important;
   font-weight: bold;
 }
 
 .plata {
-  background-color: #c0c0c0 !important;
+  background-color: #C0C0C0 !important;
   font-weight: bold;
 }
 
 .bronce {
-  background-color: #cd7f32 !important;
+  background-color: #CD7F32 !important;
   font-weight: bold;
+}
+
+/* ============================
+   TOP 10
+   ============================ */
+.top10 {
+  background-color: #e8f5e9 !important;
+  font-weight: bold;
+  border-left: 5px solid #006847;
 }
