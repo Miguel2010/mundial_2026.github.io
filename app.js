@@ -59,7 +59,18 @@ function readCSV(file) {
   reader.onload = function (event) {
     const text = event.target.result;
     const data = parseCSV(text);
+
+    // Guardar clasificación
+    localStorage.setItem("clasificacion", JSON.stringify(data));
+
+    // Guardar fecha y hora
+    const ahora = new Date();
+    const fecha = ahora.toLocaleDateString("es-ES");
+    const hora = ahora.toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" });
+    localStorage.setItem("ultimaActualizacion", `${fecha} ${hora}`);
+
     renderTable(data);
+    mostrarUltimaActualizacion();
   };
 
   reader.readAsText(file);
@@ -126,5 +137,29 @@ function renderTable(data) {
     `;
     tbody.innerHTML += fila;
   });
+
+  // --- Mostrar actialización ---
+  function mostrarUltimaActualizacion() {
+    const texto = localStorage.getItem("ultimaActualizacion");
+    const elemento = document.getElementById("ultimaActualizacion");
+  
+    if (texto) {
+      elemento.textContent = `Última actualización: ${texto}`;
+    } else {
+      elemento.textContent = "";
+    }
+  }
+
+  // --- Iniciar la página  ---
+  window.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("clasificacion");
+    if (saved) {
+      const data = JSON.parse(saved);
+      renderTable(data);
+    }
+  
+    mostrarUltimaActualizacion();
+  });
+  
 }
 
