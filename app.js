@@ -1,3 +1,27 @@
+// --- LOGIN ---
+document.getElementById("btnLogin").addEventListener("click", () => {
+  const nombre = document.getElementById("nombre").value.trim().toLowerCase();
+  const apellido = document.getElementById("apellido").value.trim().toLowerCase();
+
+  const loginError = document.getElementById("loginError");
+
+  if (!nombre || !apellido) {
+    loginError.textContent = "Debes introducir nombre y primer apellido";
+    return;
+  }
+
+  const esAdmin = (nombre === "juan" && apellido === "navarro");
+
+  // Ocultar login y mostrar contenido
+  document.getElementById("loginScreen").style.display = "none";
+  document.getElementById("mainContent").style.display = "block";
+
+  // Si es admin, mostrar herramientas
+  if (esAdmin) {
+    document.getElementById("adminTools").style.display = "block";
+  }
+});
+
 // --- Selección de archivo ---
 document.getElementById("csvFile").addEventListener("change", function (e) {
   const file = e.target.files[0];
@@ -103,3 +127,4 @@ function renderTable(data) {
     tbody.innerHTML += fila;
   });
 }
+
