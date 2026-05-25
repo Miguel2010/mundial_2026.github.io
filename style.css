@@ -17,32 +17,24 @@ Bronce:          #CD7F32
    ============================ */
 #header2026 {
   text-align: center;
-  padding: 20px 0;
-  background: linear-gradient(90deg, #002868, #BF0A30, #006847);
+  padding: 25px 0;
+  background: #002868;
   color: white;
   border-radius: 10px;
   margin-bottom: 25px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-#header2026 .flags {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+#logo2026 {
+  width: 140px;
   margin-bottom: 10px;
-}
-
-#header2026 .flags img {
-  width: 60px;
-  height: 40px;
-  border-radius: 4px;
-  border: 2px solid white;
 }
 
 .titulo2026 {
   font-size: 28px;
   font-weight: bold;
   margin: 0;
+  color: white;
 }
 
 /* ============================
