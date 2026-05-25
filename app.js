@@ -61,14 +61,6 @@ logoutBtn.addEventListener("click", () => {
   mainContent.style.display = "none";
 });
 
-// ===============================
-// LECTURA DEL CSV LOCAL (ADMIN)
-// ===============================
-/*const csvFile = document.getElementById("csvFile");
-csvFile.addEventListener("change", (e) => {
-  readCSV(e.target.files[0]);
-});*/
-
 // DRAG & DROP
 const dropZone = document.getElementById("dropZone");
 
@@ -90,25 +82,6 @@ dropZone.addEventListener("drop", (e) => {
     readCSV(file);
   }
 });
-
-// ===============================
-// LEER CSV LOCAL (ADMIN)
-// ===============================
-/*function readCSV(file) {
-  const reader = new FileReader();
-
-  reader.onload = function (event) {
-    const text = event.target.result;
-    const data = parseCSV(text);
-
-    renderTable(data);
-    mostrarUltimaActualizacion();
-
-    csvFile.value = "";
-  };
-
-  reader.readAsText(file);
-}*/
 
 // ===============================
 // LEER CSV DESDE GITHUB (TODOS)
