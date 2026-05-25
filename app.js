@@ -55,7 +55,10 @@ logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("usuarioLogado");
 
   logoutBtn.style.display = "none";
-  adminTools.style.display = "none";
+
+  // Evitar error si adminTools no existe
+  const adminTools = document.getElementById("adminTools");
+  if (adminTools) adminTools.style.display = "none";
 
   loginScreen.style.display = "block";
   mainContent.style.display = "none";
