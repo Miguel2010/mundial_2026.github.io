@@ -64,3 +64,9 @@ th {
 tr:nth-child(even) {
   background: #f9f9f9;
 }
+
+.top10 {
+  background-color: #fff3b0 !important;
+  font-weight: bold;
+}
+
