@@ -2,6 +2,8 @@
 // CARGAR CLASIFICACIÓN AL INICIAR
 // ===============================
 window.addEventListener("DOMContentLoaded", () => {
+
+  // Cargar tabla si existe
   const saved = localStorage.getItem("clasificacion");
   if (saved) {
     const data = JSON.parse(saved);
@@ -12,10 +14,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Recuperar sesión
   const usuario = localStorage.getItem("usuarioLogado");
+
   if (usuario) {
     loginScreen.style.display = "none";
     mainContent.style.display = "block";
     logoutBtn.style.display = "block";
+
+    // Si el usuario logado es Juan Navarro → mostrar zona de carga
+    if (usuario.toLowerCase() === "juan navarro") {
+      adminTools.style.display = "block";
+    }
   }
 });
 
@@ -45,13 +53,14 @@ btnLogin.addEventListener("click", () => {
   mainContent.style.display = "block";
 
   // Guardar sesión
-  localStorage.setItem("usuarioLogado", nombre + " " + apellido);
+  const usuarioCompleto = nombre + " " + apellido;
+  localStorage.setItem("usuarioLogado", usuarioCompleto);
 
   // Mostrar botón logout
   logoutBtn.style.display = "block";
 
   // Si es Juan Navarro, activar zona de carga
-  if (nombre === "juan" && apellido === "navarro") {
+  if (usuarioCompleto === "juan navarro") {
     adminTools.style.display = "block";
   }
 });
@@ -63,6 +72,8 @@ logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("usuarioLogado");
 
   logoutBtn.style.display = "none";
+  adminTools.style.display = "none";
+
   loginScreen.style.display = "block";
   mainContent.style.display = "none";
 });
@@ -223,7 +234,5 @@ function mostrarUltimaActualizacion() {
 
   intentarPintar();
 }
-
-
 
 
