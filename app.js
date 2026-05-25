@@ -61,28 +61,6 @@ logoutBtn.addEventListener("click", () => {
   mainContent.style.display = "none";
 });
 
-// DRAG & DROP
-const dropZone = document.getElementById("dropZone");
-
-dropZone.addEventListener("dragover", (e) => {
-  e.preventDefault();
-  dropZone.classList.add("dragover");
-});
-
-dropZone.addEventListener("dragleave", () => {
-  dropZone.classList.remove("dragover");
-});
-
-dropZone.addEventListener("drop", (e) => {
-  e.preventDefault();
-  dropZone.classList.remove("dragover");
-
-  const file = e.dataTransfer.files[0];
-  if (file && file.name.endsWith(".csv")) {
-    readCSV(file);
-  }
-});
-
 // ===============================
 // LEER CSV DESDE GITHUB (TODOS)
 // ===============================
