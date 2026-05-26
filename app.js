@@ -16,6 +16,10 @@ window.addEventListener("DOMContentLoaded", () => {
     mainContent.style.display = "block";
     logoutBtn.style.display = "block";
   }
+
+  // Comprobar cambios cada 30 segundos
+  setInterval(comprobarActualizacionCSV, 300000);
+
 });
 
 // ===============================
@@ -29,6 +33,8 @@ const logoutBtn = document.getElementById("logoutBtn");
 let datosCSV = [];      // Todos los registros
 let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
+let ultimoETag = null;
+
 
 /*Botón de login*/
 btnLogin.addEventListener("click", async () => {
@@ -85,7 +91,10 @@ async function cargarCSVDesdeGitHub() {
   const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/main/data/clasificacion.csv";
 
   try {
-    const res = await fetch(url);
+    // Romper caché del navegador y GitHub
+    const res = await fetch(url + "?v=" + Date.now(), {
+      cache: "no-store"
+    });
 
     // Si el fichero NO existe
     if (!res.ok) {
@@ -231,6 +240,38 @@ contenedor.addEventListener("scroll", () => {
     }
   }
 });
+
+// ====================================
+// COMPROBAR SI SE HA MODIFICADO EL CSV
+// ====================================
+async function comprobarActualizacionCSV() {
+  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/main/data/clasificacion.csv";
+
+  try {
+    const res = await fetch(url, {
+      method: "HEAD",
+      cache: "no-store"
+    });
+
+    const nuevoETag = res.headers.get("ETag");
+
+    // Primera vez → guardar ETag
+    if (!ultimoETag) {
+      ultimoETag = nuevoETag;
+      return;
+    }
+
+    // Si el ETag ha cambiado → recargar tabla
+    if (nuevoETag !== ultimoETag) {
+      ultimoETag = nuevoETag;
+      cargarCSVDesdeGitHub(); // recarga la tabla
+    }
+
+  } catch (e) {
+    console.error("Error comprobando actualización del CSV:", e);
+  }
+}
+
 
 
 
