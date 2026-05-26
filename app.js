@@ -30,7 +30,8 @@ let datosCSV = [];      // Todos los registros
 let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
 
-btnLogin.addEventListener("click", () => {
+/*Botón de login*/
+btnLogin.addEventListener("click", async () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
   const apellidos = document.getElementById("apellidos").value.trim().toLowerCase();
   const loginError = document.getElementById("loginError");
@@ -40,8 +41,16 @@ btnLogin.addEventListener("click", () => {
     return;
   }
 
-  loginError.textContent = "";
+  // Comprobar CSV antes de entrar
+  const valido = await csvEsValido();
 
+  if (!valido) {
+    document.getElementById("popupInfo").style.display = "flex";
+    return; // Bloquea acceso
+  }
+
+  // Acceso normal
+  loginError.textContent = "";
   loginScreen.style.display = "none";
   mainContent.style.display = "block";
 
@@ -49,6 +58,11 @@ btnLogin.addEventListener("click", () => {
   localStorage.setItem("usuarioLogado", usuarioCompleto);
 
   logoutBtn.style.display = "block";
+});
+
+/*Botón del popup*/
+document.getElementById("popupCerrar").addEventListener("click", () => {
+  document.getElementById("popupInfo").style.display = "none";
 });
 
 // ===============================
