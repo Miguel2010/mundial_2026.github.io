@@ -145,6 +145,7 @@ body {
   border: 2px solid #ccc;
   background: white;
   border-radius: 5px;
+  position: relative;
 }
 
 /* Encabezado fijo */
@@ -154,36 +155,21 @@ body {
   background: #002868;
   color: white;
   padding: 10px;
-  z-index: 10;
+  z-index: 20;
+  border-bottom: 2px solid #444;
 }
 
 /* ============================
    TABLA DE CLASIFICACIÓN
    ============================ */
-table {
+#tabla {
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  font-size: 15px;
-  box-shadow: 0 0 10px #cccccc;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
-th, td {
+#tabla td, #tabla th {
   padding: 10px;
   border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-th {
-  background: #002868;
-  color: white;
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background: #f7faff;
 }
 
 /* ============================
