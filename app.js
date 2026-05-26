@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Cargar tabla desde GitHub
   cargarCSVDesdeGitHub();
 
-  mostrarUltimaActualizacion();
+  //mostrarUltimaActualizacion();
   
   // Recuperar sesión
   const usuario = localStorage.getItem("usuarioLogado");
@@ -32,6 +32,7 @@ let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
 let ultimaFechaModificacion = null;
 let ultimoCSV = null;
+let ultimoCSV = localStorage.getItem("ultimoCSV") || null;
 
 /*Botón de login*/
 btnLogin.addEventListener("click", async () => {
@@ -109,6 +110,7 @@ async function cargarCSVDesdeGitHub() {
 
     // Si ha cambiado → guardar nueva versión
     ultimoCSV = texto;
+    localStorage.setItem("ultimoCSV", texto);
     
     datosCSV = parseCSV(texto);
     
