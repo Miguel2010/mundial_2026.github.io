@@ -32,11 +32,11 @@ let ventanaTamaño = 20; // filas visibles a la vez
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
-  const apellido = document.getElementById("apellido").value.trim().toLowerCase();
+  const apellidos = document.getElementById("apellidos").value.trim().toLowerCase();
   const loginError = document.getElementById("loginError");
 
-  if (!nombre || !apellido) {
-    loginError.textContent = "Debes introducir nombre y primer apellido";
+  if (!nombre || !apellidos) {
+    loginError.textContent = "Debes introducir nombre y apellidos";
     return;
   }
 
@@ -45,7 +45,7 @@ btnLogin.addEventListener("click", () => {
   loginScreen.style.display = "none";
   mainContent.style.display = "block";
 
-  const usuarioCompleto = nombre + " " + apellido;
+  const usuarioCompleto = nombre + " " + apellidos;
   localStorage.setItem("usuarioLogado", usuarioCompleto);
 
   logoutBtn.style.display = "block";
