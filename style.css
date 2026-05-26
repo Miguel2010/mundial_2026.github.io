@@ -167,9 +167,13 @@ body {
   border-collapse: collapse;
 }
 
-#tabla td, #tabla th {
+/* CENTRADO TOTAL DE LA TABLA */
+#tabla th,
+#tabla td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  text-align: center;        /* ← CENTRADO HORIZONTAL */
+  vertical-align: middle;    /* ← CENTRADO VERTICAL */
 }
 
 /* ============================
