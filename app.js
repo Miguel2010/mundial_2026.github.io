@@ -90,7 +90,7 @@ logoutBtn.addEventListener("click", () => {
 // LEER CSV DESDE GITHUB (TODOS)
 // ===============================
 async function cargarCSVDesdeGitHub() {
-  const url = "https://raw.githack.com/Miguel2010/mundial_2026.github.io/main/data/clasificacion.csv";
+  const url = "https://cdn.jsdelivr.net/gh/Miguel2010/mundial_2026.github.io/data/clasificacion.csv";
 
   try {
     // Romper caché del navegador y GitHub
@@ -121,7 +121,7 @@ async function cargarCSVDesdeGitHub() {
 // COMPROBAR SI EL CSV ES VÁLIDO
 // ===============================
 async function csvEsValido() {
-  const url = "https://raw.githack.com/Miguel2010/mundial_2026.github.io/main/data/clasificacion.csv";
+  const url = "https://cdn.jsdelivr.net/gh/Miguel2010/mundial_2026.github.io/data/clasificacion.csv";
 
   try {
     const res = await fetch(url + "?check=" + Date.now(), {
