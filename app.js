@@ -283,16 +283,16 @@ contenedor.addEventListener("scroll", () => {
 // COMPROBAR SI SE HA MODIFICADO EL CSV
 // ====================================
 async function comprobarActualizacionCSV() {
+  console.log("comprobando CSV...");
   const nuevaFecha = await obtenerFechaUltimoCommit();
 
+  console.log("nuevaFecha:", nuevaFecha, "ultimaFechaModificacion:", ultimaFechaModificacion);
   // Primera vez → guardar fecha
-  if (!ultimaFechaModificacion) {
-    ultimaFechaModificacion = nuevaFecha;
-    return;
-  }
+  if (!nuevaFecha) return;
 
   // Si la fecha cambia → refrescar tabla
   if (nuevaFecha !== ultimaFechaModificacion) {
+    console.log("🔄 detectado cambio, recargando tabla");
     ultimaFechaModificacion = nuevaFecha;
     await cargarCSVDesdeGitHub();
     mostrarUltimaActualizacion();
