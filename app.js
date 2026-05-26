@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
     logoutBtn.style.display = "block";
   }
 
-  // Comprobar cambios cada 30 segundos
+  // Comprobar cambios cada 60 segundos
   setInterval(comprobarActualizacionCSV, 60000);
 
 });
