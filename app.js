@@ -74,15 +74,28 @@ async function cargarCSVDesdeGitHub() {
     const res = await fetch(url);
     if (!res.ok) {
       console.warn("Aún no se ha realizado los cálculos de las puntuaciones");
+      mostrarTablaVacia();
       return;
     }
 
     const texto = await res.text();
+
+    // Si el CSV está vacío → tabla vacía
+    if (!texto.trim()) {
+      mostrarTablaVacia();
+      return;
+    }
+
     datosCSV = parseCSV(texto);
+
+    // Si el CSV tiene cabecera pero ninguna fila
+    if (datosCSV.length === 0) {
+      mostrarTablaVacia();
+      return;
+    }
     
     filasMostradas = 0;
-    const tbody = document.querySelector("#tabla tbody");
-    tbody.innerHTML = "";
+    document.querySelector("#tabla tbody").innerHTML = "";
     renderMasFilas();
 
   } catch (e) {
@@ -160,6 +173,23 @@ function renderMasFilas() {
   }
 
   filasMostradas = limite;
+}
+
+// ===============================
+// MOSTRAR TABLA
+// ===============================
+function mostrarTablaVacia() {
+  const tbody = document.querySelector("#tabla tbody");
+  tbody.innerHTML = "";
+
+  const mensaje = document.createElement("tr");
+  mensaje.innerHTML = `
+    <td colspan="10" style="padding:20px; text-align:center; font-weight:bold; color:#555;">
+      Aún no se ha realizado el cálculo de puntos iniciales.
+    </td>
+  `;
+
+  tbody.appendChild(mensaje);
 }
 
 // ===============================
