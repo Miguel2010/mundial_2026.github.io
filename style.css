@@ -172,6 +172,12 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+#tabla th,
+#tabla td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* ============================
    COLORES ESPECIALES (PODIO)
    ============================ */
