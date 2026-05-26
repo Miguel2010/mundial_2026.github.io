@@ -176,7 +176,7 @@ function renderMasFilas() {
 }
 
 // ===============================
-// MOSTRAR TABLA
+// MOSTRAR TABLA VACÍA
 // ===============================
 function mostrarTablaVacia() {
   const tbody = document.querySelector("#tabla tbody");
