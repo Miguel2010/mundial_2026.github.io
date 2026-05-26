@@ -81,6 +81,8 @@ async function cargarCSVDesdeGitHub() {
     datosCSV = parseCSV(texto);
     
     ventanaInicio = 0;
+    const tbody = document.querySelector("#tabla tbody");
+    tbody.innerHTML = "";
     renderVentana();
 
   } catch (e) {
