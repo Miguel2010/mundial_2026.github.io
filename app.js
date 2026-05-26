@@ -73,7 +73,7 @@ async function cargarCSVDesdeGitHub() {
   try {
     const res = await fetch(url);
     if (!res.ok) {
-      console.warn("No se encontró el CSV en GitHub");
+      console.warn("Aún no se ha realizado los cálculos de las puntuaciones");
       return;
     }
 
@@ -84,7 +84,7 @@ async function cargarCSVDesdeGitHub() {
     renderVentana();
 
   } catch (e) {
-    console.error("Error cargando CSV desde GitHub:", e);
+    console.error("Error cargando el fichero de clasificación:", e);
   }
 }
 
