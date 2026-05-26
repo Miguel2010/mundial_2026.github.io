@@ -33,7 +33,8 @@ const logoutBtn = document.getElementById("logoutBtn");
 let datosCSV = [];      // Todos los registros
 let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
-let ultimoETag = null;
+let ultimaFechaModificacion = null;
+
 
 
 /*Botón de login*/
@@ -248,22 +249,22 @@ async function comprobarActualizacionCSV() {
   const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/main/data/clasificacion.csv";
 
   try {
-    const res = await fetch(url, {
-      method: "HEAD",
+    const res = await fetch(url + "?check=" + Date.now(), {
+      method: "GET",
       cache: "no-store"
     });
 
-    const nuevoETag = res.headers.get("ETag");
+    const nuevaFecha = res.headers.get("Last-Modified");
 
-    // Primera vez → guardar ETag
-    if (!ultimoETag) {
-      ultimoETag = nuevoETag;
+    // Primera vez → guardar fecha
+    if (!ultimaFechaModificacion) {
+      ultimaFechaModificacion = nuevaFecha;
       return;
     }
 
-    // Si el ETag ha cambiado → recargar tabla
-    if (nuevoETag !== ultimoETag) {
-      ultimoETag = nuevoETag;
+    // Si la fecha cambia → refrescar tabla
+    if (nuevaFecha !== ultimaFechaModificacion) {
+      ultimaFechaModificacion = nuevaFecha;
       cargarCSVDesdeGitHub(); // recarga la tabla
       mostrarUltimaActualizacion(); //muestra la fecha de actualización
     }
@@ -272,6 +273,7 @@ async function comprobarActualizacionCSV() {
     console.error("Error comprobando actualización del CSV:", e);
   }
 }
+
 
 
 
