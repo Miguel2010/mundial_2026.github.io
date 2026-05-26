@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   // Comprobar cambios cada 30 segundos
-  setInterval(comprobarActualizacionCSV, 300000);
+  setInterval(comprobarActualizacionCSV, 60000);
 
 });
 
