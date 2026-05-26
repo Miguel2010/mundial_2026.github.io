@@ -42,6 +42,15 @@ btnLogin.addEventListener("click", async () => {
     return;
   }
 
+  // Validar que hay dos apellidos
+  const partes = apellidos.split(" ");
+  if (partes.length < 2) {
+    mostrarPopup("Debes introducir tus dos apellidos correctamente.");
+    return;
+  }
+
+  const nombreCompleto = `${nombre} ${apellidos}`.trim();
+
   // Comprobar CSV antes de entrar
   const valido = await csvEsValido();
 
@@ -50,13 +59,23 @@ btnLogin.addEventListener("click", async () => {
     return; // Bloquea acceso
   }
 
+  // Cargar CSV antes de validar usuario
+  await cargarCSVDesdeGitHub();
+
+  // Comprobar si el usuario existe en el CSV
+  const existe = datosCSV.some(fila => fila.nombre.toLowerCase() === nombreCompleto);
+
+  if (!existe) {
+    mostrarPopup("No tienes permisos para acceder.");
+    return;
+  }
+
   // Acceso normal
   loginError.textContent = "";
   loginScreen.style.display = "none";
   mainContent.style.display = "block";
 
-  const usuarioCompleto = nombre + " " + apellidos;
-  localStorage.setItem("usuarioLogado", usuarioCompleto);
+  localStorage.setItem("usuarioLogado", nombreCompleto);
 
   logoutBtn.style.display = "block";
 });
@@ -273,6 +292,17 @@ contenedor.addEventListener("scroll", () => {
     }
   }
 });
+
+// ==================================
+// POPUP
+// ==================================
+function mostrarPopup(mensaje) {
+  const popup = document.getElementById("popupInfo");
+  const texto = document.getElementById("popupTexto");
+
+  texto.innerText = mensaje;
+  popup.style.display = "flex";
+}
 
 
 
