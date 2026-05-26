@@ -297,11 +297,16 @@ contenedor.addEventListener("scroll", () => {
 // POPUP
 // ==================================
 function mostrarPopup(mensaje) {
-    const popup = document.getElementById("popupInfo");
-    const texto = document.getElementById("popupTexto");
+  const popup = document.getElementById("popupInfo");
+  const texto = popup.querySelector(".popup-content p");
 
-    texto.innerText = mensaje;
-    popup.style.display = "flex";
+  if (!texto) {
+    console.error("No se encontró el texto del popup");
+    return;
+  }
+
+  texto.innerHTML = mensaje; // permite <br>
+  popup.style.display = "flex";
 }
 
 
