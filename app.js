@@ -38,8 +38,6 @@ let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
 let ultimaFechaModificacion = null;
 
-
-
 /*Botón de login*/
 btnLogin.addEventListener("click", async () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -116,6 +114,42 @@ async function cargarCSVDesdeGitHub() {
 
   } catch (e) {
     console.error("Error cargando el fichero de clasificación:", e);
+  }
+}
+
+// ===============================
+// COMPROBAR SI EL CSV ES VÁLIDO
+// ===============================
+async function csvEsValido() {
+  const url = "https://raw.githubusercontent.com/Miguel2010/mundial_2026.github.io/main/data/clasificacion.csv";
+
+  try {
+    const res = await fetch(url + "?check=" + Date.now(), {
+      cache: "no-store"
+    });
+
+    // Si el fichero NO existe
+    if (!res.ok) return false;
+
+    const texto = await res.text();
+
+    // Vacío o solo espacios
+    if (!texto.trim()) return false;
+
+    const lineas = texto.trim().split(/\r?\n/);
+
+    // Solo cabecera → no válido
+    if (lineas.length <= 1) return false;
+
+    // Opcional: comprobar que parseCSV devuelve filas
+    const datos = parseCSV(texto);
+    if (!datos || datos.length === 0) return false;
+
+    return true;
+
+  } catch (e) {
+    console.error("Error comprobando CSV:", e);
+    return false;
   }
 }
 
