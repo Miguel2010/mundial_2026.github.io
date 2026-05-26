@@ -27,8 +27,8 @@ const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
 const logoutBtn = document.getElementById("logoutBtn");
 let datosCSV = [];      // Todos los registros
-let filasMostradas = 0; // Cuántas filas se han renderizado
-const FILAS_POR_CARGA = 20;
+let ventanaInicio = 0;
+let ventanaTamaño = 20; // filas visibles a la vez
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -79,7 +79,8 @@ async function cargarCSVDesdeGitHub() {
 
     const texto = await res.text();
     datosCSV = parseCSV(texto);
-    filasMostradas = 0;
+    ventanaInicio = 0;
+    renderVentana();
     
     document.querySelector("#tabla tbody").innerHTML = "";
     renderTableLazy();
@@ -128,12 +129,13 @@ function parseCSV(csv) {
 // ===============================
 // MOSTRAR TABLA
 // ===============================
-function renderTableLazy() {
+function renderVentana() {
   const tbody = document.querySelector("#tabla tbody");
+  tbody.innerHTML = "";
 
-  const limite = Math.min(filasMostradas + FILAS_POR_CARGA, datosCSV.length);
+  const ventanaFin = Math.min(ventanaInicio + ventanaTamaño, datosCSV.length);
 
-  for (let i = filasMostradas; i < limite; i++) {
+  for (let i = ventanaInicio; i < ventanaFin; i++) {
     const row = datosCSV[i];
     const tr = document.createElement("tr");
 
@@ -157,8 +159,6 @@ function renderTableLazy() {
 
     tbody.appendChild(tr);
   }
-
-  filasMostradas = limite;
 }
 
 // ===============================
@@ -199,13 +199,32 @@ async function mostrarUltimaActualizacion() {
 }
 
 // ==================================
-// DETECTAR SCROLL PARA MOSTRAR FILAS
+// SCROLL BIDIRECCIONAL INFINITO
 // ==================================
-document.querySelector(".tabla-scroll").addEventListener("scroll", function () {
-  const cont = this;
+const contenedor = document.querySelector(".tabla-scroll");
 
-  if (cont.scrollTop + cont.clientHeight >= cont.scrollHeight - 10) {
-    renderTableLazy();
+contenedor.addEventListener("scroll", () => {
+  const scrollTop = contenedor.scrollTop;
+  const altura = contenedor.clientHeight;
+  const scrollTotal = contenedor.scrollHeight;
+
+  // --- BAJAR ---
+  if (scrollTop + altura >= scrollTotal - 50) {
+    if (ventanaInicio + ventanaTamaño < datosCSV.length) {
+      ventanaInicio += 10; // desplazar ventana hacia abajo
+      renderVentana();
+      contenedor.scrollTop = 20; // mantener continuidad visual
+    }
+  }
+
+  // --- SUBIR ---
+  if (scrollTop <= 20) {
+    if (ventanaInicio > 0) {
+      ventanaInicio -= 10; // desplazar ventana hacia arriba
+      if (ventanaInicio < 0) ventanaInicio = 0;
+      renderVentana();
+      contenedor.scrollTop = 200; // mantener continuidad visual
+    }
   }
 });
 
