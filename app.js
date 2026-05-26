@@ -31,7 +31,6 @@ let datosCSV = [];      // Todos los registros
 let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
 let ultimaFechaModificacion = null;
-let ultimoCSV = null;
 let ultimoCSV = localStorage.getItem("ultimoCSV") || null;
 
 /*Botón de login*/
