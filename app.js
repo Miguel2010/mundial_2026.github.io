@@ -8,9 +8,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   mostrarUltimaActualizacion();
   
-  // Inicializar fecha del CSV al arrancar
-  obtenerFechaUltimoCommit().then(f => ultimaFechaModificacion = f);
-
   // Recuperar sesión
   const usuario = localStorage.getItem("usuarioLogado");
 
@@ -19,9 +16,6 @@ window.addEventListener("DOMContentLoaded", () => {
     mainContent.style.display = "block";
     logoutBtn.style.display = "block";
   }
-
-  // Comprobar cambios cada 60 segundos
-  setInterval(comprobarActualizacionCSV, 60000);
 
 });
 
@@ -279,49 +273,7 @@ contenedor.addEventListener("scroll", () => {
   }
 });
 
-// ====================================
-// COMPROBAR SI SE HA MODIFICADO EL CSV
-// ====================================
-async function comprobarActualizacionCSV() {
-  console.log("comprobando CSV...");
-  const nuevaFecha = await obtenerFechaUltimoCommit();
 
-  console.log("nuevaFecha:", nuevaFecha, "ultimaFechaModificacion:", ultimaFechaModificacion);
-  // Primera vez → guardar fecha
-  if (!nuevaFecha) return;
-
-  // Si la fecha cambia → refrescar tabla
-  if (nuevaFecha !== ultimaFechaModificacion) {
-    console.log("🔄 detectado cambio, recargando tabla");
-    ultimaFechaModificacion = nuevaFecha;
-    await cargarCSVDesdeGitHub();
-    mostrarUltimaActualizacion();
-  }
-}
-
-// ====================================
-// OBTENER ÚLTIMO COMMIT
-// ====================================
-async function obtenerFechaUltimoCommit() {
-  const usuario = "Miguel2010";
-  const repo = "mundial_2026.github.io";
-  const ruta = "data/clasificacion.csv";
-
-  const url = `https://api.github.com/repos/${usuario}/${repo}/commits?path=${ruta}&per_page=1`;
-
-  try {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) return null;
-
-    const commits = await res.json();
-    if (commits.length === 0) return null;
-
-    return commits[0].commit.author.date;
-
-  } catch {
-    return null;
-  }
-}
 
 
 
