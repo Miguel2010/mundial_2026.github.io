@@ -265,6 +265,7 @@ async function comprobarActualizacionCSV() {
     if (nuevoETag !== ultimoETag) {
       ultimoETag = nuevoETag;
       cargarCSVDesdeGitHub(); // recarga la tabla
+      mostrarUltimaActualizacion(); //muestra la fecha de actualización
     }
 
   } catch (e) {
