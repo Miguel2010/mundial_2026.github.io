@@ -26,6 +26,9 @@ const loginScreen = document.getElementById("loginScreen");
 const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
 const logoutBtn = document.getElementById("logoutBtn");
+let datosCSV = [];      // Todos los registros
+let filasMostradas = 0; // Cuántas filas se han renderizado
+const FILAS_POR_CARGA = 20;
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -75,8 +78,11 @@ async function cargarCSVDesdeGitHub() {
     }
 
     const texto = await res.text();
-    const data = parseCSV(texto);
-    renderTable(data);
+    datosCSV = parseCSV(texto);
+    filasMostradas = 0;
+    
+    document.querySelector("#tabla tbody").innerHTML = "";
+    renderTableLazy();
 
   } catch (e) {
     console.error("Error cargando CSV desde GitHub:", e);
@@ -122,20 +128,22 @@ function parseCSV(csv) {
 // ===============================
 // MOSTRAR TABLA
 // ===============================
-function renderTable(data) {
+function renderTableLazy() {
   const tbody = document.querySelector("#tabla tbody");
-  tbody.innerHTML = "";
 
-  data.forEach((row, index) => {
+  const limite = Math.min(filasMostradas + FILAS_POR_CARGA, datosCSV.length);
+
+  for (let i = filasMostradas; i < limite; i++) {
+    const row = datosCSV[i];
     const tr = document.createElement("tr");
 
-    if (index === 0) tr.classList.add("oro");
-    else if (index === 1) tr.classList.add("plata");
-    else if (index === 2) tr.classList.add("bronce");
-    else if (index < 10) tr.classList.add("top10");
+    if (i === 0) tr.classList.add("oro");
+    else if (i === 1) tr.classList.add("plata");
+    else if (i === 2) tr.classList.add("bronce");
+    else if (i < 10) tr.classList.add("top10");
 
     tr.innerHTML = `
-      <td>${index + 1}</td>
+      <td>${i + 1}</td>
       <td>${row.nombre}</td>
       <td>${row.grupos}</td>
       <td>${row.dieciseisavos}</td>
@@ -148,7 +156,9 @@ function renderTable(data) {
     `;
 
     tbody.appendChild(tr);
-  });
+  }
+
+  filasMostradas = limite;
 }
 
 // ===============================
@@ -187,4 +197,16 @@ async function mostrarUltimaActualizacion() {
     console.error("Error obteniendo fecha del CSV:", e);
   }
 }
+
+// ==================================
+// DETECTAR SCROLL PARA MOSTRAR FILAS
+// ==================================
+document.querySelector(".tabla-scroll").addEventListener("scroll", function () {
+  const cont = this;
+
+  if (cont.scrollTop + cont.clientHeight >= cont.scrollHeight - 10) {
+    renderTableLazy();
+  }
+});
+
 
