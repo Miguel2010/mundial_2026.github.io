@@ -7,6 +7,9 @@ window.addEventListener("DOMContentLoaded", () => {
   cargarCSVDesdeGitHub();
 
   mostrarUltimaActualizacion();
+  
+  // Inicializar fecha del CSV al arrancar
+  obtenerFechaUltimoCommit().then(f => ultimaFechaModificacion = f);
 
   // Recuperar sesión
   const usuario = localStorage.getItem("usuarioLogado");
