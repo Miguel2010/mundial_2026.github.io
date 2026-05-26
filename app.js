@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Cargar tabla desde GitHub
   cargarCSVDesdeGitHub();
 
-  //mostrarUltimaActualizacion();
+  mostrarUltimaActualizacion();
   
   // Recuperar sesión
   const usuario = localStorage.getItem("usuarioLogado");
@@ -30,8 +30,6 @@ const logoutBtn = document.getElementById("logoutBtn");
 let datosCSV = [];      // Todos los registros
 let filasMostradas = 0;
 const FILAS_POR_CARGA = 20; // filas visibles a la vez
-let ultimaFechaModificacion = null;
-let ultimoCSV = localStorage.getItem("ultimoCSV") || null;
 
 /*Botón de login*/
 btnLogin.addEventListener("click", async () => {
@@ -100,16 +98,6 @@ async function cargarCSVDesdeGitHub() {
     }
 
     const texto = await res.text();
-
-    // Si el CSV es igual al anterior → NO actualizar nada
-    if (ultimoCSV === texto) {
-      console.log("CSV sin cambios → no se actualiza la tabla ni la fecha");
-      return;
-    }
-
-    // Si ha cambiado → guardar nueva versión
-    ultimoCSV = texto;
-    localStorage.setItem("ultimoCSV", texto);
     
     datosCSV = parseCSV(texto);
     
@@ -117,9 +105,6 @@ async function cargarCSVDesdeGitHub() {
     filasMostradas = 0;
     document.querySelector("#tabla tbody").innerHTML = "";
     renderMasFilas();
-
-    // Actualizar fecha de última modificación
-    mostrarUltimaActualizacion();
     
   } catch (e) {
     console.error("Error cargando el fichero de clasificación:", e);
