@@ -72,15 +72,16 @@ async function cargarCSVDesdeGitHub() {
 
   try {
     const res = await fetch(url);
+
+    // Si el fichero NO existe
     if (!res.ok) {
-      console.warn("Aún no se ha realizado los cálculos de las puntuaciones");
       mostrarTablaVacia();
       return;
     }
 
     const texto = await res.text();
 
-    // Si el CSV está vacío → tabla vacía
+    // Si el CSV está vacío
     if (!texto.trim()) {
       mostrarTablaVacia();
       return;
@@ -93,13 +94,15 @@ async function cargarCSVDesdeGitHub() {
       mostrarTablaVacia();
       return;
     }
-    
+
+    // Cargar primeras filas
     filasMostradas = 0;
     document.querySelector("#tabla tbody").innerHTML = "";
     renderMasFilas();
 
   } catch (e) {
     console.error("Error cargando el fichero de clasificación:", e);
+    mostrarTablaVacia();
   }
 }
 
@@ -179,16 +182,22 @@ function renderMasFilas() {
 // MOSTRAR TABLA VACÍA
 // ===============================
 function mostrarTablaVacia() {
+  // Vaciar datos en memoria
+  datosCSV = [];
+  filasMostradas = 0;
+  ventanaInicio = 0;
+
+  // Vaciar tabla
   const tbody = document.querySelector("#tabla tbody");
   tbody.innerHTML = "";
 
+  // Mostrar mensaje
   const mensaje = document.createElement("tr");
   mensaje.innerHTML = `
     <td colspan="10" style="padding:20px; text-align:center; font-weight:bold; color:#555;">
       Aún no se ha realizado el cálculo de puntos iniciales.
     </td>
   `;
-
   tbody.appendChild(mensaje);
 }
 
