@@ -27,8 +27,8 @@ const mainContent = document.getElementById("mainContent");
 const adminTools = document.getElementById("adminTools");
 const logoutBtn = document.getElementById("logoutBtn");
 let datosCSV = [];      // Todos los registros
-let ventanaInicio = 0;
-let ventanaTamaño = 20; // filas visibles a la vez
+let filasMostradas = 0;
+const FILAS_POR_CARGA = 20; // filas visibles a la vez
 
 btnLogin.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim().toLowerCase();
@@ -80,10 +80,10 @@ async function cargarCSVDesdeGitHub() {
     const texto = await res.text();
     datosCSV = parseCSV(texto);
     
-    ventanaInicio = 0;
+    filasMostradas = 0;
     const tbody = document.querySelector("#tabla tbody");
     tbody.innerHTML = "";
-    renderVentana();
+    renderMasFilas();
 
   } catch (e) {
     console.error("Error cargando el fichero de clasificación:", e);
@@ -129,13 +129,12 @@ function parseCSV(csv) {
 // ===============================
 // MOSTRAR TABLA
 // ===============================
-function renderVentana() {
+function renderMasFilas() {
   const tbody = document.querySelector("#tabla tbody");
-  tbody.innerHTML = "";
 
-  const ventanaFin = Math.min(ventanaInicio + ventanaTamaño, datosCSV.length);
+  const limite = Math.min(filasMostradas + FILAS_POR_CARGA, datosCSV.length);
 
-  for (let i = ventanaInicio; i < ventanaFin; i++) {
+  for (let i = filasMostradas; i < limite; i++) {
     const row = datosCSV[i];
     const tr = document.createElement("tr");
 
@@ -159,6 +158,8 @@ function renderVentana() {
 
     tbody.appendChild(tr);
   }
+
+  filasMostradas = limite;
 }
 
 // ===============================
@@ -199,7 +200,7 @@ async function mostrarUltimaActualizacion() {
 }
 
 // ==================================
-// SCROLL BIDIRECCIONAL INFINITO
+// SCROLL BAJADA
 // ==================================
 const contenedor = document.querySelector(".tabla-scroll");
 
@@ -208,24 +209,12 @@ contenedor.addEventListener("scroll", () => {
   const altura = contenedor.clientHeight;
   const scrollTotal = contenedor.scrollHeight;
 
-  // --- BAJAR ---
   if (scrollTop + altura >= scrollTotal - 50) {
-    if (ventanaInicio + ventanaTamaño < datosCSV.length) {
-      ventanaInicio += 10; // desplazar ventana hacia abajo
-      renderVentana();
-      contenedor.scrollTop = 20; // mantener continuidad visual
-    }
-  }
-
-  // --- SUBIR ---
-  if (scrollTop <= 20) {
-    if (ventanaInicio > 0) {
-      ventanaInicio -= 10; // desplazar ventana hacia arriba
-      if (ventanaInicio < 0) ventanaInicio = 0;
-      renderVentana();
-      contenedor.scrollTop = 200; // mantener continuidad visual
+    if (filasMostradas < datosCSV.length) {
+      renderMasFilas();
     }
   }
 });
+
 
 
