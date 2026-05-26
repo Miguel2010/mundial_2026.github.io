@@ -134,23 +134,40 @@ body {
 }
 
 /* ============================
-   TABLA DE CLASIFICACIÓN
-   ============================ */
+   TABLA CON SCROLL
+============================ */
 .tabla-scroll {
-  max-height: 400px;   /* Ajusta la altura que quieras */
-  overflow-y: auto;    /* Scroll vertical */
-  overflow-x: hidden;  /* Sin scroll horizontal */
+  max-height: 450px;     /* Altura visible */
+  overflow-y: auto;      /* Scroll vertical */
+  overflow-x: hidden;
+  margin: 20px auto;
+  width: 95%;
   border: 2px solid #ccc;
-  margin-top: 20px;
+  background: white;
+  border-radius: 5px;
 }
 
-/* Mantener el encabezado fijo */
+/* Encabezado fijo */
 #tabla thead th {
   position: sticky;
   top: 0;
   background: #222;
   color: white;
+  padding: 10px;
   z-index: 10;
+}
+
+/* ============================
+   TABLA DE CLASIFICACIÓN
+   ============================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 15px;
+  box-shadow: 0 0 10px #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
