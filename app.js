@@ -79,11 +79,9 @@ async function cargarCSVDesdeGitHub() {
 
     const texto = await res.text();
     datosCSV = parseCSV(texto);
+    
     ventanaInicio = 0;
     renderVentana();
-    
-    document.querySelector("#tabla tbody").innerHTML = "";
-    renderTableLazy();
 
   } catch (e) {
     console.error("Error cargando CSV desde GitHub:", e);
