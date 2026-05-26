@@ -249,7 +249,8 @@ async function mostrarUltimaActualizacion() {
     });
 
     const elemento = document.getElementById("ultimaActualizacion");
-    elemento.textContent = `Última actualización de la clasificación: ${fechaFormateada} ${horaFormateada}`;
+    elemento.textContent = `Última actualización de la clasificación: ${fechaFormateada} ${horaFormateada}
+    La tabla puede tardar en actualizarse unos minutos`;
 
   } catch (e) {
     console.error("Error obteniendo fecha del CSV:", e);
