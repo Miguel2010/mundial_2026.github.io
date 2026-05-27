@@ -6,7 +6,6 @@ type LeaderboardPageProps = {
   isLoading: boolean;
   error: string | null;
   lastUpdated: string | null;
-  onReload: () => Promise<void>;
   onLogout: () => void;
 };
 
@@ -15,7 +14,6 @@ export function LeaderboardPage({
   isLoading,
   error,
   lastUpdated,
-  onReload,
   onLogout,
 }: LeaderboardPageProps) {
   const leader = rows[0];
@@ -31,9 +29,6 @@ export function LeaderboardPage({
           </p>
         </div>
         <div className="section-actions">
-          <button className="secondary-button" type="button" onClick={() => void onReload()}>
-            Recargar datos
-          </button>
           <button className="ghost-button" type="button" onClick={onLogout}>
             Cerrar sesión
           </button>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import logoUrl from '../logo2026.png';
 import { AuthGate } from './features/auth/AuthGate';
 import {
@@ -9,8 +9,10 @@ import {
 } from './features/auth/auth';
 import { LeaderboardPage } from './features/leaderboard/LeaderboardPage';
 import { fetchClassification } from './services/classification-service';
-import { fetchLastUpdateLabel } from './services/github-meta-service';
+import { fetchCsvUpdateInfo } from './services/github-meta-service';
 import type { ClassificationRow } from './types/classification';
+
+const UPDATE_CHECK_INTERVAL_MS = 5 * 60 * 1000;
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => hasActiveSession());
@@ -21,9 +23,11 @@ function App() {
   const [rowsError, setRowsError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [isLoadingMeta, setIsLoadingMeta] = useState(true);
+  const lastUpdatedIsoRef = useRef<string | null>(null);
+  const isCheckingUpdatesRef = useRef(false);
 
   useEffect(() => {
-    void loadLastUpdated();
+    void syncLastUpdated();
   }, []);
 
   useEffect(() => {
@@ -35,6 +39,61 @@ function App() {
     }
 
     void loadLeaderboard();
+    void syncLastUpdated();
+  }, [isAuthenticated]);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      return;
+    }
+
+    const checkForUpdates = async () => {
+      if (isCheckingUpdatesRef.current) {
+        return;
+      }
+
+      isCheckingUpdatesRef.current = true;
+
+      try {
+        const updateInfo = await fetchCsvUpdateInfo();
+
+        setLastUpdated(updateInfo.updatedAtLabel);
+
+        if (lastUpdatedIsoRef.current !== updateInfo.updatedAtIso) {
+          lastUpdatedIsoRef.current = updateInfo.updatedAtIso;
+          await loadLeaderboard();
+        }
+      } catch {
+        setLastUpdated((currentValue) =>
+          currentValue ?? 'No se pudo obtener la fecha de actualización.',
+        );
+      } finally {
+        isCheckingUpdatesRef.current = false;
+      }
+    };
+
+    const intervalId = window.setInterval(() => {
+      void checkForUpdates();
+    }, UPDATE_CHECK_INTERVAL_MS);
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        void checkForUpdates();
+      }
+    };
+
+    const handleWindowFocus = () => {
+      void checkForUpdates();
+    };
+
+    window.addEventListener('focus', handleWindowFocus);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      window.clearInterval(intervalId);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('focus', handleWindowFocus);
+    };
   }, [isAuthenticated]);
 
   async function loadLeaderboard() {
@@ -55,12 +114,13 @@ function App() {
     }
   }
 
-  async function loadLastUpdated() {
+  async function syncLastUpdated() {
     setIsLoadingMeta(true);
 
     try {
-      const label = await fetchLastUpdateLabel();
-      setLastUpdated(label);
+      const updateInfo = await fetchCsvUpdateInfo();
+      lastUpdatedIsoRef.current = updateInfo.updatedAtIso;
+      setLastUpdated(updateInfo.updatedAtLabel);
     } catch {
       setLastUpdated('No se pudo obtener la fecha de actualización.');
     } finally {
@@ -93,6 +153,7 @@ function App() {
     clearSession();
     setIsAuthenticated(false);
     setAuthError(null);
+    lastUpdatedIsoRef.current = null;
   }
 
   return (
@@ -109,10 +170,12 @@ function App() {
                   {isLoadingMeta ? 'Consultando GitHub...' : lastUpdated ?? 'Sin datos'}
                 </strong>
               </div>
-              <div className="meta-card">
-                <span className="meta-label">Participantes</span>
-                <strong>{isAuthenticated ? rows.length || '--' : '--'}</strong>
-              </div>
+              {isAuthenticated ? (
+                <div className="meta-card">
+                  <span className="meta-label">Participantes</span>
+                  <strong>{rows.length || '--'}</strong>
+                </div>
+              ) : null}
             </div>
           </div>
           <div className="hero-logo-wrap">
@@ -126,7 +189,6 @@ function App() {
             isLoading={isLoadingRows}
             error={rowsError}
             lastUpdated={lastUpdated}
-            onReload={loadLeaderboard}
             onLogout={handleLogout}
           />
         ) : (
