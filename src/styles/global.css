@@ -213,6 +213,10 @@ button {
   font-weight: 600;
 }
 
+.password-field {
+  position: relative;
+}
+
 .text-input {
   width: 100%;
   padding: 14px 16px;
@@ -223,10 +227,46 @@ button {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.password-input {
+  padding-right: 52px;
+}
+
 .text-input:focus {
   outline: none;
   border-color: rgba(81, 203, 238, 0.85);
   box-shadow: 0 0 0 4px rgba(81, 203, 238, 0.15);
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(229, 238, 248, 0.78);
+  transform: translateY(-50%);
+}
+
+.password-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.password-toggle:focus-visible {
+  outline: 2px solid rgba(81, 203, 238, 0.85);
+  outline-offset: 2px;
+}
+
+.password-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .primary-button,
@@ -338,18 +378,27 @@ button {
 
 .rank-row-gold {
   background: rgba(255, 215, 0, 0.18);
+  box-shadow: inset 4px 0 0 #ffd700;
 }
 
 .rank-row-silver {
   background: rgba(192, 192, 192, 0.16);
+  box-shadow: inset 4px 0 0 #c0c0c0;
 }
 
 .rank-row-bronze {
   background: rgba(205, 127, 50, 0.18);
+  box-shadow: inset 4px 0 0 #cd7f32;
 }
 
 .rank-row-top10 {
-  background: rgba(74, 210, 149, 0.08);
+  background: rgba(74, 210, 149, 0.16);
+  box-shadow: inset 4px 0 0 #4ad295;
+}
+
+.rank-row-top10 td {
+  color: #f4fff8;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {
