@@ -1,74 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Clasificación Porra del Mundial 2026</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header id="header2026">
-    <img id="logo2026" src="logo2026.png" alt="Logo Mundial 2026">
-    <h1 class="titulo2026">Clasificación de la Porra – Mundial 2026</h1>
-    <p id="ultimaActualizacion" class="actualizacion"></p>
-    <button id="logoutBtn" class="logout">Cerrar sesión</button>
-  </header>
-
-  <div id="loginScreen">
-    <h2>Identificación</h2>
-    <p>Introduce tu nombre y apellidos</p>
-
-    <input type="text" id="nombre" placeholder="Nombre">
-    <input type="text" id="apellidos" placeholder="Apellidos">
-
-    <button id="btnLogin">Entrar</button>
-
-    <p id="loginError" class="error"></p>
-  </div>
-
-  <div id="mainContent" style="display:none;">
-
-    <h1>Clasificación Porra del Mundial 2026</h1>
-    <div id="adminTools" class="upload-box" style="display:none;">
-    </div>
-    <div class="tabla-scroll">
-      <table id="tabla">
-        <thead>
-          <tr>
-            <th>Posición</th>
-            <th>Jugador</th>
-            <th>Fase Grupos</th>
-            <th>Dieciseisavos</th>
-            <th>Octavos</th>
-            <th>Cuartos</th>
-            <th>Semis</th>
-            <th>Final</th>
-            <th>3º y 4º</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-    
-  </div>
-
-  <div id="popupInfo" class="popup-overlay" style="display:none;">
-  <div class="popup-box">
-    <div class="popup-header">
-      <span class="popup-title">Información</span>
-    </div>
-
-    <div class="popup-content">
-      <p>Aún no se ha realizado el cálculo de puntos iniciales.<br>Inténtelo más tarde.</p>
-    </div>
-
-    <div class="popup-footer">
-      <button id="popupCerrar" class="popup-btn">Aceptar</button>
-    </div>
-  </div>
-</div>
-
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clasificación de la porra del Mundial 2026 con acceso privado y despliegue en GitHub Pages."
+    />
+    <title>Clasificación Porra del Mundial 2026</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-
