@@ -12,8 +12,8 @@ const columnLabels = [
   'Octavos',
   'Cuartos',
   'Semis',
-  'Final',
   '3º y 4º',
+  'Final',
   'Total',
 ];
 
@@ -47,8 +47,8 @@ export function LeaderboardTable({ rows }: LeaderboardTableProps) {
                 <td>{row.octavos}</td>
                 <td>{row.cuartos}</td>
                 <td>{row.semifinales}</td>
-                <td>{row.final}</td>
                 <td>{row.tercerCuarto}</td>
+                <td>{row.final}</td>
                 <td>
                   <strong>{row.total}</strong>
                 </td>
