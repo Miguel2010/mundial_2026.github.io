@@ -57,6 +57,7 @@ export function parseClassificationCsv(csv: string): ClassificationRow[] {
       const total = toNumber(rowRecord.Puntos);
 
       return {
+        posicion,
         participante: rowRecord.Participante.trim(),
         grupos,
         dieciseisavos,
