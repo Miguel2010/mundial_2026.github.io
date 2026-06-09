@@ -38,7 +38,7 @@ export function LeaderboardPage({
       <div className="summary-grid">
         <article className="summary-card highlight-card">
           <span className="summary-label">Líder actual</span>
-          <strong>{leader ? leader.nombre : 'Sin datos'}</strong>
+          <strong>{leader ? leader.participante : 'Sin datos'}</strong>
           <span>{leader ? `${leader.total} puntos` : 'Esperando clasificación'}</span>
         </article>
         <article className="summary-card">
