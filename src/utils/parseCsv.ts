@@ -1,5 +1,5 @@
 import type { ClassificationRow } from '../types/classification';
-
+ 
 const REQUIRED_HEADERS = [
   'Posicion',
   'Participante',
