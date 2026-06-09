@@ -60,7 +60,7 @@ export function parseClassificationCsv(csv: string): ClassificationRow[] {
         participante: rowRecord.Participante.trim(),
         grupos,
         dieciseisavos,
-        ocatvos,
+        octavos,
         cuartos,
         semifinales,
         tercerCuarto,
