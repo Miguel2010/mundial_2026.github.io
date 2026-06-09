@@ -1,6 +1,6 @@
 const REPOSITORY_OWNER = 'Miguel2010';
 const REPOSITORY_NAME = 'mundial_2026.github.io';
-const CSV_PATH = 'data/clasificacion.csv';
+const CSV_PATH = 'data/ranking.csv';
 
 export type CsvUpdateInfo = {
   updatedAtIso: string;
