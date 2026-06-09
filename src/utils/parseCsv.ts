@@ -1,14 +1,16 @@
 import type { ClassificationRow } from '../types/classification';
 
 const REQUIRED_HEADERS = [
-  'nombre',
-  'grupos',
-  'dieciseisavos',
-  'octavos',
-  'cuartos',
-  'semifinales',
-  'final',
-  'tercer_cuarto',
+  'Posicion',
+  'Participante',
+  'Pts_Fase_Grupos',
+  'Pts_16avos',
+  'Pts_Octavos',
+  'Pts_Cuartos',
+  'Pts_Semifinales',
+  'Pts_3y4_Puesto',
+  'Pts_Final',
+  'Puntos'
 ] as const;
 
 function toNumber(value: string | undefined) {
@@ -44,31 +46,26 @@ export function parseClassificationCsv(csv: string): ClassificationRow[] {
     .filter((values) => values.some(Boolean))
     .map((values) => {
       const rowRecord = Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']));
-      const grupos = toNumber(rowRecord.grupos);
-      const dieciseisavos = toNumber(rowRecord.dieciseisavos);
-      const octavos = toNumber(rowRecord.octavos);
-      const cuartos = toNumber(rowRecord.cuartos);
-      const semifinales = toNumber(rowRecord.semifinales);
-      const final = toNumber(rowRecord.final);
-      const tercerCuarto = toNumber(rowRecord.tercer_cuarto);
+      const posicion = toNumber(rowRecord.Posicion);
+      const grupos = toNumber(rowRecord.Pts_Fase_Grupos);
+      const dieciseisavos = toNumber(rowRecord.Pts_16avos);
+      const octavos = toNumber(rowRecord.Pts_Octavos);
+      const cuartos = toNumber(rowRecord.Pts_Cuartos);
+      const semifinales = toNumber(rowRecord.Pts_Semifinales);
+      const tercerCuarto = toNumber(rowRecord.Pts_3y4_Puesto);
+      const final = toNumber(rowRecord.Pts_Final);
+      const total = toNumber(rowRecord.Puntos);
 
       return {
-        nombre: rowRecord.nombre.trim(),
+        participante: rowRecord.Participante.trim(),
         grupos,
         dieciseisavos,
-        octavos,
+        ocatvos,
         cuartos,
         semifinales,
-        final,
         tercerCuarto,
-        total:
-          grupos +
-          dieciseisavos +
-          octavos +
-          cuartos +
-          semifinales +
-          final +
-          tercerCuarto,
+        final,
+        total
       };
     })
     .sort((left, right) => right.total - left.total);
