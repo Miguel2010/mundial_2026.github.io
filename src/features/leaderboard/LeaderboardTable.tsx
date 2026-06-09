@@ -40,7 +40,7 @@ export function LeaderboardTable({ rows }: LeaderboardTableProps) {
           <tbody>
             {rows.map((row, index) => (
               <tr key={`${row.participante}-${index}`} className={getRowClassName(index)}>
-                <td>{index + 1}</td>
+                <td>{row.posicion}</td>
                 <td className="player-name">{row.participante}</td>
                 <td>{row.grupos}</td>
                 <td>{row.dieciseisavos}</td>
