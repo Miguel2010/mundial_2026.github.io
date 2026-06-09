@@ -1,6 +1,6 @@
 import { parseClassificationCsv } from '../utils/parseCsv';
 
-const CSV_URL = `${import.meta.env.BASE_URL}data/clasificacion.csv`;
+const CSV_URL = `${import.meta.env.BASE_URL}data/ranking.csv`;
 
 export async function fetchClassification() {
   const response = await fetch(`${CSV_URL}?v=${Date.now()}`, {
