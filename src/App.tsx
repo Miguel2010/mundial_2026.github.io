@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import logoUrl from '../logo2026.png';
+import logoUrl from '../fifa-logo-transparent-white.webp';
 import { AuthGate } from './features/auth/AuthGate';
 import {
   clearSession,

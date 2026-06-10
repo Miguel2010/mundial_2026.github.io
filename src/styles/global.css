@@ -149,12 +149,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: center;
+  width: min(100%, 320px);
   min-height: 100%;
 }
 
 .hero-logo {
-  width: min(100%, 260px);
-  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.32));
+  width: min(100%, 160px);
 }
 
 .login-panel,

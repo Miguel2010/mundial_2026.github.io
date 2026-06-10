@@ -24,14 +24,14 @@ export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
 
       <form className="login-card" onSubmit={handleSubmit}>
         <label className="field-label" htmlFor="participante">
-          Participante
+          Nombre de la Plantilla
         </label>
         <input
           id="participante"
           type="text"
           autoComplete="name"
           className="text-input"
-          placeholder="Introduce tu nombre"
+          placeholder="Introduce el nombre de la plantilla"
           required
           value={participante}
           onChange={(event) => setParticipante(event.target.value)}
