@@ -52,11 +52,12 @@ La URL objetivo es:
 
 ## Fuente de datos
 
-La clasificación sigue viviendo en:
+Los datos editables viven en:
 
-`data/clasificacion.csv`
+- `data/ranking.csv`: clasificación y participantes.
+- `data/premios.csv`: premios por posición.
 
-Antes de ejecutar `dev` o `build`, el script `scripts/sync-static.mjs` copia ese CSV a `public/data/clasificacion.csv` para que Vite lo sirva correctamente sin cambiar la ubicación de trabajo del archivo original.
+Antes de ejecutar `dev` o `build`, el script `scripts/sync-static.mjs` copia los CSV de `data/` a `public/data/` para que Vite los sirva correctamente sin cambiar la ubicación de trabajo de los archivos originales.
 
 ## Cambio de contraseña
 
