@@ -435,6 +435,44 @@ button {
   border-bottom: none;
 }
 
+.prize-position {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.prize-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.prize-row-gold {
+  background: rgba(255, 215, 0, 0.18);
+  box-shadow: inset 4px 0 0 #ffd700;
+}
+
+.prize-row-silver {
+  background: rgba(192, 192, 192, 0.16);
+  box-shadow: inset 4px 0 0 #c0c0c0;
+}
+
+.prize-row-bronze {
+  background: rgba(205, 127, 50, 0.18);
+  box-shadow: inset 4px 0 0 #cd7f32;
+}
+
+.prize-row-top10 {
+  background: rgba(74, 210, 149, 0.12);
+  box-shadow: inset 4px 0 0 #4ad295;
+}
+
+.prize-row-current-user {
+  outline: 1px solid rgba(81, 203, 238, 0.52);
+  outline-offset: -1px;
+}
+
+.prize-row-current-user td:first-child {
+  box-shadow: inset 4px 0 0 #51cbee;
+}
+
 .table-card {
   overflow: hidden;
 }

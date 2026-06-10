@@ -11,6 +11,22 @@ function formatPrize(premio: number) {
   return `${premio.toLocaleString('es-ES')} €`;
 }
 
+function getPrizePositionLabel(posicion: number) {
+  if (posicion === 1) return '🥇 #1';
+  if (posicion === 2) return '🥈 #2';
+  if (posicion === 3) return '🥉 #3';
+  return `🎁 #${posicion}`;
+}
+
+function getPrizeRowClassName(posicion: number, currentPosition: number | null) {
+  const currentPositionClassName = posicion === currentPosition ? ' prize-row-current-user' : '';
+
+  if (posicion === 1) return `prize-row prize-row-gold${currentPositionClassName}`;
+  if (posicion === 2) return `prize-row prize-row-silver${currentPositionClassName}`;
+  if (posicion === 3) return `prize-row prize-row-bronze${currentPositionClassName}`;
+  return `prize-row prize-row-top10${currentPositionClassName}`;
+}
+
 export function PrizesPanel({ currentPosition, error, isLoading, prizes }: PrizesPanelProps) {
   const currentPrize = prizes.find((prize) => prize.posicion === currentPosition)?.premio ?? 0;
   const hasCurrentPrize = currentPrize > 0;
@@ -45,9 +61,14 @@ export function PrizesPanel({ currentPosition, error, isLoading, prizes }: Prize
           </thead>
           <tbody>
             {prizes.map((prize) => (
-              <tr key={prize.posicion}>
-                <td>#{prize.posicion}</td>
-                <td>{formatPrize(prize.premio)}</td>
+              <tr
+                key={prize.posicion}
+                className={getPrizeRowClassName(prize.posicion, currentPosition)}
+              >
+                <td className="prize-position">{getPrizePositionLabel(prize.posicion)}</td>
+                <td>
+                  <strong>{formatPrize(prize.premio)}</strong>
+                </td>
               </tr>
             ))}
           </tbody>
