@@ -198,6 +198,7 @@ button {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .login-card {
@@ -225,6 +226,16 @@ button {
   background: rgba(12, 24, 43, 0.95);
   color: #ffffff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card > .text-input {
+  margin-bottom: 16px;
+}
+
+.session-label {
+  color: rgba(229, 238, 248, 0.78);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .password-input {

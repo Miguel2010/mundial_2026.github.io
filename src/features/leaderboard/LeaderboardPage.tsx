@@ -6,6 +6,7 @@ type LeaderboardPageProps = {
   isLoading: boolean;
   error: string | null;
   lastUpdated: string | null;
+  currentParticipant: string;
   onLogout: () => void;
 };
 
@@ -14,6 +15,7 @@ export function LeaderboardPage({
   isLoading,
   error,
   lastUpdated,
+  currentParticipant,
   onLogout,
 }: LeaderboardPageProps) {
   const leader = rows[0];
@@ -29,6 +31,7 @@ export function LeaderboardPage({
           </p>
         </div>
         <div className="section-actions">
+          <span className="session-label">Conectado como {currentParticipant}</span>
           <button className="ghost-button" type="button" onClick={onLogout}>
             Cerrar sesión
           </button>

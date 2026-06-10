@@ -3,16 +3,17 @@ import { FormEvent, useState } from 'react';
 type AuthGateProps = {
   error: string | null;
   isSubmitting: boolean;
-  onLogin: (password: string) => Promise<void>;
+  onLogin: (credentials: { participante: string; password: string }) => Promise<void>;
 };
 
 export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
+  const [participante, setParticipante] = useState('');
   const [password, setPassword] = useState('');
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    await onLogin(password.trim());
+    await onLogin({ participante: participante.trim(), password: password.trim() });
   }
 
   return (
@@ -22,6 +23,20 @@ export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
       </div>
 
       <form className="login-card" onSubmit={handleSubmit}>
+        <label className="field-label" htmlFor="participante">
+          Participante
+        </label>
+        <input
+          id="participante"
+          type="text"
+          autoComplete="name"
+          className="text-input"
+          placeholder="Introduce tu nombre"
+          required
+          value={participante}
+          onChange={(event) => setParticipante(event.target.value)}
+        />
+
         <label className="field-label" htmlFor="password">
           Contraseña
         </label>
@@ -60,7 +75,9 @@ export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
         <button
           className="primary-button"
           type="submit"
-          disabled={isSubmitting || password.trim().length === 0}
+          disabled={
+            isSubmitting || participante.trim().length === 0 || password.trim().length === 0
+          }
         >
           {isSubmitting ? 'Validando...' : 'Entrar'}
         </button>

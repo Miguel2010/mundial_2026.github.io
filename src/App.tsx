@@ -4,7 +4,7 @@ import { AuthGate } from './features/auth/AuthGate';
 import {
   clearSession,
   createSession,
-  hasActiveSession,
+  getActiveSession,
   verifyPassword,
 } from './features/auth/auth';
 import { LeaderboardPage } from './features/leaderboard/LeaderboardPage';
@@ -14,8 +14,20 @@ import type { ClassificationRow } from './types/classification';
 
 const UPDATE_CHECK_INTERVAL_MS = 5 * 60 * 1000;
 
+function normalizeParticipantName(participante: string) {
+  return participante
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLocaleLowerCase('es');
+}
+
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(() => hasActiveSession());
+  const [currentParticipant, setCurrentParticipant] = useState(
+    () => getActiveSession()?.participante ?? null,
+  );
+  const isAuthenticated = currentParticipant !== null;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
   const [rows, setRows] = useState<ClassificationRow[]>([]);
@@ -128,22 +140,34 @@ function App() {
     }
   }
 
-  async function handleLogin(password: string) {
+  async function handleLogin(credentials: { participante: string; password: string }) {
     setIsSubmitting(true);
     setAuthError(null);
 
     try {
-      const isValid = await verifyPassword(password);
+      const isValid = await verifyPassword(credentials.password);
 
       if (!isValid) {
-        setAuthError('La contraseña no es correcta.');
+        setAuthError('La contraseña o el participante no son correctos.');
         return;
       }
 
-      createSession();
-      setIsAuthenticated(true);
+      const data = await fetchClassification();
+      const normalizedParticipant = normalizeParticipantName(credentials.participante);
+      const matchingRow = data.find(
+        (row) => normalizeParticipantName(row.participante) === normalizedParticipant,
+      );
+
+      if (!matchingRow) {
+        setAuthError('La contraseña o el participante no son correctos.');
+        return;
+      }
+
+      createSession({ participante: matchingRow.participante });
+      setRows(data);
+      setCurrentParticipant(matchingRow.participante);
     } catch {
-      setAuthError('No se pudo validar la contraseña.');
+      setAuthError('No se pudo cargar la lista de participantes.');
     } finally {
       setIsSubmitting(false);
     }
@@ -151,7 +175,7 @@ function App() {
 
   function handleLogout() {
     clearSession();
-    setIsAuthenticated(false);
+    setCurrentParticipant(null);
     setAuthError(null);
     lastUpdatedIsoRef.current = null;
   }
@@ -189,6 +213,7 @@ function App() {
             isLoading={isLoadingRows}
             error={rowsError}
             lastUpdated={lastUpdated}
+            currentParticipant={currentParticipant}
             onLogout={handleLogout}
           />
         ) : (
