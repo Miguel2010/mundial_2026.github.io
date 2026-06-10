@@ -1,11 +1,18 @@
-import { mkdir, copyFile } from 'node:fs/promises';
+import { mkdir, copyFile, readdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const currentDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(currentDir, '..');
-const sourceCsv = resolve(rootDir, 'data', 'ranking.csv');
-const targetCsv = resolve(rootDir, 'public', 'data', 'ranking.csv');
+const sourceDataDir = resolve(rootDir, 'data');
+const targetDataDir = resolve(rootDir, 'public', 'data');
+const dataFiles = await readdir(sourceDataDir);
+const csvFiles = dataFiles.filter((fileName) => fileName.endsWith('.csv'));
 
-await mkdir(dirname(targetCsv), { recursive: true });
-await copyFile(sourceCsv, targetCsv);
+await mkdir(targetDataDir, { recursive: true });
+
+await Promise.all(
+  csvFiles.map((fileName) =>
+    copyFile(resolve(sourceDataDir, fileName), resolve(targetDataDir, fileName)),
+  ),
+);

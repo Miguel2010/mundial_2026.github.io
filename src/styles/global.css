@@ -198,6 +198,7 @@ button {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .login-card {
@@ -225,6 +226,16 @@ button {
   background: rgba(12, 24, 43, 0.95);
   color: #ffffff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card > .text-input {
+  margin-bottom: 16px;
+}
+
+.session-label {
+  color: rgba(229, 238, 248, 0.78);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .password-input {
@@ -322,8 +333,44 @@ button {
   margin-bottom: 20px;
 }
 
+.tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tab-button {
+  border: none;
+  border-radius: 14px;
+  padding: 11px 18px;
+  color: rgba(229, 238, 248, 0.74);
+  background: transparent;
+  font-weight: 800;
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.tab-button:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.tab-button-active {
+  color: #08111f;
+  background: linear-gradient(135deg, #9ddfff 0%, #5ebdf5 100%);
+}
+
 .highlight-card {
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.14), rgba(255, 255, 255, 0.05));
+}
+
+.current-user-card {
+  border-color: rgba(81, 203, 238, 0.34);
+  background: linear-gradient(135deg, rgba(81, 203, 238, 0.16), rgba(255, 255, 255, 0.05));
+  box-shadow: inset 4px 0 0 #51cbee;
 }
 
 .status-card {
@@ -333,6 +380,97 @@ button {
 .status-card-error {
   border-color: rgba(255, 146, 146, 0.25);
   color: #ffd3d3;
+}
+
+.prizes-panel {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(320px, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.current-prize-card {
+  padding: 20px;
+  border: 1px solid rgba(81, 203, 238, 0.34);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(81, 203, 238, 0.16), rgba(255, 255, 255, 0.05));
+  box-shadow: inset 4px 0 0 #51cbee;
+}
+
+.current-prize-card strong {
+  display: block;
+  margin: 8px 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.current-prize-card span:last-child {
+  color: rgba(229, 238, 248, 0.78);
+}
+
+.prize-table-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.prize-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prize-table th,
+.prize-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.prize-table th {
+  color: #d9ecff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.prize-table tr:last-child td {
+  border-bottom: none;
+}
+
+.prize-position {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.prize-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.prize-row-gold {
+  background: rgba(255, 215, 0, 0.18);
+  box-shadow: inset 4px 0 0 #ffd700;
+}
+
+.prize-row-silver {
+  background: rgba(192, 192, 192, 0.16);
+  box-shadow: inset 4px 0 0 #c0c0c0;
+}
+
+.prize-row-bronze {
+  background: rgba(205, 127, 50, 0.18);
+  box-shadow: inset 4px 0 0 #cd7f32;
+}
+
+.prize-row-top10 {
+  background: rgba(74, 210, 149, 0.12);
+  box-shadow: inset 4px 0 0 #4ad295;
+}
+
+.prize-row-current-user {
+  outline: 1px solid rgba(81, 203, 238, 0.52);
+  outline-offset: -1px;
+}
+
+.prize-row-current-user td:first-child {
+  box-shadow: inset 4px 0 0 #51cbee;
 }
 
 .table-card {
@@ -401,9 +539,19 @@ button {
   font-weight: 600;
 }
 
+.rank-row-current-user {
+  outline: 1px solid rgba(81, 203, 238, 0.42);
+  outline-offset: -1px;
+}
+
+.rank-row-current-user td:first-child {
+  box-shadow: inset 4px 0 0 #51cbee;
+}
+
 @media (max-width: 900px) {
   .hero-panel,
   .section-heading-inline,
+  .prizes-panel,
   .summary-grid {
     grid-template-columns: 1fr;
   }
@@ -439,6 +587,14 @@ button {
 
   .section-actions {
     width: 100%;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab-button {
+    flex: 1;
   }
 
   .secondary-button,
