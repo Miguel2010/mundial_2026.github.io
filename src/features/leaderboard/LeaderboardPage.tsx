@@ -1,5 +1,6 @@
 import { LeaderboardTable } from './LeaderboardTable';
 import type { ClassificationRow } from '../../types/classification';
+import { normalizeParticipantName } from '../../utils/participants';
 
 type LeaderboardPageProps = {
   rows: ClassificationRow[];
@@ -19,6 +20,10 @@ export function LeaderboardPage({
   onLogout,
 }: LeaderboardPageProps) {
   const leader = rows[0];
+  const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
+  const currentParticipantRow = rows.find(
+    (row) => normalizeParticipantName(row.participante) === normalizedCurrentParticipant,
+  );
 
   return (
     <section className="leaderboard-panel">
@@ -49,16 +54,22 @@ export function LeaderboardPage({
           <strong>{rows.length}</strong>
           <span>Participantes registrados</span>
         </article>
-        <article className="summary-card">
-          <span className="summary-label">Estado</span>
-          <strong>{error ? 'Atención' : 'Correcto'}</strong>
-          <span>{error ? 'Revisa la carga del CSV' : 'Datos listos para consulta'}</span>
+        <article className="summary-card current-user-card">
+          <span className="summary-label">Tu posición</span>
+          <strong>{currentParticipantRow ? `#${currentParticipantRow.posicion}` : 'Sin datos'}</strong>
+          <span>
+            {currentParticipantRow
+              ? `${currentParticipantRow.total} puntos`
+              : 'No aparece en la clasificación actual'}
+          </span>
         </article>
       </div>
 
       {isLoading ? <div className="status-card">Cargando clasificación...</div> : null}
       {error ? <div className="status-card status-card-error">{error}</div> : null}
-      {!isLoading && !error ? <LeaderboardTable rows={rows} /> : null}
+      {!isLoading && !error ? (
+        <LeaderboardTable rows={rows} currentParticipant={currentParticipant} />
+      ) : null}
     </section>
   );
 }

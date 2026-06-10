@@ -337,6 +337,12 @@ button {
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.14), rgba(255, 255, 255, 0.05));
 }
 
+.current-user-card {
+  border-color: rgba(81, 203, 238, 0.34);
+  background: linear-gradient(135deg, rgba(81, 203, 238, 0.16), rgba(255, 255, 255, 0.05));
+  box-shadow: inset 4px 0 0 #51cbee;
+}
+
 .status-card {
   padding: 18px 20px;
 }
@@ -410,6 +416,15 @@ button {
 .rank-row-top10 td {
   color: #f4fff8;
   font-weight: 600;
+}
+
+.rank-row-current-user {
+  outline: 1px solid rgba(81, 203, 238, 0.42);
+  outline-offset: -1px;
+}
+
+.rank-row-current-user td:first-child {
+  box-shadow: inset 4px 0 0 #51cbee;
 }
 
 @media (max-width: 900px) {

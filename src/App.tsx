@@ -11,17 +11,9 @@ import { LeaderboardPage } from './features/leaderboard/LeaderboardPage';
 import { fetchClassification } from './services/classification-service';
 import { fetchCsvUpdateInfo } from './services/github-meta-service';
 import type { ClassificationRow } from './types/classification';
+import { normalizeParticipantName } from './utils/participants';
 
 const UPDATE_CHECK_INTERVAL_MS = 5 * 60 * 1000;
-
-function normalizeParticipantName(participante: string) {
-  return participante
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toLocaleLowerCase('es');
-}
 
 function App() {
   const [currentParticipant, setCurrentParticipant] = useState(
