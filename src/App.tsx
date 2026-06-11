@@ -11,7 +11,6 @@ import { LeaderboardPage } from './features/leaderboard/LeaderboardPage';
 import { fetchClassification } from './services/classification-service';
 import { fetchCsvUpdateInfo } from './services/github-meta-service';
 import type { ClassificationRow } from './types/classification';
-import { normalizeParticipantName } from './utils/participants';
 
 const UPDATE_CHECK_INTERVAL_MS = 5 * 60 * 1000;
 
@@ -25,6 +24,8 @@ function App() {
   const [rows, setRows] = useState<ClassificationRow[]>([]);
   const [isLoadingRows, setIsLoadingRows] = useState(false);
   const [rowsError, setRowsError] = useState<string | null>(null);
+  const [participantsError, setParticipantsError] = useState<string | null>(null);
+  const [isLoadingParticipants, setIsLoadingParticipants] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [isLoadingMeta, setIsLoadingMeta] = useState(true);
   const lastUpdatedIsoRef = useRef<string | null>(null);
@@ -39,10 +40,14 @@ function App() {
       setRows([]);
       setRowsError(null);
       setIsLoadingRows(false);
+      void loadParticipants();
       return;
     }
 
-    void loadLeaderboard();
+    if (rows.length === 0) {
+      void loadLeaderboard();
+    }
+
     void syncLastUpdated();
   }, [isAuthenticated]);
 
@@ -118,6 +123,24 @@ function App() {
     }
   }
 
+  async function loadParticipants() {
+    setIsLoadingParticipants(true);
+    setParticipantsError(null);
+
+    try {
+      const data = await fetchClassification();
+      setRows(data);
+    } catch (error) {
+      setParticipantsError(
+        error instanceof Error
+          ? error.message
+          : 'No se pudo cargar la lista de participantes.',
+      );
+    } finally {
+      setIsLoadingParticipants(false);
+    }
+  }
+
   async function syncLastUpdated() {
     setIsLoadingMeta(true);
 
@@ -140,26 +163,21 @@ function App() {
       const isValid = await verifyPassword(credentials.password);
 
       if (!isValid) {
-        setAuthError('La contraseña o el participante no son correctos.');
+        setAuthError('Contraseña incorrecta.');
         return;
       }
 
-      const data = await fetchClassification();
-      const normalizedParticipant = normalizeParticipantName(credentials.participante);
-      const matchingRow = data.find(
-        (row) => normalizeParticipantName(row.participante) === normalizedParticipant,
-      );
+      const matchingRow = rows.find((row) => row.participante === credentials.participante);
 
       if (!matchingRow) {
-        setAuthError('La contraseña o el participante no son correctos.');
+        setAuthError('Selecciona un participante válido.');
         return;
       }
 
       createSession({ participante: matchingRow.participante });
-      setRows(data);
       setCurrentParticipant(matchingRow.participante);
     } catch {
-      setAuthError('No se pudo cargar la lista de participantes.');
+      setAuthError('No se pudo validar la contraseña.');
     } finally {
       setIsSubmitting(false);
     }
@@ -209,7 +227,15 @@ function App() {
             onLogout={handleLogout}
           />
         ) : (
-          <AuthGate error={authError} isSubmitting={isSubmitting} onLogin={handleLogin} />
+          <AuthGate
+            error={authError}
+            isLoadingParticipants={isLoadingParticipants}
+            isSubmitting={isSubmitting}
+            participants={rows.map((row) => row.participante)}
+            participantsError={participantsError}
+            onLogin={handleLogin}
+            onRetryParticipants={loadParticipants}
+          />
         )}
       </main>
     </div>
