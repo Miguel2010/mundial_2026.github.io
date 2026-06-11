@@ -1,4 +1,365 @@
 Posicion,Participante,Pts_Fase_Grupos,Pts_16avos,Pts_Octavos,Pts_Cuartos,Pts_Semifinales,Pts_3y4_Puesto,Pts_Final,Puntos
-1,Miguel García Serrano,10,10110,0,0,0,0,0,10120
-2,Marta Rodríguez Alves,15,0,0,0,0,100,10000,10115
+1,001,0,0,0,0,0,0,0,0
+1,002 Jfrm,0,0,0,0,0,0,0,0
+1,003 Psv1,0,0,0,0,0,0,0,0
+1,004 Nvr,0,0,0,0,0,0,0,0
+1,005 Jlmr,0,0,0,0,0,0,0,0
+1,1,0,0,0,0,0,0,0,0
+1,3P,0,0,0,0,0,0,0,0
+1,Acp,0,0,0,0,0,0,0,0
+1,Alberti 73,0,0,0,0,0,0,0,0
+1,Alberto Cabezas,0,0,0,0,0,0,0,0
+1,Alexs,0,0,0,0,0,0,0,0
+1,Alfonsolopezhernandez,0,0,0,0,0,0,0,0
+1,Alvaro Romero,0,0,0,0,0,0,0,0
+1,Amalia Gutierrez,0,0,0,0,0,0,0,0
+1,Ander Aguado,0,0,0,0,0,0,0,0
+1,Asf,0,0,0,0,0,0,0,0
+1,Aupanacho,0,0,0,0,0,0,0,0
+1,Abuela,0,0,0,0,0,0,0,0
+1,Abuelo Jose,0,0,0,0,0,0,0,0
+1,Adrian Navarro Ochando 2,0,0,0,0,0,0,0,0
+1,Adrian Navarro Ochando,0,0,0,0,0,0,0,0
+1,Agustin Rueda Fuentes,0,0,0,0,0,0,0,0
+1,Agustina Martínez Herrero,0,0,0,0,0,0,0,0
+1,Aitor Castrillo,0,0,0,0,0,0,0,0
+1,AitorgonzáLez,0,0,0,0,0,0,0,0
+1,Alberto Carnero,0,0,0,0,0,0,0,0
+1,Alberto Conde,0,0,0,0,0,0,0,0
+1,Alberto Gomez Bravo,0,0,0,0,0,0,0,0
+1,Alberto Lupo,0,0,0,0,0,0,0,0
+1,Alberto Munoz V1,0,0,0,0,0,0,0,0
+1,Alberto Munoz V2,0,0,0,0,0,0,0,0
+1,Alejadro Tejado Heredia,0,0,0,0,0,0,0,0
+1,Alejandra Bourda,0,0,0,0,0,0,0,0
+1,Alejandro MáRmol,0,0,0,0,0,0,0,0
+1,Alejandro Soto,0,0,0,0,0,0,0,0
+1,Alex Garcia,0,0,0,0,0,0,0,0
+1,Alex Gonzalo,0,0,0,0,0,0,0,0
+1,Alvaro Mendez Casquero,0,0,0,0,0,0,0,0
+1,Alvaro PeñA Y Santi Asensio,0,0,0,0,0,0,0,0
+1,Alvaro PeñA,0,0,0,0,0,0,0,0
+1,Alvaro De Simon,0,0,0,0,0,0,0,0
+1,Alvaro Garcia Campillo,0,0,0,0,0,0,0,0
+1,Alvaro+Nico,0,0,0,0,0,0,0,0
+1,Ametzzabala,0,0,0,0,0,0,0,0
+1,Ana Garcia,0,0,0,0,0,0,0,0
+1,Ana López,0,0,0,0,0,0,0,0
+1,Andres Garrido Ramirez,0,0,0,0,0,0,0,0
+1,Andres Guzman,0,0,0,0,0,0,0,0
+1,Andy Garcia,0,0,0,0,0,0,0,0
+1,Aneel Grover,0,0,0,0,0,0,0,0
+1,Antonio Cubero,0,0,0,0,0,0,0,0
+1,Antonio Mediavilla 01,0,0,0,0,0,0,0,0
+1,Antonio Mediavilla 02,0,0,0,0,0,0,0,0
+1,Antonio Mediavilla 03,0,0,0,0,0,0,0,0
+1,Antonio Salinero,0,0,0,0,0,0,0,0
+1,Antonio Serrano,0,0,0,0,0,0,0,0
+1,Aritz Anorga 2,0,0,0,0,0,0,0,0
+1,Aritz Anorga,0,0,0,0,0,0,0,0
+1,Asier Aguado,0,0,0,0,0,0,0,0
+1,ÁLvaro FernáNdez,0,0,0,0,0,0,0,0
+1,Beńat Zubiaur1,0,0,0,0,0,0,0,0
+1,Beńat Zubiaur2,0,0,0,0,0,0,0,0
+1,Borja Poza,0,0,0,0,0,0,0,0
+1,Carlos Martinez,0,0,0,0,0,0,0,0
+1,Carlos Sisco T,0,0,0,0,0,0,0,0
+1,Clasemamita,0,0,0,0,0,0,0,0
+1,Consultores Muñoz 1,0,0,0,0,0,0,0,0
+1,Consultores Muñoz 2,0,0,0,0,0,0,0,0
+1,Consultores Muñoz 3,0,0,0,0,0,0,0,0
+1,Cris Garrido 1,0,0,0,0,0,0,0,0
+1,Cris Garrido 2,0,0,0,0,0,0,0,0
+1,Carlos Buil,0,0,0,0,0,0,0,0
+1,Carlos Chomón,0,0,0,0,0,0,0,0
+1,Carlos Lizana Crespo,0,0,0,0,0,0,0,0
+1,Carlos Martinez Clemente,0,0,0,0,0,0,0,0
+1,Carlos Molina,0,0,0,0,0,0,0,0
+1,Carlos Mulero,0,0,0,0,0,0,0,0
+1,Carlos Peña,0,0,0,0,0,0,0,0
+1,Carlos Pérez,0,0,0,0,0,0,0,0
+1,Carlos Vazquez 1,0,0,0,0,0,0,0,0
+1,Carlos Vazquez 2,0,0,0,0,0,0,0,0
+1,Carlosgilmariscal,0,0,0,0,0,0,0,0
+1,Carlosviescas,0,0,0,0,0,0,0,0
+1,Carlota Gil Diaz De Miranda,0,0,0,0,0,0,0,0
+1,Caro Ferrazzi,0,0,0,0,0,0,0,0
+1,Cayetano Lopez,0,0,0,0,0,0,0,0
+1,Cesar,0,0,0,0,0,0,0,0
+1,Chiringuito2017V2,0,0,0,0,0,0,0,0
+1,Cova Zarauza 1,0,0,0,0,0,0,0,0
+1,Cova Zarauza 2,0,0,0,0,0,0,0,0
+1,Daniel Diez Rodriguez,0,0,0,0,0,0,0,0
+1,Daniel PeñA Y Javier Barrios,0,0,0,0,0,0,0,0
+1,Daniel Perez,0,0,0,0,0,0,0,0
+1,Davidaguadopano,0,0,0,0,0,0,0,0
+1,Diego Viñuela Cordero (2),0,0,0,0,0,0,0,0
+1,Diego Viñuela Cordero,0,0,0,0,0,0,0,0
+1,Dani Chaqui,0,0,0,0,0,0,0,0
+1,Daniel Diez Rubio,0,0,0,0,0,0,0,0
+1,Danielperezbenitidanielo,0,0,0,0,0,0,0,0
+1,Danielperezbenito1,0,0,0,0,0,0,0,0
+1,Danielperezbenitobenito,0,0,0,0,0,0,0,0
+1,Dany AcuñA,0,0,0,0,0,0,0,0
+1,David Raul Espinoza,0,0,0,0,0,0,0,0
+1,David Ruiz De Gordoa,0,0,0,0,0,0,0,0
+1,DavidgarcíAlóPez,0,0,0,0,0,0,0,0
+1,Diego Andrés Galea,0,0,0,0,0,0,0,0
+1,Diego Garcia Marin 1,0,0,0,0,0,0,0,0
+1,Diego Garcia Marin 2,0,0,0,0,0,0,0,0
+1,Diego De Alfonso,0,0,0,0,0,0,0,0
+1,Diegosalinero,0,0,0,0,0,0,0,0
+1,Domin,0,0,0,0,0,0,0,0
+1,Eaf 2.0,0,0,0,0,0,0,0,0
+1,Ecar,0,0,0,0,0,0,0,0
+1,Emilio,0,0,0,0,0,0,0,0
+1,Edgardo Tedeschi,0,0,0,0,0,0,0,0
+1,Eduardo Fernandez Lagaron,0,0,0,0,0,0,0,0
+1,Eduardo Álvarez,0,0,0,0,0,0,0,0
+1,Elena DíAz,0,0,0,0,0,0,0,0
+1,Enrique Martinez,0,0,0,0,0,0,0,0
+1,Enzo Herrero Sanchez,0,0,0,0,0,0,0,0
+1,Esquivias,0,0,0,0,0,0,0,0
+1,Esteban Pedraz Mourelle1,0,0,0,0,0,0,0,0
+1,Esteban Pedraz Mourelle2,0,0,0,0,0,0,0,0
+1,Familia,0,0,0,0,0,0,0,0
+1,Felix Hernandez,0,0,0,0,0,0,0,0
+1,Fernando Amilpa Y Trujillo Mexico,0,0,0,0,0,0,0,0
+1,Figuras,0,0,0,0,0,0,0,0
+1,Francisco Ayuso Martinez 01,0,0,0,0,0,0,0,0
+1,Francisco Ayuso Martinez 02,0,0,0,0,0,0,0,0
+1,Felipe Diaz De Miranda 1,0,0,0,0,0,0,0,0
+1,Felipe Diaz De Miranda 2,0,0,0,0,0,0,0,0
+1,Felipe Diaz De Miranda 3,0,0,0,0,0,0,0,0
+1,Felipe Escribano Ferrer,0,0,0,0,0,0,0,0
+1,Fernando Barchino,0,0,0,0,0,0,0,0
+1,Fernando Perez Del Castillo,0,0,0,0,0,0,0,0
+1,Fernando Rossique,0,0,0,0,0,0,0,0
+1,Fernando Valencia Gonzalez,0,0,0,0,0,0,0,0
+1,Francisco Javier Diez Cuadrado,0,0,0,0,0,0,0,0
+1,Francisco Miguelez,0,0,0,0,0,0,0,0
+1,Francisco Zarauza,0,0,0,0,0,0,0,0
+1,Garcia´S,0,0,0,0,0,0,0,0
+1,Gp,0,0,0,0,0,0,0,0
+1,Gadearuizdecastroviejo,0,0,0,0,0,0,0,0
+1,Goni Nacho,0,0,0,0,0,0,0,0
+1,Gonzalo GarcíA,0,0,0,0,0,0,0,0
+1,Gonzalo Gil Diaz De Miranda,0,0,0,0,0,0,0,0
+1,Guillermo Diez,0,0,0,0,0,0,0,0
+1,Guillermo Martin Fuentes,0,0,0,0,0,0,0,0
+1,Guillermo Zabaleta,0,0,0,0,0,0,0,0
+1,Hugo Andrés Galea 1,0,0,0,0,0,0,0,0
+1,Hugo Andrés Galea 2,0,0,0,0,0,0,0,0
+1,Hugo Lopez,0,0,0,0,0,0,0,0
+1,Hugobuil,0,0,0,0,0,0,0,0
+1,Ignacio Buil,0,0,0,0,0,0,0,0
+1,Ignacio Gutierrez Fernandez De Molina,0,0,0,0,0,0,0,0
+1,Ignacio Poza,0,0,0,0,0,0,0,0
+1,Ignaciodelomas,0,0,0,0,0,0,0,0
+1,Inesgamero,0,0,0,0,0,0,0,0
+1,Inma Botella,0,0,0,0,0,0,0,0
+1,Inma Diaz De Miranda,0,0,0,0,0,0,0,0
+1,Inma Sierra,0,0,0,0,0,0,0,0
+1,Isa Málaga,0,0,0,0,0,0,0,0
+1,Ismael Garcia,0,0,0,0,0,0,0,0
+1,Isra Duro,0,0,0,0,0,0,0,0
+1,Itsaso Zubiaur,0,0,0,0,0,0,0,0
+1,Ivan Garcia Vaquero,0,0,0,0,0,0,0,0
+1,Ivan Serrano,0,0,0,0,0,0,0,0
+1,Ivan,0,0,0,0,0,0,0,0
+1,Iñigo Aranguren,0,0,0,0,0,0,0,0
+1,Jaf,0,0,0,0,0,0,0,0
+1,Jaf2,0,0,0,0,0,0,0,0
+1,Javier Perez Gutierrez,0,0,0,0,0,0,0,0
+1,Javierhoyas,0,0,0,0,0,0,0,0
+1,Jec1,0,0,0,0,0,0,0,0
+1,Jec2,0,0,0,0,0,0,0,0
+1,Jec3,0,0,0,0,0,0,0,0
+1,Jec4,0,0,0,0,0,0,0,0
+1,Jose Antonio Paez Hidalgo,0,0,0,0,0,0,0,0
+1,Jpc,0,0,0,0,0,0,0,0
+1,Jsa 1,0,0,0,0,0,0,0,0
+1,Jsa 2,0,0,0,0,0,0,0,0
+1,Jsa 3,0,0,0,0,0,0,0,0
+1,Juan Sagaseta Albajar,0,0,0,0,0,0,0,0
+1,Juanga Jimenez,0,0,0,0,0,0,0,0
+1,Jacobo Lopez,0,0,0,0,0,0,0,0
+1,Jacobo Obradors,0,0,0,0,0,0,0,0
+1,Javi Perez,0,0,0,0,0,0,0,0
+1,Javier Castrillo,0,0,0,0,0,0,0,0
+1,Javier Garcia Martin 1,0,0,0,0,0,0,0,0
+1,Javier Garcia Martin 2,0,0,0,0,0,0,0,0
+1,Javier Gea,0,0,0,0,0,0,0,0
+1,Javier Manjon,0,0,0,0,0,0,0,0
+1,Javier Santos,0,0,0,0,0,0,0,0
+1,Javierruizdecastroviejojunior,0,0,0,0,0,0,0,0
+1,Javierruizdecastroviejo,0,0,0,0,0,0,0,0
+1,Jenifer Tovar Ortiz,0,0,0,0,0,0,0,0
+1,Jorge Alonso,0,0,0,0,0,0,0,0
+1,Jorge Fragua,0,0,0,0,0,0,0,0
+1,Jorge Garcia,0,0,0,0,0,0,0,0
+1,Jorge Manjon,0,0,0,0,0,0,0,0
+1,Jorge Pérez,0,0,0,0,0,0,0,0
+1,Jose Fernandez Gavela,0,0,0,0,0,0,0,0
+1,Jose Fuente,0,0,0,0,0,0,0,0
+1,Jose Luis Carrasco,0,0,0,0,0,0,0,0
+1,Jose Maria Ortiz,0,0,0,0,0,0,0,0
+1,Jose Pradera,0,0,0,0,0,0,0,0
+1,Jose Zabala,0,0,0,0,0,0,0,0
+1,Josegomez.1,0,0,0,0,0,0,0,0
+1,Josegómez,0,0,0,0,0,0,0,0
+1,Juan German Balsa,0,0,0,0,0,0,0,0
+1,Juan Gutiérrez Baz,0,0,0,0,0,0,0,0
+1,Juan Jose Garcia Mahecha,0,0,0,0,0,0,0,0
+1,Juan Luis Navarro,0,0,0,0,0,0,0,0
+1,Juan Navarro,0,0,0,0,0,0,0,0
+1,Juan El Chico,0,0,0,0,0,0,0,0
+1,Kike Martin,0,0,0,0,0,0,0,0
+1,Laura Morente,0,0,0,0,0,0,0,0
+1,Lauri Garcia,0,0,0,0,0,0,0,0
+1,Lola Lopez Lopez,0,0,0,0,0,0,0,0
+1,Lola Sanchez Montes,0,0,0,0,0,0,0,0
+1,Lola Y Santi Amor Verdadero,0,0,0,0,0,0,0,0
+1,Lorenzo Saez,0,0,0,0,0,0,0,0
+1,Lucas Goñi Álvaro Tapia,0,0,0,0,0,0,0,0
+1,Lucassalinero,0,0,0,0,0,0,0,0
+1,Lucia Vazquez,0,0,0,0,0,0,0,0
+1,Luciadelomas,0,0,0,0,0,0,0,0
+1,LucíAaceñAgarcíA,0,0,0,0,0,0,0,0
+1,Luis Gil Heres,0,0,0,0,0,0,0,0
+1,Luis Sagaseta,0,0,0,0,0,0,0,0
+1,Luis VilariñO,0,0,0,0,0,0,0,0
+1,Madroño,0,0,0,0,0,0,0,0
+1,Manuel Martin Pineda,0,0,0,0,0,0,0,0
+1,Michaela Pollock,0,0,0,0,0,0,0,0
+1,Mikel Ac,0,0,0,0,0,0,0,0
+1,Monica Dmm,0,0,0,0,0,0,0,0
+1,Mv,0,0,0,0,0,0,0,0
+1,Mvh,0,0,0,0,0,0,0,0
+1,Manuel Andrés Atienza 1,0,0,0,0,0,0,0,0
+1,Manuel Andrés Atienza 2,0,0,0,0,0,0,0,0
+1,Manuel Carrillo,0,0,0,0,0,0,0,0
+1,Manuel Romero,0,0,0,0,0,0,0,0
+1,Manuel Segura Rodríguez,0,0,0,0,0,0,0,0
+1,Marco A Montaño 1,0,0,0,0,0,0,0,0
+1,Marco A Montaño 2,0,0,0,0,0,0,0,0
+1,Marcos Rodrigo DíAz,0,0,0,0,0,0,0,0
+1,Marcos Rodriguez,0,0,0,0,0,0,0,0
+1,Marcos Sagaseta,0,0,0,0,0,0,0,0
+1,Marcosrodriguezlage,0,0,0,0,0,0,0,0
+1,Maria Peña,0,0,0,0,0,0,0,0
+1,Mario Alvarez,0,0,0,0,0,0,0,0
+1,Mario Crespo PéRez,0,0,0,0,0,0,0,0
+1,Mario Crespo Yepes,0,0,0,0,0,0,0,0
+1,Mario Guzman,0,0,0,0,0,0,0,0
+1,Mario Molina,0,0,0,0,0,0,0,0
+1,Mario Pines,0,0,0,0,0,0,0,0
+1,Marta Leon Salvador,0,0,0,0,0,0,0,0
+1,Marta Perales,0,0,0,0,0,0,0,0
+1,Marta Perez Pedro Bernardo,0,0,0,0,0,0,0,0
+1,Marta Sagaseta 1,0,0,0,0,0,0,0,0
+1,Marta Sampedro,0,0,0,0,0,0,0,0
+1,Marta,0,0,0,0,0,0,0,0
+1,Martagarciarodriguez,0,0,0,0,0,0,0,0
+1,MartíN Guirado,0,0,0,0,0,0,0,0
+1,Miguel Angel Llorente,0,0,0,0,0,0,0,0
+1,Miguel Quintana,0,0,0,0,0,0,0,0
+1,Miguel Vila,0,0,0,0,0,0,0,0
+1,Mila Elorduy,0,0,0,0,0,0,0,0
+1,Monicazarauzadm,0,0,0,0,0,0,0,0
+1,Montse Vicente Merino,0,0,0,0,0,0,0,0
+1,Nacho Acuña,0,0,0,0,0,0,0,0
+1,Nacho Carbajo,0,0,0,0,0,0,0,0
+1,Nachodelomas,0,0,0,0,0,0,0,0
+1,Nico Triguero,0,0,0,0,0,0,0,0
+1,Nicolas De La Fuente,0,0,0,0,0,0,0,0
+1,Noel CalderóN 01,0,0,0,0,0,0,0,0
+1,Noel CalderóN 02,0,0,0,0,0,0,0,0
+1,Noel CalderóN 03,0,0,0,0,0,0,0,0
+1,Nu,0,0,0,0,0,0,0,0
+1,Oscar Alonso 1,0,0,0,0,0,0,0,0
+1,Oskar Sagaseta Pollock,0,0,0,0,0,0,0,0
+1,Orenbellongarriga,0,0,0,0,0,0,0,0
+1,Orestes,0,0,0,0,0,0,0,0
+1,Pablo Balbuena,0,0,0,0,0,0,0,0
+1,Pablo Peña Gomez,0,0,0,0,0,0,0,0
+1,Paco De La Fuente,0,0,0,0,0,0,0,0
+1,Pablo Buquerin Martinez,0,0,0,0,0,0,0,0
+1,Pablo Carbajo RodríGuez,0,0,0,0,0,0,0,0
+1,Pablo Gea,0,0,0,0,0,0,0,0
+1,Pablo Gonzalez Echevarría,0,0,0,0,0,0,0,0
+1,Pablo Martinez Sierra,0,0,0,0,0,0,0,0
+1,Pablo Navarro,0,0,0,0,0,0,0,0
+1,Pablo Sagaseta,0,0,0,0,0,0,0,0
+1,Pablo Santos,0,0,0,0,0,0,0,0
+1,Pachino,0,0,0,0,0,0,0,0
+1,Paloma Vazquez Vicente,0,0,0,0,0,0,0,0
+1,Patxo Zubiaur,0,0,0,0,0,0,0,0
+1,Pedro Crespo Yepes,0,0,0,0,0,0,0,0
+1,Pedro Daniel,0,0,0,0,0,0,0,0
+1,Rodolfo Moreno,0,0,0,0,0,0,0,0
+1,Roman Sagaseta Pollock,0,0,0,0,0,0,0,0
+1,Rafael Gutierrez De Vargas,0,0,0,0,0,0,0,0
+1,RamóN Alonso Ventas,0,0,0,0,0,0,0,0
+1,RamóN Hoyos,0,0,0,0,0,0,0,0
+1,Raul Ayuso,0,0,0,0,0,0,0,0
+1,Raulmateo,0,0,0,0,0,0,0,0
+1,Ricardo Fdez,0,0,0,0,0,0,0,0
+1,Ricardo MartíNez,0,0,0,0,0,0,0,0
+1,Roberysamuel,0,0,0,0,0,0,0,0
+1,Robertogamero1,0,0,0,0,0,0,0,0
+1,Robertogamero2,0,0,0,0,0,0,0,0
+1,Robertogamero3,0,0,0,0,0,0,0,0
+1,Robertobuil,0,0,0,0,0,0,0,0
+1,RocíO,0,0,0,0,0,0,0,0
+1,Rodrigo Azcona,0,0,0,0,0,0,0,0
+1,Rodrigo Cuenca Romero,0,0,0,0,0,0,0,0
+1,Rodrigogomez,0,0,0,0,0,0,0,0
+1,Rosa Artal,0,0,0,0,0,0,0,0
+1,Silvia Vila,0,0,0,0,0,0,0,0
+1,Samuelgamero1,0,0,0,0,0,0,0,0
+1,Samuelgamero2,0,0,0,0,0,0,0,0
+1,Sancama74,0,0,0,0,0,0,0,0
+1,Sandra Herrero,0,0,0,0,0,0,0,0
+1,Santi,0,0,0,0,0,0,0,0
+1,Santiago Cabezas,0,0,0,0,0,0,0,0
+1,Santiago G Arias,0,0,0,0,0,0,0,0
+1,Santiago Garcia Candanedo,0,0,0,0,0,0,0,0
+1,Santiago GarcíA LóPez,0,0,0,0,0,0,0,0
+1,Sebastiansanchezgonzalez,0,0,0,0,0,0,0,0
+1,Sebastiansisco,0,0,0,0,0,0,0,0
+1,Sergi Garcia,0,0,0,0,0,0,0,0
+1,Sergio Herrero,0,0,0,0,0,0,0,0
+1,Sergiosanchezmontesinos1,0,0,0,0,0,0,0,0
+1,Sergiosanchezmontesinos2,0,0,0,0,0,0,0,0
+1,Silvia Garcia Hoyas,0,0,0,0,0,0,0,0
+1,Susana Velasco,0,0,0,0,0,0,0,0
+1,Teresa Hernandez Cobo,0,0,0,0,0,0,0,0
+1,Tino Domenech,0,0,0,0,0,0,0,0
+1,Tomas Martinez,0,0,0,0,0,0,0,0
+1,Victoria F,0,0,0,0,0,0,0,0
+1,Xavier Garcia,0,0,0,0,0,0,0,0
+1,A,0,0,0,0,0,0,0,0
+1,Alex Hoyo,0,0,0,0,0,0,0,0
+1,Antonio Rodrigo,0,0,0,0,0,0,0,0
+1,Cristina Sanz,0,0,0,0,0,0,0,0
+1,Iker,0,0,0,0,0,0,0,0
+1,Jado19,0,0,0,0,0,0,0,0
+1,Jose Carbajo,0,0,0,0,0,0,0,0
+1,L,0,0,0,0,0,0,0,0
+1,Laura Garcia,0,0,0,0,0,0,0,0
+1,Lola Rodríguez,0,0,0,0,0,0,0,0
+1,Miguel Garcia,0,0,0,0,0,0,0,0
+1,Narciso Vaquero,0,0,0,0,0,0,0,0
+1,Nj,0,0,0,0,0,0,0,0
+1,P,0,0,0,0,0,0,0,0
+1,Papa,0,0,0,0,0,0,0,0
+1,Pepe Vergara,0,0,0,0,0,0,0,0
+1,Rafita,0,0,0,0,0,0,0,0
+1,Ricardo Pastor,0,0,0,0,0,0,0,0
+1,Sergio,0,0,0,0,0,0,0,0
+1,Álvaro,0,0,0,0,0,0,0,0
+1,Álvaromárquezvalverde1,0,0,0,0,0,0,0,0
+1,Álvaromárquezvalverde2,0,0,0,0,0,0,0,0
+1,Ángel Fernández,0,0,0,0,0,0,0,0
 
