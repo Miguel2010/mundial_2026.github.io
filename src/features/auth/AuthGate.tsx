@@ -1,19 +1,117 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, KeyboardEvent, useEffect, useId, useRef, useState } from 'react';
+import { normalizeParticipantName } from '../../utils/participants';
 
 type AuthGateProps = {
   error: string | null;
+  isLoadingParticipants: boolean;
   isSubmitting: boolean;
+  participants: string[];
+  participantsError: string | null;
   onLogin: (credentials: { participante: string; password: string }) => Promise<void>;
+  onRetryParticipants: () => Promise<void>;
 };
 
-export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
-  const [participante, setParticipante] = useState('');
+export function AuthGate({
+  error,
+  isLoadingParticipants,
+  isSubmitting,
+  participants,
+  participantsError,
+  onLogin,
+  onRetryParticipants,
+}: AuthGateProps) {
+  const [participantQuery, setParticipantQuery] = useState('');
+  const [selectedParticipant, setSelectedParticipant] = useState<string | null>(null);
   const [password, setPassword] = useState('');
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [isParticipantListOpen, setIsParticipantListOpen] = useState(false);
+  const [highlightedIndex, setHighlightedIndex] = useState(0);
+  const comboboxRef = useRef<HTMLDivElement | null>(null);
+  const participantListboxId = useId();
+  const sortedParticipants = [...participants].sort((left, right) =>
+    left.localeCompare(right, 'es', { sensitivity: 'base' }),
+  );
+  const normalizedQuery = normalizeParticipantName(participantQuery);
+  const filteredParticipants = normalizedQuery
+    ? sortedParticipants.filter((participant) =>
+        normalizeParticipantName(participant).includes(normalizedQuery),
+      )
+    : sortedParticipants;
+  const isParticipantSelectorDisabled = isLoadingParticipants || participantsError !== null;
+  const highlightedParticipant = filteredParticipants[highlightedIndex];
+  const activeOptionId =
+    isParticipantListOpen && highlightedParticipant
+      ? `${participantListboxId}-option-${highlightedIndex}`
+      : undefined;
+
+  useEffect(() => {
+    function handleDocumentPointerDown(event: PointerEvent) {
+      if (!comboboxRef.current?.contains(event.target as Node)) {
+        setIsParticipantListOpen(false);
+      }
+    }
+
+    document.addEventListener('pointerdown', handleDocumentPointerDown);
+
+    return () => {
+      document.removeEventListener('pointerdown', handleDocumentPointerDown);
+    };
+  }, []);
+
+  useEffect(() => {
+    setHighlightedIndex(0);
+  }, [participantQuery, participants]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    await onLogin({ participante: participante.trim(), password: password.trim() });
+
+    if (!selectedParticipant) {
+      return;
+    }
+
+    await onLogin({ participante: selectedParticipant, password: password.trim() });
+  }
+
+  function selectParticipant(participant: string) {
+    setSelectedParticipant(participant);
+    setParticipantQuery(participant);
+    setIsParticipantListOpen(false);
+  }
+
+  function handleParticipantKeyDown(event: KeyboardEvent<HTMLInputElement>) {
+    if (isParticipantSelectorDisabled) {
+      return;
+    }
+
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      setIsParticipantListOpen(true);
+      setHighlightedIndex((currentValue) =>
+        Math.min(currentValue + 1, Math.max(filteredParticipants.length - 1, 0)),
+      );
+      return;
+    }
+
+    if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      setIsParticipantListOpen(true);
+      setHighlightedIndex((currentValue) => Math.max(currentValue - 1, 0));
+      return;
+    }
+
+    if (event.key === 'Enter' && isParticipantListOpen) {
+      event.preventDefault();
+
+      if (highlightedParticipant) {
+        selectParticipant(highlightedParticipant);
+      }
+
+      return;
+    }
+
+    if (event.key === 'Escape') {
+      setIsParticipantListOpen(false);
+    }
   }
 
   return (
@@ -26,16 +124,81 @@ export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
         <label className="field-label" htmlFor="participante">
           Nombre de la Plantilla
         </label>
-        <input
-          id="participante"
-          type="text"
-          autoComplete="name"
-          className="text-input"
-          placeholder="Introduce el nombre de la plantilla"
-          required
-          value={participante}
-          onChange={(event) => setParticipante(event.target.value)}
-        />
+        <div className="participant-combobox" ref={comboboxRef}>
+          <input
+            id="participante"
+            type="text"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-controls={participantListboxId}
+            aria-expanded={isParticipantListOpen}
+            aria-activedescendant={activeOptionId}
+            autoComplete="off"
+            className="text-input participant-input"
+            disabled={isParticipantSelectorDisabled}
+            placeholder={
+              participantsError
+                ? 'No se pudieron cargar los participantes'
+                : isLoadingParticipants
+                  ? 'Cargando participantes...'
+                  : 'Busca y selecciona tu plantilla'
+            }
+            required
+            value={participantQuery}
+            onChange={(event) => {
+              setParticipantQuery(event.target.value);
+              setSelectedParticipant(null);
+              setIsParticipantListOpen(true);
+            }}
+            onFocus={() => {
+              if (!isParticipantSelectorDisabled) {
+                setIsParticipantListOpen(true);
+              }
+            }}
+            onKeyDown={handleParticipantKeyDown}
+          />
+
+          {isParticipantListOpen ? (
+            <div className="participant-options" id={participantListboxId} role="listbox">
+              {filteredParticipants.length > 0 ? (
+                filteredParticipants.map((participant, index) => (
+                  <button
+                    id={`${participantListboxId}-option-${index}`}
+                    className={
+                      index === highlightedIndex
+                        ? 'participant-option participant-option-highlighted'
+                        : 'participant-option'
+                    }
+                    key={participant}
+                    type="button"
+                    role="option"
+                    aria-selected={participant === selectedParticipant}
+                    onMouseEnter={() => setHighlightedIndex(index)}
+                    onClick={() => selectParticipant(participant)}
+                  >
+                    {participant}
+                  </button>
+                ))
+              ) : (
+                <p className="participant-empty">No hay participantes con ese nombre.</p>
+              )}
+            </div>
+          ) : null}
+        </div>
+
+        {participantsError ? (
+          <div className="participant-load-error">
+            <p>{participantsError}</p>
+            <button
+              className="ghost-button participant-retry"
+              type="button"
+              disabled={isLoadingParticipants}
+              onClick={() => void onRetryParticipants()}
+            >
+              Reintentar
+            </button>
+          </div>
+        ) : null}
 
         <label className="field-label" htmlFor="password">
           Contraseña
@@ -76,7 +239,10 @@ export function AuthGate({ error, isSubmitting, onLogin }: AuthGateProps) {
           className="primary-button"
           type="submit"
           disabled={
-            isSubmitting || participante.trim().length === 0 || password.trim().length === 0
+            isSubmitting ||
+            isParticipantSelectorDisabled ||
+            selectedParticipant === null ||
+            password.trim().length === 0
           }
         >
           {isSubmitting ? 'Validando...' : 'Entrar'}

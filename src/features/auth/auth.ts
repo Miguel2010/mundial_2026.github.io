@@ -1,5 +1,5 @@
 const SESSION_KEY = 'mundial-2026-session';
-const PASSWORD_HASH = '1ea27ace602a201439f6107354abad8b7262353769a5a08f8a1abd4284abbfe1';
+const PASSWORD_HASH = '49d5cd34564ead59dbfdc4d9f8039d5db61f322279e45885c60404e1f1c91995';
 
 export type AuthSession = {
   participante: string;
