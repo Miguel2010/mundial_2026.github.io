@@ -196,7 +196,7 @@ function App() {
         <section className="hero-panel">
           <div className="hero-copy">
             <span className="hero-badge">Mundial 2026</span>
-            <h1>Clasificación de la porra</h1>
+            <h1>Clasificación General</h1>
             <div className="hero-meta">
               <div className="meta-card">
                 <span className="meta-label">Última actualización</span>
