@@ -8,7 +8,7 @@ type PrizesPanelProps = {
 };
 
 function formatPrize(premio: number) {
-  return `${premio.toLocaleString('es-ES')} €`;
+  return `${premio.toLocaleString('es-ES')} %`;
 }
 
 function getPrizePositionLabel(posicion: number) {
