@@ -6,6 +6,11 @@ type LeaderboardTableProps = {
   currentParticipant: string;
 };
 
+type LeaderboardRowProps = {
+  currentParticipant: string;
+  row: ClassificationRow;
+};
+
 const columnLabels = [
   'Posición',
   'Jugador',
@@ -19,59 +24,168 @@ const columnLabels = [
   'Total',
 ];
 
-function getRowClassName(index: number, isCurrentParticipant: boolean) {
+type PhaseKey = keyof Pick<
+  ClassificationRow,
+  'grupos' | 'dieciseisavos' | 'octavos' | 'cuartos' | 'semifinales' | 'tercerCuarto' | 'final'
+>;
+
+const phaseLabels: Array<{ label: string; key: PhaseKey }> = [
+  { label: 'Grupos', key: 'grupos' },
+  { label: '16avos', key: 'dieciseisavos' },
+  { label: 'Octavos', key: 'octavos' },
+  { label: 'Cuartos', key: 'cuartos' },
+  { label: 'Semis', key: 'semifinales' },
+  { label: '3º/4º', key: 'tercerCuarto' },
+  { label: 'Final', key: 'final' },
+];
+
+function isCurrentParticipantRow(row: ClassificationRow, normalizedCurrentParticipant: string) {
+  return normalizeParticipantName(row.participante) === normalizedCurrentParticipant;
+}
+
+function getCurrentParticipantRow(rows: ClassificationRow[], currentParticipant: string) {
+  const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
+
+  return rows.find((row) => isCurrentParticipantRow(row, normalizedCurrentParticipant));
+}
+
+function getRankClassName(posicion: number) {
+  if (posicion === 1) return 'rank-row-gold';
+  if (posicion === 2) return 'rank-row-silver';
+  if (posicion === 3) return 'rank-row-bronze';
+  if (posicion <= 10) return 'rank-row-top10';
+  return '';
+}
+
+function getRowClassName(posicion: number, isCurrentParticipant: boolean) {
+  const rankClassName = getRankClassName(posicion);
   const currentParticipantClassName = isCurrentParticipant ? ' rank-row-current-user' : '';
 
-  if (index === 0) return `rank-row rank-row-gold${currentParticipantClassName}`;
-  if (index === 1) return `rank-row rank-row-silver${currentParticipantClassName}`;
-  if (index === 2) return `rank-row rank-row-bronze${currentParticipantClassName}`;
-  if (index < 10) return `rank-row rank-row-top10${currentParticipantClassName}`;
-  return `rank-row${currentParticipantClassName}`;
+  return `rank-row${rankClassName ? ` ${rankClassName}` : ''}${currentParticipantClassName}`;
+}
+
+function getMobileCardClassName(posicion: number, isCurrentParticipant: boolean) {
+  const rankClassName = getRankClassName(posicion);
+  const currentParticipantClassName = isCurrentParticipant
+    ? ' leaderboard-mobile-card-current-user'
+    : '';
+
+  return `leaderboard-mobile-card${rankClassName ? ` ${rankClassName}` : ''}${currentParticipantClassName}`;
+}
+
+function LeaderboardTableRow({ currentParticipant, row }: LeaderboardRowProps) {
+  const isCurrentParticipant = isCurrentParticipantRow(row, currentParticipant);
+
+  return (
+    <tr className={getRowClassName(row.posicion, isCurrentParticipant)}>
+      <td>{row.posicion}</td>
+      <td className="player-name">{row.participante}</td>
+      <td>{row.grupos}</td>
+      <td>{row.dieciseisavos}</td>
+      <td>{row.octavos}</td>
+      <td>{row.cuartos}</td>
+      <td>{row.semifinales}</td>
+      <td>{row.tercerCuarto}</td>
+      <td>{row.final}</td>
+      <td>
+        <strong>{row.total}</strong>
+      </td>
+    </tr>
+  );
+}
+
+function LeaderboardMobileCard({ currentParticipant, row }: LeaderboardRowProps) {
+  const isCurrentParticipant = isCurrentParticipantRow(row, currentParticipant);
+
+  return (
+    <article className={getMobileCardClassName(row.posicion, isCurrentParticipant)}>
+      <div className="leaderboard-mobile-card-header">
+        <div>
+          <span className="leaderboard-mobile-position">#{row.posicion}</span>
+          <h3>{row.participante}</h3>
+        </div>
+        <div className="leaderboard-mobile-total">
+          <strong>{row.total}</strong>
+          <span>puntos</span>
+        </div>
+      </div>
+
+      <div className="leaderboard-phase-grid">
+        {phaseLabels.map((phase) => (
+          <span className="leaderboard-phase-chip" key={phase.key}>
+            <span>{phase.label}</span>
+            <strong>{row[phase.key]}</strong>
+          </span>
+        ))}
+      </div>
+    </article>
+  );
 }
 
 export function LeaderboardTable({ rows, currentParticipant }: LeaderboardTableProps) {
   const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
+  const currentParticipantRow = getCurrentParticipantRow(rows, currentParticipant);
 
   return (
-    <div className="table-card">
-      <div className="table-scroll">
-        <table className="leaderboard-table">
-          <thead>
-            <tr>
-              {columnLabels.map((label) => (
-                <th key={label}>{label}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row, index) => {
-              const isCurrentParticipant =
-                normalizeParticipantName(row.participante) === normalizedCurrentParticipant;
+    <>
+      <div className="table-card">
+        <div className="table-scroll">
+          <table className="leaderboard-table">
+            <thead>
+              <tr>
+                {columnLabels.map((label) => (
+                  <th key={label}>{label}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {currentParticipantRow ? (
+                <>
+                  <LeaderboardTableRow
+                    currentParticipant={normalizedCurrentParticipant}
+                    row={currentParticipantRow}
+                  />
+                  <tr className="rank-row-separator" aria-hidden="true">
+                    <td colSpan={columnLabels.length}>
+                      <span>Clasificación completa</span>
+                    </td>
+                  </tr>
+                </>
+              ) : null}
 
-              return (
-                <tr
-                  key={`${row.participante}-${index}`}
-                  className={getRowClassName(index, isCurrentParticipant)}
-                >
-                  {/*<td>{index + 1}</td> para no leer la posición del fichero*/}
-                  <td>{row.posicion}</td>
-                  <td className="player-name">{row.participante}</td>
-                  <td>{row.grupos}</td>
-                  <td>{row.dieciseisavos}</td>
-                  <td>{row.octavos}</td>
-                  <td>{row.cuartos}</td>
-                  <td>{row.semifinales}</td>
-                  <td>{row.tercerCuarto}</td>
-                  <td>{row.final}</td>
-                  <td>
-                    <strong>{row.total}</strong>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+              {rows.map((row) => (
+                <LeaderboardTableRow
+                  currentParticipant={normalizedCurrentParticipant}
+                  key={`${row.participante}-${row.posicion}`}
+                  row={row}
+                />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+
+      <div className="leaderboard-mobile-list" aria-label="Clasificación en formato móvil">
+        {currentParticipantRow ? (
+          <>
+            <LeaderboardMobileCard
+              currentParticipant={normalizedCurrentParticipant}
+              row={currentParticipantRow}
+            />
+            <div className="leaderboard-mobile-separator" aria-hidden="true">
+              <span>Clasificación completa</span>
+            </div>
+          </>
+        ) : null}
+
+        {rows.map((row) => (
+          <LeaderboardMobileCard
+            currentParticipant={normalizedCurrentParticipant}
+            key={`${row.participante}-${row.posicion}`}
+            row={row}
+          />
+        ))}
+      </div>
+    </>
   );
 }
