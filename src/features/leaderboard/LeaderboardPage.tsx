@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { LeaderboardTable } from './LeaderboardTable';
 import { PrizesPanel } from '../prizes/PrizesPanel';
+import { PredictionsPanel } from '../predictions/PredictionsPanel';
 import { fetchPrizes, type PrizeRow } from '../../services/prize-service';
 import type { ClassificationRow } from '../../types/classification';
 import { normalizeParticipantName } from '../../utils/participants';
 
-type LeaderboardTab = 'classification' | 'prizes';
+type LeaderboardTab = 'classification' | 'prizes' | 'predictions';
 
 type LeaderboardPageProps = {
   rows: ClassificationRow[];
@@ -37,10 +38,14 @@ export function LeaderboardPage({
   async function handleSelectTab(tab: LeaderboardTab) {
     setActiveTab(tab);
 
-    if (tab !== 'prizes' || prizes.length > 0 || isLoadingPrizes) {
+    if (tab === 'prizes' && prizes.length === 0 && !isLoadingPrizes) {
+      await loadPrizes();
       return;
     }
 
+  }
+
+  async function loadPrizes() {
     setIsLoadingPrizes(true);
     setPrizesError(null);
 
@@ -54,6 +59,47 @@ export function LeaderboardPage({
     } finally {
       setIsLoadingPrizes(false);
     }
+  }
+
+  function renderActiveTab() {
+    if (activeTab === 'classification') {
+      return (
+        <>
+          {isLoading ? <div className="status-card">Cargando clasificación...</div> : null}
+          {error ? <div className="status-card status-card-error">{error}</div> : null}
+          {!isLoading && !error ? (
+            <LeaderboardTable rows={rows} currentParticipant={currentParticipant} />
+          ) : null}
+        </>
+      );
+    }
+
+    if (activeTab === 'prizes') {
+      return (
+        <PrizesPanel
+          currentPosition={currentParticipantRow?.posicion ?? null}
+          error={prizesError}
+          isLoading={isLoadingPrizes}
+          prizes={prizes}
+        />
+      );
+    }
+
+    return <PredictionsPanel currentParticipant={currentParticipant} />;
+  }
+
+  function renderTabButton(tab: LeaderboardTab, label: string) {
+    return (
+      <button
+        className={`tab-button${activeTab === tab ? ' tab-button-active' : ''}`}
+        type="button"
+        role="tab"
+        aria-selected={activeTab === tab}
+        onClick={() => void handleSelectTab(tab)}
+      >
+        {label}
+      </button>
+    );
   }
 
   return (
@@ -97,42 +143,12 @@ export function LeaderboardPage({
       </div>
 
       <div className="tabs" role="tablist" aria-label="Secciones de la clasificación">
-        <button
-          className={`tab-button${activeTab === 'classification' ? ' tab-button-active' : ''}`}
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'classification'}
-          onClick={() => void handleSelectTab('classification')}
-        >
-          Clasificación
-        </button>
-        <button
-          className={`tab-button${activeTab === 'prizes' ? ' tab-button-active' : ''}`}
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'prizes'}
-          onClick={() => void handleSelectTab('prizes')}
-        >
-          Premios
-        </button>
+        {renderTabButton('classification', 'Clasificación')}
+        {renderTabButton('prizes', 'Premios')}
+        {renderTabButton('predictions', 'Pronóstico')}
       </div>
 
-      {activeTab === 'classification' ? (
-        <>
-          {isLoading ? <div className="status-card">Cargando clasificación...</div> : null}
-          {error ? <div className="status-card status-card-error">{error}</div> : null}
-          {!isLoading && !error ? (
-            <LeaderboardTable rows={rows} currentParticipant={currentParticipant} />
-          ) : null}
-        </>
-      ) : (
-        <PrizesPanel
-          currentPosition={currentParticipantRow?.posicion ?? null}
-          error={prizesError}
-          isLoading={isLoadingPrizes}
-          prizes={prizes}
-        />
-      )}
+      {renderActiveTab()}
     </section>
   );
 }
