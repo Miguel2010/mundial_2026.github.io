@@ -49,6 +49,13 @@ const TEAM_COUNTRY_CODES: Record<string, string> = {
   Uzbekistán: 'UZ',
 };
 
+const TEAM_NAME_ALIASES: Record<string, string> = {
+  eeuu: 'Estados Unidos',
+  republica_de_corea: 'Corea del Sur',
+  republica_de_corea_del_sur: 'Corea del Sur',
+  cequia: 'Chequia',
+};
+
 const SUBDIVISION_FLAGS: Record<string, string> = {
   'GB-ENG': '\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}',
   'GB-SCT': '\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}',
@@ -66,12 +73,32 @@ function countryCodeToFlag(countryCode: string) {
     .replace(/./g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
 }
 
+function normalizeTeamName(teamName: string) {
+  return teamName
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '_')
+    .trim()
+    .toLocaleLowerCase('es');
+}
+
+const COUNTRY_CODES_BY_NORMALIZED_NAME = Object.fromEntries(
+  Object.entries(TEAM_COUNTRY_CODES).map(([teamName, countryCode]) => [
+    normalizeTeamName(formatTeamName(teamName)),
+    countryCode,
+  ]),
+);
+
 export function formatTeamName(teamName: string) {
   return teamName.replace(/_/g, ' ');
 }
 
 export function getTeamFlag(teamName: string) {
-  const countryCode = TEAM_COUNTRY_CODES[teamName];
+  const normalizedTeamName = normalizeTeamName(teamName);
+  const aliasedTeamName = TEAM_NAME_ALIASES[normalizedTeamName] ?? teamName;
+  const countryCode =
+    TEAM_COUNTRY_CODES[aliasedTeamName] ??
+    COUNTRY_CODES_BY_NORMALIZED_NAME[normalizeTeamName(aliasedTeamName)];
 
   return countryCode ? countryCodeToFlag(countryCode) : '';
 }
