@@ -1,1 +1,2913 @@
-
+Nombre,ID Partido,Partido,Resultados
+Pancho Zarauza,M089,Alemania-Francia,2-3
+Pancho Zarauza,M090,Bosnia y Herzegovina-Japón,0-3
+Pancho Zarauza,M091,Brasil-Senegal,0-0
+Pancho Zarauza,M092,Escocia-Inglaterra,0-1
+Pancho Zarauza,M093,Ghana-España,0-2
+Pancho Zarauza,M094,Estados Unidos-Egipto,1-1
+Pancho Zarauza,M095,Argentina-Bélgica,1-2
+Pancho Zarauza,M096,Austria-Portugal,0-2
+001 Psv,M089,Alemania-Suecia,2-1
+001 Psv,M090,Chequia-Países Bajos,1-3
+001 Psv,M091,Brasil-Costa de Marfil,2-0
+001 Psv,M092,Marruecos-Inglaterra,1-1
+001 Psv,M093,Colombia-España,1-2
+001 Psv,M094,Suiza-Bélgica,1-1
+001 Psv,M095,Argentina-Estados Unidos,2-0
+001 Psv,M096,Bosnia y Herzegovina-Portugal,0-1
+002 Jfrm,M089,Países Bajos-Noruega,1-3
+002 Jfrm,M090,Canadá-Alemania,1-2
+002 Jfrm,M091,Marruecos-Francia,1-1
+002 Jfrm,M092,México-Senegal,1-2
+002 Jfrm,M093,España-Colombia,2-1
+002 Jfrm,M094,Ecuador-Estados Unidos,1-1
+002 Jfrm,M095,Turquía-Portugal,1-3
+002 Jfrm,M096,Bosnia y Herzegovina-Argentina,0-1
+003 Psv1,M089,Alemania-Noruega,1-2
+003 Psv1,M090,Suiza-Marruecos,0-0
+003 Psv1,M091,Brasil-Francia,1-1
+003 Psv1,M092,Escocia-Inglaterra,1-1
+003 Psv1,M093,Colombia-España,1-1
+003 Psv1,M094,Turquía-Bélgica,1-2
+003 Psv1,M095,Uruguay-Estados Unidos,1-1
+003 Psv1,M096,Argelia-Portugal,0-2
+004 Nvr,M089,Brasil-Ecuador,1-2
+004 Nvr,M090,Chequia-Alemania,3-1
+004 Nvr,M091,Marruecos-Francia,2-3
+004 Nvr,M092,Costa de Marfil-Inglaterra,1-3
+004 Nvr,M093,Uruguay-Croacia,2-2
+004 Nvr,M094,México-Estados Unidos,2-2
+004 Nvr,M095,Turquía-Colombia,1-1
+004 Nvr,M096,Suiza-España,2-2
+005 Jlmr,M089,Brasil-Noruega,0-2
+005 Jlmr,M090,Sudáfrica-Alemania,2-1
+005 Jlmr,M091,Marruecos-Francia,0-2
+005 Jlmr,M092,Chequia-Inglaterra,1-3
+005 Jlmr,M093,España-Colombia,2-1
+005 Jlmr,M094,Bélgica-Turquía,1-1
+005 Jlmr,M095,Egipto-Portugal,0-3
+005 Jlmr,M096,Bosnia y Herzegovina-Argentina,1-4
+1,M089,Alemania-Francia,1-2
+1,M090,Sudáfrica-Marruecos,0-1
+1,M091,Brasil-Noruega,2-1
+1,M092,México-Inglaterra,1-3
+1,M093,Croacia-Uruguay,1-3
+1,M094,Estados Unidos-Bélgica,1-0
+1,M095,Argentina-Turquía,1-2
+1,M096,Canadá-Portugal,1-4
+3P,M089,Costa de Marfil-Francia,2-1
+3P,M090,Canadá-Marruecos,1-2
+3P,M091,Brasil-Noruega,3-1
+3P,M092,Chequia-Inglaterra,0-2
+3P,M093,Colombia-Uruguay,1-2
+3P,M094,Estados Unidos-Bélgica,1-3
+3P,M095,Argentina-Turquía,2-0
+3P,M096,Suiza-Portugal,0-2
+Acp,M089,Alemania-Francia,1-2
+Acp,M090,Bosnia y Herzegovina-Brasil,0-2
+Acp,M091,Países Bajos-Noruega,1-1
+Acp,M092,Escocia-Inglaterra,0-3
+Acp,M093,Croacia-España,0-2
+Acp,M094,Estados Unidos-Egipto,0-2
+Acp,M095,Argentina-Bélgica,2-0
+Acp,M096,Suiza-Portugal,0-3
+Alberti 73,M089,Alemania-Francia,1-2
+Alberti 73,M090,Sudáfrica-Países Bajos,0-3
+Alberti 73,M091,Brasil-Ecuador,2-0
+Alberti 73,M092,Chequia-Inglaterra,0-2
+Alberti 73,M093,Colombia-España,1-2
+Alberti 73,M094,Estados Unidos-Bélgica,1-2
+Alberti 73,M095,Argentina-Turquía,3-1
+Alberti 73,M096,Suiza-Portugal,1-1
+Alberto Cabezas,M089,Alemania-Noruega,2-0
+Alberto Cabezas,M090,Chequia-Marruecos,1-2
+Alberto Cabezas,M091,Brasil-Francia,1-3
+Alberto Cabezas,M092,México-Inglaterra,1-2
+Alberto Cabezas,M093,Croacia-Uruguay,0-1
+Alberto Cabezas,M094,Suiza-Bélgica,0-3
+Alberto Cabezas,M095,España-Turquía,4-0
+Alberto Cabezas,M096,Egipto-Colombia,0-2
+Alexs,M089,Alemania-Francia,2-3
+Alexs,M090,Chequia-Países Bajos,0-1
+Alexs,M091,Brasil-Ecuador,1-2
+Alexs,M092,México-Inglaterra,0-1
+Alexs,M093,Colombia-España,1-2
+Alexs,M094,Turquía-Bélgica,0-1
+Alexs,M095,Argentina-Paraguay,2-1
+Alexs,M096,Suiza-Portugal,1-2
+Alfonsolopezhernandez,M089,Alemania-Francia,1-3
+Alfonsolopezhernandez,M090,Chequia-Marruecos,2-3
+Alfonsolopezhernandez,M091,Brasil-Noruega,2-2
+Alfonsolopezhernandez,M092,México-Inglaterra,1-1
+Alfonsolopezhernandez,M093,Colombia-España,0-2
+Alfonsolopezhernandez,M094,Estados Unidos-Bélgica,1-1
+Alfonsolopezhernandez,M095,Argentina-Egipto,2-0
+Alfonsolopezhernandez,M096,Suiza-Portugal,1-3
+Alvaro Romero,M089,Alemania-Francia,1-2
+Alvaro Romero,M090,Sudáfrica-Países Bajos,0-1
+Alvaro Romero,M091,Brasil-Noruega,3-1
+Alvaro Romero,M092,México-Senegal,1-0
+Alvaro Romero,M093,Inglaterra-España,1-2
+Alvaro Romero,M094,Estados Unidos-Bélgica,2-2
+Alvaro Romero,M095,Argentina-Turquía,2-1
+Alvaro Romero,M096,Austria-Portugal,1-3
+Amalia Gutierrez,M089,Alemania-Francia,2-1
+Amalia Gutierrez,M090,Chequia-Países Bajos,1-2
+Amalia Gutierrez,M091,Brasil-Senegal,2-2
+Amalia Gutierrez,M092,México-Inglaterra,2-3
+Amalia Gutierrez,M093,Colombia-España,0-1
+Amalia Gutierrez,M094,Estados Unidos-Bélgica,1-0
+Amalia Gutierrez,M095,Argentina-Paraguay,3-1
+Amalia Gutierrez,M096,Suiza-Portugal,1-2
+Ander Aguado,M089,Alemania-Francia,1-2
+Ander Aguado,M090,Corea del Sur-Marruecos,0-2
+Ander Aguado,M091,Brasil-Noruega,1-0
+Ander Aguado,M092,México-Inglaterra,0-2
+Ander Aguado,M093,Croacia-España,1-3
+Ander Aguado,M094,Turquía-Bélgica,1-2
+Ander Aguado,M095,Argentina-Egipto,1-1
+Ander Aguado,M096,Costa de Marfil-Portugal,0-2
+Asf,M089,Alemania-Francia,1-2
+Asf,M090,México-Países Bajos,0-1
+Asf,M091,Marruecos-Noruega,2-1
+Asf,M092,Chequia-Inglaterra,0-1
+Asf,M093,Colombia-España,1-3
+Asf,M094,Turquía-Bélgica,1-1
+Asf,M095,Uruguay-Paraguay,2-1
+Asf,M096,Suiza-Portugal,0-3
+Aupanacho,M089,Alemania-Senegal,1-2
+Aupanacho,M090,Chequia-Países Bajos,1-1
+Aupanacho,M091,Marruecos-Francia,3-2
+Aupanacho,M092,México-Ghana,2-2
+Aupanacho,M093,Inglaterra-Argentina,2-1
+Aupanacho,M094,Estados Unidos-Sudáfrica,2-1
+Aupanacho,M095,España-Turquía,3-1
+Aupanacho,M096,Suiza-Portugal,1-2
+Abuela,M089,Alemania-Francia,2-2
+Abuela,M090,Corea del Sur-Marruecos,1-2
+Abuela,M091,Brasil-Senegal,3-1
+Abuela,M092,Ecuador-Inglaterra,1-2
+Abuela,M093,Colombia-España,1-2
+Abuela,M094,Turquía-Bélgica,1-2
+Abuela,M095,Argentina-Estados Unidos,2-0
+Abuela,M096,Suiza-Portugal,0-2
+Abuelo Jose,M089,Alemania-Francia,1-2
+Abuelo Jose,M090,Chequia-Países Bajos,1-2
+Abuelo Jose,M091,Brasil-Noruega,3-2
+Abuelo Jose,M092,México-Inglaterra,1-2
+Abuelo Jose,M093,Colombia-España,0-1
+Abuelo Jose,M094,Turquía-Bélgica,1-2
+Abuelo Jose,M095,Argentina-Estados Unidos,2-1
+Abuelo Jose,M096,Suiza-Portugal,1-1
+Adrian Navarro Ochando 2,M089,Alemania-Francia,2-2
+Adrian Navarro Ochando 2,M090,México-Brasil,1-3
+Adrian Navarro Ochando 2,M091,Países Bajos-Senegal,1-0
+Adrian Navarro Ochando 2,M092,Sudáfrica-Inglaterra,0-2
+Adrian Navarro Ochando 2,M093,Colombia-España,1-4
+Adrian Navarro Ochando 2,M094,Turquía-Bélgica,1-3
+Adrian Navarro Ochando 2,M095,Argentina-Paraguay,2-2
+Adrian Navarro Ochando 2,M096,Canadá-Portugal,1-3
+Adrian Navarro Ochando,M089,Alemania-Francia,3-2
+Adrian Navarro Ochando,M090,Sudáfrica-Países Bajos,1-2
+Adrian Navarro Ochando,M091,Brasil-Ecuador,2-0
+Adrian Navarro Ochando,M092,México-Inglaterra,1-3
+Adrian Navarro Ochando,M093,Croacia-España,1-3
+Adrian Navarro Ochando,M094,Paraguay-Bélgica,0-1
+Adrian Navarro Ochando,M095,Argentina-Turquía,2-1
+Adrian Navarro Ochando,M096,Nueva Zelanda-Portugal,0-2
+Agustin Rueda Fuentes,M089,Alemania-Francia,2-2
+Agustin Rueda Fuentes,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Agustin Rueda Fuentes,M091,Brasil-Senegal,4-0
+Agustin Rueda Fuentes,M092,Chequia-Inglaterra,0-3
+Agustin Rueda Fuentes,M093,Croacia-España,2-3
+Agustin Rueda Fuentes,M094,Suiza-Bélgica,1-3
+Agustin Rueda Fuentes,M095,Argentina-Nueva Zelanda,4-0
+Agustin Rueda Fuentes,M096,Catar-Portugal,0-2
+Agustina Martínez Herrero,M089,Alemania-Francia,2-2
+Agustina Martínez Herrero,M090,Chequia-Marruecos,1-2
+Agustina Martínez Herrero,M091,Brasil-Ecuador,2-0
+Agustina Martínez Herrero,M092,México-Inglaterra,0-3
+Agustina Martínez Herrero,M093,Croacia-España,1-2
+Agustina Martínez Herrero,M094,Estados Unidos-Bélgica,0-1
+Agustina Martínez Herrero,M095,Argentina-Irán,3-1
+Agustina Martínez Herrero,M096,Suiza-Portugal,2-2
+Aitor Castrillo,M089,Alemania-Francia,1-2
+Aitor Castrillo,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Aitor Castrillo,M091,Brasil-Noruega,3-1
+Aitor Castrillo,M092,México-Inglaterra,0-1
+Aitor Castrillo,M093,Croacia-España,1-2
+Aitor Castrillo,M094,Paraguay-Bélgica,1-2
+Aitor Castrillo,M095,Argentina-Turquía,3-0
+Aitor Castrillo,M096,Suiza-Portugal,0-2
+AitorgonzáLez,M089,Ecuador-Francia,0-2
+AitorgonzáLez,M090,Chequia-Países Bajos,1-1
+AitorgonzáLez,M091,Brasil-Noruega,2-2
+AitorgonzáLez,M092,México-Inglaterra,1-3
+AitorgonzáLez,M093,Colombia-España,1-2
+AitorgonzáLez,M094,Turquía-Bélgica,1-3
+AitorgonzáLez,M095,Argentina-Paraguay,2-0
+AitorgonzáLez,M096,Suiza-Portugal,0-2
+Alberto Carnero,M089,Alemania-Francia,1-3
+Alberto Carnero,M090,Corea del Sur-Países Bajos,1-2
+Alberto Carnero,M091,Brasil-Costa de Marfil,2-0
+Alberto Carnero,M092,México-Inglaterra,1-0
+Alberto Carnero,M093,Colombia-España,1-2
+Alberto Carnero,M094,Turquía-Bélgica,0-1
+Alberto Carnero,M095,Argentina-Egipto,3-0
+Alberto Carnero,M096,Suiza-Portugal,1-2
+Alberto Conde,M089,Alemania-Francia,1-3
+Alberto Conde,M090,Suiza-Marruecos,0-2
+Alberto Conde,M091,Brasil-Noruega,2-1
+Alberto Conde,M092,México-Inglaterra,1-3
+Alberto Conde,M093,Colombia-España,1-2
+Alberto Conde,M094,Estados Unidos-Bélgica,0-1
+Alberto Conde,M095,Argentina-Paraguay,2-1
+Alberto Conde,M096,Canadá-Portugal,0-2
+Alberto Gomez Bravo,M089,Alemania-Francia,1-2
+Alberto Gomez Bravo,M090,Corea del Sur-Países Bajos,1-3
+Alberto Gomez Bravo,M091,Brasil-Noruega,2-1
+Alberto Gomez Bravo,M092,México-Inglaterra,0-1
+Alberto Gomez Bravo,M093,Croacia-España,1-2
+Alberto Gomez Bravo,M094,Turquía-Bélgica,0-1
+Alberto Gomez Bravo,M095,Argentina-Estados Unidos,3-1
+Alberto Gomez Bravo,M096,Suiza-Portugal,0-1
+Alberto Lupo,M089,Alemania-Francia,1-2
+Alberto Lupo,M090,Suiza-Países Bajos,1-2
+Alberto Lupo,M091,Brasil-Senegal,2-1
+Alberto Lupo,M092,México-Inglaterra,1-2
+Alberto Lupo,M093,Croacia-España,1-2
+Alberto Lupo,M094,Turquía-Bélgica,2-1
+Alberto Lupo,M095,Argentina-Estados Unidos,2-1
+Alberto Lupo,M096,Canadá-Portugal,1-2
+Alberto Munoz V1,M089,Alemania-Francia,1-2
+Alberto Munoz V1,M090,Canadá-Marruecos,0-2
+Alberto Munoz V1,M091,Brasil-Costa de Marfil,2-0
+Alberto Munoz V1,M092,México-Inglaterra,1-2
+Alberto Munoz V1,M093,Colombia-España,1-2
+Alberto Munoz V1,M094,Estados Unidos-Bélgica,0-1
+Alberto Munoz V1,M095,Argentina-Egipto,2-0
+Alberto Munoz V1,M096,Suiza-Portugal,1-2
+Alberto Munoz V2,M089,Alemania-Francia,2-2
+Alberto Munoz V2,M090,Corea del Sur-Brasil,0-2
+Alberto Munoz V2,M091,Marruecos-Noruega,3-2
+Alberto Munoz V2,M092,México-Inglaterra,1-2
+Alberto Munoz V2,M093,Croacia-España,0-3
+Alberto Munoz V2,M094,Estados Unidos-Bélgica,0-0
+Alberto Munoz V2,M095,Uruguay-Turquía,2-0
+Alberto Munoz V2,M096,Canadá-Portugal,1-3
+Alejadro Tejado Heredia,M089,Alemania-Francia,2-2
+Alejadro Tejado Heredia,M090,Chequia-Países Bajos,0-2
+Alejadro Tejado Heredia,M091,Brasil-Ecuador,3-1
+Alejadro Tejado Heredia,M092,México-Inglaterra,0-3
+Alejadro Tejado Heredia,M093,Colombia-España,1-2
+Alejadro Tejado Heredia,M094,Turquía-Bélgica,0-1
+Alejadro Tejado Heredia,M095,Argentina-Egipto,2-1
+Alejadro Tejado Heredia,M096,Suiza-Portugal,0-3
+Alejandra Bourda,M089,-,-
+Alejandra Bourda,M090,-,-
+Alejandra Bourda,M091,-,-
+Alejandra Bourda,M092,-,-
+Alejandra Bourda,M093,-,-
+Alejandra Bourda,M094,-,-
+Alejandra Bourda,M095,-,-
+Alejandra Bourda,M096,-,-
+Alejandro MáRmol,M089,Alemania-Francia,1-2
+Alejandro MáRmol,M090,Sudáfrica-Marruecos,1-3
+Alejandro MáRmol,M091,Brasil-Costa de Marfil,2-0
+Alejandro MáRmol,M092,México-Croacia,1-2
+Alejandro MáRmol,M093,Inglaterra-España,2-3
+Alejandro MáRmol,M094,Turquía-Senegal,1-2
+Alejandro MáRmol,M095,Argentina-Egipto,3-2
+Alejandro MáRmol,M096,Suiza-Colombia,1-1
+Alejandro Soto,M089,Alemania-Francia,2-1
+Alejandro Soto,M090,México-Países Bajos,1-2
+Alejandro Soto,M091,Japón-Ecuador,1-1
+Alejandro Soto,M092,Arabia Saudí-Inglaterra,0-4
+Alejandro Soto,M093,Colombia-Uruguay,1-0
+Alejandro Soto,M094,Estados Unidos-Bélgica,2-1
+Alejandro Soto,M095,España-Turquía,2-1
+Alejandro Soto,M096,Costa de Marfil-Portugal,1-2
+Alex Garcia,M089,Alemania-Francia,1-2
+Alex Garcia,M090,Canadá-Marruecos,0-2
+Alex Garcia,M091,Brasil-Senegal,2-1
+Alex Garcia,M092,México-Inglaterra,2-2
+Alex Garcia,M093,Colombia-España,1-3
+Alex Garcia,M094,Turquía-Bélgica,2-1
+Alex Garcia,M095,Argentina-Egipto,3-1
+Alex Garcia,M096,Suiza-Portugal,0-2
+Alex Gonzalo,M089,Marruecos-Noruega,0-1
+Alex Gonzalo,M090,Corea del Sur-Alemania,1-0
+Alex Gonzalo,M091,Japón-Francia,1-1
+Alex Gonzalo,M092,México-Inglaterra,1-2
+Alex Gonzalo,M093,Uruguay-Croacia,2-2
+Alex Gonzalo,M094,Bélgica-Turquía,1-1
+Alex Gonzalo,M095,Estados Unidos-Portugal,0-1
+Alex Gonzalo,M096,Canadá-España,0-2
+Alvaro Mendez Casquero,M089,Alemania-Francia,2-3
+Alvaro Mendez Casquero,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Alvaro Mendez Casquero,M091,Brasil-Ecuador,1-0
+Alvaro Mendez Casquero,M092,México-Inglaterra,0-1
+Alvaro Mendez Casquero,M093,Colombia-España,1-2
+Alvaro Mendez Casquero,M094,Turquía-Bélgica,1-1
+Alvaro Mendez Casquero,M095,Argentina-Estados Unidos,3-1
+Alvaro Mendez Casquero,M096,Suiza-Portugal,1-1
+Alvaro PeñA Y Santi Asensio,M089,Alemania-Francia,1-4
+Alvaro PeñA Y Santi Asensio,M090,Chequia-Países Bajos,1-2
+Alvaro PeñA Y Santi Asensio,M091,Brasil-Costa de Marfil,2-1
+Alvaro PeñA Y Santi Asensio,M092,Ecuador-Inglaterra,2-1
+Alvaro PeñA Y Santi Asensio,M093,Croacia-España,0-3
+Alvaro PeñA Y Santi Asensio,M094,Turquía-Bélgica,0-2
+Alvaro PeñA Y Santi Asensio,M095,Uruguay-Estados Unidos,2-0
+Alvaro PeñA Y Santi Asensio,M096,Suiza-Portugal,0-3
+Alvaro PeñA,M089,Alemania-Francia,2-3
+Alvaro PeñA,M090,Canadá-Marruecos,1-2
+Alvaro PeñA,M091,Brasil-Noruega,2-1
+Alvaro PeñA,M092,México-Inglaterra,1-2
+Alvaro PeñA,M093,Colombia-España,0-2
+Alvaro PeñA,M094,Turquía-Bélgica,1-2
+Alvaro PeñA,M095,Argentina-Estados Unidos,3-0
+Alvaro PeñA,M096,Ecuador-Portugal,1-2
+Alvaro De Simon,M089,Alemania-Francia,1-2
+Alvaro De Simon,M090,México-Marruecos,0-2
+Alvaro De Simon,M091,Brasil-Noruega,3-1
+Alvaro De Simon,M092,Corea del Sur-Inglaterra,0-2
+Alvaro De Simon,M093,Colombia-España,1-2
+Alvaro De Simon,M094,Japón-Bélgica,1-1
+Alvaro De Simon,M095,Argentina-Estados Unidos,2-0
+Alvaro De Simon,M096,Suiza-Portugal,0-1
+Alvaro Garcia Campillo,M089,Alemania-Francia,1-2
+Alvaro Garcia Campillo,M090,Chequia-Países Bajos,0-2
+Alvaro Garcia Campillo,M091,Brasil-Ecuador,2-1
+Alvaro Garcia Campillo,M092,Costa de Marfil-Inglaterra,2-1
+Alvaro Garcia Campillo,M093,Colombia-España,1-2
+Alvaro Garcia Campillo,M094,Estados Unidos-Bélgica,2-3
+Alvaro Garcia Campillo,M095,Argentina-Turquía,3-2
+Alvaro Garcia Campillo,M096,Suiza-Portugal,1-2
+Alvaro+Nico,M089,Alemania-Francia,2-1
+Alvaro+Nico,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Alvaro+Nico,M091,Brasil-Ecuador,3-1
+Alvaro+Nico,M092,México-Inglaterra,1-2
+Alvaro+Nico,M093,Colombia-España,2-3
+Alvaro+Nico,M094,Turquía-Bélgica,1-1
+Alvaro+Nico,M095,Argentina-Paraguay,3-0
+Alvaro+Nico,M096,Suiza-Portugal,0-2
+Ametzzabala,M089,Ecuador-Francia,1-2
+Ametzzabala,M090,Chequia-Marruecos,0-2
+Ametzzabala,M091,Brasil-Alemania,1-1
+Ametzzabala,M092,Costa de Marfil-Inglaterra,1-3
+Ametzzabala,M093,Colombia-España,1-2
+Ametzzabala,M094,Turquía-Bélgica,2-1
+Ametzzabala,M095,Argentina-Estados Unidos,2-0
+Ametzzabala,M096,Suiza-Portugal,0-2
+Ana Garcia,M089,Alemania-Francia,3-3
+Ana Garcia,M090,Chequia-Países Bajos,0-2
+Ana Garcia,M091,Brasil-Ecuador,1-1
+Ana Garcia,M092,México-Inglaterra,1-3
+Ana Garcia,M093,Colombia-España,1-2
+Ana Garcia,M094,Turquía-Bélgica,1-2
+Ana Garcia,M095,Argentina-Egipto,2-1
+Ana Garcia,M096,Suiza-Portugal,1-3
+Ana López,M089,Alemania-Suecia,2-1
+Ana López,M090,Chequia-Países Bajos,3-1
+Ana López,M091,Brasil-Ecuador,3-1
+Ana López,M092,Marruecos-Panamá,1-0
+Ana López,M093,Colombia-Uruguay,0-2
+Ana López,M094,Paraguay-Nueva Zelanda,2-1
+Ana López,M095,Argentina-Bélgica,3-0
+Ana López,M096,Egipto-Portugal,1-2
+Andres Garrido Ramirez,M089,Alemania-Francia,2-2
+Andres Garrido Ramirez,M090,Corea del Sur-Países Bajos,1-2
+Andres Garrido Ramirez,M091,Brasil-Noruega,2-1
+Andres Garrido Ramirez,M092,México-Inglaterra,1-2
+Andres Garrido Ramirez,M093,Croacia-España,1-2
+Andres Garrido Ramirez,M094,Estados Unidos-Bélgica,1-2
+Andres Garrido Ramirez,M095,Argentina-Turquía,2-1
+Andres Garrido Ramirez,M096,Suiza-Portugal,1-2
+Andres Guzman,M089,Alemania-Francia,1-3
+Andres Guzman,M090,Corea del Sur-Marruecos,1-3
+Andres Guzman,M091,Brasil-Noruega,3-3
+Andres Guzman,M092,México-Senegal,2-2
+Andres Guzman,M093,Colombia-España,0-2
+Andres Guzman,M094,Turquía-Egipto,3-1
+Andres Guzman,M095,Argentina-Paraguay,2-0
+Andres Guzman,M096,Ecuador-Portugal,0-1
+Andy Garcia,M089,Alemania-Francia,1-2
+Andy Garcia,M090,Corea del Sur-Países Bajos,1-3
+Andy Garcia,M091,Brasil-Noruega,2-1
+Andy Garcia,M092,México-Inglaterra,2-2
+Andy Garcia,M093,Colombia-España,1-3
+Andy Garcia,M094,Turquía-Bélgica,1-3
+Andy Garcia,M095,Argentina-Egipto,3-1
+Andy Garcia,M096,Austria-Portugal,0-2
+Aneel Grover,M089,Escocia-Francia,1-3
+Aneel Grover,M090,Suiza-Marruecos,1-2
+Aneel Grover,M091,Brasil-Costa de Marfil,2-0
+Aneel Grover,M092,México-Inglaterra,1-2
+Aneel Grover,M093,Colombia-España,1-1
+Aneel Grover,M094,Turquía-Bélgica,1-2
+Aneel Grover,M095,Argentina-Egipto,1-2
+Aneel Grover,M096,Nueva Zelanda-Portugal,1-3
+Antonio Cubero,M089,Alemania-Francia,1-2
+Antonio Cubero,M090,México-Países Bajos,1-3
+Antonio Cubero,M091,Japón-Noruega,2-1
+Antonio Cubero,M092,Chequia-Inglaterra,1-1
+Antonio Cubero,M093,Colombia-España,1-2
+Antonio Cubero,M094,Estados Unidos-Egipto,1-0
+Antonio Cubero,M095,Argentina-Turquía,1-2
+Antonio Cubero,M096,Canadá-Portugal,1-2
+Antonio Mediavilla 01,M089,Alemania-Francia,1-3
+Antonio Mediavilla 01,M090,Bosnia y Herzegovina-Países Bajos,1-2
+Antonio Mediavilla 01,M091,Brasil-Ecuador,2-1
+Antonio Mediavilla 01,M092,México-Inglaterra,1-2
+Antonio Mediavilla 01,M093,Colombia-España,1-2
+Antonio Mediavilla 01,M094,Turquía-Bélgica,1-1
+Antonio Mediavilla 01,M095,Argentina-Egipto,2-0
+Antonio Mediavilla 01,M096,Suiza-Portugal,0-1
+Antonio Mediavilla 02,M089,Alemania-Francia,2-1
+Antonio Mediavilla 02,M090,Chequia-Marruecos,1-2
+Antonio Mediavilla 02,M091,Brasil-Ecuador,2-1
+Antonio Mediavilla 02,M092,México-Inglaterra,1-2
+Antonio Mediavilla 02,M093,Croacia-España,1-2
+Antonio Mediavilla 02,M094,Turquía-Egipto,1-0
+Antonio Mediavilla 02,M095,Argentina-Bélgica,2-0
+Antonio Mediavilla 02,M096,Bosnia y Herzegovina-Portugal,0-1
+Antonio Mediavilla 03,M089,Alemania-Francia,1-1
+Antonio Mediavilla 03,M090,México-Países Bajos,2-1
+Antonio Mediavilla 03,M091,Brasil-Ecuador,2-1
+Antonio Mediavilla 03,M092,Chequia-Inglaterra,1-2
+Antonio Mediavilla 03,M093,Croacia-España,1-2
+Antonio Mediavilla 03,M094,Turquía-Bélgica,1-0
+Antonio Mediavilla 03,M095,Argentina-Estados Unidos,2-0
+Antonio Mediavilla 03,M096,Suiza-Portugal,0-2
+Antonio Salinero,M089,Alemania-Francia,1-2
+Antonio Salinero,M090,Canadá-Países Bajos,0-2
+Antonio Salinero,M091,Brasil-Noruega,2-1
+Antonio Salinero,M092,México-Inglaterra,0-2
+Antonio Salinero,M093,Colombia-España,0-2
+Antonio Salinero,M094,Estados Unidos-Bélgica,1-2
+Antonio Salinero,M095,Argentina-Turquía,2-0
+Antonio Salinero,M096,Suiza-Portugal,1-2
+Antonio Serrano,M089,Alemania-Francia,1-2
+Antonio Serrano,M090,Chequia-Países Bajos,1-2
+Antonio Serrano,M091,Brasil-Noruega,2-1
+Antonio Serrano,M092,Marruecos-Inglaterra,0-2
+Antonio Serrano,M093,Croacia-España,0-2
+Antonio Serrano,M094,Bosnia y Herzegovina-Bélgica,0-1
+Antonio Serrano,M095,Argentina-Turquía,2-1
+Antonio Serrano,M096,Suiza-Portugal,0-1
+Aritz Anorga 2,M089,Alemania-Francia,1-2
+Aritz Anorga 2,M090,Corea del Sur-Países Bajos,0-2
+Aritz Anorga 2,M091,Japón-Noruega,1-0
+Aritz Anorga 2,M092,México-Inglaterra,0-3
+Aritz Anorga 2,M093,Colombia-España,0-2
+Aritz Anorga 2,M094,Turquía-Bélgica,1-2
+Aritz Anorga 2,M095,Uruguay-Estados Unidos,2-1
+Aritz Anorga 2,M096,Suiza-Portugal,1-2
+Aritz Anorga,M089,Alemania-Francia,2-1
+Aritz Anorga,M090,Corea del Sur-Países Bajos,0-1
+Aritz Anorga,M091,Brasil-Ecuador,3-0
+Aritz Anorga,M092,México-Inglaterra,0-3
+Aritz Anorga,M093,Colombia-Uruguay,0-2
+Aritz Anorga,M094,Turquía-Bélgica,2-1
+Aritz Anorga,M095,España-Estados Unidos,2-1
+Aritz Anorga,M096,Suiza-Portugal,2-1
+Asier Aguado,M089,Alemania-Francia,1-2
+Asier Aguado,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Asier Aguado,M091,Brasil-Ecuador,2-0
+Asier Aguado,M092,Chequia-Inglaterra,0-2
+Asier Aguado,M093,Croacia-España,0-2
+Asier Aguado,M094,Turquía-Bélgica,1-2
+Asier Aguado,M095,Argentina-Egipto,3-0
+Asier Aguado,M096,Suiza-Portugal,1-2
+ÁLvaro FernáNdez,M089,Alemania-Francia,1-2
+ÁLvaro FernáNdez,M090,México-Países Bajos,1-3
+ÁLvaro FernáNdez,M091,Marruecos-Noruega,2-1
+ÁLvaro FernáNdez,M092,Corea del Sur-Inglaterra,0-1
+ÁLvaro FernáNdez,M093,Croacia-España,1-2
+ÁLvaro FernáNdez,M094,Turquía-Bélgica,3-2
+ÁLvaro FernáNdez,M095,Argentina-Egipto,3-1
+ÁLvaro FernáNdez,M096,Suiza-Portugal,1-2
+Beńat Zubiaur1,M089,Alemania-Francia,0-2
+Beńat Zubiaur1,M090,México-Brasil,1-3
+Beńat Zubiaur1,M091,Marruecos-Noruega,2-1
+Beńat Zubiaur1,M092,Sudáfrica-Inglaterra,1-3
+Beńat Zubiaur1,M093,Croacia-Uruguay,0-1
+Beńat Zubiaur1,M094,Turquía-Bélgica,0-1
+Beńat Zubiaur1,M095,Argentina-Egipto,2-0
+Beńat Zubiaur1,M096,Suiza-Portugal,0-3
+Beńat Zubiaur2,M089,Alemania-Francia,1-3
+Beńat Zubiaur2,M090,Canadá-Marruecos,1-2
+Beńat Zubiaur2,M091,Brasil-Noruega,2-0
+Beńat Zubiaur2,M092,México-Inglaterra,0-3
+Beńat Zubiaur2,M093,Colombia-España,0-2
+Beńat Zubiaur2,M094,Turquía-Bélgica,1-2
+Beńat Zubiaur2,M095,Argentina-Egipto,2-0
+Beńat Zubiaur2,M096,Suiza-Portugal,0-1
+Borja Poza,M089,Alemania-Francia,1-2
+Borja Poza,M090,Canadá-Marruecos,1-2
+Borja Poza,M091,Brasil-Costa de Marfil,2-1
+Borja Poza,M092,México-Inglaterra,0-2
+Borja Poza,M093,Colombia-España,1-3
+Borja Poza,M094,Estados Unidos-Bélgica,1-1
+Borja Poza,M095,Argentina-Turquía,2-1
+Borja Poza,M096,Suiza-Portugal,0-2
+Carlos Martinez,M089,Brasil-Noruega,0-2
+Carlos Martinez,M090,Corea del Sur-Alemania,2-1
+Carlos Martinez,M091,Países Bajos-Francia,1-2
+Carlos Martinez,M092,México-Inglaterra,1-0
+Carlos Martinez,M093,España-Colombia,2-1
+Carlos Martinez,M094,Bélgica-Turquía,2-1
+Carlos Martinez,M095,Estados Unidos-Portugal,0-2
+Carlos Martinez,M096,Suiza-Argentina,1-2
+Carlos Sisco T,M089,Alemania-Francia,1-2
+Carlos Sisco T,M090,Chequia-Países Bajos,0-3
+Carlos Sisco T,M091,Brasil-Noruega,2-1
+Carlos Sisco T,M092,México-Inglaterra,0-2
+Carlos Sisco T,M093,Croacia-España,1-2
+Carlos Sisco T,M094,Turquía-Bélgica,1-0
+Carlos Sisco T,M095,Argentina-Australia,2-0
+Carlos Sisco T,M096,Suiza-Portugal,1-3
+Clasemamita,M089,Alemania-Francia,1-2
+Clasemamita,M090,Chequia-Países Bajos,0-2
+Clasemamita,M091,Marruecos-Senegal,1-0
+Clasemamita,M092,México-Inglaterra,0-1
+Clasemamita,M093,Colombia-España,1-2
+Clasemamita,M094,Turquía-Bélgica,0-2
+Clasemamita,M095,Argentina-Paraguay,2-1
+Clasemamita,M096,Suiza-Portugal,1-2
+Consultores Muñoz 1,M089,Alemania-Francia,0-1
+Consultores Muñoz 1,M090,Corea del Sur-Marruecos,0-0
+Consultores Muñoz 1,M091,Países Bajos-Ecuador,2-2
+Consultores Muñoz 1,M092,México-Inglaterra,0-1
+Consultores Muñoz 1,M093,Portugal-España,1-1
+Consultores Muñoz 1,M094,Estados Unidos-Bélgica,0-2
+Consultores Muñoz 1,M095,Argentina-Turquía,2-0
+Consultores Muñoz 1,M096,Suiza-Colombia,0-2
+Consultores Muñoz 2,M089,Alemania-Senegal,2-1
+Consultores Muñoz 2,M090,Corea del Sur-Japón,1-1
+Consultores Muñoz 2,M091,Brasil-Francia,2-1
+Consultores Muñoz 2,M092,México-Inglaterra,1-2
+Consultores Muñoz 2,M093,Colombia-España,2-1
+Consultores Muñoz 2,M094,Estados Unidos-Bélgica,0-1
+Consultores Muñoz 2,M095,Austria-Paraguay,0-0
+Consultores Muñoz 2,M096,Suiza-Portugal,0-1
+Consultores Muñoz 3,M089,Alemania-Francia,0-1
+Consultores Muñoz 3,M090,Corea del Sur-Japón,1-1
+Consultores Muñoz 3,M091,Brasil-Ecuador,0-0
+Consultores Muñoz 3,M092,México-Inglaterra,0-1
+Consultores Muñoz 3,M093,Colombia-España,1-2
+Consultores Muñoz 3,M094,Turquía-Bélgica,2-1
+Consultores Muñoz 3,M095,Argentina-Estados Unidos,2-0
+Consultores Muñoz 3,M096,Suiza-Portugal,1-2
+Cris Garrido 1,M089,Alemania-Francia,1-2
+Cris Garrido 1,M090,Canadá-Marruecos,1-2
+Cris Garrido 1,M091,Brasil-Senegal,2-1
+Cris Garrido 1,M092,Escocia-Inglaterra,1-2
+Cris Garrido 1,M093,Croacia-España,1-2
+Cris Garrido 1,M094,Estados Unidos-Bélgica,1-2
+Cris Garrido 1,M095,Argentina-Egipto,2-0
+Cris Garrido 1,M096,Suiza-Portugal,1-2
+Cris Garrido 2,M089,Alemania-Francia,2-2
+Cris Garrido 2,M090,Canadá-Brasil,0-4
+Cris Garrido 2,M091,Escocia-Ecuador,2-0
+Cris Garrido 2,M092,México-Inglaterra,1-2
+Cris Garrido 2,M093,Croacia-España,1-3
+Cris Garrido 2,M094,Estados Unidos-Bélgica,0-2
+Cris Garrido 2,M095,Argentina-Australia,3-0
+Cris Garrido 2,M096,Suiza-Portugal,0-2
+Carlos Buil,M089,Alemania-Francia,2-4
+Carlos Buil,M090,México-Países Bajos,1-3
+Carlos Buil,M091,Brasil-Noruega,3-2
+Carlos Buil,M092,Chequia-Inglaterra,1-3
+Carlos Buil,M093,Croacia-España,1-3
+Carlos Buil,M094,Japón-Bélgica,1-2
+Carlos Buil,M095,Argentina-Egipto,2-1
+Carlos Buil,M096,Suiza-Portugal,1-3
+Carlos Chomón,M089,Alemania-Francia,1-2
+Carlos Chomón,M090,Corea del Sur-Marruecos,1-2
+Carlos Chomón,M091,Brasil-Noruega,2-1
+Carlos Chomón,M092,México-Inglaterra,1-2
+Carlos Chomón,M093,Colombia-España,1-3
+Carlos Chomón,M094,Turquía-Bélgica,1-1
+Carlos Chomón,M095,Argentina-Estados Unidos,2-0
+Carlos Chomón,M096,Suiza-Portugal,1-2
+Carlos Lizana Crespo,M089,Alemania-Francia,2-3
+Carlos Lizana Crespo,M090,Bosnia y Herzegovina-Marruecos,0-1
+Carlos Lizana Crespo,M091,Brasil-Noruega,2-1
+Carlos Lizana Crespo,M092,Chequia-Inglaterra,0-2
+Carlos Lizana Crespo,M093,Colombia-España,1-2
+Carlos Lizana Crespo,M094,Turquía-Egipto,1-1
+Carlos Lizana Crespo,M095,Argentina-Estados Unidos,2-1
+Carlos Lizana Crespo,M096,Irán-Portugal,1-3
+Carlos Martinez Clemente,M089,Alemania-Francia,1-2
+Carlos Martinez Clemente,M090,Sudáfrica-Países Bajos,0-2
+Carlos Martinez Clemente,M091,Marruecos-Noruega,1-1
+Carlos Martinez Clemente,M092,Brasil-Inglaterra,0-4
+Carlos Martinez Clemente,M093,Croacia-España,0-2
+Carlos Martinez Clemente,M094,Estados Unidos-Bélgica,1-2
+Carlos Martinez Clemente,M095,Uruguay-Turquía,1-0
+Carlos Martinez Clemente,M096,Canadá-Portugal,0-2
+Carlos Molina,M089,Alemania-Francia,1-1
+Carlos Molina,M090,Chequia-Suecia,1-1
+Carlos Molina,M091,Brasil-Noruega,2-0
+Carlos Molina,M092,México-Inglaterra,0-1
+Carlos Molina,M093,Croacia-España,0-2
+Carlos Molina,M094,Estados Unidos-Egipto,0-1
+Carlos Molina,M095,Argentina-Bélgica,2-0
+Carlos Molina,M096,Suiza-Portugal,0-2
+Carlos Mulero,M089,Alemania-Francia,1-3
+Carlos Mulero,M090,Canadá-Marruecos,1-2
+Carlos Mulero,M091,Brasil-Senegal,3-2
+Carlos Mulero,M092,México-Inglaterra,1-3
+Carlos Mulero,M093,Colombia-España,2-3
+Carlos Mulero,M094,Estados Unidos-Bélgica,1-3
+Carlos Mulero,M095,Argentina-Turquía,2-0
+Carlos Mulero,M096,Suiza-Portugal,1-2
+Carlos Peña,M089,Alemania-Francia,2-1
+Carlos Peña,M090,Canadá-Países Bajos,1-2
+Carlos Peña,M091,Brasil-Senegal,2-1
+Carlos Peña,M092,Arabia Saudí-Inglaterra,0-3
+Carlos Peña,M093,Colombia-España,1-2
+Carlos Peña,M094,Estados Unidos-Bélgica,2-1
+Carlos Peña,M095,Argentina-Turquía,2-1
+Carlos Peña,M096,Austria-Portugal,1-2
+Carlos Pérez,M089,Alemania-Francia,1-2
+Carlos Pérez,M090,Canadá-Marruecos,0-2
+Carlos Pérez,M091,Brasil-Senegal,2-0
+Carlos Pérez,M092,Corea del Sur-Noruega,1-3
+Carlos Pérez,M093,Ghana-España,1-2
+Carlos Pérez,M094,Turquía-Bélgica,1-3
+Carlos Pérez,M095,Argentina-Estados Unidos,2-0
+Carlos Pérez,M096,Suiza-Portugal,0-2
+Carlos Vazquez 1,M089,Alemania-Francia,1-3
+Carlos Vazquez 1,M090,Suiza-Marruecos,2-1
+Carlos Vazquez 1,M091,Brasil-Noruega,2-1
+Carlos Vazquez 1,M092,México-Inglaterra,2-1
+Carlos Vazquez 1,M093,Croacia-España,1-4
+Carlos Vazquez 1,M094,Turquía-Bélgica,1-3
+Carlos Vazquez 1,M095,Argentina-Estados Unidos,3-1
+Carlos Vazquez 1,M096,Costa de Marfil-Portugal,1-3
+Carlos Vazquez 2,M089,Alemania-Francia,2-3
+Carlos Vazquez 2,M090,Canadá-Países Bajos,1-3
+Carlos Vazquez 2,M091,Brasil-Noruega,2-1
+Carlos Vazquez 2,M092,México-Inglaterra,0-1
+Carlos Vazquez 2,M093,Colombia-España,2-2
+Carlos Vazquez 2,M094,Turquía-Bélgica,1-2
+Carlos Vazquez 2,M095,Uruguay-Estados Unidos,1-0
+Carlos Vazquez 2,M096,Ecuador-Portugal,1-3
+Carlosgilmariscal,M089,Ecuador-Francia,1-3
+Carlosgilmariscal,M090,Bosnia y Herzegovina-Marruecos,1-2
+Carlosgilmariscal,M091,Brasil-Alemania,2-1
+Carlosgilmariscal,M092,México-Inglaterra,2-2
+Carlosgilmariscal,M093,Colombia-España,1-3
+Carlosgilmariscal,M094,Turquía-Corea del Sur,2-1
+Carlosgilmariscal,M095,Argentina-Paraguay,3-2
+Carlosgilmariscal,M096,Suiza-Portugal,0-2
+Carlospulpillo,M089,Alemania-Francia,2-2
+Carlospulpillo,M090,Canadá-Marruecos,0-1
+Carlospulpillo,M091,Brasil-Noruega,4-2
+Carlospulpillo,M092,Costa de Marfil-Inglaterra,1-3
+Carlospulpillo,M093,Colombia-España,1-2
+Carlospulpillo,M094,Turquía-Egipto,2-1
+Carlospulpillo,M095,Uruguay-Bélgica,2-2
+Carlospulpillo,M096,Bosnia y Herzegovina-Portugal,0-2
+Carlosviescas,M089,Alemania-Francia,1-2
+Carlosviescas,M090,Chequia-Países Bajos,0-1
+Carlosviescas,M091,Brasil-Noruega,3-1
+Carlosviescas,M092,México-Inglaterra,1-2
+Carlosviescas,M093,Colombia-España,0-2
+Carlosviescas,M094,Estados Unidos-Egipto,1-1
+Carlosviescas,M095,Argentina-Bélgica,2-2
+Carlosviescas,M096,Suiza-Portugal,1-3
+Carlota Gil Diaz De Miranda,M089,Alemania-Francia,1-2
+Carlota Gil Diaz De Miranda,M090,Suiza-Marruecos,0-1
+Carlota Gil Diaz De Miranda,M091,Brasil-Noruega,2-0
+Carlota Gil Diaz De Miranda,M092,México-Inglaterra,0-2
+Carlota Gil Diaz De Miranda,M093,Colombia-España,0-2
+Carlota Gil Diaz De Miranda,M094,Estados Unidos-Bélgica,1-0
+Carlota Gil Diaz De Miranda,M095,Argentina-Turquía,1-0
+Carlota Gil Diaz De Miranda,M096,Canadá-Portugal,1-3
+Caro Ferrazzi,M089,Alemania-Francia,0-1
+Caro Ferrazzi,M090,Sudáfrica-Escocia,1-1
+Caro Ferrazzi,M091,Brasil-Senegal,2-0
+Caro Ferrazzi,M092,México-Croacia,0-1
+Caro Ferrazzi,M093,Inglaterra-España,0-0
+Caro Ferrazzi,M094,Turquía-Corea del Sur,0-1
+Caro Ferrazzi,M095,Argentina-Paraguay,2-0
+Caro Ferrazzi,M096,Ecuador-Portugal,1-2
+Cayetano Lopez,M089,Alemania-Francia,1-2
+Cayetano Lopez,M090,Canadá-Japón,1-2
+Cayetano Lopez,M091,Brasil-Senegal,2-1
+Cayetano Lopez,M092,México-Inglaterra,1-0
+Cayetano Lopez,M093,Ghana-España,0-2
+Cayetano Lopez,M094,Estados Unidos-Bélgica,1-1
+Cayetano Lopez,M095,Argentina-Egipto,3-1
+Cayetano Lopez,M096,Suiza-Portugal,1-2
+Cesar,M089,Alemania-Francia,2-1
+Cesar,M090,México-Países Bajos,1-2
+Cesar,M091,Brasil-Ecuador,2-0
+Cesar,M092,Chequia-Inglaterra,0-1
+Cesar,M093,Colombia-España,1-2
+Cesar,M094,Estados Unidos-Bélgica,1-2
+Cesar,M095,Argentina-Paraguay,2-1
+Cesar,M096,Suiza-Portugal,1-2
+Chiringuito2017V2,M089,Alemania-Francia,1-2
+Chiringuito2017V2,M090,Canadá-Países Bajos,0-2
+Chiringuito2017V2,M091,Japón-Noruega,1-2
+Chiringuito2017V2,M092,México-Inglaterra,1-3
+Chiringuito2017V2,M093,Colombia-España,0-1
+Chiringuito2017V2,M094,Turquía-Bélgica,0-2
+Chiringuito2017V2,M095,Argentina-Estados Unidos,3-1
+Chiringuito2017V2,M096,Suiza-Portugal,1-4
+Cova Zarauza 1,M089,Brasil-Francia,1-4
+Cova Zarauza 1,M090,Canadá-Suecia,0-0
+Cova Zarauza 1,M091,Países Bajos-Noruega,2-0
+Cova Zarauza 1,M092,Corea del Sur-Inglaterra,1-3
+Cova Zarauza 1,M093,Colombia-España,1-2
+Cova Zarauza 1,M094,Turquía-Bélgica,0-1
+Cova Zarauza 1,M095,Argentina-Estados Unidos,2-0
+Cova Zarauza 1,M096,Suiza-Portugal,1-3
+Cova Zarauza 2,M089,Alemania-Francia,1-3
+Cova Zarauza 2,M090,Corea del Sur-Países Bajos,0-2
+Cova Zarauza 2,M091,Brasil-Ecuador,2-0
+Cova Zarauza 2,M092,México-Inglaterra,0-1
+Cova Zarauza 2,M093,Colombia-España,1-3
+Cova Zarauza 2,M094,Estados Unidos-Bélgica,0-0
+Cova Zarauza 2,M095,Argentina-Egipto,2-0
+Cova Zarauza 2,M096,Canadá-Portugal,1-3
+Daniel Diez Rodriguez,M089,Alemania-Francia,1-2
+Daniel Diez Rodriguez,M090,Chequia-Marruecos,0-1
+Daniel Diez Rodriguez,M091,Brasil-Ecuador,1-1
+Daniel Diez Rodriguez,M092,México-Inglaterra,0-2
+Daniel Diez Rodriguez,M093,Portugal-España,2-2
+Daniel Diez Rodriguez,M094,Turquía-Bélgica,2-1
+Daniel Diez Rodriguez,M095,Argentina-Estados Unidos,2-1
+Daniel Diez Rodriguez,M096,Bosnia y Herzegovina-Colombia,1-3
+Daniel PeñA Y Javier Barrios,M089,Alemania-Francia,2-1
+Daniel PeñA Y Javier Barrios,M090,Canadá-Países Bajos,0-2
+Daniel PeñA Y Javier Barrios,M091,Brasil-Noruega,3-1
+Daniel PeñA Y Javier Barrios,M092,México-Croacia,0-2
+Daniel PeñA Y Javier Barrios,M093,Inglaterra-España,1-2
+Daniel PeñA Y Javier Barrios,M094,Suecia-Bélgica,0-2
+Daniel PeñA Y Javier Barrios,M095,Argentina-Turquía,2-1
+Daniel PeñA Y Javier Barrios,M096,Suiza-Portugal,1-3
+Daniel Perez,M089,Alemania-Francia,1-2
+Daniel Perez,M090,Canadá-Marruecos,0-1
+Daniel Perez,M091,Brasil-Noruega,3-1
+Daniel Perez,M092,México-Inglaterra,0-1
+Daniel Perez,M093,Croacia-España,0-2
+Daniel Perez,M094,Turquía-Bélgica,1-1
+Daniel Perez,M095,Argentina-Estados Unidos,2-1
+Daniel Perez,M096,Suiza-Portugal,0-2
+Davidaguadopano,M089,Alemania-Francia,2-3
+Davidaguadopano,M090,Canadá-Brasil,0-3
+Davidaguadopano,M091,Marruecos-Senegal,3-1
+Davidaguadopano,M092,México-Croacia,1-2
+Davidaguadopano,M093,Inglaterra-España,2-2
+Davidaguadopano,M094,Turquía-Bélgica,2-0
+Davidaguadopano,M095,Argentina-Estados Unidos,3-0
+Davidaguadopano,M096,Suiza-Portugal,2-3
+Diego Viñuela Cordero (2),M089,Alemania-Francia,0-2
+Diego Viñuela Cordero (2),M090,Suiza-Países Bajos,0-2
+Diego Viñuela Cordero (2),M091,Brasil-Noruega,2-0
+Diego Viñuela Cordero (2),M092,Costa de Marfil-Inglaterra,2-1
+Diego Viñuela Cordero (2),M093,RD Congo-España,1-4
+Diego Viñuela Cordero (2),M094,Estados Unidos-Bélgica,1-0
+Diego Viñuela Cordero (2),M095,Argentina-Turquía,3-1
+Diego Viñuela Cordero (2),M096,Argelia-Portugal,0-3
+Diego Viñuela Cordero,M089,Alemania-Francia,1-2
+Diego Viñuela Cordero,M090,Suiza-Países Bajos,0-2
+Diego Viñuela Cordero,M091,Brasil-Ecuador,2-1
+Diego Viñuela Cordero,M092,México-Inglaterra,0-2
+Diego Viñuela Cordero,M093,Colombia-España,1-3
+Diego Viñuela Cordero,M094,Turquía-Bélgica,1-2
+Diego Viñuela Cordero,M095,Argentina-Estados Unidos,3-0
+Diego Viñuela Cordero,M096,Canadá-Portugal,0-4
+Dani Chaqui,M089,Alemania-Francia,2-3
+Dani Chaqui,M090,Canadá-Países Bajos,1-3
+Dani Chaqui,M091,Brasil-Ecuador,3-0
+Dani Chaqui,M092,México-Inglaterra,1-2
+Dani Chaqui,M093,Croacia-España,1-2
+Dani Chaqui,M094,Turquía-Bélgica,2-1
+Dani Chaqui,M095,Argentina-Egipto,2-1
+Dani Chaqui,M096,Suiza-Portugal,1-2
+Daniel Diez Rubio,M089,Alemania-Francia,1-2
+Daniel Diez Rubio,M090,Chequia-Marruecos,0-1
+Daniel Diez Rubio,M091,Brasil-Noruega,2-1
+Daniel Diez Rubio,M092,México-Inglaterra,1-2
+Daniel Diez Rubio,M093,Croacia-España,0-2
+Daniel Diez Rubio,M094,Turquía-Bélgica,0-0
+Daniel Diez Rubio,M095,Argentina-Estados Unidos,2-0
+Daniel Diez Rubio,M096,Suiza-Portugal,1-2
+Danielperezbenitidanielo,M089,Alemania-Francia,2-3
+Danielperezbenitidanielo,M090,México-Países Bajos,1-2
+Danielperezbenitidanielo,M091,Brasil-Ecuador,3-1
+Danielperezbenitidanielo,M092,Corea del Sur-Inglaterra,1-2
+Danielperezbenitidanielo,M093,Colombia-España,1-1
+Danielperezbenitidanielo,M094,Turquía-Bélgica,1-2
+Danielperezbenitidanielo,M095,Uruguay-Estados Unidos,2-1
+Danielperezbenitidanielo,M096,Costa de Marfil-Portugal,1-3
+Danielperezbenito1,M089,Alemania-Francia,2-3
+Danielperezbenito1,M090,Suiza-Marruecos,1-2
+Danielperezbenito1,M091,Brasil-Ecuador,4-1
+Danielperezbenito1,M092,México-Inglaterra,2-3
+Danielperezbenito1,M093,Croacia-España,1-1
+Danielperezbenito1,M094,Turquía-Bélgica,2-1
+Danielperezbenito1,M095,Uruguay-Paraguay,2-1
+Danielperezbenito1,M096,Canadá-Portugal,1-2
+Danielperezbenitobenito,M089,Alemania-Francia,2-3
+Danielperezbenitobenito,M090,Suiza-Marruecos,1-2
+Danielperezbenitobenito,M091,Brasil-Ecuador,4-1
+Danielperezbenitobenito,M092,México-Inglaterra,2-3
+Danielperezbenitobenito,M093,Croacia-España,1-1
+Danielperezbenitobenito,M094,Turquía-Bélgica,2-1
+Danielperezbenitobenito,M095,Uruguay-Paraguay,2-1
+Danielperezbenitobenito,M096,Canadá-Portugal,1-2
+Dany AcuñA,M089,Alemania-Senegal,1-0
+Dany AcuñA,M090,Sudáfrica-Países Bajos,1-2
+Dany AcuñA,M091,Marruecos-Francia,1-3
+Dany AcuñA,M092,México-Ghana,2-0
+Dany AcuñA,M093,Colombia-España,1-3
+Dany AcuñA,M094,Estados Unidos-Bélgica,1-2
+Dany AcuñA,M095,Uruguay-Turquía,2-0
+Dany AcuñA,M096,Austria-Portugal,1-2
+David Raul Espinoza,M089,Alemania-Francia,1-3
+David Raul Espinoza,M090,México-Brasil,1-2
+David Raul Espinoza,M091,Marruecos-Ecuador,2-2
+David Raul Espinoza,M092,Corea del Sur-Inglaterra,2-3
+David Raul Espinoza,M093,Colombia-España,2-3
+David Raul Espinoza,M094,Estados Unidos-Bélgica,2-1
+David Raul Espinoza,M095,Argentina-Paraguay,3-1
+David Raul Espinoza,M096,Suiza-Portugal,0-3
+David Ruiz De Gordoa,M089,Alemania-Francia,2-2
+David Ruiz De Gordoa,M090,Corea del Sur-Países Bajos,0-2
+David Ruiz De Gordoa,M091,Brasil-Senegal,2-0
+David Ruiz De Gordoa,M092,México-Inglaterra,0-1
+David Ruiz De Gordoa,M093,Colombia-España,1-2
+David Ruiz De Gordoa,M094,Australia-Bélgica,2-1
+David Ruiz De Gordoa,M095,Argentina-Irán,2-0
+David Ruiz De Gordoa,M096,Canadá-Portugal,0-3
+DavidgarcíAlóPez,M089,Alemania-Francia,1-2
+DavidgarcíAlóPez,M090,Corea del Sur-Países Bajos,1-2
+DavidgarcíAlóPez,M091,Brasil-Ecuador,2-0
+DavidgarcíAlóPez,M092,México-Inglaterra,1-2
+DavidgarcíAlóPez,M093,Croacia-España,1-3
+DavidgarcíAlóPez,M094,Turquía-Bélgica,1-2
+DavidgarcíAlóPez,M095,Argentina-Irán,2-1
+DavidgarcíAlóPez,M096,Suiza-Portugal,1-2
+Diego Andrés Galea,M089,Alemania-Francia,1-1
+Diego Andrés Galea,M090,Corea del Sur-Países Bajos,1-0
+Diego Andrés Galea,M091,Brasil-Ecuador,3-1
+Diego Andrés Galea,M092,México-Inglaterra,0-1
+Diego Andrés Galea,M093,Croacia-España,1-2
+Diego Andrés Galea,M094,Turquía-Chequia,2-1
+Diego Andrés Galea,M095,Argentina-Bélgica,3-1
+Diego Andrés Galea,M096,Suiza-Portugal,1-3
+Diego Garcia Marin 1,M089,Alemania-Francia,1-2
+Diego Garcia Marin 1,M090,Corea del Sur-Marruecos,0-2
+Diego Garcia Marin 1,M091,Brasil-Noruega,2-1
+Diego Garcia Marin 1,M092,México-Inglaterra,0-1
+Diego Garcia Marin 1,M093,Colombia-España,1-2
+Diego Garcia Marin 1,M094,Turquía-Bélgica,1-2
+Diego Garcia Marin 1,M095,Argentina-Estados Unidos,2-0
+Diego Garcia Marin 1,M096,Suiza-Portugal,1-4
+Diego Garcia Marin 2,M089,Alemania-Francia,1-2
+Diego Garcia Marin 2,M090,Corea del Sur-Marruecos,0-1
+Diego Garcia Marin 2,M091,Brasil-Noruega,1-2
+Diego Garcia Marin 2,M092,México-Inglaterra,0-2
+Diego Garcia Marin 2,M093,Colombia-España,1-3
+Diego Garcia Marin 2,M094,Turquía-Bélgica,1-2
+Diego Garcia Marin 2,M095,Argentina-Estados Unidos,2-1
+Diego Garcia Marin 2,M096,Suiza-Portugal,0-2
+Diego De Alfonso,M089,Paraguay-Francia,0-2
+Diego De Alfonso,M090,Corea del Sur-Marruecos,1-3
+Diego De Alfonso,M091,Brasil-Senegal,2-0
+Diego De Alfonso,M092,México-Inglaterra,0-1
+Diego De Alfonso,M093,Croacia-España,0-1
+Diego De Alfonso,M094,Turquía-Bélgica,1-1
+Diego De Alfonso,M095,Argentina-Egipto,3-0
+Diego De Alfonso,M096,Suiza-Portugal,0-2
+Diegosalinero,M089,Alemania-Francia,1-2
+Diegosalinero,M090,Corea del Sur-Países Bajos,0-2
+Diegosalinero,M091,Brasil-Noruega,2-1
+Diegosalinero,M092,México-Inglaterra,0-2
+Diegosalinero,M093,Croacia-España,1-2
+Diegosalinero,M094,Estados Unidos-Bélgica,2-2
+Diegosalinero,M095,Argentina-Irán,3-0
+Diegosalinero,M096,Suiza-Portugal,1-2
+Domin,M089,Alemania-Francia,1-2
+Domin,M090,Bosnia y Herzegovina-Marruecos,0-1
+Domin,M091,Brasil-Ecuador,1-0
+Domin,M092,Sudáfrica-Inglaterra,1-2
+Domin,M093,Colombia-España,1-2
+Domin,M094,Turquía-Bélgica,2-1
+Domin,M095,Argentina-Egipto,1-0
+Domin,M096,Suiza-Portugal,1-2
+Eaf 2.0,M089,Alemania-Francia,1-3
+Eaf 2.0,M090,Bosnia y Herzegovina-Marruecos,0-2
+Eaf 2.0,M091,Brasil-Noruega,2-1
+Eaf 2.0,M092,México-Senegal,2-0
+Eaf 2.0,M093,Colombia-España,1-2
+Eaf 2.0,M094,Canadá-Bélgica,0-2
+Eaf 2.0,M095,Uruguay-Egipto,1-1
+Eaf 2.0,M096,Ecuador-Portugal,2-3
+Ecar,M089,Alemania-Francia,3-2
+Ecar,M090,Chequia-Japón,1-1
+Ecar,M091,Brasil-Noruega,3-1
+Ecar,M092,Corea del Sur-Inglaterra,1-3
+Ecar,M093,Colombia-España,1-2
+Ecar,M094,Estados Unidos-México,1-2
+Ecar,M095,Uruguay-Egipto,2-1
+Ecar,M096,Suiza-Portugal,1-3
+Emilio,M089,Brasil-Noruega,3-1
+Emilio,M090,México-Alemania,3-2
+Emilio,M091,Japón-Francia,1-2
+Emilio,M092,Corea del Sur-Inglaterra,2-3
+Emilio,M093,España-Croacia,4-2
+Emilio,M094,Bélgica-Estados Unidos,1-2
+Emilio,M095,Egipto-Portugal,1-2
+Emilio,M096,Irán-Argentina,1-1
+Edgardo Tedeschi,M089,Ecuador-Francia,0-2
+Edgardo Tedeschi,M090,México-Países Bajos,0-1
+Edgardo Tedeschi,M091,Brasil-Alemania,1-2
+Edgardo Tedeschi,M092,Chequia-Inglaterra,0-2
+Edgardo Tedeschi,M093,Colombia-España,1-1
+Edgardo Tedeschi,M094,Estados Unidos-Bélgica,1-2
+Edgardo Tedeschi,M095,Argentina-Paraguay,3-0
+Edgardo Tedeschi,M096,Canadá-Portugal,1-3
+Eduardo Fernandez Lagaron,M089,Alemania-Francia,1-2
+Eduardo Fernandez Lagaron,M090,Canadá-Países Bajos,1-3
+Eduardo Fernandez Lagaron,M091,Brasil-Noruega,2-1
+Eduardo Fernandez Lagaron,M092,México-Inglaterra,1-3
+Eduardo Fernandez Lagaron,M093,Colombia-España,0-2
+Eduardo Fernandez Lagaron,M094,Estados Unidos-Bélgica,1-1
+Eduardo Fernandez Lagaron,M095,Argentina-Turquía,2-0
+Eduardo Fernandez Lagaron,M096,Suiza-Portugal,0-2
+Eduardo Álvarez,M089,Alemania-Francia,1-2
+Eduardo Álvarez,M090,Chequia-Países Bajos,1-2
+Eduardo Álvarez,M091,Brasil-Ecuador,3-0
+Eduardo Álvarez,M092,México-Croacia,0-2
+Eduardo Álvarez,M093,Inglaterra-España,1-2
+Eduardo Álvarez,M094,Turquía-Bélgica,1-2
+Eduardo Álvarez,M095,Argentina-Estados Unidos,2-0
+Eduardo Álvarez,M096,Suiza-Portugal,0-2
+Elena DíAz,M089,Alemania-Francia,1-2
+Elena DíAz,M090,México-Marruecos,1-1
+Elena DíAz,M091,Brasil-Noruega,2-1
+Elena DíAz,M092,Chequia-Inglaterra,0-1
+Elena DíAz,M093,Croacia-España,1-2
+Elena DíAz,M094,Turquía-Bélgica,0-2
+Elena DíAz,M095,Argentina-Estados Unidos,3-1
+Elena DíAz,M096,Suiza-Portugal,0-2
+Enrique Martinez,M089,Alemania-Francia,1-2
+Enrique Martinez,M090,Canadá-Países Bajos,2-2
+Enrique Martinez,M091,Brasil-Senegal,2-2
+Enrique Martinez,M092,México-Noruega,2-0
+Enrique Martinez,M093,Colombia-España,1-3
+Enrique Martinez,M094,Estados Unidos-Bélgica,1-2
+Enrique Martinez,M095,Argentina-Turquía,2-0
+Enrique Martinez,M096,Suiza-Portugal,1-2
+Enzo Herrero Sanchez,M089,Alemania-Francia,1-2
+Enzo Herrero Sanchez,M090,México-Países Bajos,2-2
+Enzo Herrero Sanchez,M091,Brasil-Ecuador,3-2
+Enzo Herrero Sanchez,M092,Marruecos-Inglaterra,0-1
+Enzo Herrero Sanchez,M093,Colombia-España,1-2
+Enzo Herrero Sanchez,M094,Turquía-Bélgica,1-3
+Enzo Herrero Sanchez,M095,Argentina-Estados Unidos,3-0
+Enzo Herrero Sanchez,M096,Suiza-Portugal,2-3
+Esquivias,M089,Alemania-Francia,2-2
+Esquivias,M090,Canadá-Marruecos,0-1
+Esquivias,M091,Brasil-Senegal,1-0
+Esquivias,M092,México-Croacia,0-1
+Esquivias,M093,Inglaterra-España,1-1
+Esquivias,M094,Turquía-Bélgica,1-2
+Esquivias,M095,Argentina-Estados Unidos,2-0
+Esquivias,M096,Suiza-Portugal,0-1
+Esteban Pedraz Mourelle1,M089,Alemania-Francia,0-2
+Esteban Pedraz Mourelle1,M090,Corea del Sur-Marruecos,1-2
+Esteban Pedraz Mourelle1,M091,Brasil-Costa de Marfil,3-0
+Esteban Pedraz Mourelle1,M092,México-Inglaterra,1-3
+Esteban Pedraz Mourelle1,M093,Colombia-España,1-1
+Esteban Pedraz Mourelle1,M094,Estados Unidos-Bélgica,0-2
+Esteban Pedraz Mourelle1,M095,Argentina-Turquía,2-0
+Esteban Pedraz Mourelle1,M096,Suiza-Portugal,0-2
+Esteban Pedraz Mourelle2,M089,Alemania-Senegal,0-2
+Esteban Pedraz Mourelle2,M090,Canadá-Marruecos,1-2
+Esteban Pedraz Mourelle2,M091,Brasil-Noruega,3-0
+Esteban Pedraz Mourelle2,M092,Corea del Sur-Ghana,1-3
+Esteban Pedraz Mourelle2,M093,Uzbekistán-Argentina,1-1
+Esteban Pedraz Mourelle2,M094,Paraguay-Chequia,0-2
+Esteban Pedraz Mourelle2,M095,Uruguay-Australia,2-0
+Esteban Pedraz Mourelle2,M096,Suiza-Croacia,0-2
+Familia,M089,Alemania-Francia,1-2
+Familia,M090,Chequia-Marruecos,0-1
+Familia,M091,Brasil-Ecuador,2-1
+Familia,M092,México-Inglaterra,0-1
+Familia,M093,Colombia-España,1-2
+Familia,M094,Turquía-Bélgica,0-1
+Familia,M095,Argentina-Estados Unidos,1-0
+Familia,M096,Suiza-Portugal,0-2
+Felix Hernandez,M089,Alemania-Francia,1-2
+Felix Hernandez,M090,Chequia-Marruecos,0-1
+Felix Hernandez,M091,Brasil-Ecuador,3-1
+Felix Hernandez,M092,Canada-Inglaterra,0-2
+Felix Hernandez,M093,Colombia-España,0-1
+Felix Hernandez,M094,Turquía-Bélgica,1-2
+Felix Hernandez,M095,Argentina-Estados Unidos,2-0
+Felix Hernandez,M096,Canadá-Portugal,0-2
+Fernando Amilpa Y Trujillo Mexico,M089,Alemania-Francia,3-2
+Fernando Amilpa Y Trujillo Mexico,M090,Corea del Sur-Países Bajos,2-3
+Fernando Amilpa Y Trujillo Mexico,M091,Brasil-Noruega,3-1
+Fernando Amilpa Y Trujillo Mexico,M092,México-Inglaterra,2-1
+Fernando Amilpa Y Trujillo Mexico,M093,Croacia-España,2-3
+Fernando Amilpa Y Trujillo Mexico,M094,-,2-3
+Fernando Amilpa Y Trujillo Mexico,M095,-,3-1
+Fernando Amilpa Y Trujillo Mexico,M096,Bosnia y Herzegovina-Portugal,1-3
+Figuras,M089,Alemania-Francia,2-3
+Figuras,M090,Chequia-Países Bajos,0-2
+Figuras,M091,Brasil-Noruega,2-1
+Figuras,M092,Ecuador-Inglaterra,0-3
+Figuras,M093,Colombia-España,0-2
+Figuras,M094,Turquía-Corea del Sur,2-1
+Figuras,M095,Argentina-Estados Unidos,1-0
+Figuras,M096,Canadá-Portugal,1-2
+Francisco Ayuso Martinez 01,M089,Alemania-Francia,1-2
+Francisco Ayuso Martinez 01,M090,México-Países Bajos,1-2
+Francisco Ayuso Martinez 01,M091,Brasil-Noruega,2-0
+Francisco Ayuso Martinez 01,M092,Chequia-Inglaterra,0-2
+Francisco Ayuso Martinez 01,M093,Colombia-España,1-3
+Francisco Ayuso Martinez 01,M094,Estados Unidos-Bélgica,1-2
+Francisco Ayuso Martinez 01,M095,Argentina-Irán,2-0
+Francisco Ayuso Martinez 01,M096,Suiza-Portugal,1-1
+Francisco Ayuso Martinez 02,M089,Alemania-Francia,1-3
+Francisco Ayuso Martinez 02,M090,Chequia-Marruecos,1-2
+Francisco Ayuso Martinez 02,M091,Brasil-Noruega,2-1
+Francisco Ayuso Martinez 02,M092,México-Inglaterra,0-2
+Francisco Ayuso Martinez 02,M093,Croacia-España,0-2
+Francisco Ayuso Martinez 02,M094,Turquía-Bélgica,2-1
+Francisco Ayuso Martinez 02,M095,Argentina-Nueva Zelanda,2-1
+Francisco Ayuso Martinez 02,M096,Suiza-Portugal,1-3
+Felipe Diaz De Miranda 1,M089,Alemania-Francia,2-2
+Felipe Diaz De Miranda 1,M090,Canadá-Brasil,0-2
+Felipe Diaz De Miranda 1,M091,Marruecos-Noruega,1-1
+Felipe Diaz De Miranda 1,M092,México-Inglaterra,1-2
+Felipe Diaz De Miranda 1,M093,Colombia-España,1-2
+Felipe Diaz De Miranda 1,M094,Estados Unidos-Bélgica,2-2
+Felipe Diaz De Miranda 1,M095,Argentina-Turquía,2-0
+Felipe Diaz De Miranda 1,M096,Suiza-Portugal,0-1
+Felipe Diaz De Miranda 2,M089,Alemania-Francia,0-2
+Felipe Diaz De Miranda 2,M090,Chequia-Marruecos,0-2
+Felipe Diaz De Miranda 2,M091,Brasil-Noruega,2-1
+Felipe Diaz De Miranda 2,M092,México-Inglaterra,0-2
+Felipe Diaz De Miranda 2,M093,Portugal-España,1-2
+Felipe Diaz De Miranda 2,M094,Turquía-Bélgica,0-2
+Felipe Diaz De Miranda 2,M095,Argentina-Estados Unidos,2-0
+Felipe Diaz De Miranda 2,M096,Suiza-Colombia,0-2
+Felipe Diaz De Miranda 3,M089,Alemania-Francia,0-2
+Felipe Diaz De Miranda 3,M090,Canadá-Brasil,0-2
+Felipe Diaz De Miranda 3,M091,Marruecos-Ecuador,1-2
+Felipe Diaz De Miranda 3,M092,México-Inglaterra,1-2
+Felipe Diaz De Miranda 3,M093,Colombia-España,1-2
+Felipe Diaz De Miranda 3,M094,Turquía-Bélgica,1-2
+Felipe Diaz De Miranda 3,M095,Uruguay-Estados Unidos,1-0
+Felipe Diaz De Miranda 3,M096,Suiza-Portugal,0-2
+Felipe Escribano Ferrer,M089,Alemania-Francia,1-2
+Felipe Escribano Ferrer,M090,Canadá-Marruecos,0-1
+Felipe Escribano Ferrer,M091,Brasil-Noruega,2-0
+Felipe Escribano Ferrer,M092,México-Inglaterra,1-2
+Felipe Escribano Ferrer,M093,Croacia-España,1-2
+Felipe Escribano Ferrer,M094,Turquía-Bélgica,1-0
+Felipe Escribano Ferrer,M095,Argentina-Egipto,2-0
+Felipe Escribano Ferrer,M096,Suiza-Portugal,1-2
+Fernando Barchino,M089,Alemania-Francia,1-2
+Fernando Barchino,M090,México-Países Bajos,1-1
+Fernando Barchino,M091,Brasil-Ecuador,2-1
+Fernando Barchino,M092,Costa de Marfil-Inglaterra,0-2
+Fernando Barchino,M093,Croacia-España,1-1
+Fernando Barchino,M094,Estados Unidos-Bélgica,1-1
+Fernando Barchino,M095,Argentina-Egipto,2-0
+Fernando Barchino,M096,Canadá-Portugal,1-1
+Fernando Perez Del Castillo,M089,Alemania-Francia,2-3
+Fernando Perez Del Castillo,M090,Canadá-Países Bajos,0-3
+Fernando Perez Del Castillo,M091,Marruecos-Senegal,2-1
+Fernando Perez Del Castillo,M092,México-Inglaterra,1-1
+Fernando Perez Del Castillo,M093,Colombia-España,0-3
+Fernando Perez Del Castillo,M094,Estados Unidos-Bélgica,2-1
+Fernando Perez Del Castillo,M095,Argentina-Turquía,2-1
+Fernando Perez Del Castillo,M096,Suiza-Portugal,1-3
+Fernando Rossique,M089,Alemania-Francia,2-4
+Fernando Rossique,M090,Corea del Sur-Países Bajos,1-3
+Fernando Rossique,M091,Brasil-Senegal,4-0
+Fernando Rossique,M092,Escocia-Inglaterra,2-3
+Fernando Rossique,M093,Colombia-España,0-1
+Fernando Rossique,M094,EEUU-Bélgica,1-1
+Fernando Rossique,M095,Argentina-Egipto,4-0
+Fernando Rossique,M096,Suiza-Portugal,0-0
+Fernando Valencia Gonzalez,M089,Alemania-Japón,3-1
+Fernando Valencia Gonzalez,M090,Corea del Sur-Países Bajos,1-3
+Fernando Valencia Gonzalez,M091,Marruecos-Curazao,4-0
+Fernando Valencia Gonzalez,M092,México-Inglaterra,1-2
+Fernando Valencia Gonzalez,M093,Croacia-España,1-2
+Fernando Valencia Gonzalez,M094,Estados Unidos-Bélgica,2-3
+Fernando Valencia Gonzalez,M095,Argentina-Australia,3-1
+Fernando Valencia Gonzalez,M096,Canadá-Portugal,1-2
+Francisco Javier Diez Cuadrado,M089,Alemania-Francia,0-2
+Francisco Javier Diez Cuadrado,M090,Bosnia y Herzegovina-Japón,0-1
+Francisco Javier Diez Cuadrado,M091,Brasil-Ecuador,1-0
+Francisco Javier Diez Cuadrado,M092,Chequia-Inglaterra,0-1
+Francisco Javier Diez Cuadrado,M093,Colombia-España,0-2
+Francisco Javier Diez Cuadrado,M094,Estados Unidos-México,0-1
+Francisco Javier Diez Cuadrado,M095,Argentina-Turquía,2-1
+Francisco Javier Diez Cuadrado,M096,Suiza-Portugal,1-1
+Francisco Miguelez,M089,Alemania-Senegal,0-2
+Francisco Miguelez,M090,Suiza-Brasil,0-3
+Francisco Miguelez,M091,Marruecos-Francia,0-1
+Francisco Miguelez,M092,México-Inglaterra,0-2
+Francisco Miguelez,M093,Croacia-España,1-2
+Francisco Miguelez,M094,Noruega-Bélgica,1-0
+Francisco Miguelez,M095,Uruguay-Estados Unidos,1-0
+Francisco Miguelez,M096,Canadá-Portugal,2-1
+Garcia´S,M089,Alemania-Francia,1-3
+Garcia´S,M090,Corea del Sur-Marruecos,1-2
+Garcia´S,M091,Brasil-Senegal,2-1
+Garcia´S,M092,México-Inglaterra,1-3
+Garcia´S,M093,Colombia-España,1-3
+Garcia´S,M094,Estados Unidos-Bélgica,0-2
+Garcia´S,M095,Argentina-Turquía,2-1
+Garcia´S,M096,Suiza-Portugal,0-3
+Gp,M089,Alemania-Francia,1-2
+Gp,M090,México-Brasil,0-2
+Gp,M091,Marruecos-Ecuador,1-0
+Gp,M092,Costa de Marfil-Inglaterra,1-0
+Gp,M093,Colombia-España,1-2
+Gp,M094,Canadá-Bélgica,0-2
+Gp,M095,Argentina-Estados Unidos,2-0
+Gp,M096,Suiza-Portugal,1-2
+Gadearuizdecastroviejo,M089,Alemania-Francia,1-3
+Gadearuizdecastroviejo,M090,Sudáfrica-Suecia,0-1
+Gadearuizdecastroviejo,M091,Brasil-Noruega,3-1
+Gadearuizdecastroviejo,M092,México-Inglaterra,0-2
+Gadearuizdecastroviejo,M093,Croacia-España,1-2
+Gadearuizdecastroviejo,M094,Suiza-Austria,1-2
+Gadearuizdecastroviejo,M095,Argentina-Egipto,2-0
+Gadearuizdecastroviejo,M096,Canadá-Portugal,0-1
+Goni Nacho,M089,Alemania-Francia,1-2
+Goni Nacho,M090,Corea del Sur-Marruecos,0-2
+Goni Nacho,M091,Brasil-Senegal,3-1
+Goni Nacho,M092,México-Inglaterra,0-2
+Goni Nacho,M093,Colombia-España,1-2
+Goni Nacho,M094,Turquía-Bélgica,1-1
+Goni Nacho,M095,Argentina-Estados Unidos,3-0
+Goni Nacho,M096,Suiza-Portugal,1-2
+Gonzalo GarcíA,M089,Alemania-Francia,1-2
+Gonzalo GarcíA,M090,Canadá-Países Bajos,0-2
+Gonzalo GarcíA,M091,Brasil-Senegal,2-1
+Gonzalo GarcíA,M092,México-Inglaterra,1-2
+Gonzalo GarcíA,M093,Colombia-España,1-2
+Gonzalo GarcíA,M094,Estados Unidos-Bélgica,0-1
+Gonzalo GarcíA,M095,Argentina-Turquía,2-0
+Gonzalo GarcíA,M096,Suiza-Portugal,1-1
+Gonzalo Gil Diaz De Miranda,M089,Alemania-Francia,1-3
+Gonzalo Gil Diaz De Miranda,M090,Suiza-Marruecos,0-1
+Gonzalo Gil Diaz De Miranda,M091,Brasil-Senegal,2-0
+Gonzalo Gil Diaz De Miranda,M092,Noruega-Inglaterra,0-2
+Gonzalo Gil Diaz De Miranda,M093,Colombia-España,1-2
+Gonzalo Gil Diaz De Miranda,M094,Turquía-Bélgica,0-1
+Gonzalo Gil Diaz De Miranda,M095,Argentina-Estados Unidos,2-0
+Gonzalo Gil Diaz De Miranda,M096,Canadá-Portugal,1-2
+Guillermo Diez,M089,Alemania-Francia,2-4
+Guillermo Diez,M090,México-Brasil,1-2
+Guillermo Diez,M091,Japón-Noruega,1-3
+Guillermo Diez,M092,Corea del Sur-Inglaterra,0-1
+Guillermo Diez,M093,Colombia-España,2-3
+Guillermo Diez,M094,Turquía-Egipto,2-0
+Guillermo Diez,M095,Argentina-Bélgica,1-1
+Guillermo Diez,M096,Irán-Portugal,0-2
+Guillermo Martin Fuentes,M089,Alemania-Francia,0-2
+Guillermo Martin Fuentes,M090,Corea del Sur-Países Bajos,0-1
+Guillermo Martin Fuentes,M091,Brasil-Noruega,2-0
+Guillermo Martin Fuentes,M092,México-Croacia,1-1
+Guillermo Martin Fuentes,M093,Inglaterra-España,0-2
+Guillermo Martin Fuentes,M094,Estados Unidos-Bélgica,0-1
+Guillermo Martin Fuentes,M095,Argentina-Turquía,2-0
+Guillermo Martin Fuentes,M096,Suiza-Portugal,0-1
+Guillermo Zabaleta,M089,Brasil-Ecuador,0-2
+Guillermo Zabaleta,M090,Bosnia y Herzegovina-Alemania,1-1
+Guillermo Zabaleta,M091,Marruecos-Francia,1-3
+Guillermo Zabaleta,M092,México-Inglaterra,0-1
+Guillermo Zabaleta,M093,España-Colombia,2-1
+Guillermo Zabaleta,M094,Bélgica-Turquía,1-1
+Guillermo Zabaleta,M095,Egipto-Portugal,1-3
+Guillermo Zabaleta,M096,Suiza-Argentina,0-1
+Hugo Andrés Galea 1,M089,Alemania-Francia,1-3
+Hugo Andrés Galea 1,M090,Corea del Sur-Marruecos,1-1
+Hugo Andrés Galea 1,M091,Brasil-Ecuador,2-1
+Hugo Andrés Galea 1,M092,México-Inglaterra,1-3
+Hugo Andrés Galea 1,M093,Colombia-España,1-2
+Hugo Andrés Galea 1,M094,Turquía-Bélgica,2-1
+Hugo Andrés Galea 1,M095,Argentina-Estados Unidos,3-1
+Hugo Andrés Galea 1,M096,Suiza-Portugal,1-2
+Hugo Andrés Galea 2,M089,Alemania-Francia,1-2
+Hugo Andrés Galea 2,M090,Corea del Sur-Marruecos,1-1
+Hugo Andrés Galea 2,M091,Brasil-Ecuador,2-1
+Hugo Andrés Galea 2,M092,México-Inglaterra,1-3
+Hugo Andrés Galea 2,M093,Colombia-España,0-2
+Hugo Andrés Galea 2,M094,Estados Unidos-Bélgica,1-2
+Hugo Andrés Galea 2,M095,Argentina-Turquía,2-1
+Hugo Andrés Galea 2,M096,Suiza-Portugal,1-3
+Hugo Lopez,M089,Alemania-Francia,1-2
+Hugo Lopez,M090,Suiza-Marruecos,0-1
+Hugo Lopez,M091,Brasil-Noruega,3-0
+Hugo Lopez,M092,Chequia-Inglaterra,0-2
+Hugo Lopez,M093,Croacia-España,1-2
+Hugo Lopez,M094,Australia-Bélgica,0-2
+Hugo Lopez,M095,Argentina-Turquía,2-0
+Hugo Lopez,M096,Egipto-Portugal,1-2
+Hugobuil,M089,Alemania-Francia,1-2
+Hugobuil,M090,Canadá-Países Bajos,1-2
+Hugobuil,M091,Brasil-Noruega,2-1
+Hugobuil,M092,México-Inglaterra,1-2
+Hugobuil,M093,Colombia-España,1-3
+Hugobuil,M094,Estados Unidos-Bélgica,1-1
+Hugobuil,M095,Argentina-Turquía,2-0
+Hugobuil,M096,Suiza-Portugal,1-2
+Ignacio Buil,M089,Alemania-Francia,1-1
+Ignacio Buil,M090,Suiza-Países Bajos,1-2
+Ignacio Buil,M091,Brasil-Noruega,3-1
+Ignacio Buil,M092,México-Inglaterra,0-2
+Ignacio Buil,M093,Croacia-España,1-2
+Ignacio Buil,M094,Austria-Bélgica,1-2
+Ignacio Buil,M095,Argentina-Egipto,3-0
+Ignacio Buil,M096,Nueva Zelanda-Portugal,0-3
+Ignacio Gutierrez Fernandez De Molina,M089,Alemania-Francia,1-3
+Ignacio Gutierrez Fernandez De Molina,M090,Corea del Sur-Marruecos,1-2
+Ignacio Gutierrez Fernandez De Molina,M091,Brasil-Noruega,3-0
+Ignacio Gutierrez Fernandez De Molina,M092,México-Inglaterra,2-2
+Ignacio Gutierrez Fernandez De Molina,M093,Colombia-España,1-3
+Ignacio Gutierrez Fernandez De Molina,M094,Estados Unidos-Egipto,3-1
+Ignacio Gutierrez Fernandez De Molina,M095,Argentina-Turquía,3-1
+Ignacio Gutierrez Fernandez De Molina,M096,Canadá-Portugal,1-3
+Ignacio Poza,M089,Alemania-Francia,2-2
+Ignacio Poza,M090,Canadá-Países Bajos,1-3
+Ignacio Poza,M091,Brasil-Noruega,2-1
+Ignacio Poza,M092,México-Inglaterra,1-3
+Ignacio Poza,M093,Colombia-España,1-2
+Ignacio Poza,M094,Estados Unidos-Bélgica,1-1
+Ignacio Poza,M095,Argentina-Turquía,3-1
+Ignacio Poza,M096,Suiza-Portugal,0-2
+Ignaciodelomas,M089,Alemania-Francia,1-2
+Ignaciodelomas,M090,Chequia-Países Bajos,0-1
+Ignaciodelomas,M091,Brasil-Noruega,2-0
+Ignaciodelomas,M092,México-Inglaterra,1-2
+Ignaciodelomas,M093,Croacia-España,1-3
+Ignaciodelomas,M094,Estados Unidos-Bélgica,1-2
+Ignaciodelomas,M095,Argentina-Turquía,2-1
+Ignaciodelomas,M096,Suiza-Portugal,0-1
+Inesgamero,M089,Alemania-Francia,2-2
+Inesgamero,M090,Catar-Brasil,0-2
+Inesgamero,M091,Marruecos-Ecuador,3-2
+Inesgamero,M092,México-Inglaterra,1-2
+Inesgamero,M093,Croacia-España,1-2
+Inesgamero,M094,Turquía-Egipto,0-2
+Inesgamero,M095,Argentina-Bélgica,2-0
+Inesgamero,M096,Suiza-Portugal,0-3
+Inma Botella,M089,Alemania-Francia,1-0
+Inma Botella,M090,Canadá-Marruecos,2-2
+Inma Botella,M091,Países Bajos-Noruega,2-0
+Inma Botella,M092,Chequia-Croacia,1-2
+Inma Botella,M093,Portugal-España,1-2
+Inma Botella,M094,Turquía-Egipto,1-1
+Inma Botella,M095,Argentina-Paraguay,1-0
+Inma Botella,M096,Suiza-Colombia,1-2
+Inma Diaz De Miranda,M089,Alemania-Francia,2-3
+Inma Diaz De Miranda,M090,Canadá-Marruecos,1-3
+Inma Diaz De Miranda,M091,Brasil-Ecuador,2-0
+Inma Diaz De Miranda,M092,México-Croacia,2-2
+Inma Diaz De Miranda,M093,Inglaterra-España,2-2
+Inma Diaz De Miranda,M094,Turquía-Bélgica,1-2
+Inma Diaz De Miranda,M095,Argentina-Egipto,3-1
+Inma Diaz De Miranda,M096,Suiza-Portugal,0-2
+Inma Sierra,M089,Alemania-Francia,2-0
+Inma Sierra,M090,Sudáfrica-Marruecos,2-2
+Inma Sierra,M091,Brasil-Ecuador,2-0
+Inma Sierra,M092,México-Inglaterra,1-2
+Inma Sierra,M093,Portugal-España,2-3
+Inma Sierra,M094,Paraguay-Bélgica,1-2
+Inma Sierra,M095,Argentina-Estados Unidos,2-0
+Inma Sierra,M096,Suiza-Croacia,1-2
+Isa Málaga,M089,Ecuador-Francia,2-3
+Isa Málaga,M090,Bosnia y Herzegovina-Marruecos,1-2
+Isa Málaga,M091,Brasil-Alemania,3-1
+Isa Málaga,M092,Corea del Sur-Croacia,0-1
+Isa Málaga,M093,Colombia-Uruguay,2-1
+Isa Málaga,M094,Turquía-México,2-1
+Isa Málaga,M095,España-Paraguay,2-1
+Isa Málaga,M096,Suiza-Portugal,0-2
+Ismael Garcia,M089,Alemania-Francia,2-3
+Ismael Garcia,M090,Canadá-Países Bajos,1-3
+Ismael Garcia,M091,Brasil-Ecuador,3-0
+Ismael Garcia,M092,México-Croacia,1-2
+Ismael Garcia,M093,Inglaterra-España,1-2
+Ismael Garcia,M094,Paraguay-Bélgica,2-1
+Ismael Garcia,M095,Argentina-Egipto,2-1
+Ismael Garcia,M096,Suiza-Portugal,1-2
+Isra Duro,M089,Ecuador-Francia,1-2
+Isra Duro,M090,MEXICO-Países Bajos,1-3
+Isra Duro,M091,Brasil-Noruega,2-2
+Isra Duro,M092,Costa de Marfil-Inglaterra,0-2
+Isra Duro,M093,Colombia-España,0-2
+Isra Duro,M094,Turquia-Egipto,1-2
+Isra Duro,M095,Argentina-Bélgica,1-1
+Isra Duro,M096,CANADA-Portugal,0-1
+Itsaso Zubiaur,M089,Alemania-Francia,2-0
+Itsaso Zubiaur,M090,Suiza-Marruecos,0-3
+Itsaso Zubiaur,M091,Brasil-Senegal,3-0
+Itsaso Zubiaur,M092,México-Inglaterra,1-3
+Itsaso Zubiaur,M093,Colombia-España,1-3
+Itsaso Zubiaur,M094,Estados Unidos-Bélgica,0-2
+Itsaso Zubiaur,M095,Argentina-Egipto,2-1
+Itsaso Zubiaur,M096,Bosnia y Herzegovina-Portugal,0-3
+Ivan Garcia Vaquero,M089,Alemania-Francia,2-1
+Ivan Garcia Vaquero,M090,Suiza-Países Bajos,0-1
+Ivan Garcia Vaquero,M091,Brasil-Noruega,1-2
+Ivan Garcia Vaquero,M092,Costa de Marfil-Croacia,0-1
+Ivan Garcia Vaquero,M093,Inglaterra-España,1-2
+Ivan Garcia Vaquero,M094,Turquía-Bélgica,1-1
+Ivan Garcia Vaquero,M095,Argentina-Paraguay,2-0
+Ivan Garcia Vaquero,M096,Canadá-Portugal,0-1
+Ivan Serrano,M089,Alemania-Francia,1-2
+Ivan Serrano,M090,Corea del Sur-Japón,1-3
+Ivan Serrano,M091,Brasil-Noruega,3-1
+Ivan Serrano,M092,México-Inglaterra,0-3
+Ivan Serrano,M093,Colombia-España,1-3
+Ivan Serrano,M094,Senegal-Bélgica,2-1
+Ivan Serrano,M095,Argentina-Turquía,2-0
+Ivan Serrano,M096,Suiza-Portugal,0-2
+Ivan,M089,Alemania-Francia,2-2
+Ivan,M090,Corea del Sur-Países Bajos,1-2
+Ivan,M091,Brasil-Noruega,1-2
+Ivan,M092,Chequia-Inglaterra,1-3
+Ivan,M093,Croacia-España,0-2
+Ivan,M094,Estados Unidos-Bélgica,0-2
+Ivan,M095,Argentina-Turquía,1-0
+Ivan,M096,Suiza-Portugal,1-2
+Iñigo Aranguren,M089,Brasil-Ecuador,0-2
+Iñigo Aranguren,M090,Corea del Sur-Alemania,2-2
+Iñigo Aranguren,M091,Países Bajos-Francia,1-2
+Iñigo Aranguren,M092,Costa de Marfil-Inglaterra,1-0
+Iñigo Aranguren,M093,España-Colombia,1-0
+Iñigo Aranguren,M094,Bélgica-Estados Unidos,2-1
+Iñigo Aranguren,M095,Paraguay-Portugal,1-1
+Iñigo Aranguren,M096,Suiza-Argentina,0-1
+Jaf,M089,Alemania-Francia,1-3
+Jaf,M090,Canadá-Países Bajos,1-3
+Jaf,M091,Brasil-Noruega,3-1
+Jaf,M092,México-Inglaterra,1-3
+Jaf,M093,Colombia-España,1-2
+Jaf,M094,Suecia-Bélgica,1-2
+Jaf,M095,Argentina-Paraguay,3-1
+Jaf,M096,Suiza-Portugal,1-2
+Jaf2,M089,Alemania-Francia,2-3
+Jaf2,M090,Canadá-Países Bajos,0-2
+Jaf2,M091,Brasil-Noruega,3-1
+Jaf2,M092,México-Croacia,2-1
+Jaf2,M093,Portugal-España,1-3
+Jaf2,M094,Paraguay-Bélgica,1-2
+Jaf2,M095,Argentina-Turquía,2-0
+Jaf2,M096,Suiza-Colombia,0-2
+Javier Perez Gutierrez,M089,Alemania-Francia,1-2
+Javier Perez Gutierrez,M090,Corea del Sur-Países Bajos,1-2
+Javier Perez Gutierrez,M091,Brasil-Senegal,3-1
+Javier Perez Gutierrez,M092,México-Inglaterra,1-2
+Javier Perez Gutierrez,M093,Colombia-España,1-2
+Javier Perez Gutierrez,M094,Noruega-Bélgica,1-1
+Javier Perez Gutierrez,M095,Argentina-Turquía,3-1
+Javier Perez Gutierrez,M096,Suiza-Portugal,1-2
+Javierhoyas,M089,Alemania-Francia,1-3
+Javierhoyas,M090,Canadá-Marruecos,1-1
+Javierhoyas,M091,Brasil-Noruega,2-0
+Javierhoyas,M092,México-Inglaterra,1-2
+Javierhoyas,M093,Croacia-Argentina,1-2
+Javierhoyas,M094,Estados Unidos-Bélgica,0-1
+Javierhoyas,M095,Uruguay-Turquía,1-2
+Javierhoyas,M096,Suiza-Portugal,0-1
+Jec1,M089,Alemania-Francia,1-3
+Jec1,M090,Canadá-Marruecos,0-2
+Jec1,M091,Brasil-Noruega,3-0
+Jec1,M092,México-Inglaterra,1-3
+Jec1,M093,Ghana-España,1-3
+Jec1,M094,Turquía-Bélgica,2-0
+Jec1,M095,Argentina-Egipto,2-1
+Jec1,M096,Suiza-Portugal,1-3
+Jec2,M089,Alemania-Francia,1-3
+Jec2,M090,Chequia-Países Bajos,0-3
+Jec2,M091,Brasil-Ecuador,4-1
+Jec2,M092,México-Inglaterra,1-3
+Jec2,M093,Colombia-España,1-3
+Jec2,M094,Estados Unidos-Bélgica,2-1
+Jec2,M095,Argentina-Turquía,3-2
+Jec2,M096,Senegal-Portugal,1-3
+Jec3,M089,Alemania-Francia,1-3
+Jec3,M090,Chequia-Marruecos,1-3
+Jec3,M091,Brasil-Senegal,3-1
+Jec3,M092,México-Inglaterra,1-3
+Jec3,M093,Colombia-España,1-3
+Jec3,M094,Estados Unidos-Egipto,3-1
+Jec3,M095,Argentina-Turquía,3-1
+Jec3,M096,Suiza-Portugal,1-3
+Jec4,M089,Alemania-Francia,1-4
+Jec4,M090,Corea del Sur-Marruecos,1-2
+Jec4,M091,Brasil-Senegal,3-1
+Jec4,M092,México-Inglaterra,2-3
+Jec4,M093,Ghana-España,2-4
+Jec4,M094,Estados Unidos-Bélgica,3-1
+Jec4,M095,Argentina-Turquía,2-0
+Jec4,M096,Costa de Marfil-Portugal,1-3
+Jose Antonio Paez Hidalgo,M089,Alemania-Francia,2-2
+Jose Antonio Paez Hidalgo,M090,Bosnia y Herzegovina-Brasil,1-2
+Jose Antonio Paez Hidalgo,M091,Marruecos-Noruega,2-1
+Jose Antonio Paez Hidalgo,M092,Costa de Marfil-Inglaterra,1-2
+Jose Antonio Paez Hidalgo,M093,Colombia-España,1-2
+Jose Antonio Paez Hidalgo,M094,Turquía-Bélgica,2-3
+Jose Antonio Paez Hidalgo,M095,Argentina-Egipto,2-1
+Jose Antonio Paez Hidalgo,M096,Senegal-Portugal,1-3
+Jpc,M089,Alemania-Francia,4-3
+Jpc,M090,Suiza-Países Bajos,1-3
+Jpc,M091,Brasil-Senegal,4-2
+Jpc,M092,México-Inglaterra,0-2
+Jpc,M093,Croacia-España,1-2
+Jpc,M094,Estados Unidos-Egipto,1-3
+Jpc,M095,Argentina-Bélgica,3-0
+Jpc,M096,Canadá-Portugal,1-2
+Jsa 1,M089,Alemania-Francia,1-3
+Jsa 1,M090,Suiza-Marruecos,0-1
+Jsa 1,M091,Brasil-Senegal,2-0
+Jsa 1,M092,México-Inglaterra,1-3
+Jsa 1,M093,Croacia-España,0-3
+Jsa 1,M094,Turquía-Bélgica,1-1
+Jsa 1,M095,Argentina-Egipto,1-0
+Jsa 1,M096,Canadá-Portugal,0-2
+Jsa 2,M089,Costa de Marfil-Francia,0-2
+Jsa 2,M090,Canadá-Marruecos,1-2
+Jsa 2,M091,Brasil-Alemania,2-1
+Jsa 2,M092,Chequia-Inglaterra,0-2
+Jsa 2,M093,Colombia-España,1-3
+Jsa 2,M094,Turquía-Corea del Sur,1-1
+Jsa 2,M095,Argentina-Bélgica,2-0
+Jsa 2,M096,Suiza-Portugal,1-2
+Jsa 3,M089,Alemania-Francia,1-2
+Jsa 3,M090,Canadá-Países Bajos,1-3
+Jsa 3,M091,Brasil-Senegal,2-0
+Jsa 3,M092,México-Inglaterra,2-1
+Jsa 3,M093,Croacia-España,1-2
+Jsa 3,M094,Estados Unidos-Bélgica,1-2
+Jsa 3,M095,Argentina-Turquía,3-1
+Jsa 3,M096,Suiza-Portugal,1-2
+Juan Sagaseta Albajar,M089,Alemania-Francia,1-3
+Juan Sagaseta Albajar,M090,Sudáfrica-Marruecos,0-1
+Juan Sagaseta Albajar,M091,Brasil-Senegal,2-1
+Juan Sagaseta Albajar,M092,México-Inglaterra,1-2
+Juan Sagaseta Albajar,M093,Colombia-España,1-1
+Juan Sagaseta Albajar,M094,Estados Unidos-Egipto,2-2
+Juan Sagaseta Albajar,M095,Argentina-Turquía,4-1
+Juan Sagaseta Albajar,M096,Suiza-Portugal,0-3
+Juanga Jimenez,M089,Alemania-Francia,1-3
+Juanga Jimenez,M090,Bosnia y Herzegovina-Países Bajos,1-2
+Juanga Jimenez,M091,Brasil-Noruega,2-2
+Juanga Jimenez,M092,México-Inglaterra,1-3
+Juanga Jimenez,M093,Colombia-España,1-2
+Juanga Jimenez,M094,Estados Unidos-Bélgica,0-1
+Juanga Jimenez,M095,Argentina-Turquía,2-1
+Juanga Jimenez,M096,Suiza-Portugal,1-2
+Jacobo Lopez,M089,Alemania-Francia,2-3
+Jacobo Lopez,M090,Suiza-Países Bajos,1-2
+Jacobo Lopez,M091,Brasil-Senegal,3-1
+Jacobo Lopez,M092,Corea del Sur-Inglaterra,0-2
+Jacobo Lopez,M093,Colombia-España,0-2
+Jacobo Lopez,M094,Estados Unidos-Bélgica,1-2
+Jacobo Lopez,M095,Argentina-Turquía,2-1
+Jacobo Lopez,M096,Canadá-Portugal,1-3
+Jacobo Obradors,M089,Alemania-Francia,0-2
+Jacobo Obradors,M090,Canadá-Marruecos,0-1
+Jacobo Obradors,M091,Brasil-Ecuador,2-0
+Jacobo Obradors,M092,México-Inglaterra,0-2
+Jacobo Obradors,M093,Croacia-España,1-2
+Jacobo Obradors,M094,Estados Unidos-Bélgica,0-1
+Jacobo Obradors,M095,Argentina-Paraguay,1-0
+Jacobo Obradors,M096,Suiza-Portugal,1-2
+Javi Perez,M089,Alemania-Francia,1-3
+Javi Perez,M090,Canadá-Países Bajos,0-2
+Javi Perez,M091,Brasil-Senegal,1-1
+Javi Perez,M092,México-Inglaterra,0-2
+Javi Perez,M093,Colombia-España,1-3
+Javi Perez,M094,Turquía-Bélgica,2-0
+Javi Perez,M095,Uruguay-Estados Unidos,2-3
+Javi Perez,M096,Argelia-Portugal,0-2
+Javier Castrillo,M089,Alemania-Francia,1-2
+Javier Castrillo,M090,México-Marruecos,1-2
+Javier Castrillo,M091,Brasil-Costa de Marfil,2-0
+Javier Castrillo,M092,Chequia-Inglaterra,1-2
+Javier Castrillo,M093,Croacia-España,1-3
+Javier Castrillo,M094,Turquía-Ecuador,2-1
+Javier Castrillo,M095,Uruguay-Estados Unidos,2-1
+Javier Castrillo,M096,Suiza-Colombia,1-2
+Javier Garcia Martin 1,M089,Alemania-Francia,1-2
+Javier Garcia Martin 1,M090,Suiza-Marruecos,0-2
+Javier Garcia Martin 1,M091,Brasil-Noruega,2-1
+Javier Garcia Martin 1,M092,Chequia-Croacia,0-1
+Javier Garcia Martin 1,M093,Inglaterra-España,0-1
+Javier Garcia Martin 1,M094,Turquía-Bélgica,2-1
+Javier Garcia Martin 1,M095,Argentina-Egipto,2-1
+Javier Garcia Martin 1,M096,Bosnia y Herzegovina-Portugal,0-2
+Javier Garcia Martin 2,M089,Alemania-Francia,0-1
+Javier Garcia Martin 2,M090,Chequia-Marruecos,0-1
+Javier Garcia Martin 2,M091,Brasil-Noruega,2-1
+Javier Garcia Martin 2,M092,México-Inglaterra,1-0
+Javier Garcia Martin 2,M093,Croacia-España,1-2
+Javier Garcia Martin 2,M094,Turquía-Bélgica,1-0
+Javier Garcia Martin 2,M095,Argentina-Estados Unidos,2-0
+Javier Garcia Martin 2,M096,Suiza-Portugal,0-2
+Javier Gea,M089,Alemania-Francia,3-3
+Javier Gea,M090,Chequia-Brasil,0-3
+Javier Gea,M091,Marruecos-Senegal,1-2
+Javier Gea,M092,México-Inglaterra,1-2
+Javier Gea,M093,Colombia-España,2-3
+Javier Gea,M094,Turquía-Corea del Sur,1-2
+Javier Gea,M095,Argentina-Estados Unidos,3-0
+Javier Gea,M096,Suiza-Portugal,1-2
+Javier Manjon,M089,Alemania-Noruega,0-2
+Javier Manjon,M090,Sudáfrica-Países Bajos,1-3
+Javier Manjon,M091,Brasil-Francia,2-2
+Javier Manjon,M092,México-Inglaterra,1-2
+Javier Manjon,M093,Colombia-España,2-3
+Javier Manjon,M094,Turquía-Bélgica,1-3
+Javier Manjon,M095,Argentina-Estados Unidos,3-0
+Javier Manjon,M096,Suiza-Portugal,0-3
+Javier Santos,M089,Alemania-Francia,3-2
+Javier Santos,M090,Corea del Sur-Países Bajos,0-1
+Javier Santos,M091,Brasil-Noruega,3-1
+Javier Santos,M092,México-Inglaterra,1-3
+Javier Santos,M093,Colombia-España,0-1
+Javier Santos,M094,Turquía-Bélgica,1-0
+Javier Santos,M095,Argentina-Estados Unidos,2-0
+Javier Santos,M096,Egipto-Portugal,0-2
+Javierruizdecastroviejojunior,M089,Alemania-Francia,2-3
+Javierruizdecastroviejojunior,M090,México-Japón,1-2
+Javierruizdecastroviejojunior,M091,Brasil-Noruega,3-1
+Javierruizdecastroviejojunior,M092,Corea del Sur-Inglaterra,1-2
+Javierruizdecastroviejojunior,M093,Portugal-España,2-2
+Javierruizdecastroviejojunior,M094,Turquía-Bélgica,2-2
+Javierruizdecastroviejojunior,M095,Argentina-Estados Unidos,3-0
+Javierruizdecastroviejojunior,M096,Suecia-Colombia,1-3
+Javierruizdecastroviejo,M089,Alemania-Francia,1-2
+Javierruizdecastroviejo,M090,Canadá-Marruecos,1-2
+Javierruizdecastroviejo,M091,Brasil-Noruega,2-1
+Javierruizdecastroviejo,M092,México-Inglaterra,1-2
+Javierruizdecastroviejo,M093,Colombia-España,1-2
+Javierruizdecastroviejo,M094,Estados Unidos-Bélgica,0-1
+Javierruizdecastroviejo,M095,Argentina-Turquía,2-1
+Javierruizdecastroviejo,M096,Suiza-Portugal,0-2
+Jenifer Tovar Ortiz,M089,Alemania-Francia,1-2
+Jenifer Tovar Ortiz,M090,Corea del Sur-Japón,1-3
+Jenifer Tovar Ortiz,M091,Brasil-Ecuador,3-1
+Jenifer Tovar Ortiz,M092,México-Inglaterra,1-2
+Jenifer Tovar Ortiz,M093,Colombia-España,3-2
+Jenifer Tovar Ortiz,M094,Paraguay-Bélgica,3-1
+Jenifer Tovar Ortiz,M095,Argentina-Estados Unidos,3-1
+Jenifer Tovar Ortiz,M096,Canadá-Portugal,1-3
+Jorge Alonso,M089,Alemania-Francia,0-2
+Jorge Alonso,M090,Canadá-Japón,1-1
+Jorge Alonso,M091,Brasil-Ecuador,0-1
+Jorge Alonso,M092,México-Inglaterra,1-2
+Jorge Alonso,M093,Portugal-España,3-2
+Jorge Alonso,M094,Bosnia y Herzegovina-Bélgica,1-4
+Jorge Alonso,M095,Argentina-Turquía,3-1
+Jorge Alonso,M096,Suiza-Colombia,1-2
+Jorge Fragua,M089,Alemania-Francia,1-2
+Jorge Fragua,M090,Bosnia y Herzegovina-Marruecos,1-0
+Jorge Fragua,M091,Brasil-Noruega,3-2
+Jorge Fragua,M092,México-Inglaterra,3-2
+Jorge Fragua,M093,Colombia-España,1-3
+Jorge Fragua,M094,Senegal-Bélgica,2-1
+Jorge Fragua,M095,Argentina-Turquía,2-1
+Jorge Fragua,M096,Costa de Marfil-Portugal,1-2
+Jorge Garcia,M089,Canadá-Alemania,0-3
+Jorge Garcia,M090,Canadá-Alemania,2-1
+Jorge Garcia,M091,-,0-3
+Jorge Garcia,M092,México-Inglaterra,0-2
+Jorge Garcia,M093,-,2-1
+Jorge Garcia,M094,Bélgica-Turquía,0-1
+Jorge Garcia,M095,-,1-2
+Jorge Garcia,M096,-,0-2
+Jorge Manjon,M089,Alemania-Francia,1-3
+Jorge Manjon,M090,Canadá-Países Bajos,0-3
+Jorge Manjon,M091,Brasil-Noruega,2-2
+Jorge Manjon,M092,Costa de Marfil-Inglaterra,0-2
+Jorge Manjon,M093,Croacia-España,1-2
+Jorge Manjon,M094,Turquía-Bélgica,0-2
+Jorge Manjon,M095,Argentina-Estados Unidos,3-0
+Jorge Manjon,M096,Suiza-Portugal,1-2
+Jorge Pérez,M089,Alemania-Francia,2-3
+Jorge Pérez,M090,Canadá-Escocia,1-2
+Jorge Pérez,M091,Brasil-Noruega,2-1
+Jorge Pérez,M092,Corea del Sur-Inglaterra,1-1
+Jorge Pérez,M093,Colombia-España,1-3
+Jorge Pérez,M094,Turquía-Bélgica,1-1
+Jorge Pérez,M095,Argentina-Egipto,4-1
+Jorge Pérez,M096,Suiza-Portugal,2-3
+Jose Fernandez Gavela,M089,Alemania-Francia,2-1
+Jose Fernandez Gavela,M090,México-Países Bajos,1-2
+Jose Fernandez Gavela,M091,Brasil-Noruega,2-1
+Jose Fernandez Gavela,M092,Corea del Sur-Inglaterra,0-2
+Jose Fernandez Gavela,M093,Colombia-España,1-2
+Jose Fernandez Gavela,M094,Estados Unidos-Bélgica,1-1
+Jose Fernandez Gavela,M095,Argentina-Turquía,2-0
+Jose Fernandez Gavela,M096,Canadá-Portugal,0-2
+Jose Fuente,M089,Alemania-Francia,1-2
+Jose Fuente,M090,Chequia-Marruecos,0-1
+Jose Fuente,M091,Brasil-Noruega,2-0
+Jose Fuente,M092,México-Senegal,1-2
+Jose Fuente,M093,Colombia-España,1-1
+Jose Fuente,M094,Estados Unidos-Bélgica,1-1
+Jose Fuente,M095,Argentina-Turquía,2-0
+Jose Fuente,M096,Suiza-Portugal,0-1
+Jose Luis Carrasco,M089,Alemania-Francia,2-2
+Jose Luis Carrasco,M090,Corea del Sur-Marruecos,1-2
+Jose Luis Carrasco,M091,Brasil-Ecuador,2-1
+Jose Luis Carrasco,M092,Escocia-Inglaterra,0-1
+Jose Luis Carrasco,M093,Croacia-España,1-3
+Jose Luis Carrasco,M094,Estados Unidos-Bélgica,1-1
+Jose Luis Carrasco,M095,Argentina-Turquía,2-0
+Jose Luis Carrasco,M096,Suiza-Portugal,1-3
+Jose Maria Ortiz,M089,Alemania-Francia,2-2
+Jose Maria Ortiz,M090,Chequia-Países Bajos,0-2
+Jose Maria Ortiz,M091,Brasil-Ecuador,1-1
+Jose Maria Ortiz,M092,México-Inglaterra,1-1
+Jose Maria Ortiz,M093,Croacia-España,0-1
+Jose Maria Ortiz,M094,Turquía-Bélgica,2-1
+Jose Maria Ortiz,M095,Argentina-Estados Unidos,2-1
+Jose Maria Ortiz,M096,Suiza-Portugal,2-3
+Jose Pradera,M089,Alemania-Francia,2-3
+Jose Pradera,M090,Corea del Sur-Países Bajos,1-3
+Jose Pradera,M091,Brasil-Noruega,3-1
+Jose Pradera,M092,Escocia-Inglaterra,2-4
+Jose Pradera,M093,Croacia-España,1-3
+Jose Pradera,M094,Estados Unidos-Bélgica,1-3
+Jose Pradera,M095,Argentina-Egipto,4-1
+Jose Pradera,M096,Ecuador-Portugal,1-3
+Jose Zabala,M089,Alemania-Francia,1-2
+Jose Zabala,M090,Canadá-Marruecos,0-1
+Jose Zabala,M091,Brasil-Noruega,3-2
+Jose Zabala,M092,México-Inglaterra,0-2
+Jose Zabala,M093,Colombia-España,1-2
+Jose Zabala,M094,Estados Unidos-Bélgica,1-2
+Jose Zabala,M095,Argentina-Turquía,2-0
+Jose Zabala,M096,Suiza-Portugal,1-2
+Josegomez.1,M089,Alemania-Francia,1-2
+Josegomez.1,M090,Catar-Marruecos,0-2
+Josegomez.1,M091,Brasil-Noruega,3-1
+Josegomez.1,M092,México-Ghana,2-2
+Josegomez.1,M093,Inglaterra-España,1-3
+Josegomez.1,M094,Canadá-Egipto,1-1
+Josegomez.1,M095,Argentina-Turquía,2-0
+Josegomez.1,M096,Suiza-Portugal,1-3
+Josegómez,M089,Alemania-Francia,1-3
+Josegómez,M090,Suiza-Países Bajos,0-2
+Josegómez,M091,Brasil-Noruega,3-0
+Josegómez,M092,México-Inglaterra,2-3
+Josegómez,M093,Ghana-España,1-3
+Josegómez,M094,Estados Unidos-Bélgica,1-1
+Josegómez,M095,Argentina-Paraguay,2-1
+Josegómez,M096,Canadá-Portugal,1-2
+Juan German Balsa,M089,Alemania-Francia,2-4
+Juan German Balsa,M090,México-Marruecos,1-3
+Juan German Balsa,M091,Brasil-Ecuador,3-1
+Juan German Balsa,M092,Corea del Sur-Inglaterra,0-0
+Juan German Balsa,M093,Colombia-España,2-3
+Juan German Balsa,M094,Turquía-Uruguay,1-1
+Juan German Balsa,M095,Argentina-Estados Unidos,4-2
+Juan German Balsa,M096,Argelia-Portugal,0-2
+Juan Gutiérrez Baz,M089,Alemania-Francia,1-2
+Juan Gutiérrez Baz,M090,Chequia-Países Bajos,1-2
+Juan Gutiérrez Baz,M091,Brasil-Noruega,3-1
+Juan Gutiérrez Baz,M092,México-Inglaterra,1-2
+Juan Gutiérrez Baz,M093,Colombia-España,1-2
+Juan Gutiérrez Baz,M094,Estados Unidos-Bélgica,1-1
+Juan Gutiérrez Baz,M095,Argentina-Turquía,2-0
+Juan Gutiérrez Baz,M096,Suiza-Portugal,1-2
+Juan Jose Garcia Mahecha,M089,Japón-Ecuador,1-3
+Juan Jose Garcia Mahecha,M090,Chequia-Alemania,0-1
+Juan Jose Garcia Mahecha,M091,Países Bajos-Francia,1-3
+Juan Jose Garcia Mahecha,M092,México-Inglaterra,0-2
+Juan Jose Garcia Mahecha,M093,España-Portugal,2-2
+Juan Jose Garcia Mahecha,M094,Bélgica-Paraguay,1-0
+Juan Jose Garcia Mahecha,M095,Estados Unidos-Colombia,0-2
+Juan Jose Garcia Mahecha,M096,Suiza-Argentina,1-2
+Juan Luis Navarro,M089,Alemania-Francia,1-2
+Juan Luis Navarro,M090,México-Marruecos,1-2
+Juan Luis Navarro,M091,Brasil-Ecuador,1-1
+Juan Luis Navarro,M092,Chequia-Inglaterra,1-2
+Juan Luis Navarro,M093,Croacia-España,0-2
+Juan Luis Navarro,M094,Turquía-Bélgica,2-2
+Juan Luis Navarro,M095,Argentina-Paraguay,1-1
+Juan Luis Navarro,M096,Suiza-Portugal,1-2
+Juan Navarro,M089,Alemania-Francia,1-0
+Juan Navarro,M090,Canadá-Países Bajos,0-0
+Juan Navarro,M091,Brasil-Noruega,1-0
+Juan Navarro,M092,México-Inglaterra,0-1
+Juan Navarro,M093,Colombia-España,0-1
+Juan Navarro,M094,Turquía-Bélgica,0-1
+Juan Navarro,M095,Argentina-Estados Unidos,1-0
+Juan Navarro,M096,Suiza-Portugal,0-0
+Juan El Chico,M089,Alemania-Francia,2-0
+Juan El Chico,M090,Canadá-Marruecos,0-1
+Juan El Chico,M091,Brasil-Noruega,2-1
+Juan El Chico,M092,Costa de Marfil-Inglaterra,0-0
+Juan El Chico,M093,Colombia-España,0-3
+Juan El Chico,M094,Estados Unidos-Bélgica,2-0
+Juan El Chico,M095,Argentina-Irán,3-1
+Juan El Chico,M096,Suiza-Portugal,1-1
+Kike Martin,M089,Alemania-Francia,0-2
+Kike Martin,M090,México-Japón,1-2
+Kike Martin,M091,Brasil-Noruega,2-3
+Kike Martin,M092,Escocia-Inglaterra,0-2
+Kike Martin,M093,Croacia-España,1-3
+Kike Martin,M094,Estados Unidos-Bélgica,0-2
+Kike Martin,M095,Argentina-Turquía,2-1
+Kike Martin,M096,Ecuador-Portugal,0-3
+Laura Morente,M089,Alemania-Francia,2-1
+Laura Morente,M090,Chequia-Marruecos,0-2
+Laura Morente,M091,Brasil-Ecuador,2-0
+Laura Morente,M092,México-Inglaterra,2-2
+Laura Morente,M093,Croacia-España,1-2
+Laura Morente,M094,Estados Unidos-Bélgica,2-1
+Laura Morente,M095,Argentina-Australia,3-1
+Laura Morente,M096,Canadá-Portugal,0-0
+Lauri Garcia,M089,Alemania-Francia,2-1
+Lauri Garcia,M090,Corea del Sur-Japón,2-2
+Lauri Garcia,M091,Brasil-Costa de Marfil,3-1
+Lauri Garcia,M092,México-Inglaterra,1-2
+Lauri Garcia,M093,Ghana-España,1-3
+Lauri Garcia,M094,Turquía-Bélgica,0-2
+Lauri Garcia,M095,Uruguay-Estados Unidos,2-1
+Lauri Garcia,M096,Suiza-Portugal,1-3
+Lola Lopez Lopez,M089,Alemania-Francia,3-1
+Lola Lopez Lopez,M090,Suiza-Suecia,4-2
+Lola Lopez Lopez,M091,Brasil-Noruega,4-0
+Lola Lopez Lopez,M092,Sudáfrica-Inglaterra,2-4
+Lola Lopez Lopez,M093,Portugal-España,2-3
+Lola Lopez Lopez,M094,Estados Unidos-Bélgica,3-4
+Lola Lopez Lopez,M095,Uruguay-Egipto,3-1
+Lola Lopez Lopez,M096,Canadá-Australia,2-1
+Lola Sanchez Montes,M089,Alemania-Francia,1-4
+Lola Sanchez Montes,M090,México-Países Bajos,1-2
+Lola Sanchez Montes,M091,Brasil-Ecuador,5-1
+Lola Sanchez Montes,M092,Sudáfrica-Inglaterra,1-3
+Lola Sanchez Montes,M093,Colombia-España,0-3
+Lola Sanchez Montes,M094,Estados Unidos-Bélgica,2-1
+Lola Sanchez Montes,M095,Argentina-Irán,4-0
+Lola Sanchez Montes,M096,Suiza-Portugal,1-2
+Lola Y Santi Amor Verdadero,M089,Alemania-Francia,1-3
+Lola Y Santi Amor Verdadero,M090,México-Países Bajos,1-2
+Lola Y Santi Amor Verdadero,M091,Brasil-Ecuador,3-0
+Lola Y Santi Amor Verdadero,M092,Sudáfrica-Inglaterra,1-3
+Lola Y Santi Amor Verdadero,M093,Croacia-España,1-2
+Lola Y Santi Amor Verdadero,M094,Estados Unidos-Bélgica,2-1
+Lola Y Santi Amor Verdadero,M095,Argentina-Irán,4-0
+Lola Y Santi Amor Verdadero,M096,Suiza-Portugal,1-3
+Lorenzo Saez,M089,Alemania-Noruega,3-1
+Lorenzo Saez,M090,Canadá-Brasil,2-1
+Lorenzo Saez,M091,Marruecos-Costa de Marfil,1-2
+Lorenzo Saez,M092,México-Croacia,2-1
+Lorenzo Saez,M093,Inglaterra-España,1-3
+Lorenzo Saez,M094,Estados Unidos-Bélgica,2-1
+Lorenzo Saez,M095,Argentina-Turquía,3-1
+Lorenzo Saez,M096,Suiza-Portugal,1-2
+Lucas Goñi Álvaro Tapia,M089,Alemania-Noruega,2-3
+Lucas Goñi Álvaro Tapia,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Lucas Goñi Álvaro Tapia,M091,Brasil-Francia,1-3
+Lucas Goñi Álvaro Tapia,M092,Corea del Sur-Inglaterra,0-3
+Lucas Goñi Álvaro Tapia,M093,Croacia-España,1-1
+Lucas Goñi Álvaro Tapia,M094,Estados Unidos-Bélgica,0-2
+Lucas Goñi Álvaro Tapia,M095,Argentina-Turquía,2-1
+Lucas Goñi Álvaro Tapia,M096,Suiza-Portugal,2-2
+Lucassalinero,M089,Brasil-Senegal,1-3
+Lucassalinero,M090,Canadá-Alemania,2-0
+Lucassalinero,M091,Marruecos-Francia,2-3
+Lucassalinero,M092,México-Inglaterra,1-2
+Lucassalinero,M093,España-Colombia,2-1
+Lucassalinero,M094,Bélgica-Estados Unidos,1-1
+Lucassalinero,M095,Turquía-Portugal,1-3
+Lucassalinero,M096,Suiza-Argentina,1-3
+Lucia Vazquez,M089,Alemania-Francia,2-3
+Lucia Vazquez,M090,Canadá-Países Bajos,1-3
+Lucia Vazquez,M091,Brasil-Noruega,3-1
+Lucia Vazquez,M092,México-Inglaterra,0-1
+Lucia Vazquez,M093,Colombia-España,2-4
+Lucia Vazquez,M094,Paraguay-Bélgica,2-2
+Lucia Vazquez,M095,Argentina-Estados Unidos,1-0
+Lucia Vazquez,M096,Costa de Marfil-Portugal,1-3
+Luciadelomas,M089,Alemania-Francia,2-1
+Luciadelomas,M090,Chequia-Países Bajos,0-1
+Luciadelomas,M091,Brasil-Noruega,1-0
+Luciadelomas,M092,México-Inglaterra,1-2
+Luciadelomas,M093,Croacia-España,1-3
+Luciadelomas,M094,Estados Unidos-Bélgica,2-1
+Luciadelomas,M095,Argentina-Turquía,2-1
+Luciadelomas,M096,Suiza-Portugal,0-1
+LucíAaceñAgarcíA,M089,Alemania-Francia,1-2
+LucíAaceñAgarcíA,M090,Canadá-Países Bajos,0-2
+LucíAaceñAgarcíA,M091,Brasil-Ecuador,2-0
+LucíAaceñAgarcíA,M092,México-Inglaterra,2-1
+LucíAaceñAgarcíA,M093,Colombia-España,1-3
+LucíAaceñAgarcíA,M094,Estados Unidos-Bélgica,2-3
+LucíAaceñAgarcíA,M095,Argentina-Australia,2-1
+LucíAaceñAgarcíA,M096,Suiza-Portugal,1-2
+Luis Gil Heres,M089,Alemania-Francia,1-2
+Luis Gil Heres,M090,Suiza-Marruecos,1-2
+Luis Gil Heres,M091,Brasil-Noruega,2-0
+Luis Gil Heres,M092,México-Inglaterra,0-2
+Luis Gil Heres,M093,Colombia-España,1-3
+Luis Gil Heres,M094,Turquía-Bélgica,1-2
+Luis Gil Heres,M095,Argentina-Estados Unidos,2-0
+Luis Gil Heres,M096,Canadá-Portugal,1-2
+Luis Sagaseta,M089,Alemania-Francia,2-1
+Luis Sagaseta,M090,Catar-Marruecos,1-2
+Luis Sagaseta,M091,Brasil-Senegal,2-0
+Luis Sagaseta,M092,Arabia Saudí-Inglaterra,1-3
+Luis Sagaseta,M093,Croacia-España,1-3
+Luis Sagaseta,M094,Turquía-Bélgica,2-1
+Luis Sagaseta,M095,Argentina-Paraguay,2-0
+Luis Sagaseta,M096,Suiza-Portugal,0-2
+Luis VilariñO,M089,Brasil-Noruega,0-1
+Luis VilariñO,M090,Chequia-Alemania,1-0
+Luis VilariñO,M091,Países Bajos-Francia,1-1
+Luis VilariñO,M092,México-Inglaterra,1-2
+Luis VilariñO,M093,España-Colombia,2-1
+Luis VilariñO,M094,Bélgica-Estados Unidos,1-0
+Luis VilariñO,M095,Egipto-Portugal,0-2
+Luis VilariñO,M096,Canadá-Argentina,1-2
+Madroño,M089,Alemania-Francia,0-2
+Madroño,M090,Suiza-Marruecos,1-3
+Madroño,M091,Brasil-Noruega,3-1
+Madroño,M092,México-Inglaterra,1-2
+Madroño,M093,Croacia-España,1-4
+Madroño,M094,Turquía-Corea del Sur,2-1
+Madroño,M095,Argentina-Bélgica,2-1
+Madroño,M096,Canadá-Portugal,0-3
+Manuel Martin Pineda,M089,Alemania-Francia,1-2
+Manuel Martin Pineda,M090,Canadá-Brasil,1-2
+Manuel Martin Pineda,M091,Marruecos-Noruega,2-2
+Manuel Martin Pineda,M092,México-Inglaterra,1-2
+Manuel Martin Pineda,M093,Colombia-España,1-3
+Manuel Martin Pineda,M094,Turquía-Bélgica,1-1
+Manuel Martin Pineda,M095,Uruguay-Australia,2-0
+Manuel Martin Pineda,M096,Suiza-Portugal,1-2
+Michaela Pollock,M089,Alemania-Francia,2-1
+Michaela Pollock,M090,México-Países Bajos,1-2
+Michaela Pollock,M091,Brasil-Costa de Marfil,2-0
+Michaela Pollock,M092,Ecuador-Croacia,0-2
+Michaela Pollock,M093,Inglaterra-España,0-2
+Michaela Pollock,M094,Turquía-Bélgica,1-1
+Michaela Pollock,M095,Argentina-Egipto,2-0
+Michaela Pollock,M096,Suiza-Portugal,1-2
+Mikel Ac,M089,Alemania-Francia,1-2
+Mikel Ac,M090,Bosnia y Herzegovina-Marruecos,0-1
+Mikel Ac,M091,Brasil-Noruega,2-1
+Mikel Ac,M092,México-Inglaterra,1-2
+Mikel Ac,M093,Colombia-España,0-2
+Mikel Ac,M094,Estados Unidos-Bélgica,1-2
+Mikel Ac,M095,Argentina-Turquía,1-0
+Mikel Ac,M096,Suiza-Portugal,0-1
+Monica Dmm,M089,Alemania-Francia,1-1
+Monica Dmm,M090,Canadá-Países Bajos,0-2
+Monica Dmm,M091,Suecia-Noruega,0-2
+Monica Dmm,M092,Brasil-Inglaterra,2-2
+Monica Dmm,M093,Croacia-España,1-1
+Monica Dmm,M094,Estados Unidos-Bélgica,1-0
+Monica Dmm,M095,Argentina-Turquía,2-0
+Monica Dmm,M096,Suiza-Portugal,0-2
+Mv,M089,Alemania-Francia,1-1
+Mv,M090,Catar-Brasil,0-2
+Mv,M091,Marruecos-Senegal,2-1
+Mv,M092,México-Inglaterra,0-2
+Mv,M093,Croacia-España,1-3
+Mv,M094,Estados Unidos-Bélgica,0-1
+Mv,M095,Argentina-Turquía,2-2
+Mv,M096,Canadá-Portugal,0-2
+Mvh,M089,Alemania-Francia,2-4
+Mvh,M090,Sudáfrica-Países Bajos,0-2
+Mvh,M091,Brasil-Noruega,2-1
+Mvh,M092,México-Inglaterra,1-2
+Mvh,M093,Colombia-España,1-2
+Mvh,M094,Turquía-Bélgica,2-0
+Mvh,M095,Argentina-Egipto,3-1
+Mvh,M096,Suiza-Portugal,0-2
+Manuel Andrés Atienza 1,M089,Alemania-Francia,1-2
+Manuel Andrés Atienza 1,M090,Corea del Sur-Marruecos,1-2
+Manuel Andrés Atienza 1,M091,Brasil-Noruega,2-1
+Manuel Andrés Atienza 1,M092,México-Inglaterra,1-2
+Manuel Andrés Atienza 1,M093,Colombia-España,0-1
+Manuel Andrés Atienza 1,M094,Turquía-Bélgica,1-0
+Manuel Andrés Atienza 1,M095,Argentina-Estados Unidos,2-0
+Manuel Andrés Atienza 1,M096,Suiza-Portugal,1-2
+Manuel Andrés Atienza 2,M089,Alemania-Francia,2-3
+Manuel Andrés Atienza 2,M090,México-Países Bajos,1-1
+Manuel Andrés Atienza 2,M091,Brasil-Ecuador,1-1
+Manuel Andrés Atienza 2,M092,Corea del Sur-Inglaterra,1-2
+Manuel Andrés Atienza 2,M093,Croacia-España,1-2
+Manuel Andrés Atienza 2,M094,Estados Unidos-Bélgica,2-1
+Manuel Andrés Atienza 2,M095,Argentina-Turquía,2-2
+Manuel Andrés Atienza 2,M096,Suiza-Portugal,1-2
+Manuel Carrillo,M089,Alemania-Francia,0-2
+Manuel Carrillo,M090,México-Países Bajos,1-2
+Manuel Carrillo,M091,Marruecos-Senegal,1-0
+Manuel Carrillo,M092,Cabo Verde-Inglaterra,1-2
+Manuel Carrillo,M093,Ghana-España,1-2
+Manuel Carrillo,M094,Noruega-Bélgica,2-0
+Manuel Carrillo,M095,Argentina-Egipto,2-1
+Manuel Carrillo,M096,Suiza-Portugal,0-1
+Manuel Romero,M089,Alemania-Francia,1-2
+Manuel Romero,M090,México-Países Bajos,0-2
+Manuel Romero,M091,Brasil-Noruega,2-0
+Manuel Romero,M092,Costa de Marfil-Inglaterra,1-2
+Manuel Romero,M093,Colombia-España,1-2
+Manuel Romero,M094,Turquía-Bélgica,1-2
+Manuel Romero,M095,Argentina-Estados Unidos,2-0
+Manuel Romero,M096,Suiza-Portugal,0-2
+Manuel Segura Rodríguez,M089,Alemania-Francia,2-3
+Manuel Segura Rodríguez,M090,México-Marruecos,1-3
+Manuel Segura Rodríguez,M091,Brasil-Noruega,2-1
+Manuel Segura Rodríguez,M092,Corea del Sur-Inglaterra,0-2
+Manuel Segura Rodríguez,M093,Croacia-España,1-3
+Manuel Segura Rodríguez,M094,Turquía-Bélgica,1-2
+Manuel Segura Rodríguez,M095,Argentina-Estados Unidos,2-0
+Manuel Segura Rodríguez,M096,Suiza-Portugal,1-3
+Marco A Montaño 1,M089,Alemania-Francia,0-2
+Marco A Montaño 1,M090,Bosnia y Herzegovina-Países Bajos,1-2
+Marco A Montaño 1,M091,Brasil-Noruega,2-1
+Marco A Montaño 1,M092,México-Inglaterra,1-2
+Marco A Montaño 1,M093,Colombia-España,2-2
+Marco A Montaño 1,M094,Turquía-Bélgica,2-1
+Marco A Montaño 1,M095,Argentina-Paraguay,2-0
+Marco A Montaño 1,M096,Suiza-Portugal,1-2
+Marco A Montaño 2,M089,Alemania-Francia,1-2
+Marco A Montaño 2,M090,Chequia-Marruecos,0-2
+Marco A Montaño 2,M091,Brasil-Noruega,2-2
+Marco A Montaño 2,M092,México-Inglaterra,0-1
+Marco A Montaño 2,M093,Colombia-Uruguay,2-1
+Marco A Montaño 2,M094,Turquía-Bélgica,2-2
+Marco A Montaño 2,M095,España-Egipto,2-0
+Marco A Montaño 2,M096,Suiza-Portugal,0-3
+Marcos Rodrigo DíAz,M089,Alemania-Francia,1-2
+Marcos Rodrigo DíAz,M090,Canadá-Países Bajos,1-2
+Marcos Rodrigo DíAz,M091,Brasil-Noruega,3-2
+Marcos Rodrigo DíAz,M092,México-Inglaterra,1-2
+Marcos Rodrigo DíAz,M093,Portugal-España,1-3
+Marcos Rodrigo DíAz,M094,Turquía-Bélgica,1-2
+Marcos Rodrigo DíAz,M095,Argentina-Egipto,3-1
+Marcos Rodrigo DíAz,M096,Suiza-Colombia,0-2
+Marcos Rodriguez,M089,Alemania-Francia,1-1
+Marcos Rodriguez,M090,Suiza-Países Bajos,1-2
+Marcos Rodriguez,M091,Brasil-Noruega,3-1
+Marcos Rodriguez,M092,México-Inglaterra,1-3
+Marcos Rodriguez,M093,Croacia-España,0-2
+Marcos Rodriguez,M094,Estados Unidos-Corea del Sur,2-1
+Marcos Rodriguez,M095,Argentina-Turquía,2-0
+Marcos Rodriguez,M096,Canadá-Portugal,2-2
+Marcos Sagaseta,M089,Alemania-Francia,4-3
+Marcos Sagaseta,M090,Suiza-Países Bajos,2-3
+Marcos Sagaseta,M091,Brasil-Noruega,1-0
+Marcos Sagaseta,M092,México-Inglaterra,0-3
+Marcos Sagaseta,M093,Croacia-España,1-3
+Marcos Sagaseta,M094,Turquía-Bélgica,1-2
+Marcos Sagaseta,M095,Argentina-Egipto,2-0
+Marcos Sagaseta,M096,Canadá-Portugal,1-2
+Marcosrodriguezlage,M089,Alemania-Francia,1-2
+Marcosrodriguezlage,M090,Suiza-Países Bajos,0-1
+Marcosrodriguezlage,M091,Brasil-Noruega,3-1
+Marcosrodriguezlage,M092,México-Inglaterra,1-2
+Marcosrodriguezlage,M093,Colombia-España,1-2
+Marcosrodriguezlage,M094,Estados Unidos-Bélgica,1-1
+Marcosrodriguezlage,M095,Argentina-Turquía,2-0
+Marcosrodriguezlage,M096,Canadá-Portugal,1-3
+Maria Peña,M089,Alemania-Francia,1-2
+Maria Peña,M090,Suiza-Países Bajos,1-2
+Maria Peña,M091,Brasil-Noruega,2-0
+Maria Peña,M092,Arabia Saudí-Inglaterra,1-3
+Maria Peña,M093,Croacia-España,1-3
+Maria Peña,M094,Japón-Bélgica,0-1
+Maria Peña,M095,Argentina-Turquía,2-0
+Maria Peña,M096,Catar-Portugal,0-2
+Mario Alvarez,M089,Alemania-Francia,1-2
+Mario Alvarez,M090,Suiza-Brasil,0-2
+Mario Alvarez,M091,Marruecos-Ecuador,1-1
+Mario Alvarez,M092,México-Inglaterra,1-2
+Mario Alvarez,M093,Croacia-España,0-2
+Mario Alvarez,M094,Turquía-Bélgica,2-1
+Mario Alvarez,M095,Argentina-Irán,2-0
+Mario Alvarez,M096,Bosnia y Herzegovina-Portugal,0-3
+Mario Crespo PéRez,M089,Alemania-Francia,1-2
+Mario Crespo PéRez,M090,Suiza-Países Bajos,1-2
+Mario Crespo PéRez,M091,Brasil-Noruega,2-1
+Mario Crespo PéRez,M092,México-Inglaterra,1-1
+Mario Crespo PéRez,M093,Croacia-España,1-2
+Mario Crespo PéRez,M094,Estados Unidos-Bélgica,1-2
+Mario Crespo PéRez,M095,Argentina-Egipto,2-1
+Mario Crespo PéRez,M096,Canadá-Portugal,1-2
+Mario Crespo Yepes,M089,Marruecos-Noruega,0-2
+Mario Crespo Yepes,M090,Canadá-Alemania,2-1
+Mario Crespo Yepes,M091,Brasil-Francia,3-3
+Mario Crespo Yepes,M092,México-Inglaterra,0-1
+Mario Crespo Yepes,M093,España-Croacia,2-0
+Mario Crespo Yepes,M094,Bélgica-Turquía,3-2
+Mario Crespo Yepes,M095,Estados Unidos-Portugal,1-2
+Mario Crespo Yepes,M096,Suiza-Argentina,1-2
+Mario Guzman,M089,Alemania-Senegal,2-2
+Mario Guzman,M090,Suiza-Brasil,1-3
+Mario Guzman,M091,Marruecos-Francia,2-2
+Mario Guzman,M092,México-Inglaterra,2-2
+Mario Guzman,M093,Croacia-España,1-2
+Mario Guzman,M094,Estados Unidos-Bélgica,1-2
+Mario Guzman,M095,Argentina-Turquía,3-0
+Mario Guzman,M096,Austria-Portugal,1-3
+Mario Molina,M089,Paises Bajos-Senegal,0-2
+Mario Molina,M090,Suiza-Alemania,1-0
+Mario Molina,M091,Marruecos-Francia,2-1
+Mario Molina,M092,México-Inglaterra,0-2
+Mario Molina,M093,España-Croacia,3-1
+Mario Molina,M094,Bélgica-Estados Unidos,2-0
+Mario Molina,M095,Paraguay-Portugal,1-2
+Mario Molina,M096,Bosnia y Herzegovina-Argentina,0-2
+Mario Pines,M089,Alemania-Francia,2-2
+Mario Pines,M090,Canadá-Marruecos,0-1
+Mario Pines,M091,Brasil-Senegal,2-1
+Mario Pines,M092,México-Inglaterra,1-3
+Mario Pines,M093,Croacia-España,1-1
+Mario Pines,M094,Estados Unidos-Bélgica,1-2
+Mario Pines,M095,Argentina-Paraguay,2-0
+Mario Pines,M096,Suiza-Portugal,1-2
+Marta Leon Salvador,M089,Alemania-Suecia,2-1
+Marta Leon Salvador,M090,México-Países Bajos,0-3
+Marta Leon Salvador,M091,Marruecos-Senegal,2-1
+Marta Leon Salvador,M092,Uruguay-Inglaterra,0-2
+Marta Leon Salvador,M093,Croacia-España,1-2
+Marta Leon Salvador,M094,Estados Unidos-Bélgica,1-1
+Marta Leon Salvador,M095,Argentina-Australia,1-1
+Marta Leon Salvador,M096,Suiza-Portugal,0-2
+Marta Perales,M089,Australia-Francia,0-3
+Marta Perales,M090,Chequia-Escocia,2-2
+Marta Perales,M091,Japón-Senegal,0-1
+Marta Perales,M092,Cabo Verde-Croacia,0-2
+Marta Perales,M093,Inglaterra-España,1-1
+Marta Perales,M094,Turquía-Sudáfrica,1-2
+Marta Perales,M095,Uruguay-Estados Unidos,1-1
+Marta Perales,M096,Suiza-Colombia,2-0
+Marta Perez Pedro Bernardo,M089,Alemania-Francia,2-0
+Marta Perez Pedro Bernardo,M090,Chequia-Marruecos,0-2
+Marta Perez Pedro Bernardo,M091,Brasil-Noruega,3-1
+Marta Perez Pedro Bernardo,M092,México-Inglaterra,0-2
+Marta Perez Pedro Bernardo,M093,Colombia-Uruguay,1-0
+Marta Perez Pedro Bernardo,M094,Estados Unidos-Bélgica,0-1
+Marta Perez Pedro Bernardo,M095,Argentina-Turquía,2-0
+Marta Perez Pedro Bernardo,M096,Catar-Portugal,0-2
+Marta Sagaseta 1,M089,Alemania-Francia,3-3
+Marta Sagaseta 1,M090,Canadá-Países Bajos,0-2
+Marta Sagaseta 1,M091,Brasil-Noruega,2-1
+Marta Sagaseta 1,M092,Costa de Marfil-Inglaterra,0-4
+Marta Sagaseta 1,M093,Croacia-España,1-2
+Marta Sagaseta 1,M094,Australia-Bélgica,1-2
+Marta Sagaseta 1,M095,Argentina-Turquía,3-0
+Marta Sagaseta 1,M096,Suiza-Portugal,2-2
+Marta Sampedro,M089,Alemania-Francia,1-1
+Marta Sampedro,M090,Suiza-Marruecos,1-2
+Marta Sampedro,M091,Brasil-Ecuador,2-1
+Marta Sampedro,M092,Corea del Sur-Inglaterra,2-4
+Marta Sampedro,M093,Portugal-España,1-2
+Marta Sampedro,M094,Estados Unidos-Bélgica,0-2
+Marta Sampedro,M095,Argentina-Paraguay,2-1
+Marta Sampedro,M096,Canadá-Colombia,0-2
+Marta,M089,Alemania-Francia,1-2
+Marta,M090,Chequia-Países Bajos,0-1
+Marta,M091,Brasil-Ecuador,1-0
+Marta,M092,México-Inglaterra,0-1
+Marta,M093,Colombia-España,0-1
+Marta,M094,Turquía-Bélgica,1-0
+Marta,M095,Argentina-Egipto,2-1
+Marta,M096,Canadá-Portugal,0-2
+Martagarciarodriguez,M089,Alemania-Francia,1-3
+Martagarciarodriguez,M090,Suiza-Países Bajos,0-2
+Martagarciarodriguez,M091,Brasil-Ecuador,2-1
+Martagarciarodriguez,M092,México-Inglaterra,1-3
+Martagarciarodriguez,M093,Colombia-España,2-3
+Martagarciarodriguez,M094,Turquía-Bélgica,1-1
+Martagarciarodriguez,M095,Argentina-Estados Unidos,2-0
+Martagarciarodriguez,M096,Canadá-Portugal,1-3
+MartíN Guirado,M089,Alemania-Francia,1-3
+MartíN Guirado,M090,Canadá-Países Bajos,0-2
+MartíN Guirado,M091,Marruecos-Senegal,2-2
+MartíN Guirado,M092,Escocia-Inglaterra,0-2
+MartíN Guirado,M093,Colombia-España,1-2
+MartíN Guirado,M094,Turquía-Bélgica,2-1
+MartíN Guirado,M095,Argentina-Estados Unidos,3-1
+MartíN Guirado,M096,Suiza-Portugal,2-4
+Miguel Angel Llorente,M089,Alemania-Francia,1-2
+Miguel Angel Llorente,M090,México-Suecia,2-3
+Miguel Angel Llorente,M091,Brasil-Ecuador,4-1
+Miguel Angel Llorente,M092,Sudáfrica-Inglaterra,0-2
+Miguel Angel Llorente,M093,Croacia-España,1-2
+Miguel Angel Llorente,M094,Estados Unidos-Chequia,0-1
+Miguel Angel Llorente,M095,Uruguay-Paraguay,1-1
+Miguel Angel Llorente,M096,Egipto-Portugal,1-2
+Miguel Quintana,M089,Brasil-Noruega,1-3
+Miguel Quintana,M090,Corea del Sur-Alemania,2-1
+Miguel Quintana,M091,Países Bajos-Francia,0-2
+Miguel Quintana,M092,México-Inglaterra,1-3
+Miguel Quintana,M093,España-Colombia,3-1
+Miguel Quintana,M094,Bélgica-Estados Unidos,2-1
+Miguel Quintana,M095,Turquía-Portugal,0-2
+Miguel Quintana,M096,Suiza-Argentina,1-3
+Miguel Vila,M089,Alemania-Francia,2-3
+Miguel Vila,M090,Canadá-Países Bajos,0-2
+Miguel Vila,M091,Brasil-Noruega,3-1
+Miguel Vila,M092,Chequia-Inglaterra,1-2
+Miguel Vila,M093,Croacia-España,2-4
+Miguel Vila,M094,Turquía-Bélgica,1-1
+Miguel Vila,M095,Argentina-Estados Unidos,2-0
+Miguel Vila,M096,Suiza-Portugal,0-1
+Mila Elorduy,M089,Turquía-Francia,1-3
+Mila Elorduy,M090,Chequia-Marruecos,0-2
+Mila Elorduy,M091,Brasil-Ecuador,3-0
+Mila Elorduy,M092,Haití-Inglaterra,0-3
+Mila Elorduy,M093,Croacia-España,1-3
+Mila Elorduy,M094,Estados Unidos-Bélgica,2-0
+Mila Elorduy,M095,Argentina-Paraguay,3-1
+Mila Elorduy,M096,Suiza-Portugal,1-2
+Monicazarauzadm,M089,Alemania-Francia,1-2
+Monicazarauzadm,M090,Corea del Sur-Países Bajos,0-3
+Monicazarauzadm,M091,Marruecos-Noruega,2-1
+Monicazarauzadm,M092,México-Senegal,1-1
+Monicazarauzadm,M093,Inglaterra-España,0-2
+Monicazarauzadm,M094,Ecuador-Bélgica,1-2
+Monicazarauzadm,M095,Argentina-Estados Unidos,5-2
+Monicazarauzadm,M096,Canadá-Portugal,1-4
+Montse Vicente Merino,M089,Paraguay-Noruega,2-3
+Montse Vicente Merino,M090,Corea del Sur-Marruecos,1-3
+Montse Vicente Merino,M091,Brasil-Francia,2-1
+Montse Vicente Merino,M092,México-Inglaterra,1-3
+Montse Vicente Merino,M093,Croacia-España,2-2
+Montse Vicente Merino,M094,Turquía-Chequia,1-1
+Montse Vicente Merino,M095,Argentina-Estados Unidos,2-0
+Montse Vicente Merino,M096,Canadá-Portugal,1-3
+Nacho Acuña,M089,Alemania-Francia,1-3
+Nacho Acuña,M090,México-Japón,1-2
+Nacho Acuña,M091,Brasil-Noruega,3-1
+Nacho Acuña,M092,Cabo Verde-Senegal,1-1
+Nacho Acuña,M093,Colombia-España,1-3
+Nacho Acuña,M094,Turquía-Bélgica,3-2
+Nacho Acuña,M095,Argentina-Estados Unidos,2-1
+Nacho Acuña,M096,Suiza-Portugal,1-3
+Nacho Carbajo,M089,Alemania-Francia,0-1
+Nacho Carbajo,M090,Canadá-Países Bajos,1-2
+Nacho Carbajo,M091,Brasil-Noruega,3-1
+Nacho Carbajo,M092,Uruguay-Inglaterra,0-2
+Nacho Carbajo,M093,Colombia-España,1-3
+Nacho Carbajo,M094,Turquía-Bélgica,3-2
+Nacho Carbajo,M095,Argentina-Estados Unidos,1-0
+Nacho Carbajo,M096,Argelia-Portugal,1-2
+Nachodelomas,M089,Alemania-Francia,1-0
+Nachodelomas,M090,Chequia-Países Bajos,0-2
+Nachodelomas,M091,Brasil-Ecuador,3-0
+Nachodelomas,M092,México-Inglaterra,0-1
+Nachodelomas,M093,Croacia-España,1-2
+Nachodelomas,M094,Estados Unidos-Bélgica,0-1
+Nachodelomas,M095,Argentina-Turquía,2-0
+Nachodelomas,M096,Suiza-Portugal,0-1
+Nico Triguero,M089,Alemania-Francia,1-2
+Nico Triguero,M090,Canadá-Países Bajos,0-2
+Nico Triguero,M091,Brasil-Senegal,3-1
+Nico Triguero,M092,Costa de Marfil-Inglaterra,0-1
+Nico Triguero,M093,Croacia-España,0-3
+Nico Triguero,M094,Estados Unidos-Noruega,2-1
+Nico Triguero,M095,Argentina-Turquía,3-1
+Nico Triguero,M096,Suiza-Portugal,1-2
+Nicolas De La Fuente,M089,Alemania-Francia,2-4
+Nicolas De La Fuente,M090,Canadá-Países Bajos,1-3
+Nicolas De La Fuente,M091,Brasil-Senegal,3-1
+Nicolas De La Fuente,M092,México-Croacia,2-2
+Nicolas De La Fuente,M093,Inglaterra-España,2-3
+Nicolas De La Fuente,M094,Noruega-Bélgica,3-2
+Nicolas De La Fuente,M095,Argentina-Egipto,3-1
+Nicolas De La Fuente,M096,Suiza-Portugal,1-2
+Noel CalderóN 01,M089,Alemania-Noruega,2-1
+Noel CalderóN 01,M090,Bosnia y Herzegovina-Brasil,1-3
+Noel CalderóN 01,M091,Marruecos-Francia,1-1
+Noel CalderóN 01,M092,México-Inglaterra,0-2
+Noel CalderóN 01,M093,Colombia-España,1-3
+Noel CalderóN 01,M094,Turquía-Bélgica,1-0
+Noel CalderóN 01,M095,Argentina-Paraguay,3-0
+Noel CalderóN 01,M096,Suiza-Portugal,1-2
+Noel CalderóN 02,M089,Alemania-Francia,0-0
+Noel CalderóN 02,M090,Corea del Sur-Marruecos,0-1
+Noel CalderóN 02,M091,Brasil-Noruega,2-0
+Noel CalderóN 02,M092,México-Inglaterra,1-1
+Noel CalderóN 02,M093,Colombia-España,1-3
+Noel CalderóN 02,M094,Turquía-Bélgica,1-0
+Noel CalderóN 02,M095,Argentina-Paraguay,2-1
+Noel CalderóN 02,M096,Suiza-Portugal,1-3
+Noel CalderóN 03,M089,Ecuador-Francia,1-1
+Noel CalderóN 03,M090,Chequia-Marruecos,0-2
+Noel CalderóN 03,M091,Brasil-Noruega,1-2
+Noel CalderóN 03,M092,México-Inglaterra,1-2
+Noel CalderóN 03,M093,Colombia-España,1-3
+Noel CalderóN 03,M094,Turquía-Bélgica,2-1
+Noel CalderóN 03,M095,Austria-Paraguay,2-0
+Noel CalderóN 03,M096,Suiza-Portugal,1-2
+Nu,M089,Alemania-Francia,1-1
+Nu,M090,Chequia-Marruecos,0-1
+Nu,M091,Brasil-Senegal,1-1
+Nu,M092,Ecuador-Inglaterra,0-2
+Nu,M093,Colombia-España,1-2
+Nu,M094,Turquía-Bélgica,1-2
+Nu,M095,Argentina-Estados Unidos,2-0
+Nu,M096,Suiza-Portugal,1-1
+Oscar Alonso 1,M089,Alemania-Francia,1-1
+Oscar Alonso 1,M090,México-Brasil,0-2
+Oscar Alonso 1,M091,Marruecos-Noruega,2-0
+Oscar Alonso 1,M092,Corea del Sur-Inglaterra,1-2
+Oscar Alonso 1,M093,Croacia-España,1-1
+Oscar Alonso 1,M094,Estados Unidos-Bélgica,2-1
+Oscar Alonso 1,M095,Argentina-Turquía,0-0
+Oscar Alonso 1,M096,Canadá-Portugal,0-2
+Oskar Sagaseta Pollock,M089,Alemania-Francia,2-2
+Oskar Sagaseta Pollock,M090,Chequia-Suecia,1-1
+Oskar Sagaseta Pollock,M091,Brasil-Noruega,2-1
+Oskar Sagaseta Pollock,M092,México-Inglaterra,1-2
+Oskar Sagaseta Pollock,M093,Croacia-España,1-3
+Oskar Sagaseta Pollock,M094,Estados Unidos-Bélgica,0-1
+Oskar Sagaseta Pollock,M095,Argentina-Turquía,1-0
+Oskar Sagaseta Pollock,M096,Catar-Portugal,1-2
+Orenbellongarriga,M089,Alemania-Francia,1-2
+Orenbellongarriga,M090,Canadá-Marruecos,1-2
+Orenbellongarriga,M091,Brasil-Noruega,2-1
+Orenbellongarriga,M092,México-Inglaterra,1-2
+Orenbellongarriga,M093,Colombia-España,1-2
+Orenbellongarriga,M094,Senegal-Bélgica,1-1
+Orenbellongarriga,M095,Argentina-Estados Unidos,2-0
+Orenbellongarriga,M096,Suiza-Portugal,1-2
+Orestes,M089,Ecuador-Francia,0-2
+Orestes,M090,Suiza-Países Bajos,2-1
+Orestes,M091,Brasil-Alemania,2-0
+Orestes,M092,Uruguay-Inglaterra,1-3
+Orestes,M093,Colombia-España,2-2
+Orestes,M094,Turquía-Corea del Sur,3-1
+Orestes,M095,Arabia Saudí-Estados Unidos,2-0
+Orestes,M096,Canadá-Portugal,1-2
+Pablo Balbuena,M089,Alemania-Francia,1-2
+Pablo Balbuena,M090,Bosnia y Herzegovina-Suecia,0-2
+Pablo Balbuena,M091,Brasil-Ecuador,1-1
+Pablo Balbuena,M092,Corea del Sur-Inglaterra,0-1
+Pablo Balbuena,M093,Colombia-España,0-1
+Pablo Balbuena,M094,Turquía-Senegal,2-1
+Pablo Balbuena,M095,Argentina-Paraguay,1-0
+Pablo Balbuena,M096,Costa de Marfil-Portugal,1-3
+Pablo Peña Gomez,M089,Alemania-Francia,1-3
+Pablo Peña Gomez,M090,Corea del Sur-Marruecos,1-2
+Pablo Peña Gomez,M091,Brasil-Costa de Marfil,2-0
+Pablo Peña Gomez,M092,Ecuador-Inglaterra,1-2
+Pablo Peña Gomez,M093,Croacia-España,1-2
+Pablo Peña Gomez,M094,Turquía-Bélgica,1-3
+Pablo Peña Gomez,M095,Argentina-Estados Unidos,1-0
+Pablo Peña Gomez,M096,Suiza-Portugal,0-3
+Paco De La Fuente,M089,Brasil-Senegal,1-3
+Paco De La Fuente,M090,Chequia-Alemania,3-1
+Paco De La Fuente,M091,Marruecos-Francia,1-2
+Paco De La Fuente,M092,México-Croacia,1-2
+Paco De La Fuente,M093,España-Inglaterra,2-1
+Paco De La Fuente,M094,Egipto-Estados Unidos,2-3
+Paco De La Fuente,M095,Turquía-Portugal,2-3
+Paco De La Fuente,M096,Suiza-Argentina,1-3
+Pablo Buquerin Martinez,M089,Alemania-Francia,2-2
+Pablo Buquerin Martinez,M090,Corea del Sur-Marruecos,0-2
+Pablo Buquerin Martinez,M091,Brasil-Noruega,3-2
+Pablo Buquerin Martinez,M092,México-Inglaterra,0-1
+Pablo Buquerin Martinez,M093,Colombia-España,1-2
+Pablo Buquerin Martinez,M094,Turquía-Bélgica,1-1
+Pablo Buquerin Martinez,M095,Argentina-Estados Unidos,2-1
+Pablo Buquerin Martinez,M096,Canadá-Portugal,0-2
+Pablo Carbajo RodríGuez,M089,Ecuador-Francia,1-3
+Pablo Carbajo RodríGuez,M090,México-Marruecos,0-2
+Pablo Carbajo RodríGuez,M091,Brasil-Alemania,3-2
+Pablo Carbajo RodríGuez,M092,Costa de Marfil-Inglaterra,0-5
+Pablo Carbajo RodríGuez,M093,Colombia-España,2-3
+Pablo Carbajo RodríGuez,M094,Turquía-Bélgica,1-1
+Pablo Carbajo RodríGuez,M095,Uruguay-Estados Unidos,2-0
+Pablo Carbajo RodríGuez,M096,Canadá-Portugal,1-4
+Pablo Gea,M089,Alemania-Senegal,2-1
+Pablo Gea,M090,Canadá-Países Bajos,1-3
+Pablo Gea,M091,Brasil-Francia,2-1
+Pablo Gea,M092,México-Croacia,0-1
+Pablo Gea,M093,Inglaterra-Uruguay,1-1
+Pablo Gea,M094,Turquía-Egipto,2-3
+Pablo Gea,M095,España-Bélgica,2-1
+Pablo Gea,M096,Suiza-Portugal,1-2
+Pablo Gonzalez Echevarría,M089,Ecuador-Francia,0-3
+Pablo Gonzalez Echevarría,M090,Suiza-Japón,1-1
+Pablo Gonzalez Echevarría,M091,Marruecos-Noruega,2-1
+Pablo Gonzalez Echevarría,M092,Corea del Sur-Inglaterra,2-2
+Pablo Gonzalez Echevarría,M093,Colombia-España,0-2
+Pablo Gonzalez Echevarría,M094,Estados Unidos-Bélgica,1-2
+Pablo Gonzalez Echevarría,M095,Argentina-Egipto,3-0
+Pablo Gonzalez Echevarría,M096,Canadá-Portugal,1-2
+Pablo Martinez Sierra,M089,Alemania-Francia,3-2
+Pablo Martinez Sierra,M090,Canadá-Marruecos,1-2
+Pablo Martinez Sierra,M091,Brasil-Senegal,2-1
+Pablo Martinez Sierra,M092,México-Inglaterra,0-2
+Pablo Martinez Sierra,M093,Colombia-España,1-3
+Pablo Martinez Sierra,M094,Estados Unidos-Bélgica,1-0
+Pablo Martinez Sierra,M095,Uruguay-Turquía,1-0
+Pablo Martinez Sierra,M096,Suiza-Portugal,1-2
+Pablo Navarro,M089,Alemania-Francia,2-3
+Pablo Navarro,M090,Chequia-Marruecos,1-2
+Pablo Navarro,M091,Brasil-Ecuador,2-1
+Pablo Navarro,M092,Costa de Marfil-Senegal,1-1
+Pablo Navarro,M093,Colombia-España,1-2
+Pablo Navarro,M094,Turquía-Bélgica,1-1
+Pablo Navarro,M095,Argentina-Estados Unidos,2-0
+Pablo Navarro,M096,Suiza-Portugal,1-2
+Pablo Sagaseta,M089,Alemania-Francia,1-1
+Pablo Sagaseta,M090,México-Marruecos,0-2
+Pablo Sagaseta,M091,Brasil-Noruega,2-0
+Pablo Sagaseta,M092,Chequia-Inglaterra,0-1
+Pablo Sagaseta,M093,Croacia-España,2-3
+Pablo Sagaseta,M094,Turquía-Sudáfrica,1-1
+Pablo Sagaseta,M095,Argentina-Paraguay,2-0
+Pablo Sagaseta,M096,Suiza-Portugal,0-1
+Pablo Santos,M089,Alemania-Francia,1-3
+Pablo Santos,M090,Corea del Sur-Brasil,1-2
+Pablo Santos,M091,Marruecos-Ecuador,2-0
+Pablo Santos,M092,México-Inglaterra,1-3
+Pablo Santos,M093,Croacia-España,1-3
+Pablo Santos,M094,Turquía-Bélgica,1-0
+Pablo Santos,M095,Argentina-Estados Unidos,1-0
+Pablo Santos,M096,Suiza-Portugal,0-2
+Pachino,M089,Alemania-Noruega,1-2
+Pachino,M090,Canadá-Países Bajos,1-2
+Pachino,M091,Brasil-Francia,2-1
+Pachino,M092,México-Inglaterra,1-2
+Pachino,M093,Colombia-España,1-2
+Pachino,M094,Estados Unidos-Irán,1-1
+Pachino,M095,Argentina-Egipto,2-0
+Pachino,M096,Suiza-Portugal,1-2
+Paloma Vazquez Vicente,M089,Alemania-Francia,2-3
+Paloma Vazquez Vicente,M090,Canadá-Marruecos,2-1
+Paloma Vazquez Vicente,M091,Brasil-Noruega,4-1
+Paloma Vazquez Vicente,M092,México-Inglaterra,1-1
+Paloma Vazquez Vicente,M093,Colombia-España,2-4
+Paloma Vazquez Vicente,M094,Paraguay-Bélgica,2-2
+Paloma Vazquez Vicente,M095,Uruguay-Egipto,1-0
+Paloma Vazquez Vicente,M096,Bosnia y Herzegovina-Portugal,1-3
+Patxo Zubiaur,M089,Alemania-Francia,2-0
+Patxo Zubiaur,M090,México-Marruecos,0-3
+Patxo Zubiaur,M091,Brasil-Noruega,2-0
+Patxo Zubiaur,M092,Escocia-Inglaterra,0-3
+Patxo Zubiaur,M093,Colombia-España,1-2
+Patxo Zubiaur,M094,Turquía-Bélgica,0-2
+Patxo Zubiaur,M095,Argentina-Egipto,2-1
+Patxo Zubiaur,M096,Bosnia y Herzegovina-Portugal,0-3
+Pedro Crespo Yepes,M089,Alemania-Francia,2-3
+Pedro Crespo Yepes,M090,Suiza-Marruecos,1-1
+Pedro Crespo Yepes,M091,Brasil-Noruega,1-0
+Pedro Crespo Yepes,M092,México-Inglaterra,0-1
+Pedro Crespo Yepes,M093,Colombia-España,1-3
+Pedro Crespo Yepes,M094,Turquía-Bélgica,1-2
+Pedro Crespo Yepes,M095,Argentina-Egipto,2-1
+Pedro Crespo Yepes,M096,Canadá-Portugal,0-2
+Pedro Daniel,M089,Alemania-Francia,0-1
+Pedro Daniel,M090,Canadá-Brasil,0-3
+Pedro Daniel,M091,Marruecos-Senegal,1-0
+Pedro Daniel,M092,Corea del Sur-Inglaterra,1-3
+Pedro Daniel,M093,Colombia-España,1-3
+Pedro Daniel,M094,Estados Unidos-Bélgica,2-1
+Pedro Daniel,M095,Argentina-Egipto,1-0
+Pedro Daniel,M096,Suiza-Portugal,0-2
+Rodolfo Moreno,M089,Alemania-Noruega,3-1
+Rodolfo Moreno,M090,Suiza-Marruecos,0-2
+Rodolfo Moreno,M091,Brasil-Francia,2-3
+Rodolfo Moreno,M092,Costa de Marfil-Inglaterra,1-3
+Rodolfo Moreno,M093,Colombia-España,0-3
+Rodolfo Moreno,M094,Estados Unidos-Bélgica,0-2
+Rodolfo Moreno,M095,Argentina-Turquía,2-0
+Rodolfo Moreno,M096,Canadá-Portugal,1-3
+Roman Sagaseta Pollock,M089,Alemania-Noruega,3-0
+Roman Sagaseta Pollock,M090,Canadá-Escocia,1-2
+Roman Sagaseta Pollock,M091,Brasil-Francia,3-3
+Roman Sagaseta Pollock,M092,Senegal-Inglaterra,2-2
+Roman Sagaseta Pollock,M093,Croacia-España,2-4
+Roman Sagaseta Pollock,M094,Turquía-Egipto,2-2
+Roman Sagaseta Pollock,M095,Argentina-Bélgica,3-3
+Roman Sagaseta Pollock,M096,Suiza-Portugal,2-3
+Rafael Gutierrez De Vargas,M089,Ecuador-Francia,1-1
+Rafael Gutierrez De Vargas,M090,Canadá-Brasil,1-3
+Rafael Gutierrez De Vargas,M091,Marruecos-Alemania,1-2
+Rafael Gutierrez De Vargas,M092,México-Inglaterra,1-2
+Rafael Gutierrez De Vargas,M093,Colombia-España,0-2
+Rafael Gutierrez De Vargas,M094,Turquía-Bélgica,1-0
+Rafael Gutierrez De Vargas,M095,Argentina-Estados Unidos,3-0
+Rafael Gutierrez De Vargas,M096,Suiza-Portugal,0-3
+RamóN Alonso Ventas,M089,Alemania-Francia,3-4
+RamóN Alonso Ventas,M090,Suiza-Marruecos,2-3
+RamóN Alonso Ventas,M091,Brasil-Noruega,1-0
+RamóN Alonso Ventas,M092,México-Senegal,1-2
+RamóN Alonso Ventas,M093,Colombia-España,2-3
+RamóN Alonso Ventas,M094,Estados Unidos-Bélgica,2-3
+RamóN Alonso Ventas,M095,Uruguay-Turquía,1-2
+RamóN Alonso Ventas,M096,Canadá-Portugal,1-4
+RamóN Hoyos,M089,Alemania-Francia,1-3
+RamóN Hoyos,M090,México-Marruecos,0-2
+RamóN Hoyos,M091,Brasil-Ecuador,2-1
+RamóN Hoyos,M092,Costa de Marfil-Inglaterra,1-3
+RamóN Hoyos,M093,Colombia-España,1-2
+RamóN Hoyos,M094,Turquía-Bélgica,1-1
+RamóN Hoyos,M095,Argentina-Estados Unidos,2-0
+RamóN Hoyos,M096,Argelia-Portugal,1-3
+Raul Ayuso,M089,Alemania-Francia,2-3
+Raul Ayuso,M090,Corea del Sur-Marruecos,1-3
+Raul Ayuso,M091,Brasil-Ecuador,2-0
+Raul Ayuso,M092,México-Inglaterra,1-2
+Raul Ayuso,M093,Colombia-España,1-2
+Raul Ayuso,M094,Estados Unidos-Bélgica,1-2
+Raul Ayuso,M095,Uruguay-Turquía,2-0
+Raul Ayuso,M096,Suiza-Portugal,1-2
+Raulmateo,M089,Alemania-Francia,2-3
+Raulmateo,M090,Sudáfrica-Marruecos,1-2
+Raulmateo,M091,Brasil-Senegal,3-1
+Raulmateo,M092,Escocia-Inglaterra,1-2
+Raulmateo,M093,Colombia-España,0-2
+Raulmateo,M094,Estados Unidos-Bélgica,1-2
+Raulmateo,M095,Argentina-Egipto,2-1
+Raulmateo,M096,Suiza-Portugal,1-2
+Ricardo Fdez,M089,Alemania-Francia,1-2
+Ricardo Fdez,M090,Corea del Sur-Países Bajos,1-3
+Ricardo Fdez,M091,Brasil-Noruega,3-2
+Ricardo Fdez,M092,México-Croacia,1-2
+Ricardo Fdez,M093,Inglaterra-España,0-2
+Ricardo Fdez,M094,Turquía-Bélgica,1-1
+Ricardo Fdez,M095,Argentina-Estados Unidos,3-0
+Ricardo Fdez,M096,Suiza-Portugal,0-2
+Ricardo MartíNez,M089,Alemania-Francia,2-2
+Ricardo MartíNez,M090,Chequia-Escocia,1-3
+Ricardo MartíNez,M091,Brasil-Noruega,2-0
+Ricardo MartíNez,M092,México-Croacia,1-1
+Ricardo MartíNez,M093,Inglaterra-Uruguay,3-3
+Ricardo MartíNez,M094,Estados Unidos-Bélgica,1-2
+Ricardo MartíNez,M095,España-Egipto,3-1
+Ricardo MartíNez,M096,Suiza-Portugal,2-3
+Roberysamuel,M089,Alemania-Francia,2-1
+Roberysamuel,M090,Corea del Sur-Marruecos,0-2
+Roberysamuel,M091,Países Bajos-Senegal,0-1
+Roberysamuel,M092,México-Inglaterra,0-1
+Roberysamuel,M093,Colombia-España,1-2
+Roberysamuel,M094,Estados Unidos-Chequia,1-0
+Roberysamuel,M095,Argentina-Turquía,2-0
+Roberysamuel,M096,Canadá-Portugal,1-3
+Robertogamero1,M089,Alemania-Francia,1-1
+Robertogamero1,M090,Corea del Sur-Países Bajos,1-1
+Robertogamero1,M091,Marruecos-Senegal,2-1
+Robertogamero1,M092,México-Inglaterra,1-2
+Robertogamero1,M093,Colombia-España,1-2
+Robertogamero1,M094,Estados Unidos-Bélgica,1-0
+Robertogamero1,M095,Argentina-Turquía,2-1
+Robertogamero1,M096,Canadá-Portugal,0-1
+Robertogamero2,M089,Alemania-Francia,1-1
+Robertogamero2,M090,Suiza-Países Bajos,1-2
+Robertogamero2,M091,Brasil-Noruega,2-0
+Robertogamero2,M092,México-Inglaterra,1-2
+Robertogamero2,M093,Colombia-España,1-2
+Robertogamero2,M094,Estados Unidos-Bélgica,1-2
+Robertogamero2,M095,Argentina-Turquía,2-0
+Robertogamero2,M096,Canadá-Portugal,1-2
+Robertogamero3,M089,Alemania-Francia,0-1
+Robertogamero3,M090,Canadá-Brasil,1-2
+Robertogamero3,M091,Marruecos-Senegal,1-1
+Robertogamero3,M092,México-Inglaterra,0-1
+Robertogamero3,M093,Portugal-España,1-2
+Robertogamero3,M094,Turquía-Bélgica,2-1
+Robertogamero3,M095,Uruguay-Estados Unidos,0-1
+Robertogamero3,M096,Argelia-Colombia,0-1
+Robertobuil,M089,Alemania-Francia,3-2
+Robertobuil,M090,México-Japón,1-3
+Robertobuil,M091,Países Bajos-Noruega,3-1
+Robertobuil,M092,Corea del Sur-Inglaterra,1-2
+Robertobuil,M093,Colombia-España,1-3
+Robertobuil,M094,Estados Unidos-Bélgica,2-2
+Robertobuil,M095,Argentina-Egipto,3-1
+Robertobuil,M096,Suiza-Portugal,1-4
+RocíO,M089,Alemania-Francia,2-3
+RocíO,M090,Suiza-Países Bajos,1-2
+RocíO,M091,Brasil-Senegal,3-2
+RocíO,M092,México-Inglaterra,0-2
+RocíO,M093,Colombia-España,2-3
+RocíO,M094,Turquía-Bélgica,1-0
+RocíO,M095,Argentina-Egipto,3-0
+RocíO,M096,Canadá-Portugal,1-2
+Rodrigo Azcona,M089,Alemania-Francia,2-2
+Rodrigo Azcona,M090,Chequia-Países Bajos,0-2
+Rodrigo Azcona,M091,Brasil-Ecuador,3-2
+Rodrigo Azcona,M092,México-Inglaterra,1-1
+Rodrigo Azcona,M093,Colombia-España,1-3
+Rodrigo Azcona,M094,Turquía-Bélgica,1-1
+Rodrigo Azcona,M095,Argentina-Paraguay,2-0
+Rodrigo Azcona,M096,Suiza-Portugal,2-2
+Rodrigo Cuenca Romero,M089,Alemania-Francia,1-3
+Rodrigo Cuenca Romero,M090,México-Marruecos,0-1
+Rodrigo Cuenca Romero,M091,Brasil-Noruega,2-1
+Rodrigo Cuenca Romero,M092,Chequia-Croacia,0-1
+Rodrigo Cuenca Romero,M093,Inglaterra-España,0-2
+Rodrigo Cuenca Romero,M094,Turquía-Bélgica,2-2
+Rodrigo Cuenca Romero,M095,Argentina-Estados Unidos,2-0
+Rodrigo Cuenca Romero,M096,Suiza-Portugal,2-2
+Rodrigogomez,M089,Alemania-Francia,1-3
+Rodrigogomez,M090,México-Marruecos,0-2
+Rodrigogomez,M091,Brasil-Noruega,2-0
+Rodrigogomez,M092,Uruguay-Inglaterra,0-4
+Rodrigogomez,M093,Croacia-España,1-3
+Rodrigogomez,M094,Turquía-Bélgica,0-2
+Rodrigogomez,M095,Austria-Egipto,0-1
+Rodrigogomez,M096,Suiza-Portugal,1-3
+Rosa Artal,M089,Alemania-Francia,2-1
+Rosa Artal,M090,Canadá-Países Bajos,1-2
+Rosa Artal,M091,Brasil-Senegal,2-1
+Rosa Artal,M092,México-Noruega,3-0
+Rosa Artal,M093,Colombia-España,1-3
+Rosa Artal,M094,Estados Unidos-Bélgica,1-2
+Rosa Artal,M095,Argentina-Paraguay,3-1
+Rosa Artal,M096,Suiza-Portugal,1-3
+Silvia Vila,M089,Alemania-Francia,2-2
+Silvia Vila,M090,Corea del Sur-Marruecos,1-2
+Silvia Vila,M091,Brasil-Senegal,4-1
+Silvia Vila,M092,Chequia-Inglaterra,0-2
+Silvia Vila,M093,Croacia-España,2-3
+Silvia Vila,M094,Turquía-Bélgica,1-3
+Silvia Vila,M095,Argentina-Estados Unidos,2-1
+Silvia Vila,M096,Suiza-Portugal,1-2
+Samuelgamero1,M089,Alemania-Francia,1-3
+Samuelgamero1,M090,México-Marruecos,1-2
+Samuelgamero1,M091,Brasil-Ecuador,1-0
+Samuelgamero1,M092,Corea del Sur-Inglaterra,1-1
+Samuelgamero1,M093,Colombia-España,1-2
+Samuelgamero1,M094,Estados Unidos-Bélgica,1-0
+Samuelgamero1,M095,Argentina-Turquía,2-0
+Samuelgamero1,M096,Suiza-Portugal,1-2
+Samuelgamero2,M089,Alemania-Francia,1-2
+Samuelgamero2,M090,Corea del Sur-Países Bajos,1-2
+Samuelgamero2,M091,Brasil-Noruega,1-1
+Samuelgamero2,M092,México-Inglaterra,0-1
+Samuelgamero2,M093,Colombia-España,1-2
+Samuelgamero2,M094,Senegal-Bélgica,1-1
+Samuelgamero2,M095,Argentina-Turquía,2-1
+Samuelgamero2,M096,Canadá-Portugal,0-2
+Sancama74,M089,Alemania-Francia,1-2
+Sancama74,M090,Canadá-Brasil,0-2
+Sancama74,M091,Marruecos-Senegal,1-1
+Sancama74,M092,Uruguay-Ghana,1-0
+Sancama74,M093,Inglaterra-España,0-1
+Sancama74,M094,Turquía-Bélgica,0-2
+Sancama74,M095,Argentina-Estados Unidos,2-1
+Sancama74,M096,Suiza-Portugal,1-1
+Sandra Herrero,M089,Alemania-Francia,1-3
+Sandra Herrero,M090,Chequia-Países Bajos,2-4
+Sandra Herrero,M091,Suecia-Ecuador,0-3
+Sandra Herrero,M092,México-Inglaterra,2-5
+Sandra Herrero,M093,Colombia-Uruguay,4-3
+Sandra Herrero,M094,Estados Unidos-Bélgica,0-1
+Sandra Herrero,M095,Argentina-Paraguay,4-2
+Sandra Herrero,M096,Suiza-Croacia,0-2
+Santi,M089,Alemania-Francia,1-2
+Santi,M090,Canadá-Brasil,0-2
+Santi,M091,Marruecos-Ecuador,2-1
+Santi,M092,México-Inglaterra,1-2
+Santi,M093,Croacia-España,1-2
+Santi,M094,Costa de Marfil-Bélgica,1-2
+Santi,M095,Uruguay-Estados Unidos,2-0
+Santi,M096,Suiza-Portugal,1-3
+Santiago Cabezas,M089,Alemania-Francia,1-2
+Santiago Cabezas,M090,Suiza-Marruecos,1-3
+Santiago Cabezas,M091,Brasil-Costa de Marfil,1-0
+Santiago Cabezas,M092,Chequia-Inglaterra,0-2
+Santiago Cabezas,M093,Colombia-España,1-3
+Santiago Cabezas,M094,Estados Unidos-Bélgica,0-2
+Santiago Cabezas,M095,Argentina-Turquía,2-0
+Santiago Cabezas,M096,Bosnia y Herzegovina-Portugal,0-1
+Santiago G Arias,M089,Alemania-Francia,2-2
+Santiago G Arias,M090,Chequia-Países Bajos,2-3
+Santiago G Arias,M091,Brasil-Noruega,3-2
+Santiago G Arias,M092,México-Inglaterra,1-3
+Santiago G Arias,M093,Croacia-España,2-4
+Santiago G Arias,M094,Australia-Bélgica,2-3
+Santiago G Arias,M095,Uruguay-Estados Unidos,3-1
+Santiago G Arias,M096,Suiza-Portugal,2-3
+Santiago Garcia Candanedo,M089,Alemania-Francia,1-2
+Santiago Garcia Candanedo,M090,Bosnia y Herzegovina-Marruecos,0-1
+Santiago Garcia Candanedo,M091,Brasil-Senegal,2-0
+Santiago Garcia Candanedo,M092,México-Ghana,1-0
+Santiago Garcia Candanedo,M093,Inglaterra-España,0-2
+Santiago Garcia Candanedo,M094,Turquía-Chequia,3-1
+Santiago Garcia Candanedo,M095,Argentina-Paraguay,1-1
+Santiago Garcia Candanedo,M096,Canadá-Portugal,0-1
+Santiago GarcíA LóPez,M089,Alemania-Francia,1-3
+Santiago GarcíA LóPez,M090,Chequia-Marruecos,0-2
+Santiago GarcíA LóPez,M091,Brasil-Ecuador,2-0
+Santiago GarcíA LóPez,M092,Sudáfrica-Inglaterra,1-3
+Santiago GarcíA LóPez,M093,Croacia-España,0-1
+Santiago GarcíA LóPez,M094,Bosnia y Herzegovina-Bélgica,2-2
+Santiago GarcíA LóPez,M095,Argentina-Estados Unidos,2-0
+Santiago GarcíA LóPez,M096,Suiza-Portugal,1-4
+Sebastiansanchezgonzalez,M089,Alemania-Francia,1-3
+Sebastiansanchezgonzalez,M090,Corea del Sur-Marruecos,1-2
+Sebastiansanchezgonzalez,M091,Brasil-Senegal,2-1
+Sebastiansanchezgonzalez,M092,Chequia-Inglaterra,1-3
+Sebastiansanchezgonzalez,M093,Croacia-España,1-3
+Sebastiansanchezgonzalez,M094,Suecia-Bélgica,1-2
+Sebastiansanchezgonzalez,M095,Argentina-Egipto,2-1
+Sebastiansanchezgonzalez,M096,Ecuador-Portugal,0-2
+Sebastiansisco,M089,Alemania-Francia,1-3
+Sebastiansisco,M090,Chequia-Países Bajos,1-1
+Sebastiansisco,M091,Brasil-Ecuador,2-1
+Sebastiansisco,M092,México-Inglaterra,0-3
+Sebastiansisco,M093,Croacia-España,1-3
+Sebastiansisco,M094,Turquía-Bélgica,1-0
+Sebastiansisco,M095,Austria-Egipto,2-1
+Sebastiansisco,M096,Bosnia y Herzegovina-Portugal,0-2
+Sergi Garcia,M089,Alemania-Francia,2-3
+Sergi Garcia,M090,Suiza-Brasil,0-2
+Sergi Garcia,M091,Marruecos-Senegal,2-1
+Sergi Garcia,M092,México-Inglaterra,2-2
+Sergi Garcia,M093,Colombia-España,1-3
+Sergi Garcia,M094,Turquía-Bélgica,2-1
+Sergi Garcia,M095,Argentina-Egipto,2-1
+Sergi Garcia,M096,Argelia-Portugal,1-3
+Sergio Herrero,M089,Alemania-Francia,1-2
+Sergio Herrero,M090,Corea del Sur-Países Bajos,1-3
+Sergio Herrero,M091,Marruecos-Noruega,1-1
+Sergio Herrero,M092,México-Inglaterra,1-3
+Sergio Herrero,M093,Croacia-España,0-2
+Sergio Herrero,M094,Turquía-Bélgica,1-1
+Sergio Herrero,M095,Argentina-Estados Unidos,2-0
+Sergio Herrero,M096,Canadá-Portugal,0-1
+Sergiosanchezmontesinos1,M089,Alemania-Francia,1-2
+Sergiosanchezmontesinos1,M090,Sudáfrica-Países Bajos,0-1
+Sergiosanchezmontesinos1,M091,Brasil-Ecuador,2-1
+Sergiosanchezmontesinos1,M092,Arabia Saudí-Inglaterra,0-1
+Sergiosanchezmontesinos1,M093,Colombia-España,1-2
+Sergiosanchezmontesinos1,M094,Paraguay-México,0-1
+Sergiosanchezmontesinos1,M095,Argentina-Egipto,2-0
+Sergiosanchezmontesinos1,M096,Suiza-Portugal,0-1
+Sergiosanchezmontesinos2,M089,Alemania-Francia,1-2
+Sergiosanchezmontesinos2,M090,Chequia-Marruecos,0-2
+Sergiosanchezmontesinos2,M091,Brasil-Ecuador,3-2
+Sergiosanchezmontesinos2,M092,México-Inglaterra,0-1
+Sergiosanchezmontesinos2,M093,Colombia-España,1-2
+Sergiosanchezmontesinos2,M094,Turquía-Bélgica,0-1
+Sergiosanchezmontesinos2,M095,Argentina-Estados Unidos,2-0
+Sergiosanchezmontesinos2,M096,Suiza-Ghana,1-0
+Silvia Garcia Hoyas,M089,Alemania-Francia,1-2
+Silvia Garcia Hoyas,M090,Corea del Sur-Países Bajos,0-2
+Silvia Garcia Hoyas,M091,Brasil-Noruega,2-1
+Silvia Garcia Hoyas,M092,México-Inglaterra,1-2
+Silvia Garcia Hoyas,M093,Colombia-España,0-2
+Silvia Garcia Hoyas,M094,Estados Unidos-Bélgica,1-2
+Silvia Garcia Hoyas,M095,Argentina-Paraguay,2-0
+Silvia Garcia Hoyas,M096,Suiza-Portugal,0-1
+Susana Velasco,M089,Alemania-Francia,1-2
+Susana Velasco,M090,Canadá-Brasil,0-2
+Susana Velasco,M091,Marruecos-Ecuador,1-0
+Susana Velasco,M092,México-Inglaterra,1-2
+Susana Velasco,M093,Colombia-España,1-3
+Susana Velasco,M094,Turquía-Bélgica,2-3
+Susana Velasco,M095,Argentina-Egipto,2-0
+Susana Velasco,M096,Suiza-Portugal,0-2
+Teresa Hernandez Cobo,M089,Alemania-Francia,2-1
+Teresa Hernandez Cobo,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Teresa Hernandez Cobo,M091,Brasil-Noruega,2-1
+Teresa Hernandez Cobo,M092,México-Inglaterra,0-3
+Teresa Hernandez Cobo,M093,Croacia-Uruguay,2-1
+Teresa Hernandez Cobo,M094,Turquía-Bélgica,2-2
+Teresa Hernandez Cobo,M095,España-Estados Unidos,3-1
+Teresa Hernandez Cobo,M096,Suiza-Portugal,0-3
+Tino Domenech,M089,Alemania-Francia,1-1
+Tino Domenech,M090,Bosnia y Herzegovina-Marruecos,1-2
+Tino Domenech,M091,Países Bajos-Senegal,1-1
+Tino Domenech,M092,México-Inglaterra,1-1
+Tino Domenech,M093,Portugal-España,1-2
+Tino Domenech,M094,Noruega-Bélgica,2-1
+Tino Domenech,M095,Argentina-Turquía,2-0
+Tino Domenech,M096,Argelia-Colombia,1-2
+Tomas Martinez,M089,Ecuador-Francia,0-2
+Tomas Martinez,M090,Chequia-Marruecos,1-2
+Tomas Martinez,M091,Brasil-Alemania,3-1
+Tomas Martinez,M092,México-Noruega,1-0
+Tomas Martinez,M093,Colombia-España,2-2
+Tomas Martinez,M094,Estados Unidos-Bélgica,1-2
+Tomas Martinez,M095,Argentina-Paraguay,3-0
+Tomas Martinez,M096,Canadá-Portugal,0-2
+Victoria F,M089,Alemania-Francia,2-3
+Victoria F,M090,Sudáfrica-Marruecos,1-2
+Victoria F,M091,Brasil-Senegal,3-1
+Victoria F,M092,Chequia-Inglaterra,1-0
+Victoria F,M093,Croacia-España,0-1
+Victoria F,M094,Estados Unidos-México,2-1
+Victoria F,M095,Argentina-Paraguay,2-0
+Victoria F,M096,Suiza-Portugal,1-3
+Xavier Garcia,M089,Alemania-Francia,3-3
+Xavier Garcia,M090,Canadá-Países Bajos,1-3
+Xavier Garcia,M091,Brasil-Costa de Marfil,3-0
+Xavier Garcia,M092,México-Inglaterra,1-4
+Xavier Garcia,M093,Croacia-España,1-3
+Xavier Garcia,M094,Turquía-Belgica,0-1
+Xavier Garcia,M095,Argentina-Egipto,3-1
+Xavier Garcia,M096,Suiza-Portugal,1-3
+A,M089,Ecuador-Francia,1-2
+A,M090,México-Brasil,1-3
+A,M091,Marruecos-Alemania,2-1
+A,M092,Chequia-Inglaterra,0-1
+A,M093,Colombia-España,1-2
+A,M094,Estados Unidos-Uruguay,2-1
+A,M095,Argentina-Egipto,3-1
+A,M096,Suiza-Portugal,0-2
+Alex Hoyo,M089,Alemania-Francia,1-3
+Alex Hoyo,M090,Suiza-Marruecos,0-0
+Alex Hoyo,M091,Brasil-Costa de Marfil,1-1
+Alex Hoyo,M092,México-Croacia,1-0
+Alex Hoyo,M093,Inglaterra-España,0-1
+Alex Hoyo,M094,Turquía-Bélgica,1-0
+Alex Hoyo,M095,Uruguay-Estados Unidos,2-1
+Alex Hoyo,M096,Canadá-Portugal,0-2
+Antonio Rodrigo,M089,Alemania-Francia,2-1
+Antonio Rodrigo,M090,Corea del Sur-Brasil,0-3
+Antonio Rodrigo,M091,Marruecos-Senegal,1-0
+Antonio Rodrigo,M092,México-Inglaterra,1-1
+Antonio Rodrigo,M093,Croacia-España,1-3
+Antonio Rodrigo,M094,Turquía-Bélgica,2-2
+Antonio Rodrigo,M095,Uruguay-Estados Unidos,2-0
+Antonio Rodrigo,M096,Nueva Zelanda-Portugal,0-2
+Cristina Sanz,M089,Alemania-Francia,1-4
+Cristina Sanz,M090,México-Marruecos,0-2
+Cristina Sanz,M091,Brasil-Noruega,2-3
+Cristina Sanz,M092,Escocia-Inglaterra,1-2
+Cristina Sanz,M093,Croacia-España,1-3
+Cristina Sanz,M094,Turquía-Bélgica,2-1
+Cristina Sanz,M095,Argentina-Estados Unidos,3-0
+Cristina Sanz,M096,Suiza-Portugal,1-3
+Iker,M089,Alemania-Francia,1-2
+Iker,M090,Bosnia y Herzegovina-Países Bajos,1-3
+Iker,M091,Brasil-Noruega,2-0
+Iker,M092,México-Inglaterra,1-2
+Iker,M093,Colombia-España,1-2
+Iker,M094,Estados Unidos-Bélgica,1-1
+Iker,M095,Argentina-Turquía,3-1
+Iker,M096,Suiza-Portugal,1-2
+Jado19,M089,Alemania-Francia,1-2
+Jado19,M090,Corea del Sur-Países Bajos,1-1
+Jado19,M091,Brasil-Ecuador,1-1
+Jado19,M092,Costa de Marfil-Inglaterra,0-1
+Jado19,M093,Colombia-España,1-2
+Jado19,M094,Turquía-Senegal,1-1
+Jado19,M095,Argentina-Egipto,1-0
+Jado19,M096,Suiza-Portugal,1-2
+Jose Carbajo,M089,Alemania-Francia,2-3
+Jose Carbajo,M090,Canadá-Países Bajos,0-2
+Jose Carbajo,M091,Brasil-Noruega,2-1
+Jose Carbajo,M092,México-Inglaterra,0-2
+Jose Carbajo,M093,Colombia-España,1-3
+Jose Carbajo,M094,Estados Unidos-Bélgica,0-1
+Jose Carbajo,M095,Argentina-Turquía,2-1
+Jose Carbajo,M096,Suiza-Portugal,0-1
+L,M089,Alemania-Francia,3-4
+L,M090,Suiza-Marruecos,1-3
+L,M091,Brasil-Senegal,4-1
+L,M092,México-Inglaterra,1-3
+L,M093,Croacia-España,2-3
+L,M094,Estados Unidos-Bélgica,2-2
+L,M095,Argentina-Turquía,3-2
+L,M096,Canadá-Portugal,1-3
+Laura Garcia,M089,Alemania-Noruega,1-3
+Laura Garcia,M090,Bosnia y Herzegovina-Países Bajos,0-2
+Laura Garcia,M091,Brasil-Francia,3-2
+Laura Garcia,M092,Corea del Sur-Inglaterra,0-2
+Laura Garcia,M093,Colombia-España,1-3
+Laura Garcia,M094,Turquía-Bélgica,3-1
+Laura Garcia,M095,Argentina-Estados Unidos,3-1
+Laura Garcia,M096,Suiza-Portugal,1-2
+Lola Rodríguez,M089,Alemania-Francia,1-1
+Lola Rodríguez,M090,México-Marruecos,2-0
+Lola Rodríguez,M091,Brasil-Costa de Marfil,4-0
+Lola Rodríguez,M092,Ecuador-Inglaterra,1-3
+Lola Rodríguez,M093,Croacia-España,1-2
+Lola Rodríguez,M094,Turquía-Bélgica,1-2
+Lola Rodríguez,M095,Argentina-Egipto,1-0
+Lola Rodríguez,M096,Suiza-Portugal,1-2
+Miguel Garcia,M089,Alemania-Francia,2-3
+Miguel Garcia,M090,Sudáfrica-Países Bajos,1-2
+Miguel Garcia,M091,Brasil-Senegal,4-1
+Miguel Garcia,M092,México-Inglaterra,0-2
+Miguel Garcia,M093,Croacia-España,0-1
+Miguel Garcia,M094,Turquía-Bélgica,0-1
+Miguel Garcia,M095,Argentina-Egipto,3-0
+Miguel Garcia,M096,Suiza-Portugal,1-2
+Narciso Vaquero,M089,Brasil-Senegal,2-2
+Narciso Vaquero,M090,Suiza-Costa de Marfil,1-1
+Narciso Vaquero,M091,Marruecos-Francia,1-1
+Narciso Vaquero,M092,Chequia-Colombia,2-3
+Narciso Vaquero,M093,España-RD Congo,2-0
+Narciso Vaquero,M094,Uruguay-Turquía,0-0
+Narciso Vaquero,M095,Estados Unidos-Portugal,0-0
+Narciso Vaquero,M096,Argelia-Argentina,0-1
+Nj,M089,Alemania-Francia,2-1
+Nj,M090,Suiza-Países Bajos,0-2
+Nj,M091,Brasil-Noruega,1-0
+Nj,M092,Costa de Marfil-Inglaterra,0-1
+Nj,M093,Colombia-España,0-3
+Nj,M094,Australia-Bélgica,0-1
+Nj,M095,Argentina-Egipto,2-1
+Nj,M096,Canadá-Portugal,0-2
+P,M089,Alemania-Francia,1-2
+P,M090,Chequia-Marruecos,1-3
+P,M091,Brasil-Ecuador,3-1
+P,M092,México-Inglaterra,1-2
+P,M093,Colombia-España,1-2
+P,M094,Estados Unidos-Bélgica,1-1
+P,M095,Argentina-Turquía,3-0
+P,M096,Canadá-Portugal,1-4
+Papa,M089,Alemania-Francia,1-1
+Papa,M090,Chequia-Países Bajos,0-2
+Papa,M091,Brasil-Ecuador,2-1
+Papa,M092,México-Inglaterra,1-2
+Papa,M093,Colombia-España,1-2
+Papa,M094,Paraguay-Bélgica,0-2
+Papa,M095,Argentina-Turquía,2-0
+Papa,M096,Suiza-Portugal,1-2
+Pepe Vergara,M089,Alemania-Francia,2-2
+Pepe Vergara,M090,Bosnia y Herzegovina-Marruecos,1-2
+Pepe Vergara,M091,Brasil-Costa de Marfil,3-1
+Pepe Vergara,M092,México-Inglaterra,1-1
+Pepe Vergara,M093,Colombia-España,0-1
+Pepe Vergara,M094,Paraguay-Egipto,1-0
+Pepe Vergara,M095,Uruguay-Bélgica,1-1
+Pepe Vergara,M096,Suiza-Portugal,1-2
+Rafita,M089,Alemania-Francia,1-3
+Rafita,M090,Corea del Sur-Marruecos,0-2
+Rafita,M091,Brasil-Ecuador,2-1
+Rafita,M092,Chequia-Inglaterra,0-2
+Rafita,M093,Portugal-España,2-2
+Rafita,M094,Estados Unidos-Bélgica,1-0
+Rafita,M095,Argentina-Turquía,3-1
+Rafita,M096,Suiza-Colombia,1-1
+Ricardo Pastor,M089,Alemania-Francia,1-1
+Ricardo Pastor,M090,México-Países Bajos,1-2
+Ricardo Pastor,M091,Brasil-Noruega,2-2
+Ricardo Pastor,M092,Costa de Marfil-Inglaterra,1-3
+Ricardo Pastor,M093,Colombia-España,1-2
+Ricardo Pastor,M094,Turquía-Bélgica,1-1
+Ricardo Pastor,M095,Argentina-Estados Unidos,1-0
+Ricardo Pastor,M096,Bosnia y Herzegovina-Portugal,1-3
+Sergio,M089,Alemania-Francia,2-2
+Sergio,M090,Corea del Sur-Países Bajos,1-2
+Sergio,M091,Brasil-Noruega,3-1
+Sergio,M092,México-Inglaterra,1-3
+Sergio,M093,Colombia-España,1-2
+Sergio,M094,Turquía-Bélgica,1-3
+Sergio,M095,Argentina-Egipto,2-1
+Sergio,M096,Suiza-Portugal,1-2
+Álvaro,M089,Alemania-Francia,3-3
+Álvaro,M090,Chequia-Marruecos,0-2
+Álvaro,M091,Brasil-Noruega,3-1
+Álvaro,M092,Escocia-Inglaterra,0-2
+Álvaro,M093,Croacia-España,0-3
+Álvaro,M094,Estados Unidos-Bélgica,1-1
+Álvaro,M095,Argentina-Turquía,3-1
+Álvaro,M096,Suiza-Portugal,2-3
+Álvaromárquezvalverde1,M089,Alemania-Francia,0-2
+Álvaromárquezvalverde1,M090,México-Marruecos,0-1
+Álvaromárquezvalverde1,M091,Brasil-Senegal,2-1
+Álvaromárquezvalverde1,M092,Chequia-Inglaterra,0-1
+Álvaromárquezvalverde1,M093,Croacia-España,0-1
+Álvaromárquezvalverde1,M094,Turquía-Bélgica,0-2
+Álvaromárquezvalverde1,M095,Argentina-Egipto,2-0
+Álvaromárquezvalverde1,M096,Costa de Marfil-Portugal,0-3
+Álvaromárquezvalverde2,M089,Alemania-Francia,0-2
+Álvaromárquezvalverde2,M090,Canadá-Marruecos,0-1
+Álvaromárquezvalverde2,M091,Brasil-Ecuador,2-0
+Álvaromárquezvalverde2,M092,Chequia-Inglaterra,1-2
+Álvaromárquezvalverde2,M093,Croacia-España,1-2
+Álvaromárquezvalverde2,M094,Japón-Bélgica,0-1
+Álvaromárquezvalverde2,M095,Argentina-Egipto,2-0
+Álvaromárquezvalverde2,M096,Costa de Marfil-Portugal,0-2
+Ángel Fernández,M089,Alemania-Francia,2-2
+Ángel Fernández,M090,Chequia-Marruecos,1-2
+Ángel Fernández,M091,Brasil-Noruega,2-0
+Ángel Fernández,M092,México-Croacia,2-2
+Ángel Fernández,M093,Inglaterra-España,1-2
+Ángel Fernández,M094,Paraguay-Corea del Sur,1-0
+Ángel Fernández,M095,Argentina-Bélgica,1-1
+Ángel Fernández,M096,Suiza-Portugal,1-2
