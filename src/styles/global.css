@@ -985,6 +985,33 @@ button {
   margin-top: 16px;
 }
 
+.group-stage-view-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.group-stage-view-tab {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 10px 14px;
+  color: rgba(229, 238, 248, 0.78);
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 800;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.group-stage-view-tab:hover {
+  color: #ffffff;
+  border-color: rgba(157, 223, 255, 0.38);
+}
+
+.group-stage-view-tab-active {
+  color: #08111f;
+  border-color: transparent;
+  background: linear-gradient(135deg, #d7f2ff 0%, #9ddfff 100%);
+}
+
 .prediction-outcome-stat {
   display: grid;
   gap: 4px;
@@ -1219,6 +1246,16 @@ button {
   .prediction-outcome-summary {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+  }
+
+  .group-stage-view-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .group-stage-view-tab {
+    width: 100%;
+    padding: 10px 12px;
   }
 
   .prediction-outcome-stat {
