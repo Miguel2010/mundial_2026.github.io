@@ -119,23 +119,61 @@ function getPredictionRowClassName(participante: string, currentParticipant: str
   return isCurrentParticipant ? 'prediction-row prediction-row-current-user' : 'prediction-row';
 }
 
-function getOrderedPredictions(predictions: Prediction[], currentParticipant: string) {
+function getOrderedPredictions(match: PredictionMatch, currentParticipant: string) {
   const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
-  const currentParticipantPrediction = predictions.find(
+  const currentParticipantPrediction = match.predictions.find(
     (prediction) =>
       normalizeParticipantName(prediction.participante) === normalizedCurrentParticipant,
   );
+  const remainingPredictions = match.predictions.filter(
+    (prediction) =>
+      normalizeParticipantName(prediction.participante) !== normalizedCurrentParticipant,
+  );
 
   if (!currentParticipantPrediction) {
-    return predictions;
+    return match.predictions;
   }
+
+  if (!match.played || !match.result) {
+    return [currentParticipantPrediction, ...remainingPredictions];
+  }
+
+  const groupedPredictions = remainingPredictions.reduce(
+    (groups, prediction) => {
+      const outcome = getPredictionOutcome(prediction.score, match.result);
+
+      if (outcome === 'exact') {
+        groups.exact.push(prediction);
+        return groups;
+      }
+
+      if (outcome === 'partial') {
+        groups.partial.push(prediction);
+        return groups;
+      }
+
+      if (outcome === 'incorrect') {
+        groups.incorrect.push(prediction);
+        return groups;
+      }
+
+      groups.unknown.push(prediction);
+      return groups;
+    },
+    {
+      exact: [] as Prediction[],
+      partial: [] as Prediction[],
+      incorrect: [] as Prediction[],
+      unknown: [] as Prediction[],
+    },
+  );
 
   return [
     currentParticipantPrediction,
-    ...predictions.filter(
-      (prediction) =>
-        normalizeParticipantName(prediction.participante) !== normalizedCurrentParticipant,
-    ),
+    ...groupedPredictions.exact,
+    ...groupedPredictions.partial,
+    ...groupedPredictions.incorrect,
+    ...groupedPredictions.unknown,
   ];
 }
 
@@ -218,7 +256,7 @@ export function PredictionMatchesPanel({
 
       <div className="prediction-match-list">
         {matches.map((match) => {
-          const orderedPredictions = getOrderedPredictions(match.predictions, currentParticipant);
+          const orderedPredictions = getOrderedPredictions(match, currentParticipant);
           const cardClassName = match.played
             ? 'prediction-match-card prediction-match-card-played'
             : 'prediction-match-card';

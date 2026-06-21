@@ -1302,6 +1302,14 @@ button {
     justify-content: flex-start;
   }
 
+  .prediction-row-current-user {
+    border-color: rgba(81, 203, 238, 0.42);
+  }
+
+  .prediction-row-current-user td:first-child {
+    box-shadow: none;
+  }
+
   .prediction-outcome-badge {
     padding: 3px 8px;
     font-size: 0.7rem;
