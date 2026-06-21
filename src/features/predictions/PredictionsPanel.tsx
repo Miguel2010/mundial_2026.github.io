@@ -29,8 +29,8 @@ const predictionSections: Array<{ id: PredictionSection; label: string }> = [
   { id: 'octavos', label: 'Octavos' },
   { id: 'cuartos', label: 'Cuartos' },
   { id: 'semis', label: 'Semis' },
-  { id: 'final', label: 'Final' },
   { id: 'third-place', label: '3y4' },
+  { id: 'final', label: 'Final' },
 ];
 
 export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) {

@@ -33,6 +33,20 @@ export function GroupStagePredictionsPanel({
           {matches.length} partidos y {matches[0]?.predictions.length ?? 0} participantes con
           pronóstico registrado.
         </p>
+        <div className="prediction-outcome-legend" aria-label="Leyenda de resultados">
+          <span className="prediction-outcome-legend-item">
+            <span className="prediction-outcome-badge prediction-outcome-badge-exact">Exacto</span>
+            marcador exacto
+          </span>
+          <span className="prediction-outcome-legend-item">
+            <span className="prediction-outcome-badge prediction-outcome-badge-partial">Parcial</span>
+            acertaste ganador o empate
+          </span>
+          <span className="prediction-outcome-legend-item">
+            <span className="prediction-outcome-badge prediction-outcome-badge-incorrect">Incorrecto</span>
+            pronóstico incorrecto
+          </span>
+        </div>
         <div className="prediction-outcome-summary" aria-label="Resumen de aciertos personales">
           <article className="prediction-outcome-stat prediction-outcome-stat-played">
             <strong>{predictionOutcomeSummary.played}</strong>
@@ -75,23 +89,6 @@ export function GroupStagePredictionsPanel({
               Jugados ({playedMatches.length})
             </button>
           </div>
-
-          {activeView === 'played' ? (
-            <div className="prediction-outcome-legend" aria-label="Leyenda de resultados">
-              <span className="prediction-outcome-legend-item">
-                <span className="prediction-outcome-badge prediction-outcome-badge-exact">Exacto</span>
-                marcador exacto
-              </span>
-              <span className="prediction-outcome-legend-item">
-                <span className="prediction-outcome-badge prediction-outcome-badge-partial">Parcial</span>
-                acertaste ganador o empate
-              </span>
-              <span className="prediction-outcome-legend-item">
-                <span className="prediction-outcome-badge prediction-outcome-badge-incorrect">Incorrecto</span>
-                pronóstico incorrecto
-              </span>
-            </div>
-          ) : null}
         </>
       ) : null}
 
