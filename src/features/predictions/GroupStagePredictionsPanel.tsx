@@ -20,7 +20,7 @@ export function GroupStagePredictionsPanel({
 }: GroupStagePredictionsPanelProps) {
   const [activeView, setActiveView] = useState<GroupStageView>('pending');
   const pendingMatches = matches.filter((match) => !match.played);
-  const playedMatches = matches.filter((match) => match.played);
+  const playedMatches = matches.filter((match) => match.played).slice().reverse();
   const visibleMatches = activeView === 'pending' ? pendingMatches : playedMatches;
   const predictionOutcomeSummary = getPredictionOutcomeSummary(matches, currentParticipant);
 
