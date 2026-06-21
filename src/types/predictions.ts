@@ -10,6 +10,8 @@ export type PredictionMatch = {
   homeFlag: string;
   awayFlag: string;
   predictions: Prediction[];
+  played?: boolean;
+  result?: string;
 };
 
 export type ParticipantPredictionRow = {
