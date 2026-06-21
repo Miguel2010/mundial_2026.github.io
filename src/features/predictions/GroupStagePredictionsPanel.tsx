@@ -20,6 +20,7 @@ export function GroupStagePredictionsPanel({
       error={error}
       isLoading={isLoading}
       matches={matches}
+      showOutcomeLegend
       title="Fase de Grupos"
     />
   );

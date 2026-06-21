@@ -2,6 +2,8 @@ import type { GroupStageMatch, GroupStagePrediction } from '../types/predictions
 import { formatTeamName, getTeamFlag } from '../utils/teamFlags';
 
 const PREDICTIONS_URL = `${import.meta.env.BASE_URL}data/pronostico_fase_grupos.csv`;
+const STATUS_URL = `${import.meta.env.BASE_URL}data/fase_grupos_estado.csv`;
+const SCORE_PATTERN = /^\d+-\d+$/;
 
 function createMatchId(matchHeader: string) {
   return matchHeader
@@ -74,21 +76,99 @@ function parsePredictionsCsv(csv: string): GroupStageMatch[] {
   });
 }
 
-export async function fetchGroupStagePredictions() {
-  const response = await fetch(`${PREDICTIONS_URL}?v=${Date.now()}`, {
-    cache: 'no-store',
-  });
+function parsePlayedStatusCsv(csv: string) {
+  const sanitizedCsv = csv.replace(/^\uFEFF/, '').trim();
 
-  if (!response.ok) {
+  if (!sanitizedCsv) {
+    return new Map<string, { played: boolean; result?: string }>();
+  }
+
+  const lines = sanitizedCsv.split(/\r?\n/).filter(Boolean);
+
+  if (lines.length <= 1) {
+    return new Map<string, { played: boolean; result?: string }>();
+  }
+
+  const headers = lines[0].split(',').map((header) => header.trim());
+
+  if (headers[0] !== 'match' || headers[1] !== 'played' || headers[2] !== 'result') {
+    throw new Error('El formato del CSV de estado de fase de grupos no es válido.');
+  }
+
+  return lines.slice(1).reduce((statusByMatchId, line) => {
+    const [matchHeader = '', playedValue = '', rawResult = ''] = line
+      .split(',')
+      .map((value) => value.trim());
+
+    if (!matchHeader) {
+      return statusByMatchId;
+    }
+
+    if (playedValue !== 'true' && playedValue !== 'false') {
+      throw new Error(`El estado del partido "${matchHeader}" debe ser true o false.`);
+    }
+
+    const result = rawResult.replace(/\s+/g, '');
+
+    if (playedValue === 'true' && !SCORE_PATTERN.test(result)) {
+      throw new Error(`El resultado del partido "${matchHeader}" debe tener formato 0-0.`);
+    }
+
+    if (playedValue === 'false' && result) {
+      throw new Error(`El partido "${matchHeader}" no puede tener resultado si no está jugado.`);
+    }
+
+    statusByMatchId.set(createMatchId(matchHeader), {
+      played: playedValue === 'true',
+      result: result || undefined,
+    });
+
+    return statusByMatchId;
+  }, new Map<string, { played: boolean; result?: string }>());
+}
+
+export async function fetchGroupStagePredictions() {
+  const cacheKey = Date.now();
+  const [predictionsResponse, statusResponse] = await Promise.all([
+    fetch(`${PREDICTIONS_URL}?v=${cacheKey}`, {
+      cache: 'no-store',
+    }),
+    fetch(`${STATUS_URL}?v=${cacheKey}`, {
+      cache: 'no-store',
+    }),
+  ]);
+
+  if (!predictionsResponse.ok) {
     throw new Error('No se encontró el archivo de pronósticos.');
   }
 
-  const csv = await response.text();
-  const parsedMatches = parsePredictionsCsv(csv);
+  if (!statusResponse.ok) {
+    throw new Error('No se encontró el archivo de estado de la fase de grupos.');
+  }
+
+  const [predictionsCsv, statusCsv] = await Promise.all([
+    predictionsResponse.text(),
+    statusResponse.text(),
+  ]);
+
+  const statusByMatchId = parsePlayedStatusCsv(statusCsv);
+  const parsedMatches = parsePredictionsCsv(predictionsCsv).map((match) => {
+    const status = statusByMatchId.get(match.id);
+
+    return {
+      ...match,
+      played: status?.played ?? false,
+      result: status?.result,
+    };
+  });
+
 
   if (parsedMatches.length === 0) {
     throw new Error('El CSV de pronósticos está vacío o no contiene partidos válidos.');
   }
 
-  return parsedMatches;
+  const pendingMatches = parsedMatches.filter((match) => !match.played);
+  const playedMatches = parsedMatches.filter((match) => match.played);
+
+  return [...pendingMatches, ...playedMatches];
 }
