@@ -1,10 +1,10 @@
-Nombre,ID_Partido,Partido,Resultados
+Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis
 Pancho Zarauza,M104,Francia-Inglaterra,1-2
 001 Psv,M104,España-Argentina,1-2
 002 Jfrm,M104,España-Portugal,2-1
 003 Psv1,M104,Bélgica-Brasil,1-2
 004 Nvr,M104,Ecuador-Inglaterra,1-2
-005 Jlmr,M104,Sudáfrica-Portugal,1-1
+005 Jlmr,M104,Sudáfrica-Portugal,1-1,Sudáfrica
 1,M104,Francia-Brasil,2-3
 3P,M104,Marruecos-Portugal,1-1
 Acp,M104,España-Portugal,2-2
@@ -49,7 +49,7 @@ Ana López,M104,Alemania-Argentina,1-3
 Andres Garrido Ramirez,M104,España-Portugal,1-1
 Andres Guzman,M104,España-Argentina,3-0
 Andy Garcia,M104,Francia-Brasil,2-0
-Aneel Grover,M104,Francia-Brasil,2-2
+Aneel Grover,M104,Francia-Brasil,2-2,Brasil
 Antonio Cubero,M104,Países Bajos-Portugal,1-2
 Antonio Mediavilla 01,M104,España-Portugal,2-1
 Antonio Mediavilla 02,M104,España-Brasil,2-1
@@ -68,7 +68,7 @@ Carlos Sisco T,M104,España-Portugal,1-2
 Clasemamita,M104,España-Portugal,3-1
 Consultores Muñoz 1,M104,España-Argentina,2-1
 Consultores Muñoz 2,M104,Alemania-Brasil,1-2
-Consultores Muñoz 3,M104,Francia-Portugal,1-1
+Consultores Muñoz 3,M104,Francia-Portugal,1-1,Portugal
 Cris Garrido 1,M104,Francia-Brasil,2-1
 Cris Garrido 2,M104,Brasil-Portugal,0-0
 Carlos Buil,M104,España-Argentina,3-2
@@ -89,7 +89,7 @@ Caro Ferrazzi,M104,España-Argentina,2-3
 Cayetano Lopez,M104,España-Brasil,2-0
 Cesar,M104,España-Brasil,2-1
 Chiringuito2017V2,M104,España-Portugal,2-1
-Cova Zarauza 1,M104,España-Portugal,2-2
+Cova Zarauza 1,M104,España-Portugal,2-2,España
 Cova Zarauza 2,M104,Francia-Portugal,1-2
 Daniel Diez Rodriguez,M104,Portugal-Inglaterra,2-0
 Daniel PeñA Y Javier Barrios,M104,España-Portugal,2-1
@@ -118,9 +118,9 @@ Emilio,M104,España-Francia,4-2
 Edgardo Tedeschi,M104,Bélgica-Argentina,0-2
 Eduardo Fernandez Lagaron,M104,España-Argentina,3-1
 Eduardo Álvarez,M104,Francia-Argentina,1-0
-Elena DíAz,M104,Francia-Argentina,2-1
+Díaz De Miranda,M104,Francia-Argentina,2-1
 Enrique Martinez,M104,Francia-Brasil,1-2
-Enzo Herrero Sanchez,M104,España-Brasil,1-1
+Enzo Herrero Sanchez,M104,España-Brasil,1-1,España
 Esquivias,M104,Francia-Brasil,2-1
 Esteban Pedraz Mourelle1,M104,Francia-Argentina,0-0
 Esteban Pedraz Mourelle2,M104,Senegal-Uruguay,0-0
@@ -187,7 +187,7 @@ Juanga Jimenez,M104,España-Argentina,1-2
 Jacobo Lopez,M104,Francia-Portugal,2-1
 Jacobo Obradors,M104,España-Brasil,2-0
 Javi Perez,M104,España-Portugal,0-1
-Javier Castrillo,M104,España-Brasil,2-2
+Javier Castrillo,M104,España-Brasil,2-2,España
 Javier Garcia Martin 1,M104,España-Portugal,1-0
 Javier Garcia Martin 2,M104,Francia-Portugal,1-2
 Javier Gea,M104,España-Portugal,3-2
@@ -202,7 +202,7 @@ Jorge Garcia,M104,-,3-2
 Jorge Manjon,M104,España-Portugal,1-0
 Jorge Pérez,M104,España-Argentina,2-1
 Jose Fernandez Gavela,M104,España-Inglaterra,2-1
-Jose Fuente,M104,Francia-Brasil,1-1
+Jose Fuente,M104,Francia-Brasil,1-1,Brasil
 Jose Luis Carrasco,M104,España-Portugal,3-2
 Jose Maria Ortiz,M104,España-Argentina,2-1
 Jose Pradera,M104,España-Inglaterra,3-2
@@ -211,7 +211,7 @@ Josegomez.1,M104,España-Portugal,3-1
 Josegómez,M104,España-Brasil,2-0
 Juan German Balsa,M104,Francia-Brasil,2-0
 Juan Gutiérrez Baz,M104,España-Brasil,2-1
-Juan Jose Garcia Mahecha,M104,España-Argentina,2-2
+Juan Jose Garcia Mahecha,M104,España-Argentina,2-2,España
 Juan Luis Navarro,M104,España-Portugal,1-1
 Juan Navarro,M104,España-Argentina,1-0
 Juan El Chico,M104,España-Argentina,1-4
@@ -222,7 +222,7 @@ Lola Lopez Lopez,M104,España-Inglaterra,3-1
 Lola Sanchez Montes,M104,España-Argentina,3-3
 Lola Y Santi Amor Verdadero,M104,España-Argentina,3-3
 Lorenzo Saez,M104,España-Argentina,3-2
-Lucas Goñi Álvaro Tapia,M104,España-Portugal,2-2
+Lucas Goñi Álvaro Tapia,M104,España-Portugal,2-2,España
 Lucassalinero,M104,Canadá-Francia,2-3
 Lucia Vazquez,M104,Francia-Argentina,1-2
 Luciadelomas,M104,España-Inglaterra,2-1
@@ -263,7 +263,7 @@ Marta Sampedro,M104,España-Brasil,1-0
 Marta,M104,Francia-Brasil,2-1
 Martagarciarodriguez,M104,España-Portugal,2-1
 MartíN Guirado,M104,España-Portugal,3-2
-Miguel Angel Llorente,M104,España-Brasil,2-2
+Miguel Angel Llorente,M104,España-Brasil,2-2,España
 Miguel Quintana,M104,España-Francia,2-2
 Miguel Vila,M104,España-Portugal,2-1
 Mila Elorduy,M104,España-Argentina,3-2
@@ -293,7 +293,7 @@ Pablo Martinez Sierra,M104,España-Brasil,1-2
 Pablo Navarro,M104,España-Portugal,3-2
 Pablo Sagaseta,M104,España-Argentina,2-1
 Pablo Santos,M104,Francia-Argentina,2-0
-Pachino,M104,España-Brasil,1-1
+Pachino,M104,España-Brasil,1-1,Brasil
 Paloma Vazquez Vicente,M104,Francia-Brasil,3-1
 Patxo Zubiaur,M104,Alemania-Inglaterra,0-2
 Pedro Crespo Yepes,M104,España-Portugal,2-1
@@ -321,7 +321,7 @@ Silvia Vila,M104,España-Brasil,2-1
 Samuelgamero1,M104,España-Portugal,2-0
 Samuelgamero2,M104,España-Brasil,1-2
 Sancama74,M104,España-Argentina,3-1
-Sandra Herrero,M104,Francia-Argentina,0-0
+Sandra Herrero,M104,Francia-Argentina,0-0,Francia
 Santi,M104,España-Portugal,1-2
 Santiago Cabezas,M104,España-Inglaterra,1-1
 Santiago G Arias,M104,España-Uruguay,3-2
@@ -331,7 +331,7 @@ Sebastiansanchezgonzalez,M104,España-Brasil,2-1
 Sebastiansisco,M104,España-Brasil,1-0
 Sergi Garcia,M104,Brasil-Marruecos,3-1
 Sergio Herrero,M104,Francia-Marruecos,2-1
-Sergiosanchezmontesinos1,M104,España-Brasil,1-1
+Sergiosanchezmontesinos1,M104,España-Brasil,1-1,España
 Sergiosanchezmontesinos2,M104,Francia-Inglaterra,2-1
 Silvia Garcia Hoyas,M104,España-Argentina,2-1
 Susana Velasco,M104,España-Inglaterra,2-1
@@ -357,7 +357,7 @@ P,M104,Francia-Portugal,2-2
 Papa,M104,España-Brasil,3-1
 Pepe Vergara,M104,España-Portugal,2-2
 Rafita,M104,España-Brasil,1-1
-Ricardo Pastor,M104,España-Portugal,1-1
+Ricardo Pastor,M104,España-Portugal,1-1,Portugal
 Sergio,M104,España-Portugal,1-1
 Álvaro,M104,España-Inglaterra,1-0
 Álvaromárquezvalverde1,M104,Francia-Portugal,0-1
