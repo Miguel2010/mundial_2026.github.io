@@ -1020,6 +1020,26 @@ button {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.04);
   min-width: 0;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+button.prediction-outcome-stat {
+  cursor: pointer;
+}
+
+button.prediction-outcome-stat:hover {
+  transform: translateY(-1px);
+}
+
+button.prediction-outcome-stat:focus-visible {
+  outline: 2px solid rgba(157, 223, 255, 0.7);
+  outline-offset: 2px;
+}
+
+.prediction-outcome-stat-active {
+  border-color: rgba(157, 223, 255, 0.34);
+  box-shadow: inset 0 0 0 1px rgba(157, 223, 255, 0.24);
 }
 
 .prediction-outcome-stat strong {
