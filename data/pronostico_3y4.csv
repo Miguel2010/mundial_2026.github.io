@@ -1,4 +1,4 @@
-Nombre,ID_Partido,Partido,Resultados
+Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis
 Pancho Zarauza,M103,España-Portugal,2-2
 001 Psv,M103,Países Bajos-Brasil,1-2
 002 Jfrm,M103,Alemania-Marruecos,1-2
@@ -22,7 +22,7 @@ Abuelo Jose,M103,Francia-Portugal,2-1
 Adrian Navarro Ochando 2,M103,España-Países Bajos,2-0
 Adrian Navarro Ochando,M103,Alemania-Inglaterra,3-1
 Agustin Rueda Fuentes,M103,Países Bajos-Argentina,1-0
-Agustina Martínez Herrero,M103,España-Inglaterra,0-0
+Agustina Martínez Herrero,M103,España-Inglaterra,0-0,España
 Aitor Castrillo,M103,España-Portugal,2-1
 AitorgonzáLez,M103,Francia-Inglaterra,1-0
 Alberto Carnero,M103,España-Brasil,2-1
@@ -67,7 +67,7 @@ Carlos Martinez,M103,Noruega-Francia,1-3
 Carlos Sisco T,M103,Francia-Brasil,2-1
 Clasemamita,M103,Francia-Inglaterra,2-1
 Consultores Muñoz 1,M103,Francia-Inglaterra,3-1
-Consultores Muñoz 2,M103,Colombia-Portugal,2-2
+Consultores Muñoz 2,M103,Colombia-Portugal,2-2,Portugal
 Consultores Muñoz 3,M103,España-Brasil,3-2
 Cris Garrido 1,M103,España-Argentina,2-1
 Cris Garrido 2,M103,España-Inglaterra,1-2
@@ -251,7 +251,7 @@ Marcosrodriguezlage,M103,España-Brasil,2-2
 Maria Peña,M103,Francia-Argentina,3-1
 Mario Alvarez,M103,Francia-Inglaterra,2-1
 Mario Crespo PéRez,M103,Francia-Brasil,2-1
-Mario Crespo Yepes,M103,Noruega-Argentina,1-1
+Mario Crespo Yepes,M103,Noruega-Argentina,1-1,Argentina
 Mario Guzman,M103,Brasil-Portugal,3-1
 Mario Molina,M103,Suiza-Marruecos,2-0
 Mario Pines,M103,Francia-Inglaterra,2-0
@@ -301,18 +301,18 @@ Rodolfo Moreno,M103,Marruecos-Francia,0-3
 Roman Sagaseta Pollock,M103,Alemania-Portugal,3-2
 Rafael Gutierrez De Vargas,M103,Brasil-Inglaterra,2-2
 RamóN Alonso Ventas,M103,Bélgica-Senegal,2-2
-RamóN Hoyos,M103,España-Portugal,2-2
+RamóN Hoyos,M103,España-Portugal,2-2,España
 Raul Ayuso,M103,Francia-Portugal,2-0
 Raulmateo,M103,Francia-Portugal,1-2
 Ricardo Fdez,M103,Francia-Croacia,3-1
-Ricardo MartíNez,M103,Inglaterra-España,1-1
+Ricardo MartíNez,M103,Inglaterra-España,1-1,España
 Roberysamuel,M103,Marruecos-Inglaterra,2-1
 Robertogamero1,M103,Francia-Portugal,0-1
 Robertogamero2,M103,Países Bajos-Argentina,2-1
 Robertogamero3,M103,España-Estados Unidos,2-0
 Robertobuil,M103,Alemania-Inglaterra,2-1
 RocíO,M103,Francia-Inglaterra,3-2
-Rodrigo Azcona,M103,Francia-Inglaterra,0-0
+Rodrigo Azcona,M103,Francia-Inglaterra,0-0,Francia
 Rodrigo Cuenca Romero,M103,Francia-Brasil,3-2
 Rodrigogomez,M103,Francia-Brasil,3-1
 Rosa Artal,M103,Alemania-Brasil,1-3
@@ -320,7 +320,7 @@ Silvia Vila,M103,Francia-Argentina,1-0
 Samuelgamero1,M103,Francia-Inglaterra,3-0
 Samuelgamero2,M103,Francia-Argentina,2-1
 Sancama74,M103,Francia-Marruecos,1-2
-Sandra Herrero,M103,Colombia-Ecuador,1-1
+Sandra Herrero,M103,Colombia-Ecuador,1-1,Colombia
 Santi,M103,Francia-Inglaterra,2-0
 Santiago Cabezas,M103,Marruecos-Portugal,1-1
 Santiago G Arias,M103,Alemania-Inglaterra,2-1
@@ -361,5 +361,5 @@ Sergio,M103,Francia-Brasil,1-3
 Álvaro,M103,Francia-Argentina,2-3
 Álvaromárquezvalverde1,M103,España-Brasil,2-1
 Álvaromárquezvalverde2,M103,Francia-Portugal,2-1
-Ángel Fernández,M103,España-Portugal,1-1
+Ángel Fernández,M103,España-Portugal,1-1,España
 
