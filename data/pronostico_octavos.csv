@@ -1,4 +1,4 @@
-Nombre,ID_Partido,Partido,Resultados
+Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis
 Pancho Zarauza,M089,Alemania-Francia,2-3
 Pancho Zarauza,M090,Bosnia y Herzegovina-Japón,0-3
 Pancho Zarauza,M091,Brasil-Senegal,0-0
@@ -1318,7 +1318,7 @@ Isra Duro,M092,Costa de Marfil-Inglaterra,0-2
 Isra Duro,M093,Colombia-España,0-2
 Isra Duro,M094,Turquia-Egipto,1-2
 Isra Duro,M095,Argentina-Bélgica,1-1
-Isra Duro,M096,CANADA-Portugal,0-1
+Isra Duro,M096,Canadá-Portugal,0-1
 Itsaso Zubiaur,M089,Alemania-Francia,2-0
 Itsaso Zubiaur,M090,Suiza-Marruecos,0-3
 Itsaso Zubiaur,M091,Brasil-Senegal,3-0
