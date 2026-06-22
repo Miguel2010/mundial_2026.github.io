@@ -1,29 +1,29 @@
-Nombre,ID_Partido,Partido,Resultados
+Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis
 Pancho Zarauza,M101,Francia-España,2-1
-Pancho Zarauza,M102,Inglaterra-Portugal,1-1
+Pancho Zarauza,M102,Inglaterra-Portugal,1-1,Inglaterra
 001 Psv,M101,Países Bajos-España,1-2
-001 Psv,M102,Brasil-Argentina,2-2
+001 Psv,M102,Brasil-Argentina,2-2,Argentina
 002 Jfrm,M101,Alemania-España,0-1
-002 Jfrm,M102,Marruecos-Portugal,0-0
+002 Jfrm,M102,Marruecos-Portugal,0-0,Portugal
 003 Psv1,M101,Noruega-Bélgica,0-2
-003 Psv1,M102,Brasil-Portugal,1-1
+003 Psv1,M102,Brasil-Portugal,1-1,Brasil
 004 Nvr,M101,Ecuador-México,1-0
-004 Nvr,M102,Inglaterra-Colombia,2-2
+004 Nvr,M102,Inglaterra-Colombia,2-2,Inglaterra
 005 Jlmr,M101,Sudáfrica-Turquía,2-0
 005 Jlmr,M102,Francia-Portugal,1-2
 1,M101,Francia-Uruguay,1-0
 1,M102,Brasil-Portugal,2-1
-3P,M101,Marruecos-Uruguay,1-1
+3P,M101,Marruecos-Uruguay,1-1,Marruecos
 3P,M102,Inglaterra-Portugal,0-1
 Acp,M101,Francia-España,1-3
 Acp,M102,Inglaterra-Portugal,1-2
-Alberti 73,M101,Francia-España,1-1
+Alberti 73,M101,Francia-España,1-1,Francia
 Alberti 73,M102,Inglaterra-Argentina,1-2
 Alberto Cabezas,M101,Alemania-Bélgica,2-1
-Alberto Cabezas,M102,Francia-España,1-1
+Alberto Cabezas,M102,Francia-España,1-1,España
 Alexs,M101,Francia-España,3-2
 Alexs,M102,Inglaterra-Argentina,1-2
-Alfonsolopezhernandez,M101,Francia-España,2-2
+Alfonsolopezhernandez,M101,Francia-España,2-2,Francia
 Alfonsolopezhernandez,M102,Brasil-Portugal,0-1
 Alvaro Romero,M101,Francia-España,2-1
 Alvaro Romero,M102,Brasil-Portugal,0-2
@@ -35,21 +35,21 @@ Asf,M101,Francia-España,2-3
 Asf,M102,Inglaterra-Portugal,1-0
 Aupanacho,M101,Senegal-Inglaterra,1-2
 Aupanacho,M102,México-Portugal,1-2
-Abuela,M101,Francia-España,2-2
+Abuela,M101,Francia-España,2-2,España
 Abuela,M102,Brasil-Portugal,1-2
 Abuelo Jose,M101,Francia-España,2-3
 Abuelo Jose,M102,Brasil-Portugal,2-1
-Adrian Navarro Ochando 2,M101,Brasil-España,2-2
+Adrian Navarro Ochando 2,M101,Brasil-España,2-2,Brasil
 Adrian Navarro Ochando 2,M102,Países Bajos-Argentina,1-2
 Adrian Navarro Ochando,M101,Alemania-España,0-1
 Adrian Navarro Ochando,M102,Inglaterra-Argentina,1-2
 Agustin Rueda Fuentes,M101,Países Bajos-España,0-1
-Agustin Rueda Fuentes,M102,Brasil-Argentina,0-0
+Agustin Rueda Fuentes,M102,Brasil-Argentina,0-0,Brasil
 Agustina Martínez Herrero,M101,Alemania-España,2-1
-Agustina Martínez Herrero,M102,Inglaterra-Argentina,1-1
+Agustina Martínez Herrero,M102,Inglaterra-Argentina,1-1,Argentina
 Aitor Castrillo,M101,Francia-España,2-1
 Aitor Castrillo,M102,Inglaterra-Portugal,2-1
-AitorgonzáLez,M101,Francia-España,1-1
+AitorgonzáLez,M101,Francia-España,1-1,España
 AitorgonzáLez,M102,Inglaterra-Portugal,1-2
 Alberto Carnero,M101,Francia-España,2-0
 Alberto Carnero,M102,Brasil-Portugal,1-2
@@ -63,35 +63,35 @@ Alberto Munoz V1,M101,Francia-España,2-1
 Alberto Munoz V1,M102,Brasil-Argentina,2-1
 Alberto Munoz V2,M101,Francia-España,0-2
 Alberto Munoz V2,M102,Marruecos-Portugal,2-3
-Alejadro Tejado Heredia,M101,Francia-España,1-1
+Alejadro Tejado Heredia,M101,Francia-España,1-1,España
 Alejadro Tejado Heredia,M102,Brasil-Portugal,1-2
 Alejandra Bourda,M101,-,-
 Alejandra Bourda,M102,-,-
 Alejandro MáRmol,M101,Francia-España,1-3
-Alejandro MáRmol,M102,Brasil-Argentina,2-2
+Alejandro MáRmol,M102,Brasil-Argentina,2-2,Argentina
 Alejandro Soto,M101,Países Bajos-Colombia,2-1
 Alejandro Soto,M102,Inglaterra-España,0-2
 Alex Garcia,M101,Francia-España,1-3
-Alex Garcia,M102,Brasil-Argentina,1-1
+Alex Garcia,M102,Brasil-Argentina,1-1,Argentina
 Alex Gonzalo,M101,Corea del Sur-Turquía,1-0
 Alex Gonzalo,M102,Inglaterra-España,0-1
-Alvaro Mendez Casquero,M101,Francia-España,2-2
-Alvaro Mendez Casquero,M102,Inglaterra-Portugal,2-2
+Alvaro Mendez Casquero,M101,Francia-España,2-2,España
+Alvaro Mendez Casquero,M102,Inglaterra-Portugal,2-2,Portugal
 Alvaro PeñA Y Santi Asensio,M101,Francia-España,2-1
 Alvaro PeñA Y Santi Asensio,M102,Brasil-Portugal,1-0
 Alvaro PeñA,M101,Francia-España,1-2
-Alvaro PeñA,M102,Brasil-Portugal,1-1
-Alvaro De Simon,M101,Francia-España,1-1
+Alvaro PeñA,M102,Brasil-Portugal,1-1,Portugal
+Alvaro De Simon,M101,Francia-España,1-1,España
 Alvaro De Simon,M102,Brasil-Portugal,2-3
 Alvaro Garcia Campillo,M101,Francia-España,2-1
-Alvaro Garcia Campillo,M102,Brasil-Portugal,2-2
+Alvaro Garcia Campillo,M102,Brasil-Portugal,2-2,Portugal
 Alvaro+Nico,M101,Alemania-España,1-2
 Alvaro+Nico,M102,Brasil-Portugal,3-2
 Ametzzabala,M101,Francia-España,0-2
 Ametzzabala,M102,Inglaterra-Portugal,2-0
 Ana Garcia,M101,Países Bajos-España,1-0
 Ana Garcia,M102,Inglaterra-Portugal,1-2
-Ana López,M101,Alemania-Uruguay,1-1
+Ana López,M101,Alemania-Uruguay,1-1,Alemania
 Ana López,M102,Brasil-Argentina,1-3
 Andres Garrido Ramirez,M101,Francia-España,1-2
 Andres Garrido Ramirez,M102,Inglaterra-Portugal,2-3
@@ -106,7 +106,7 @@ Antonio Cubero,M102,Japón-Portugal,0-2
 Antonio Mediavilla 01,M101,Francia-España,1-3
 Antonio Mediavilla 01,M102,Brasil-Portugal,1-2
 Antonio Mediavilla 02,M101,Marruecos-España,1-2
-Antonio Mediavilla 02,M102,Brasil-Portugal,1-1
+Antonio Mediavilla 02,M102,Brasil-Portugal,1-1,Brasil
 Antonio Mediavilla 03,M101,Alemania-España,1-2
 Antonio Mediavilla 03,M102,Brasil-Portugal,2-1
 Antonio Salinero,M101,Francia-España,1-2
@@ -126,12 +126,12 @@ Beńat Zubiaur1,M102,Inglaterra-Argentina,0-2
 Beńat Zubiaur2,M101,Francia-España,3-1
 Beńat Zubiaur2,M102,Inglaterra-Portugal,0-1
 Borja Poza,M101,Francia-España,3-1
-Borja Poza,M102,Brasil-Portugal,2-2
+Borja Poza,M102,Brasil-Portugal,2-2,Brasil
 Carlos Martinez,M101,Noruega-España,1-2
-Carlos Martinez,M102,Francia-Portugal,2-2
-Carlos Sisco T,M101,Francia-España,2-2
+Carlos Martinez,M102,Francia-Portugal,2-2,Portugal
+Carlos Sisco T,M101,Francia-España,2-2,España
 Carlos Sisco T,M102,Brasil-Portugal,1-2
-Clasemamita,M101,Francia-España,2-2
+Clasemamita,M101,Francia-España,2-2,España
 Clasemamita,M102,Inglaterra-Portugal,1-2
 Consultores Muñoz 1,M101,Francia-España,1-2
 Consultores Muñoz 1,M102,Inglaterra-Argentina,0-1
@@ -142,15 +142,15 @@ Consultores Muñoz 3,M102,Brasil-Portugal,1-2
 Cris Garrido 1,M101,Francia-España,2-1
 Cris Garrido 1,M102,Brasil-Argentina,2-1
 Cris Garrido 2,M101,Brasil-España,1-0
-Cris Garrido 2,M102,Inglaterra-Portugal,2-2
+Cris Garrido 2,M102,Inglaterra-Portugal,2-2,Portugal
 Carlos Buil,M101,Francia-España,2-3
 Carlos Buil,M102,Brasil-Argentina,2-3
 Carlos Chomón,M101,Francia-España,1-2
-Carlos Chomón,M102,Brasil-Argentina,1-1
+Carlos Chomón,M102,Brasil-Argentina,1-1,Argentina
 Carlos Lizana Crespo,M101,Francia-España,2-3
 Carlos Lizana Crespo,M102,Inglaterra-Portugal,2-1
-Carlos Martinez Clemente,M101,Francia-España,1-1
-Carlos Martinez Clemente,M102,Inglaterra-Portugal,1-1
+Carlos Martinez Clemente,M101,Francia-España,1-1,España
+Carlos Martinez Clemente,M102,Inglaterra-Portugal,1-1,Portugal
 Carlos Molina,M101,Francia-España,2-1
 Carlos Molina,M102,Inglaterra-Argentina,1-2
 Carlos Mulero,M101,Francia-España,1-3
@@ -158,57 +158,57 @@ Carlos Mulero,M102,Brasil-Portugal,2-4
 Carlos Peña,M101,Alemania-España,1-2
 Carlos Peña,M102,Inglaterra-Argentina,1-2
 Carlos Pérez,M101,Francia-España,2-3
-Carlos Pérez,M102,Noruega-Portugal,2-2
+Carlos Pérez,M102,Noruega-Portugal,2-2,Noruega
 Carlos Vazquez 1,M101,Francia-España,1-3
-Carlos Vazquez 1,M102,Brasil-Argentina,2-2
+Carlos Vazquez 1,M102,Brasil-Argentina,2-2,Brasil
 Carlos Vazquez 2,M101,Francia-Colombia,4-1
 Carlos Vazquez 2,M102,Inglaterra-Portugal,1-2
-Carlosgilmariscal,M101,Francia-España,2-2
+Carlosgilmariscal,M101,Francia-España,2-2,Francia
 Carlosgilmariscal,M102,Inglaterra-Portugal,0-2
 Carlospulpillo,M101,Francia-España,1-2
 Carlospulpillo,M102,Brasil-Portugal,2-0
 Carlosviescas,M101,Países Bajos-España,0-1
-Carlosviescas,M102,Inglaterra-Portugal,2-2
+Carlosviescas,M102,Inglaterra-Portugal,2-2,Portugal
 Carlota Gil Diaz De Miranda,M101,Francia-España,2-1
 Carlota Gil Diaz De Miranda,M102,Inglaterra-Portugal,2-1
-Caro Ferrazzi,M101,Francia-España,1-1
+Caro Ferrazzi,M101,Francia-España,1-1,España
 Caro Ferrazzi,M102,Croacia-Argentina,0-1
 Cayetano Lopez,M101,Francia-España,1-2
 Cayetano Lopez,M102,Brasil-Argentina,2-1
 Cesar,M101,Países Bajos-España,0-1
 Cesar,M102,Brasil-Argentina,2-1
-Chiringuito2017V2,M101,Francia-España,1-1
+Chiringuito2017V2,M101,Francia-España,1-1,España
 Chiringuito2017V2,M102,Inglaterra-Portugal,1-3
 Cova Zarauza 1,M101,Francia-España,2-3
 Cova Zarauza 1,M102,Inglaterra-Portugal,1-2
-Cova Zarauza 2,M101,Francia-España,2-2
+Cova Zarauza 2,M101,Francia-España,2-2,Francia
 Cova Zarauza 2,M102,Inglaterra-Portugal,1-2
 Daniel Diez Rodriguez,M101,Francia-Portugal,1-2
-Daniel Diez Rodriguez,M102,Inglaterra-Colombia,1-1
+Daniel Diez Rodriguez,M102,Inglaterra-Colombia,1-1,Inglaterra
 Daniel PeñA Y Javier Barrios,M101,Alemania-España,1-2
-Daniel PeñA Y Javier Barrios,M102,Brasil-Portugal,2-2
+Daniel PeñA Y Javier Barrios,M102,Brasil-Portugal,2-2,Portugal
 Daniel Perez,M101,Francia-España,1-2
-Daniel Perez,M102,Brasil-Portugal,2-2
+Daniel Perez,M102,Brasil-Portugal,2-2,Portugal
 Davidaguadopano,M101,Brasil-España,3-1
 Davidaguadopano,M102,Marruecos-Portugal,1-2
 Diego Viñuela Cordero (2),M101,Francia-España,2-1
 Diego Viñuela Cordero (2),M102,Costa de Marfil-Argentina,0-2
 Diego Viñuela Cordero,M101,Francia-España,1-2
 Diego Viñuela Cordero,M102,Inglaterra-Portugal,0-1
-Dani Chaqui,M101,Francia-España,2-2
+Dani Chaqui,M101,Francia-España,2-2,España
 Dani Chaqui,M102,Brasil-Argentina,2-1
 Daniel Diez Rubio,M101,Francia-España,1-2
 Daniel Diez Rubio,M102,Brasil-Portugal,0-1
-Danielperezbenitidanielo,M101,Francia-España,1-1
+Danielperezbenitidanielo,M101,Francia-España,1-1,España
 Danielperezbenitidanielo,M102,Inglaterra-Portugal,2-3
 Danielperezbenito1,M101,Francia-Croacia,2-0
-Danielperezbenito1,M102,Brasil-Portugal,2-2
+Danielperezbenito1,M102,Brasil-Portugal,2-2,Portugal
 Danielperezbenitobenito,M101,Francia-Croacia,2-0
-Danielperezbenitobenito,M102,Brasil-Portugal,2-2
+Danielperezbenitobenito,M102,Brasil-Portugal,2-2,Portugal
 Dany AcuñA,M101,Países Bajos-España,0-1
-Dany AcuñA,M102,Francia-Portugal,1-1
-David Raul Espinoza,M101,Francia-España,3-3
-David Raul Espinoza,M102,Inglaterra-Argentina,2-2
+Dany AcuñA,M102,Francia-Portugal,1-1,Portugal
+David Raul Espinoza,M101,Francia-España,3-3,España
+David Raul Espinoza,M102,Inglaterra-Argentina,2-2,Argentina
 David Ruiz De Gordoa,M101,Francia-España,2-1
 David Ruiz De Gordoa,M102,Brasil-Portugal,2-0
 DavidgarcíAlóPez,M101,Francia-España,2-3
@@ -223,11 +223,11 @@ Diego De Alfonso,M101,Francia-España,2-1
 Diego De Alfonso,M102,Inglaterra-Portugal,0-3
 Diegosalinero,M101,Francia-España,1-2
 Diegosalinero,M102,Brasil-Argentina,1-1
-Domin,M101,Francia-España,2-2
+Domin,M101,Francia-España,2-2,Francia
 Domin,M102,Inglaterra-Portugal,1-2
 Eaf 2.0,M101,Francia-España,1-2
 Eaf 2.0,M102,México-Portugal,1-2
-Ecar,M101,Alemania-España,2-2
+Ecar,M101,Alemania-España,2-2,España
 Ecar,M102,Inglaterra-Portugal,1-2
 Emilio,M101,México-España,2-3
 Emilio,M102,Francia-Portugal,2-1
@@ -238,18 +238,18 @@ Eduardo Fernandez Lagaron,M102,Brasil-Argentina,2-3
 Eduardo Álvarez,M101,Francia-España,2-1
 Eduardo Álvarez,M102,Brasil-Argentina,1-3
 Elena DíAz,M101,Francia-España,2-1
-Elena DíAz,M102,Brasil-Argentina,2-2
-Enrique Martinez,M101,Francia-España,2-2
+Elena DíAz,M102,Brasil-Argentina,2-2,Argentina
+Enrique Martinez,M101,Francia-España,2-2,Francia
 Enrique Martinez,M102,Brasil-Portugal,2-0
 Enzo Herrero Sanchez,M101,Francia-España,1-2
 Enzo Herrero Sanchez,M102,Brasil-Argentina,2-1
 Esquivias,M101,Francia-Inglaterra,1-0
-Esquivias,M102,Brasil-Argentina,1-1
+Esquivias,M102,Brasil-Argentina,1-1,Brasil
 Esteban Pedraz Mourelle1,M101,Francia-España,2-0
-Esteban Pedraz Mourelle1,M102,Brasil-Argentina,1-1
+Esteban Pedraz Mourelle1,M102,Brasil-Argentina,1-1,Argentina
 Esteban Pedraz Mourelle2,M101,Senegal-Argentina,2-0
-Esteban Pedraz Mourelle2,M102,Brasil-Uruguay,1-1
-Familia,M101,Francia-España,2-2
+Esteban Pedraz Mourelle2,M102,Brasil-Uruguay,1-1,Uruguay
+Familia,M101,Francia-España,2-2,España
 Familia,M102,Brasil-Portugal,2-1
 Felix Hernandez,M101,Francia-España,1-0
 Felix Hernandez,M102,Brasil-Argentina,2-1
@@ -258,11 +258,11 @@ Fernando Amilpa Y Trujillo Mexico,M102,Brasil-Argentina,3-2
 Figuras,M101,Francia-España,1-2
 Figuras,M102,Inglaterra-Portugal,0-1
 Francisco Ayuso Martinez 01,M101,Francia-España,1-3
-Francisco Ayuso Martinez 01,M102,Brasil-Argentina,2-2
-Francisco Ayuso Martinez 02,M101,Francia-España,2-2
+Francisco Ayuso Martinez 01,M102,Brasil-Argentina,2-2,Argentina
+Francisco Ayuso Martinez 02,M101,Francia-España,2-2,España
 Francisco Ayuso Martinez 02,M102,Inglaterra-Portugal,1-2
 Felipe Diaz De Miranda 1,M101,Francia-España,2-1
-Felipe Diaz De Miranda 1,M102,Inglaterra-Portugal,1-1
+Felipe Diaz De Miranda 1,M102,Inglaterra-Portugal,1-1,Portugal
 Felipe Diaz De Miranda 2,M101,Francia-España,0-1
 Felipe Diaz De Miranda 2,M102,Inglaterra-Colombia,1-0
 Felipe Diaz De Miranda 3,M101,Francia-España,0-1
@@ -270,15 +270,15 @@ Felipe Diaz De Miranda 3,M102,Inglaterra-Uruguay,1-0
 Felipe Escribano Ferrer,M101,Francia-España,1-2
 Felipe Escribano Ferrer,M102,Brasil-Portugal,0-1
 Fernando Barchino,M101,Países Bajos-España,1-2
-Fernando Barchino,M102,Brasil-Argentina,1-1
+Fernando Barchino,M102,Brasil-Argentina,1-1,Argentina
 Fernando Perez Del Castillo,M101,Francia-España,0-1
 Fernando Perez Del Castillo,M102,Marruecos-Portugal,1-2
 Fernando Rossique,M101,Francia-España,2-0
 Fernando Rossique,M102,Inglaterra-Portugal,0-1
-Fernando Valencia Gonzalez,M101,Países Bajos-España,1-1
+Fernando Valencia Gonzalez,M101,Países Bajos-España,1-1,España
 Fernando Valencia Gonzalez,M102,Inglaterra-Portugal,2-1
 Francisco Javier Diez Cuadrado,M101,Francia-España,1-0
-Francisco Javier Diez Cuadrado,M102,Inglaterra-Argentina,1-1
+Francisco Javier Diez Cuadrado,M102,Inglaterra-Argentina,1-1,Inglaterra
 Francisco Miguelez,M101,Brasil-España,1-0
 Francisco Miguelez,M102,Francia-Canadá,2-1
 Garcia´S,M101,Francia-España,1-2
@@ -288,15 +288,15 @@ Gp,M102,Marruecos-Argentina,1-2
 Gadearuizdecastroviejo,M101,Francia-España,2-3
 Gadearuizdecastroviejo,M102,Inglaterra-Portugal,3-1
 Goni Nacho,M101,Francia-España,1-2
-Goni Nacho,M102,Inglaterra-Portugal,1-1
+Goni Nacho,M102,Inglaterra-Portugal,1-1,Portugal
 Gonzalo GarcíA,M101,Francia-España,1-2
-Gonzalo GarcíA,M102,Brasil-Portugal,0-0
+Gonzalo GarcíA,M102,Brasil-Portugal,0-0,Portugal
 Gonzalo Gil Diaz De Miranda,M101,Francia-España,1-2
 Gonzalo Gil Diaz De Miranda,M102,Brasil-Argentina,2-1
 Guillermo Diez,M101,Francia-Turquía,3-0
 Guillermo Diez,M102,Inglaterra-Portugal,2-1
 Guillermo Martin Fuentes,M101,Francia-España,2-0
-Guillermo Martin Fuentes,M102,Brasil-Portugal,0-0
+Guillermo Martin Fuentes,M102,Brasil-Portugal,0-0,Portugal
 Guillermo Zabaleta,M101,Ecuador-España,0-1
 Guillermo Zabaleta,M102,Inglaterra-Portugal,2-3
 Hugo Andrés Galea 1,M101,Francia-España,2-1
@@ -304,31 +304,31 @@ Hugo Andrés Galea 1,M102,Inglaterra-Portugal,1-2
 Hugo Andrés Galea 2,M101,Francia-España,2-3
 Hugo Andrés Galea 2,M102,Inglaterra-Portugal,2-1
 Hugo Lopez,M101,Francia-España,2-3
-Hugo Lopez,M102,Brasil-Portugal,2-2
+Hugo Lopez,M102,Brasil-Portugal,2-2,Brasil
 Hugobuil,M101,Francia-España,2-3
-Hugobuil,M102,Brasil-Argentina,1-1
+Hugobuil,M102,Brasil-Argentina,1-1,Argentina
 Ignacio Buil,M101,Francia-España,1-2
 Ignacio Buil,M102,Brasil-Portugal,2-1
 Ignacio Gutierrez Fernandez De Molina,M101,Francia-España,2-3
 Ignacio Gutierrez Fernandez De Molina,M102,Brasil-Portugal,1-2
-Ignacio Poza,M101,Alemania-España,1-1
-Ignacio Poza,M102,Inglaterra-Portugal,1-1
+Ignacio Poza,M101,Alemania-España,1-1,España
+Ignacio Poza,M102,Inglaterra-Portugal,1-1,Portugal
 Ignaciodelomas,M101,Francia-España,1-2
 Ignaciodelomas,M102,Brasil-Argentina,1-0
 Inesgamero,M101,Francia-España,1-2
-Inesgamero,M102,Marruecos-Portugal,1-1
+Inesgamero,M102,Marruecos-Portugal,1-1,Marruecos
 Inma Botella,M101,Marruecos-España,1-3
 Inma Botella,M102,Croacia-Argentina,2-1
 Inma Diaz De Miranda,M101,Francia-España,1-2
 Inma Diaz De Miranda,M102,Brasil-Argentina,2-1
-Inma Sierra,M101,Alemania-España,2-2
+Inma Sierra,M101,Alemania-España,2-2,Alemania
 Inma Sierra,M102,Inglaterra-Argentina,3-1
-Isa Málaga,M101,Francia-Colombia,2-2
-Isa Málaga,M102,Brasil-España,2-2
-Ismael Garcia,M101,Francia-España,2-2
+Isa Málaga,M101,Francia-Colombia,2-2,Francia
+Isa Málaga,M102,Brasil-España,2-2,España
+Ismael Garcia,M101,Francia-España,2-2,España
 Ismael Garcia,M102,Brasil-Argentina,2-1
 Isra Duro,M101,Francia-España,1-2
-Isra Duro,M102,Brasil-Portugal,1-1
+Isra Duro,M102,Brasil-Portugal,1-1,Portugal
 Itsaso Zubiaur,M101,Alemania-España,2-0
 Itsaso Zubiaur,M102,Brasil-Portugal,1-2
 Ivan Garcia Vaquero,M101,Alemania-España,1-2
@@ -355,27 +355,27 @@ Jec3,M101,Francia-España,1-3
 Jec3,M102,Brasil-Portugal,1-3
 Jec4,M101,Francia-España,2-3
 Jec4,M102,Brasil-Portugal,3-1
-Jose Antonio Paez Hidalgo,M101,Francia-España,2-2
+Jose Antonio Paez Hidalgo,M101,Francia-España,2-2,España
 Jose Antonio Paez Hidalgo,M102,Marruecos-Argentina,2-3
 Jpc,M101,Alemania-España,2-1
 Jpc,M102,Inglaterra-Portugal,2-3
 Jsa 1,M101,Francia-España,1-2
-Jsa 1,M102,Inglaterra-Argentina,1-1
+Jsa 1,M102,Inglaterra-Argentina,1-1,Inglaterra
 Jsa 2,M101,Francia-España,2-1
-Jsa 2,M102,Inglaterra-Portugal,1-1
+Jsa 2,M102,Inglaterra-Portugal,1-1,Inglaterra
 Jsa 3,M101,Francia-España,1-2
-Jsa 3,M102,Brasil-Argentina,2-2
+Jsa 3,M102,Brasil-Argentina,2-2,Argentina
 Juan Sagaseta Albajar,M101,Francia-Colombia,2-0
 Juan Sagaseta Albajar,M102,Brasil-Portugal,1-2
 Juanga Jimenez,M101,Francia-España,0-1
 Juanga Jimenez,M102,Noruega-Argentina,1-2
-Jacobo Lopez,M101,Francia-España,3-3
+Jacobo Lopez,M101,Francia-España,3-3,Francia
 Jacobo Lopez,M102,Inglaterra-Portugal,1-2
 Jacobo Obradors,M101,Francia-España,1-2
 Jacobo Obradors,M102,Brasil-Portugal,1-0
-Javi Perez,M101,Países Bajos-España,1-1
-Javi Perez,M102,Brasil-Portugal,2-2
-Javier Castrillo,M101,Francia-España,1-1
+Javi Perez,M101,Países Bajos-España,1-1,España
+Javi Perez,M102,Brasil-Portugal,2-2,Portugal
+Javier Castrillo,M101,Francia-España,1-1,España
 Javier Castrillo,M102,Brasil-Colombia,2-1
 Javier Garcia Martin 1,M101,Francia-España,1-2
 Javier Garcia Martin 1,M102,Croacia-Portugal,1-2
@@ -384,10 +384,10 @@ Javier Garcia Martin 2,M102,Brasil-Portugal,1-2
 Javier Gea,M101,Francia-España,2-3
 Javier Gea,M102,Inglaterra-Portugal,1-2
 Javier Manjon,M101,Noruega-España,1-2
-Javier Manjon,M102,Francia-Portugal,2-2
+Javier Manjon,M102,Francia-Portugal,2-2,Portugal
 Javier Santos,M101,Alemania-España,1-2
 Javier Santos,M102,Brasil-Portugal,2-1
-Javierruizdecastroviejojunior,M101,Francia-Portugal,2-2
+Javierruizdecastroviejojunior,M101,Francia-Portugal,2-2,Francia
 Javierruizdecastroviejojunior,M102,Brasil-Argentina,2-1
 Javierruizdecastroviejo,M101,Francia-España,2-1
 Javierruizdecastroviejo,M102,Brasil-Portugal,1-2
@@ -395,18 +395,18 @@ Jenifer Tovar Ortiz,M101,Francia-Colombia,1-2
 Jenifer Tovar Ortiz,M102,Brasil-Portugal,2-3
 Jorge Alonso,M101,Francia-Portugal,1-0
 Jorge Alonso,M102,Inglaterra-Argentina,1-0
-Jorge Fragua,M101,Francia-España,1-1
+Jorge Fragua,M101,Francia-España,1-1,España
 Jorge Fragua,M102,Brasil-Portugal,3-2
 Jorge Garcia,M101,Alemania-España,1-2
 Jorge Garcia,M102,-,2-0
-Jorge Manjon,M101,Francia-España,2-2
+Jorge Manjon,M101,Francia-España,2-2,España
 Jorge Manjon,M102,Inglaterra-Portugal,1-2
 Jorge Pérez,M101,Francia-España,3-5
 Jorge Pérez,M102,Brasil-Argentina,1-2
 Jose Fernandez Gavela,M101,Alemania-España,1-2
-Jose Fernandez Gavela,M102,Inglaterra-Portugal,1-1
-Jose Fuente,M101,Francia-España,2-2
-Jose Fuente,M102,Brasil-Portugal,0-0
+Jose Fernandez Gavela,M102,Inglaterra-Portugal,1-1,Inglaterra
+Jose Fuente,M101,Francia-España,2-2,Francia
+Jose Fuente,M102,Brasil-Portugal,0-0,Brasil
 Jose Luis Carrasco,M101,Francia-España,2-3
 Jose Luis Carrasco,M102,Brasil-Portugal,1-2
 Jose Maria Ortiz,M101,Países Bajos-España,1-3
@@ -415,42 +415,42 @@ Jose Pradera,M101,Países Bajos-España,2-3
 Jose Pradera,M102,Inglaterra-Portugal,2-1
 Jose Zabala,M101,Francia-España,2-1
 Jose Zabala,M102,Inglaterra-Portugal,1-2
-Josegomez.1,M101,Francia-España,2-2
+Josegomez.1,M101,Francia-España,2-2,Francia
 Josegomez.1,M102,México-Portugal,0-2
 Josegómez,M101,Países Bajos-España,0-1
-Josegómez,M102,Brasil-Portugal,2-2
+Josegómez,M102,Brasil-Portugal,2-2,Portugal
 Juan German Balsa,M101,Francia-España,2-1
 Juan German Balsa,M102,Brasil-Portugal,2-1
 Juan Gutiérrez Baz,M101,Francia-España,1-2
 Juan Gutiérrez Baz,M102,Brasil-Argentina,2-1
 Juan Jose Garcia Mahecha,M101,Alemania-España,1-2
-Juan Jose Garcia Mahecha,M102,Francia-Argentina,2-2
+Juan Jose Garcia Mahecha,M102,Francia-Argentina,2-2,Argentina
 Juan Luis Navarro,M101,Francia-España,1-2
-Juan Luis Navarro,M102,Brasil-Portugal,1-1
+Juan Luis Navarro,M102,Brasil-Portugal,1-1,Portugal
 Juan Navarro,M101,Países Bajos-España,0-1
-Juan Navarro,M102,Inglaterra-Argentina,0-0
+Juan Navarro,M102,Inglaterra-Argentina,0-0,Argentina
 Juan El Chico,M101,Alemania-España,1-3
 Juan El Chico,M102,Inglaterra-Argentina,0-2
 Kike Martin,M101,Francia-España,2-3
 Kike Martin,M102,Inglaterra-Argentina,1-2
-Laura Morente,M101,Alemania-España,2-2
+Laura Morente,M101,Alemania-España,2-2,España
 Laura Morente,M102,Inglaterra-Argentina,2-1
 Lauri Garcia,M101,Alemania-España,3-2
 Lauri Garcia,M102,Inglaterra-Portugal,2-1
 Lola Lopez Lopez,M101,Alemania-España,2-4
 Lola Lopez Lopez,M102,Inglaterra-Uruguay,2-1
-Lola Sanchez Montes,M101,Francia-España,2-2
+Lola Sanchez Montes,M101,Francia-España,2-2,España
 Lola Sanchez Montes,M102,Brasil-Argentina,2-3
-Lola Y Santi Amor Verdadero,M101,Francia-España,2-2
+Lola Y Santi Amor Verdadero,M101,Francia-España,2-2,España
 Lola Y Santi Amor Verdadero,M102,Inglaterra-Argentina,1-2
 Lorenzo Saez,M101,Alemania-España,1-3
 Lorenzo Saez,M102,Costa de Marfil-Argentina,1-3
 Lucas Goñi Álvaro Tapia,M101,Países Bajos-España,0-1
-Lucas Goñi Álvaro Tapia,M102,Francia-Portugal,2-2
+Lucas Goñi Álvaro Tapia,M102,Francia-Portugal,2-2,Portugal
 Lucassalinero,M101,Canadá-España,2-1
-Lucassalinero,M102,Francia-Portugal,2-2
+Lucassalinero,M102,Francia-Portugal,2-2,Francia
 Lucia Vazquez,M101,Francia-España,4-2
-Lucia Vazquez,M102,Inglaterra-Argentina,2-2
+Lucia Vazquez,M102,Inglaterra-Argentina,2-2,Argentina
 Luciadelomas,M101,Alemania-España,1-2
 Luciadelomas,M102,Inglaterra-Argentina,2-1
 LucíAaceñAgarcíA,M101,Francia-España,2-3
@@ -458,7 +458,7 @@ LucíAaceñAgarcíA,M102,Brasil-Portugal,1-2
 Luis Gil Heres,M101,Francia-España,1-0
 Luis Gil Heres,M102,Brasil-Argentina,2-1
 Luis Sagaseta,M101,Alemania-España,2-1
-Luis Sagaseta,M102,Brasil-Portugal,2-2
+Luis Sagaseta,M102,Brasil-Portugal,2-2,Portugal
 Luis VilariñO,M101,Noruega-España,0-2
 Luis VilariñO,M102,Inglaterra-Argentina,1-2
 Madroño,M101,Francia-España,0-2
@@ -469,55 +469,55 @@ Michaela Pollock,M101,Alemania-España,1-2
 Michaela Pollock,M102,Brasil-Argentina,2-1
 Mikel Ac,M101,Francia-España,2-1
 Mikel Ac,M102,Inglaterra-Argentina,2-1
-Monica Dmm,M101,Francia-España,2-2
+Monica Dmm,M101,Francia-España,2-2,Francia
 Monica Dmm,M102,Brasil-Portugal,2-3
 Mv,M101,Brasil-España,2-3
-Mv,M102,Marruecos-Portugal,2-2
+Mv,M102,Marruecos-Portugal,2-2,Portugal
 Mvh,M101,Francia-España,1-2
 Mvh,M102,Brasil-Argentina,3-4
 Manuel Andrés Atienza 1,M101,Francia-España,1-2
-Manuel Andrés Atienza 1,M102,Inglaterra-Portugal,2-2
-Manuel Andrés Atienza 2,M101,Francia-España,2-2
-Manuel Andrés Atienza 2,M102,Inglaterra-Portugal,1-1
+Manuel Andrés Atienza 1,M102,Inglaterra-Portugal,2-2,Portugal
+Manuel Andrés Atienza 2,M101,Francia-España,2-2,España
+Manuel Andrés Atienza 2,M102,Inglaterra-Portugal,1-1,Inglaterra
 Manuel Carrillo,M101,Francia-España,1-0
 Manuel Carrillo,M102,Inglaterra-Argentina,3-0
-Manuel Romero,M101,Francia-España,1-1
+Manuel Romero,M101,Francia-España,1-1,España
 Manuel Romero,M102,Brasil-Portugal,1-2
 Manuel Segura Rodríguez,M101,Francia-España,0-1
 Manuel Segura Rodríguez,M102,Inglaterra-Portugal,1-2
-Marco A Montaño 1,M101,Francia-España,2-2
+Marco A Montaño 1,M101,Francia-España,2-2,Francia
 Marco A Montaño 1,M102,Inglaterra-Portugal,1-2
 Marco A Montaño 2,M101,Francia-Colombia,2-0
 Marco A Montaño 2,M102,Brasil-Portugal,2-1
 Marcos Rodrigo DíAz,M101,Francia-España,2-3
 Marcos Rodrigo DíAz,M102,Brasil-Argentina,2-3
 Marcos Rodriguez,M101,Francia-España,1-2
-Marcos Rodriguez,M102,Brasil-Argentina,2-2
-Marcos Sagaseta,M101,Alemania-España,2-2
+Marcos Rodriguez,M102,Brasil-Argentina,2-2,Argentina
+Marcos Sagaseta,M101,Alemania-España,2-2,España
 Marcos Sagaseta,M102,Inglaterra-Portugal,0-1
-Marcosrodriguezlage,M101,Francia-España,1-1
+Marcosrodriguezlage,M101,Francia-España,1-1,Francia
 Marcosrodriguezlage,M102,Brasil-Argentina,0-1
-Maria Peña,M101,Francia-España,1-1
+Maria Peña,M101,Francia-España,1-1,España
 Maria Peña,M102,Brasil-Argentina,2-1
-Mario Alvarez,M101,Francia-España,1-1
+Mario Alvarez,M101,Francia-España,1-1,España
 Mario Alvarez,M102,Inglaterra-Portugal,0-1
-Mario Crespo PéRez,M101,Francia-España,1-1
-Mario Crespo PéRez,M102,Brasil-Portugal,1-1
+Mario Crespo PéRez,M101,Francia-España,1-1,España
+Mario Crespo PéRez,M102,Brasil-Portugal,1-1,Portugal
 Mario Crespo Yepes,M101,Noruega-España,2-3
 Mario Crespo Yepes,M102,Francia-Argentina,1-0
 Mario Guzman,M101,Brasil-España,2-3
 Mario Guzman,M102,Inglaterra-Portugal,10-2
 Mario Molina,M101,Suiza-España,1-3
 Mario Molina,M102,Marruecos-Argentina,0-2
-Mario Pines,M101,Francia-España,1-1
+Mario Pines,M101,Francia-España,1-1,España
 Mario Pines,M102,Inglaterra-Argentina,1-2
 Marta Leon Salvador,M101,Países Bajos-España,2-1
 Marta Leon Salvador,M102,Marruecos-Portugal,1-2
 Marta Perales,M101,Escocia-Sudáfrica,0-1
-Marta Perales,M102,Croacia-Uruguay,3-3
+Marta Perales,M102,Croacia-Uruguay,3-3,Croacia
 Marta Perez Pedro Bernardo,M101,Marruecos-Bélgica,2-0
 Marta Perez Pedro Bernardo,M102,Inglaterra-Portugal,2-1
-Marta Sagaseta 1,M101,Francia-España,3-3
+Marta Sagaseta 1,M101,Francia-España,3-3,España
 Marta Sagaseta 1,M102,Inglaterra-Argentina,1-2
 Marta Sampedro,M101,Francia-España,1-3
 Marta Sampedro,M102,Brasil-Argentina,2-0
@@ -527,16 +527,16 @@ Martagarciarodriguez,M101,Francia-España,1-2
 Martagarciarodriguez,M102,Inglaterra-Portugal,0-1
 MartíN Guirado,M101,Francia-España,1-2
 MartíN Guirado,M102,Inglaterra-Portugal,0-3
-Miguel Angel Llorente,M101,Francia-España,2-2
+Miguel Angel Llorente,M101,Francia-España,2-2,España
 Miguel Angel Llorente,M102,Brasil-Portugal,2-0
 Miguel Quintana,M101,Noruega-España,0-1
 Miguel Quintana,M102,Francia-Argentina,3-1
-Miguel Vila,M101,Francia-España,1-1
+Miguel Vila,M101,Francia-España,1-1,España
 Miguel Vila,M102,Inglaterra-Portugal,1-2
 Mila Elorduy,M101,Francia-España,0-1
 Mila Elorduy,M102,Inglaterra-Argentina,1-2
 Monicazarauzadm,M101,Francia-España,1-2
-Monicazarauzadm,M102,Marruecos-Portugal,2-2
+Monicazarauzadm,M102,Marruecos-Portugal,2-2,Portugal
 Montse Vicente Merino,M101,Marruecos-Croacia,3-1
 Montse Vicente Merino,M102,Brasil-Argentina,2-1
 Nacho Acuña,M101,Francia-España,1-2
@@ -546,7 +546,7 @@ Nacho Carbajo,M102,Inglaterra-Portugal,0-1
 Nachodelomas,M101,Alemania-España,1-2
 Nachodelomas,M102,Brasil-Portugal,1-0
 Nico Triguero,M101,Francia-España,1-2
-Nico Triguero,M102,Brasil-Portugal,2-2
+Nico Triguero,M102,Brasil-Portugal,2-2,Portugal
 Nicolas De La Fuente,M101,Francia-España,2-3
 Nicolas De La Fuente,M102,Brasil-Argentina,3-2
 Noel CalderóN 01,M101,Brasil-España,1-2
@@ -554,25 +554,25 @@ Noel CalderóN 01,M102,Inglaterra-Portugal,0-1
 Noel CalderóN 02,M101,Alemania-España,1-2
 Noel CalderóN 02,M102,Inglaterra-Portugal,2-0
 Noel CalderóN 03,M101,Francia-España,2-1
-Noel CalderóN 03,M102,Inglaterra-Portugal,1-1
+Noel CalderóN 03,M102,Inglaterra-Portugal,1-1,Inglaterra
 Nu,M101,Francia-España,1-2
-Nu,M102,Brasil-Argentina,1-1
+Nu,M102,Brasil-Argentina,1-1,Brasil
 Oscar Alonso 1,M101,Brasil-España,0-1
 Oscar Alonso 1,M102,Inglaterra-Portugal,1-2
 Oskar Sagaseta Pollock,M101,Alemania-España,1-2
-Oskar Sagaseta Pollock,M102,Inglaterra-Portugal,1-1
-Orenbellongarriga,M101,Francia-España,2-2
+Oskar Sagaseta Pollock,M102,Inglaterra-Portugal,1-1,Inglaterra
+Orenbellongarriga,M101,Francia-España,2-2,España
 Orenbellongarriga,M102,Inglaterra-Argentina,1-2
 Orestes,M101,Francia-España,1-2
 Orestes,M102,Brasil-Portugal,2-0
-Pablo Balbuena,M101,Francia-España,1-1
+Pablo Balbuena,M101,Francia-España,1-1,España
 Pablo Balbuena,M102,Brasil-Portugal,0-1
 Pablo Peña Gomez,M101,Francia-España,2-3
 Pablo Peña Gomez,M102,Inglaterra-Portugal,1-2
 Paco De La Fuente,M101,Chequia-España,3-1
 Paco De La Fuente,M102,Francia-Portugal,2-3
 Pablo Buquerin Martinez,M101,Francia-España,2-3
-Pablo Buquerin Martinez,M102,Inglaterra-Portugal,2-2
+Pablo Buquerin Martinez,M102,Inglaterra-Portugal,2-2,Inglaterra
 Pablo Carbajo RodríGuez,M101,Francia-España,2-1
 Pablo Carbajo RodríGuez,M102,Brasil-Portugal,1-3
 Pablo Gea,M101,Alemania-Inglaterra,2-1
@@ -587,77 +587,77 @@ Pablo Sagaseta,M101,Alemania-España,0-2
 Pablo Sagaseta,M102,Inglaterra-Argentina,2-3
 Pablo Santos,M101,Francia-España,2-1
 Pablo Santos,M102,Inglaterra-Argentina,1-2
-Pachino,M101,Países Bajos-España,1-1
+Pachino,M101,Países Bajos-España,1-1,España
 Pachino,M102,Brasil-Portugal,2-1
 Paloma Vazquez Vicente,M101,Francia-España,3-2
 Paloma Vazquez Vicente,M102,Brasil-Uruguay,3-2
 Patxo Zubiaur,M101,Alemania-Bélgica,2-0
 Patxo Zubiaur,M102,Inglaterra-Portugal,3-1
-Pedro Crespo Yepes,M101,Francia-España,1-1
-Pedro Crespo Yepes,M102,Brasil-Portugal,1-1
+Pedro Crespo Yepes,M101,Francia-España,1-1,España
+Pedro Crespo Yepes,M102,Brasil-Portugal,1-1,Portugal
 Pedro Daniel,M101,Francia-España,2-1
 Pedro Daniel,M102,Marruecos-Portugal,1-0
 Rodolfo Moreno,M101,Marruecos-España,1-3
 Rodolfo Moreno,M102,Francia-Portugal,0-1
-Roman Sagaseta Pollock,M101,Alemania-España,3-3
-Roman Sagaseta Pollock,M102,Brasil-Portugal,3-3
+Roman Sagaseta Pollock,M101,Alemania-España,3-3,España
+Roman Sagaseta Pollock,M102,Brasil-Portugal,3-3,Brasil
 Rafael Gutierrez De Vargas,M101,Brasil-España,1-2
 Rafael Gutierrez De Vargas,M102,Inglaterra-Portugal,0-2
 RamóN Alonso Ventas,M101,Francia-Bélgica,1-0
-RamóN Alonso Ventas,M102,Senegal-Portugal,1-1
-RamóN Hoyos,M101,Francia-España,1-1
+RamóN Alonso Ventas,M102,Senegal-Portugal,1-1,Portugal
+RamóN Hoyos,M101,Francia-España,1-1,Francia
 RamóN Hoyos,M102,Inglaterra-Portugal,2-1
 Raul Ayuso,M101,Francia-España,1-2
 Raul Ayuso,M102,Brasil-Portugal,3-2
 Raulmateo,M101,Francia-España,1-3
 Raulmateo,M102,Brasil-Portugal,3-1
-Ricardo Fdez,M101,Francia-España,2-2
+Ricardo Fdez,M101,Francia-España,2-2,España
 Ricardo Fdez,M102,Croacia-Portugal,1-2
 Ricardo MartíNez,M101,Francia-Inglaterra,3-1
-Ricardo MartíNez,M102,Brasil-España,2-2
+Ricardo MartíNez,M102,Brasil-España,2-2,Brasil
 Roberysamuel,M101,Marruecos-España,0-1
 Roberysamuel,M102,Inglaterra-Portugal,0-2
-Robertogamero1,M101,Francia-España,1-1
+Robertogamero1,M101,Francia-España,1-1,España
 Robertogamero1,M102,Inglaterra-Portugal,2-1
 Robertogamero2,M101,Países Bajos-España,1-2
-Robertogamero2,M102,Brasil-Argentina,1-1
+Robertogamero2,M102,Brasil-Argentina,1-1,Brasil
 Robertogamero3,M101,Francia-España,2-1
 Robertogamero3,M102,Marruecos-Estados Unidos,1-0
 Robertobuil,M101,Alemania-España,1-2
 Robertobuil,M102,Inglaterra-Portugal,1-3
-RocíO,M101,Francia-España,3-3
-RocíO,M102,Inglaterra-Argentina,2-2
+RocíO,M101,Francia-España,3-3,España
+RocíO,M102,Inglaterra-Argentina,2-2,Argentina
 Rodrigo Azcona,M101,Francia-España,0-0
 Rodrigo Azcona,M102,Inglaterra-Portugal,1-3
-Rodrigo Cuenca Romero,M101,Francia-España,2-2
+Rodrigo Cuenca Romero,M101,Francia-España,2-2,España
 Rodrigo Cuenca Romero,M102,Brasil-Portugal,1-2
 Rodrigogomez,M101,Francia-España,2-3
 Rodrigogomez,M102,Brasil-Portugal,2-3
 Rosa Artal,M101,Alemania-España,1-2
 Rosa Artal,M102,Brasil-Argentina,1-3
 Silvia Vila,M101,Francia-España,1-2
-Silvia Vila,M102,Brasil-Argentina,2-2
+Silvia Vila,M102,Brasil-Argentina,2-2,Brasil
 Samuelgamero1,M101,Francia-España,1-2
 Samuelgamero1,M102,Inglaterra-Portugal,1-2
-Samuelgamero2,M101,Francia-España,1-1
+Samuelgamero2,M101,Francia-España,1-1,España
 Samuelgamero2,M102,Brasil-Argentina,1-0
 Sancama74,M101,Francia-España,1-2
-Sancama74,M102,Marruecos-Argentina,2-2
+Sancama74,M102,Marruecos-Argentina,2-2,Argentina
 Sandra Herrero,M101,Francia-Colombia,1-0
 Sandra Herrero,M102,Ecuador-Argentina,2-3
 Santi,M101,Francia-España,1-2
 Santi,M102,Inglaterra-Portugal,1-2
 Santiago Cabezas,M101,Marruecos-España,0-1
 Santiago Cabezas,M102,Inglaterra-Portugal,1-0
-Santiago G Arias,M101,Alemania-España,2-2
-Santiago G Arias,M102,Inglaterra-Uruguay,3-3
+Santiago G Arias,M101,Alemania-España,2-2,España
+Santiago G Arias,M102,Inglaterra-Uruguay,3-3,Uruguay
 Santiago Garcia Candanedo,M101,Francia-España,0-0
 Santiago Garcia Candanedo,M102,Brasil-Portugal,0-2
 Santiago GarcíA LóPez,M101,Francia-España,3-0
 Santiago GarcíA LóPez,M102,Inglaterra-Argentina,1-2
 Sebastiansanchezgonzalez,M101,Francia-España,1-3
 Sebastiansanchezgonzalez,M102,Brasil-Portugal,2-1
-Sebastiansisco,M101,Francia-España,1-1
+Sebastiansisco,M101,Francia-España,1-1,España
 Sebastiansisco,M102,Brasil-Portugal,2-0
 Sergi Garcia,M101,Brasil-España,3-2
 Sergi Garcia,M102,Marruecos-Portugal,2-1
@@ -672,9 +672,9 @@ Silvia Garcia Hoyas,M102,Brasil-Argentina,1-2
 Susana Velasco,M101,Brasil-España,1-2
 Susana Velasco,M102,Inglaterra-Portugal,2-1
 Teresa Hernandez Cobo,M101,Alemania-Croacia,2-1
-Teresa Hernandez Cobo,M102,Inglaterra-España,1-1
+Teresa Hernandez Cobo,M102,Inglaterra-España,1-1,España
 Tino Domenech,M101,Marruecos-España,1-2
-Tino Domenech,M102,Inglaterra-Argentina,1-1
+Tino Domenech,M102,Inglaterra-Argentina,1-1,Inglaterra
 Tomas Martinez,M101,Francia-España,1-0
 Tomas Martinez,M102,Brasil-Argentina,0-1
 Victoria F,M101,Francia-España,2-0
@@ -685,46 +685,46 @@ A,M101,Francia-España,3-2
 A,M102,Inglaterra-Portugal,1-3
 Alex Hoyo,M101,Francia-España,0-3
 Alex Hoyo,M102,México-Portugal,0-1
-Antonio Rodrigo,M101,Alemania-España,1-1
+Antonio Rodrigo,M101,Alemania-España,1-1,Alemania
 Antonio Rodrigo,M102,Inglaterra-Portugal,0-1
 Cristina Sanz,M101,Francia-España,2-1
 Cristina Sanz,M102,Noruega-Argentina,1-3
-Iker,M101,Francia-España,2-2
+Iker,M101,Francia-España,2-2,España
 Iker,M102,Brasil-Argentina,1-2
-Jado19,M101,Francia-España,2-2
-Jado19,M102,Brasil-Portugal,1-1
+Jado19,M101,Francia-España,2-2,España
+Jado19,M102,Brasil-Portugal,1-1,Brasil
 Jose Carbajo,M101,Países Bajos-España,0-2
 Jose Carbajo,M102,Inglaterra-Portugal,2-1
-L,M101,Francia-España,2-2
+L,M101,Francia-España,2-2,Francia
 L,M102,Brasil-Portugal,2-3
 Laura Garcia,M101,Noruega-España,1-2
 Laura Garcia,M102,Brasil-Portugal,3-2
 Lola Rodríguez,M101,México-España,1-2
 Lola Rodríguez,M102,Brasil-Argentina,1-2
 Miguel Garcia,M101,Francia-España,1-2
-Miguel Garcia,M102,Brasil-Argentina,1-1
+Miguel Garcia,M102,Brasil-Argentina,1-1,Argentina
 Narciso Vaquero,M101,Suiza-España,2-0
-Narciso Vaquero,M102,Colombia-Portugal,1-1
+Narciso Vaquero,M102,Colombia-Portugal,1-1,Portugal
 Nj,M101,Países Bajos-España,0-1
 Nj,M102,Inglaterra-Argentina,2-1
 P,M101,Francia-España,2-1
 P,M102,Brasil-Portugal,2-3
 Papa,M101,Países Bajos-España,0-2
-Papa,M102,Brasil-Argentina,2-2
+Papa,M102,Brasil-Argentina,2-2,Brasil
 Pepe Vergara,M101,Alemania-España,1-3
 Pepe Vergara,M102,Inglaterra-Portugal,0-1
 Rafita,M101,Francia-España,2-4
 Rafita,M102,Brasil-Argentina,1-0
-Ricardo Pastor,M101,Países Bajos-España,1-1
-Ricardo Pastor,M102,Brasil-Portugal,1-1
+Ricardo Pastor,M101,Países Bajos-España,1-1,España
+Ricardo Pastor,M102,Brasil-Portugal,1-1,Portugal
 Sergio,M101,Francia-España,1-2
 Sergio,M102,Brasil-Portugal,1-2
-Álvaro,M101,Francia-España,1-1
+Álvaro,M101,Francia-España,1-1,España
 Álvaro,M102,Inglaterra-Argentina,2-1
 Álvaromárquezvalverde1,M101,Francia-España,2-1
 Álvaromárquezvalverde1,M102,Brasil-Portugal,0-1
 Álvaromárquezvalverde2,M101,Francia-España,1-2
 Álvaromárquezvalverde2,M102,Brasil-Portugal,1-0
-Ángel Fernández,M101,Alemania-España,1-1
+Ángel Fernández,M101,Alemania-España,1-1,Alemania
 Ángel Fernández,M102,Brasil-Portugal,2-1
 
