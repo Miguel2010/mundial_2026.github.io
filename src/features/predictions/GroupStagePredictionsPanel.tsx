@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import type { GroupStageMatch } from '../../types/predictions';
 import { PredictionMatchesPanel } from './PredictionMatchesPanel';
-import { getPredictionOutcomeSummary } from './prediction-outcomes';
+import {
+  getCurrentParticipantOutcome,
+  getPredictionOutcomeSummary,
+  type PredictionOutcome,
+} from './prediction-outcomes';
 
 type GroupStageView = 'pending' | 'played';
+type GroupStageOutcomeFilter = 'all' | PredictionOutcome;
 
 type GroupStagePredictionsPanelProps = {
   currentParticipant: string;
@@ -19,10 +24,43 @@ export function GroupStagePredictionsPanel({
   matches,
 }: GroupStagePredictionsPanelProps) {
   const [activeView, setActiveView] = useState<GroupStageView>('pending');
+  const [activeOutcomeFilter, setActiveOutcomeFilter] = useState<GroupStageOutcomeFilter>('all');
   const pendingMatches = matches.filter((match) => !match.played);
   const playedMatches = matches.filter((match) => match.played).slice().reverse();
-  const visibleMatches = activeView === 'pending' ? pendingMatches : playedMatches;
   const predictionOutcomeSummary = getPredictionOutcomeSummary(matches, currentParticipant);
+  const filteredPlayedMatches =
+    activeOutcomeFilter === 'all'
+      ? playedMatches
+      : playedMatches.filter(
+          (match) => getCurrentParticipantOutcome(match, currentParticipant) === activeOutcomeFilter,
+        );
+  const visibleMatches = activeView === 'pending' ? pendingMatches : filteredPlayedMatches;
+
+  function handleSelectPendingView() {
+    setActiveView('pending');
+    setActiveOutcomeFilter('all');
+  }
+
+  function handleSelectPlayedView() {
+    setActiveView('played');
+    setActiveOutcomeFilter('all');
+  }
+
+  function handleToggleOutcomeFilter(outcome: PredictionOutcome) {
+    setActiveView('played');
+    setActiveOutcomeFilter((currentFilter) => (currentFilter === outcome ? 'all' : outcome));
+  }
+
+  const emptyMessage =
+    activeView === 'pending'
+      ? 'No hay partidos pendientes en esta vista.'
+      : activeOutcomeFilter === 'exact'
+        ? 'No hay partidos jugados con resultado exacto en esta vista.'
+        : activeOutcomeFilter === 'partial'
+          ? 'No hay partidos jugados con acierto parcial en esta vista.'
+          : activeOutcomeFilter === 'incorrect'
+            ? 'No hay partidos jugados con pronóstico incorrecto en esta vista.'
+            : 'No hay partidos jugados en esta vista.';
 
   return (
     <div className="predictions-panel">
@@ -48,22 +86,57 @@ export function GroupStagePredictionsPanel({
           </span>
         </div>
         <div className="prediction-outcome-summary" aria-label="Resumen de aciertos personales">
-          <article className="prediction-outcome-stat prediction-outcome-stat-played">
+          <button
+            className={`prediction-outcome-stat prediction-outcome-stat-played${
+              activeView === 'played' && activeOutcomeFilter === 'all'
+                ? ' prediction-outcome-stat-active'
+                : ''
+            }`}
+            type="button"
+            onClick={handleSelectPlayedView}
+          >
             <strong>{predictionOutcomeSummary.played}</strong>
             <span>Jugados</span>
-          </article>
-          <article className="prediction-outcome-stat prediction-outcome-stat-exact">
+          </button>
+          <button
+            className={`prediction-outcome-stat prediction-outcome-stat-exact${
+              activeView === 'played' && activeOutcomeFilter === 'exact'
+                ? ' prediction-outcome-stat-active'
+                : ''
+            }`}
+            type="button"
+            aria-pressed={activeView === 'played' && activeOutcomeFilter === 'exact'}
+            onClick={() => handleToggleOutcomeFilter('exact')}
+          >
             <strong>{predictionOutcomeSummary.exact}</strong>
             <span>Exactos</span>
-          </article>
-          <article className="prediction-outcome-stat prediction-outcome-stat-partial">
+          </button>
+          <button
+            className={`prediction-outcome-stat prediction-outcome-stat-partial${
+              activeView === 'played' && activeOutcomeFilter === 'partial'
+                ? ' prediction-outcome-stat-active'
+                : ''
+            }`}
+            type="button"
+            aria-pressed={activeView === 'played' && activeOutcomeFilter === 'partial'}
+            onClick={() => handleToggleOutcomeFilter('partial')}
+          >
             <strong>{predictionOutcomeSummary.partial}</strong>
             <span>Parciales</span>
-          </article>
-          <article className="prediction-outcome-stat prediction-outcome-stat-incorrect">
+          </button>
+          <button
+            className={`prediction-outcome-stat prediction-outcome-stat-incorrect${
+              activeView === 'played' && activeOutcomeFilter === 'incorrect'
+                ? ' prediction-outcome-stat-active'
+                : ''
+            }`}
+            type="button"
+            aria-pressed={activeView === 'played' && activeOutcomeFilter === 'incorrect'}
+            onClick={() => handleToggleOutcomeFilter('incorrect')}
+          >
             <strong>{predictionOutcomeSummary.incorrect}</strong>
             <span>Incorrectos</span>
-          </article>
+          </button>
         </div>
       </div>
 
@@ -75,7 +148,7 @@ export function GroupStagePredictionsPanel({
               type="button"
               role="tab"
               aria-selected={activeView === 'pending'}
-              onClick={() => setActiveView('pending')}
+              onClick={handleSelectPendingView}
             >
               Pendientes ({pendingMatches.length})
             </button>
@@ -84,7 +157,7 @@ export function GroupStagePredictionsPanel({
               type="button"
               role="tab"
               aria-selected={activeView === 'played'}
-              onClick={() => setActiveView('played')}
+              onClick={handleSelectPlayedView}
             >
               Jugados ({playedMatches.length})
             </button>
@@ -94,11 +167,7 @@ export function GroupStagePredictionsPanel({
 
       <PredictionMatchesPanel
         currentParticipant={currentParticipant}
-        emptyMessage={
-          activeView === 'pending'
-            ? 'No hay partidos pendientes en esta vista.'
-            : 'No hay partidos jugados en esta vista.'
-        }
+        emptyMessage={emptyMessage}
         error={error}
         isLoading={isLoading}
         matches={visibleMatches}

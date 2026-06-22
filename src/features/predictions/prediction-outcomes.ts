@@ -61,28 +61,34 @@ export function getPredictionOutcomeLabel(outcome: PredictionOutcome) {
   return 'Incorrecto';
 }
 
+export function getCurrentParticipantOutcome(
+  match: PredictionMatch,
+  currentParticipant: string,
+): PredictionOutcome | null {
+  if (!match.played || !match.result) {
+    return null;
+  }
+
+  const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
+  const currentParticipantPrediction = match.predictions.find(
+    (prediction) =>
+      normalizeParticipantName(prediction.participante) === normalizedCurrentParticipant,
+  );
+
+  if (!currentParticipantPrediction) {
+    return null;
+  }
+
+  return getPredictionOutcome(currentParticipantPrediction.score, match.result);
+}
+
 export function getPredictionOutcomeSummary(
   matches: PredictionMatch[],
   currentParticipant: string,
 ): PredictionOutcomeSummary {
-  const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
-
   return matches.reduce<PredictionOutcomeSummary>(
     (summary, match) => {
-      if (!match.played || !match.result) {
-        return summary;
-      }
-
-      const currentParticipantPrediction = match.predictions.find(
-        (prediction) =>
-          normalizeParticipantName(prediction.participante) === normalizedCurrentParticipant,
-      );
-
-      if (!currentParticipantPrediction) {
-        return summary;
-      }
-
-      const outcome = getPredictionOutcome(currentParticipantPrediction.score, match.result);
+      const outcome = getCurrentParticipantOutcome(match, currentParticipant);
 
       if (!outcome) {
         return summary;
