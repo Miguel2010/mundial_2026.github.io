@@ -93,12 +93,6 @@ export function KnockoutStagePredictionsPanel({
 
   return (
     <div className="predictions-panel">
-      <div className="section-heading predictions-heading">
-        <span className="section-kicker">Pronóstico</span>
-        <h3>{title}</h3>
-        <p>{orderedParticipants.length} participantes con sus cruces y resultados pronosticados.</p>
-      </div>
-
       {shouldShowWarnings && warnings.length > 0 ? (
         <details className="status-card status-card-warning prediction-warning-panel">
           <summary className="prediction-warning-summary">

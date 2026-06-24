@@ -64,80 +64,72 @@ export function GroupStagePredictionsPanel({
 
   return (
     <div className="predictions-panel">
-      <div className="section-heading predictions-heading">
-        <span className="section-kicker">Pronóstico</span>
-        <h3>Fase de Grupos</h3>
-        <p>
-          {matches.length} partidos y {matches[0]?.predictions.length ?? 0} participantes con
-          pronóstico registrado.
-        </p>
-        <div className="prediction-outcome-legend" aria-label="Leyenda de resultados">
-          <span className="prediction-outcome-legend-item">
-            <span className="prediction-outcome-badge prediction-outcome-badge-exact">Exacto</span>
-            marcador exacto
-          </span>
-          <span className="prediction-outcome-legend-item">
-            <span className="prediction-outcome-badge prediction-outcome-badge-partial">Parcial</span>
-            acertaste ganador o empate
-          </span>
-          <span className="prediction-outcome-legend-item">
-            <span className="prediction-outcome-badge prediction-outcome-badge-incorrect">Incorrecto</span>
-            pronóstico incorrecto
-          </span>
-        </div>
-        <div className="prediction-outcome-summary" aria-label="Resumen de aciertos personales">
-          <button
-            className={`prediction-outcome-stat prediction-outcome-stat-played${
-              activeView === 'played' && activeOutcomeFilter === 'all'
-                ? ' prediction-outcome-stat-active'
-                : ''
-            }`}
-            type="button"
-            onClick={handleSelectPlayedView}
-          >
-            <strong>{predictionOutcomeSummary.played}</strong>
-            <span>Jugados</span>
-          </button>
-          <button
-            className={`prediction-outcome-stat prediction-outcome-stat-exact${
-              activeView === 'played' && activeOutcomeFilter === 'exact'
-                ? ' prediction-outcome-stat-active'
-                : ''
-            }`}
-            type="button"
-            aria-pressed={activeView === 'played' && activeOutcomeFilter === 'exact'}
-            onClick={() => handleToggleOutcomeFilter('exact')}
-          >
-            <strong>{predictionOutcomeSummary.exact}</strong>
-            <span>Exactos</span>
-          </button>
-          <button
-            className={`prediction-outcome-stat prediction-outcome-stat-partial${
-              activeView === 'played' && activeOutcomeFilter === 'partial'
-                ? ' prediction-outcome-stat-active'
-                : ''
-            }`}
-            type="button"
-            aria-pressed={activeView === 'played' && activeOutcomeFilter === 'partial'}
-            onClick={() => handleToggleOutcomeFilter('partial')}
-          >
-            <strong>{predictionOutcomeSummary.partial}</strong>
-            <span>Parciales</span>
-          </button>
-          <button
-            className={`prediction-outcome-stat prediction-outcome-stat-incorrect${
-              activeView === 'played' && activeOutcomeFilter === 'incorrect'
-                ? ' prediction-outcome-stat-active'
-                : ''
-            }`}
-            type="button"
-            aria-pressed={activeView === 'played' && activeOutcomeFilter === 'incorrect'}
-            onClick={() => handleToggleOutcomeFilter('incorrect')}
-          >
-            <strong>{predictionOutcomeSummary.incorrect}</strong>
-            <span>Incorrectos</span>
-          </button>
-        </div>
+      <div className="prediction-outcome-legend" aria-label="Leyenda de resultados">
+        <span className="prediction-outcome-legend-item">
+          <span className="prediction-outcome-badge prediction-outcome-badge-exact">Exacto</span>
+          marcador exacto
+        </span>
+        <span className="prediction-outcome-legend-item">
+          <span className="prediction-outcome-badge prediction-outcome-badge-partial">Parcial</span>
+          acertaste ganador o empate
+        </span>
+        <span className="prediction-outcome-legend-item">
+          <span className="prediction-outcome-badge prediction-outcome-badge-incorrect">Incorrecto</span>
+          pronóstico incorrecto
+        </span>
+      </div>
+      <div className="prediction-outcome-summary" aria-label="Resumen de aciertos personales">
+        <button
+          className={`prediction-outcome-stat prediction-outcome-stat-played${
+            activeView === 'played' && activeOutcomeFilter === 'all'
+              ? ' prediction-outcome-stat-active'
+              : ''
+          }`}
+          type="button"
+          onClick={handleSelectPlayedView}
+        >
+          <strong>{predictionOutcomeSummary.played}</strong>
+          <span>Jugados</span>
+        </button>
+        <button
+          className={`prediction-outcome-stat prediction-outcome-stat-exact${
+            activeView === 'played' && activeOutcomeFilter === 'exact'
+              ? ' prediction-outcome-stat-active'
+              : ''
+          }`}
+          type="button"
+          aria-pressed={activeView === 'played' && activeOutcomeFilter === 'exact'}
+          onClick={() => handleToggleOutcomeFilter('exact')}
+        >
+          <strong>{predictionOutcomeSummary.exact}</strong>
+          <span>Exactos</span>
+        </button>
+        <button
+          className={`prediction-outcome-stat prediction-outcome-stat-partial${
+            activeView === 'played' && activeOutcomeFilter === 'partial'
+              ? ' prediction-outcome-stat-active'
+              : ''
+          }`}
+          type="button"
+          aria-pressed={activeView === 'played' && activeOutcomeFilter === 'partial'}
+          onClick={() => handleToggleOutcomeFilter('partial')}
+        >
+          <strong>{predictionOutcomeSummary.partial}</strong>
+          <span>Parciales</span>
+        </button>
+        <button
+          className={`prediction-outcome-stat prediction-outcome-stat-incorrect${
+            activeView === 'played' && activeOutcomeFilter === 'incorrect'
+              ? ' prediction-outcome-stat-active'
+              : ''
+          }`}
+          type="button"
+          aria-pressed={activeView === 'played' && activeOutcomeFilter === 'incorrect'}
+          onClick={() => handleToggleOutcomeFilter('incorrect')}
+        >
+          <strong>{predictionOutcomeSummary.incorrect}</strong>
+          <span>Incorrectos</span>
+        </button>
       </div>
 
       {!isLoading && !error ? (
