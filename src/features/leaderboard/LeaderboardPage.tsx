@@ -144,8 +144,8 @@ export function LeaderboardPage({
 
       <div className="tabs" role="tablist" aria-label="Secciones de la clasificación">
         {renderTabButton('classification', 'Clasificación')}
-        {renderTabButton('prizes', 'Premios')}
         {renderTabButton('predictions', 'Pronóstico')}
+        {renderTabButton('prizes', 'Premios')}
       </div>
 
       {renderActiveTab()}

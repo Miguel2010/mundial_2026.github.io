@@ -6,7 +6,11 @@ import { fetchOctavosPredictions } from '../../services/octavos-predictions-serv
 import { fetchRoundOf16Predictions } from '../../services/round-of-16-predictions-service';
 import { fetchSemisPredictions } from '../../services/semis-predictions-service';
 import { fetchThirdPlacePredictions } from '../../services/third-place-predictions-service';
-import type { GroupStageMatch, ParticipantPredictions } from '../../types/predictions';
+import type {
+  GroupStageMatch,
+  KnockoutStagePredictions,
+  ParticipantPredictions,
+} from '../../types/predictions';
 import { GroupStagePredictionsPanel } from './GroupStagePredictionsPanel';
 import { KnockoutStagePredictionsPanel } from './KnockoutStagePredictionsPanel';
 
@@ -56,6 +60,12 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   const [semisError, setSemisError] = useState<string | null>(null);
   const [finalError, setFinalError] = useState<string | null>(null);
   const [thirdPlaceError, setThirdPlaceError] = useState<string | null>(null);
+  const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
+  const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
+  const [cuartosWarnings, setCuartosWarnings] = useState<string[]>([]);
+  const [semisWarnings, setSemisWarnings] = useState<string[]>([]);
+  const [finalWarnings, setFinalWarnings] = useState<string[]>([]);
+  const [thirdPlaceWarnings, setThirdPlaceWarnings] = useState<string[]>([]);
   const hasRequestedGroupStageRef = useRef(false);
   const hasRequestedRoundOf16Ref = useRef(false);
   const hasRequestedOctavosRef = useRef(false);
@@ -117,13 +127,27 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     }
   }
 
+  function applyKnockoutStagePredictions(
+    loadedPredictions: KnockoutStagePredictions,
+    setParticipants: (participants: ParticipantPredictions[]) => void,
+    setWarnings: (warnings: string[]) => void,
+  ) {
+    setParticipants(loadedPredictions.participants);
+    setWarnings(loadedPredictions.warnings);
+  }
+
   async function loadRoundOf16Predictions() {
     setIsLoadingRoundOf16(true);
     setRoundOf16Error(null);
+    setRoundOf16Warnings([]);
 
     try {
-      const loadedParticipants = await fetchRoundOf16Predictions();
-      setRoundOf16Participants(loadedParticipants);
+      const loadedPredictions = await fetchRoundOf16Predictions();
+      applyKnockoutStagePredictions(
+        loadedPredictions,
+        setRoundOf16Participants,
+        setRoundOf16Warnings,
+      );
     } catch (error) {
       setRoundOf16Error(
         error instanceof Error ? error.message : 'No se pudieron cargar los pronósticos.',
@@ -136,10 +160,11 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   async function loadOctavosPredictions() {
     setIsLoadingOctavos(true);
     setOctavosError(null);
+    setOctavosWarnings([]);
 
     try {
-      const loadedParticipants = await fetchOctavosPredictions();
-      setOctavosParticipants(loadedParticipants);
+      const loadedPredictions = await fetchOctavosPredictions();
+      applyKnockoutStagePredictions(loadedPredictions, setOctavosParticipants, setOctavosWarnings);
     } catch (error) {
       setOctavosError(
         error instanceof Error ? error.message : 'No se pudieron cargar los pronósticos.',
@@ -152,10 +177,11 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   async function loadCuartosPredictions() {
     setIsLoadingCuartos(true);
     setCuartosError(null);
+    setCuartosWarnings([]);
 
     try {
-      const loadedParticipants = await fetchCuartosPredictions();
-      setCuartosParticipants(loadedParticipants);
+      const loadedPredictions = await fetchCuartosPredictions();
+      applyKnockoutStagePredictions(loadedPredictions, setCuartosParticipants, setCuartosWarnings);
     } catch (error) {
       setCuartosError(
         error instanceof Error ? error.message : 'No se pudieron cargar los pronósticos.',
@@ -168,10 +194,11 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   async function loadSemisPredictions() {
     setIsLoadingSemis(true);
     setSemisError(null);
+    setSemisWarnings([]);
 
     try {
-      const loadedParticipants = await fetchSemisPredictions();
-      setSemisParticipants(loadedParticipants);
+      const loadedPredictions = await fetchSemisPredictions();
+      applyKnockoutStagePredictions(loadedPredictions, setSemisParticipants, setSemisWarnings);
     } catch (error) {
       setSemisError(
         error instanceof Error ? error.message : 'No se pudieron cargar los pronósticos.',
@@ -184,10 +211,11 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   async function loadFinalPredictions() {
     setIsLoadingFinal(true);
     setFinalError(null);
+    setFinalWarnings([]);
 
     try {
-      const loadedParticipants = await fetchFinalPredictions();
-      setFinalParticipants(loadedParticipants);
+      const loadedPredictions = await fetchFinalPredictions();
+      applyKnockoutStagePredictions(loadedPredictions, setFinalParticipants, setFinalWarnings);
     } catch (error) {
       setFinalError(
         error instanceof Error ? error.message : 'No se pudieron cargar los pronósticos.',
@@ -200,10 +228,15 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   async function loadThirdPlacePredictions() {
     setIsLoadingThirdPlace(true);
     setThirdPlaceError(null);
+    setThirdPlaceWarnings([]);
 
     try {
-      const loadedParticipants = await fetchThirdPlacePredictions();
-      setThirdPlaceParticipants(loadedParticipants);
+      const loadedPredictions = await fetchThirdPlacePredictions();
+      applyKnockoutStagePredictions(
+        loadedPredictions,
+        setThirdPlaceParticipants,
+        setThirdPlaceWarnings,
+      );
     } catch (error) {
       setThirdPlaceError(
         error instanceof Error ? error.message : 'No se pudieron cargar los pronósticos.',
@@ -248,6 +281,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           isLoading={isLoadingRoundOf16}
           participants={roundOf16Participants}
           title="Dieciseisavos"
+          warnings={roundOf16Warnings}
         />
       ) : null}
 
@@ -258,6 +292,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           isLoading={isLoadingOctavos}
           participants={octavosParticipants}
           title="Octavos"
+          warnings={octavosWarnings}
         />
       ) : null}
 
@@ -268,6 +303,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           isLoading={isLoadingCuartos}
           participants={cuartosParticipants}
           title="Cuartos"
+          warnings={cuartosWarnings}
         />
       ) : null}
 
@@ -278,6 +314,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           isLoading={isLoadingSemis}
           participants={semisParticipants}
           title="Semis"
+          warnings={semisWarnings}
         />
       ) : null}
 
@@ -288,6 +325,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           isLoading={isLoadingFinal}
           participants={finalParticipants}
           title="Final"
+          warnings={finalWarnings}
         />
       ) : null}
 
@@ -298,6 +336,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           isLoading={isLoadingThirdPlace}
           participants={thirdPlaceParticipants}
           title="3y4"
+          warnings={thirdPlaceWarnings}
         />
       ) : null}
     </div>

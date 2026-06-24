@@ -18,11 +18,17 @@ export type ParticipantPredictionRow = {
   matchId: string;
   matchLabel: string;
   score: string;
+  penaltyWinner?: string;
 };
 
 export type ParticipantPredictions = {
   participante: string;
   predictions: ParticipantPredictionRow[];
+};
+
+export type KnockoutStagePredictions = {
+  participants: ParticipantPredictions[];
+  warnings: string[];
 };
 
 export type GroupStagePrediction = Prediction;
