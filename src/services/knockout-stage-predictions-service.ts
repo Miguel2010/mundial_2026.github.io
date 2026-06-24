@@ -1,11 +1,34 @@
-import type { ParticipantPredictionRow, ParticipantPredictions } from '../types/predictions';
+import type {
+  KnockoutStagePredictions,
+  ParticipantPredictionRow,
+  ParticipantPredictions,
+} from '../types/predictions';
+import { normalizeParticipantName } from '../utils/participants';
 
 type KnockoutStageCsvRow = {
   participante: string;
   matchId: string;
   matchLabel: string;
   score: string;
+  penaltyWinner?: string;
 };
+
+type PenaltyDataIssue = {
+  kind: 'invalid-penalty-winner' | 'missing-penalty-winner';
+  matchLabel: string;
+  participante: string;
+};
+
+type PenaltyDataIssues = {
+  details: PenaltyDataIssue[];
+};
+
+type ParsedKnockoutRows = {
+  issues: PenaltyDataIssues;
+  rows: KnockoutStageCsvRow[];
+};
+
+const SCORE_PATTERN = /^(\d+)-(\d+)$/;
 
 function getMatchSequence(matchId: string) {
   const sequence = Number.parseInt(matchId.replace(/\D+/g, ''), 10);
@@ -25,27 +48,82 @@ function sortPredictionsByMatchId(predictions: ParticipantPredictionRow[]) {
   });
 }
 
-function parseCsvRows(csv: string, stageLabel: string): KnockoutStageCsvRow[] {
+function createEmptyIssues(): PenaltyDataIssues {
+  return {
+    details: [],
+  };
+}
+
+function parseScore(score: string) {
+  const match = score.trim().match(SCORE_PATTERN);
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    away: Number.parseInt(match[2], 10),
+    home: Number.parseInt(match[1], 10),
+  };
+}
+
+function isDrawScore(score: string) {
+  const parsedScore = parseScore(score);
+
+  return parsedScore !== null && parsedScore.home === parsedScore.away;
+}
+
+function getMatchTeams(matchLabel: string) {
+  const [homeTeam, awayTeam, ...rest] = matchLabel.split('-');
+
+  if (!homeTeam || !awayTeam || rest.length > 0) {
+    return null;
+  }
+
+  return {
+    awayTeam: awayTeam.trim(),
+    homeTeam: homeTeam.trim(),
+  };
+}
+
+function createPenaltyWarningMessages(stageLabel: string, issues: PenaltyDataIssues) {
+  return issues.details.map((issue) => {
+    if (issue.kind === 'missing-penalty-winner') {
+      return `${issue.participante} · ${issue.matchLabel}: empate sin ganador por penaltis en el CSV de ${stageLabel}.`;
+    }
+
+    return `${issue.participante} · ${issue.matchLabel}: ganador por penaltis no válido en el CSV de ${stageLabel}.`;
+  });
+}
+
+function parseCsvRows(csv: string, stageLabel: string): ParsedKnockoutRows {
   const sanitizedCsv = csv.replace(/^\uFEFF/, '').trim();
 
   if (!sanitizedCsv) {
-    return [];
+    return {
+      issues: createEmptyIssues(),
+      rows: [],
+    };
   }
 
   const lines = sanitizedCsv.split(/\r?\n/).filter(Boolean);
 
   if (lines.length <= 1) {
-    return [];
+    return {
+      issues: createEmptyIssues(),
+      rows: [],
+    };
   }
 
   const headers = lines[0].split(',').map((header) => header.trim());
-  const expectedHeaders = ['Nombre', 'ID_Partido', 'Partido', 'Resultados'];
+  const expectedHeaders = ['Nombre', 'ID_Partido', 'Partido', 'Resultados', 'Ganador_Penaltis'];
 
   if (expectedHeaders.some((header, index) => headers[index] !== header)) {
     throw new Error(`El formato del CSV de ${stageLabel} no coincide con lo esperado.`);
   }
 
-  return lines
+  const issues = createEmptyIssues();
+  const rows = lines
     .slice(1)
     .map((line) => line.split(',').map((value) => value.trim()))
     .map<KnockoutStageCsvRow | null>((values) => {
@@ -53,9 +131,59 @@ function parseCsvRows(csv: string, stageLabel: string): KnockoutStageCsvRow[] {
       const matchId = values[1] ?? '';
       const matchLabel = values[2] ?? '';
       const score = values[3] ?? '';
+      const rawPenaltyWinner = values[4] ?? '';
 
       if (!participante || !matchId || !matchLabel || !score) {
         return null;
+      }
+
+      const hasDrawScore = isDrawScore(score);
+
+      if (!hasDrawScore) {
+        return {
+          participante,
+          matchId,
+          matchLabel,
+          score,
+        };
+      }
+
+      if (!rawPenaltyWinner) {
+        issues.details.push({
+          kind: 'missing-penalty-winner',
+          matchLabel,
+          participante,
+        });
+
+        return {
+          participante,
+          matchId,
+          matchLabel,
+          score,
+        };
+      }
+
+      const teams = getMatchTeams(matchLabel);
+      const normalizedPenaltyWinner = normalizeParticipantName(rawPenaltyWinner);
+      const isValidPenaltyWinner =
+        teams !== null &&
+        [teams.homeTeam, teams.awayTeam].some(
+          (teamName) => normalizeParticipantName(teamName) === normalizedPenaltyWinner,
+        );
+
+      if (!isValidPenaltyWinner) {
+        issues.details.push({
+          kind: 'invalid-penalty-winner',
+          matchLabel,
+          participante,
+        });
+
+        return {
+          participante,
+          matchId,
+          matchLabel,
+          score,
+        };
       }
 
       return {
@@ -63,13 +191,16 @@ function parseCsvRows(csv: string, stageLabel: string): KnockoutStageCsvRow[] {
         matchId,
         matchLabel,
         score,
+        penaltyWinner: rawPenaltyWinner,
       };
     })
     .filter((row): row is KnockoutStageCsvRow => row !== null);
+
+  return { issues, rows };
 }
 
-function parsePredictionsCsv(csv: string, stageLabel: string): ParticipantPredictions[] {
-  const rows = parseCsvRows(csv, stageLabel);
+function parsePredictionsCsv(csv: string, stageLabel: string): KnockoutStagePredictions {
+  const { issues, rows } = parseCsvRows(csv, stageLabel);
   const predictionsByParticipant = new Map<string, ParticipantPredictions>();
 
   rows.forEach((row) => {
@@ -78,6 +209,7 @@ function parsePredictionsCsv(csv: string, stageLabel: string): ParticipantPredic
       matchId: row.matchId,
       matchLabel: row.matchLabel,
       score: row.score,
+      penaltyWinner: row.penaltyWinner,
     };
 
     if (existingParticipant) {
@@ -95,10 +227,13 @@ function parsePredictionsCsv(csv: string, stageLabel: string): ParticipantPredic
     });
   });
 
-  return [...predictionsByParticipant.values()].map((participantPredictions) => ({
-    ...participantPredictions,
-    predictions: sortPredictionsByMatchId(participantPredictions.predictions),
-  }));
+  return {
+    participants: [...predictionsByParticipant.values()].map((participantPredictions) => ({
+      ...participantPredictions,
+      predictions: sortPredictionsByMatchId(participantPredictions.predictions),
+    })),
+    warnings: createPenaltyWarningMessages(stageLabel, issues),
+  };
 }
 
 export async function fetchKnockoutStagePredictions(csvPath: string, stageLabel: string) {
@@ -113,7 +248,7 @@ export async function fetchKnockoutStagePredictions(csvPath: string, stageLabel:
   const csv = await response.text();
   const parsedPredictions = parsePredictionsCsv(csv, stageLabel);
 
-  if (parsedPredictions.length === 0) {
+  if (parsedPredictions.participants.length === 0) {
     throw new Error(`El CSV de ${stageLabel} está vacío o no contiene partidos válidos.`);
   }
 
