@@ -15,8 +15,8 @@ Pancho Zarauza,M096,Austria-Portugal,0-2
 001 Psv,M094,Suiza-Bélgica,1-1,Bélgica
 001 Psv,M095,Argentina-Estados Unidos,2-0
 001 Psv,M096,Bosnia y Herzegovina-Portugal,0-1
-002 Jfrm,M089,Países Bajos-Noruega,1-3
-002 Jfrm,M090,Canadá-Alemania,1-2
+002 Jfrm,M089,Canadá-Alemania,1-3
+002 Jfrm,M090,Países Bajos-Noruega,1-2
 002 Jfrm,M091,Marruecos-Francia,1-1,Marruecos
 002 Jfrm,M092,México-Senegal,1-2
 002 Jfrm,M093,España-Colombia,2-1
@@ -31,16 +31,16 @@ Pancho Zarauza,M096,Austria-Portugal,0-2
 003 Psv1,M094,Turquía-Bélgica,1-2
 003 Psv1,M095,Uruguay-Estados Unidos,1-1,Estados Unidos
 003 Psv1,M096,Argelia-Portugal,0-2
-004 Nvr,M089,Brasil-Ecuador,1-2
-004 Nvr,M090,Chequia-Alemania,3-1
+004 Nvr,M089,Chequia-Alemania,1-2
+004 Nvr,M090,Brasil-Ecuador,3-1
 004 Nvr,M091,Marruecos-Francia,2-3
 004 Nvr,M092,Costa de Marfil-Inglaterra,1-3
 004 Nvr,M093,Uruguay-Croacia,2-2,Croacia
 004 Nvr,M094,México-Estados Unidos,2-2,México
 004 Nvr,M095,Turquía-Colombia,1-1,Colombia
 004 Nvr,M096,Suiza-España,2-2,España
-005 Jlmr,M089,Brasil-Noruega,0-2
-005 Jlmr,M090,Sudáfrica-Alemania,2-1
+005 Jlmr,M089,Sudáfrica-Alemania,0-2
+005 Jlmr,M090,Brasil-Noruega,2-1
 005 Jlmr,M091,Marruecos-Francia,0-2
 005 Jlmr,M092,Chequia-Inglaterra,1-3
 005 Jlmr,M093,España-Colombia,2-1
@@ -295,8 +295,8 @@ Alex Garcia,M093,Colombia-España,1-3
 Alex Garcia,M094,Turquía-Bélgica,2-1
 Alex Garcia,M095,Argentina-Egipto,3-1
 Alex Garcia,M096,Suiza-Portugal,0-2
-Alex Gonzalo,M089,Marruecos-Noruega,0-1
-Alex Gonzalo,M090,Corea del Sur-Alemania,1-0
+Alex Gonzalo,M089,Corea del Sur-Alemania,0-1
+Alex Gonzalo,M090,Marruecos-Noruega,1-0
 Alex Gonzalo,M091,Japón-Francia,1-1,Japón
 Alex Gonzalo,M092,México-Inglaterra,1-2
 Alex Gonzalo,M093,Uruguay-Croacia,2-2,Uruguay
@@ -511,8 +511,8 @@ Borja Poza,M093,Colombia-España,1-3
 Borja Poza,M094,Estados Unidos-Bélgica,1-1,Bélgica
 Borja Poza,M095,Argentina-Turquía,2-1
 Borja Poza,M096,Suiza-Portugal,0-2
-Carlos Martinez,M089,Brasil-Noruega,0-2
-Carlos Martinez,M090,Corea del Sur-Alemania,2-1
+Carlos Martinez,M089,Corea del Sur-Alemania,0-2
+Carlos Martinez,M090,Brasil-Noruega,2-1
 Carlos Martinez,M091,Países Bajos-Francia,1-2
 Carlos Martinez,M092,México-Inglaterra,1-0
 Carlos Martinez,M093,España-Colombia,2-1
@@ -919,8 +919,8 @@ Ecar,M093,Colombia-España,1-2
 Ecar,M094,Estados Unidos-México,1-2
 Ecar,M095,Uruguay-Egipto,2-1
 Ecar,M096,Suiza-Portugal,1-3
-Emilio,M089,Brasil-Noruega,3-1
-Emilio,M090,México-Alemania,3-2
+Emilio,M089,México-Alemania,3-1
+Emilio,M090,Brasil-Noruega,3-2
 Emilio,M091,Japón-Francia,1-2
 Emilio,M092,Corea del Sur-Inglaterra,2-3
 Emilio,M093,España-Croacia,4-2
@@ -1186,13 +1186,13 @@ Guillermo Diez,M096,Irán-Portugal,0-2
 Guillermo Martin Fuentes,M089,Alemania-Francia,0-2
 Guillermo Martin Fuentes,M090,Corea del Sur-Países Bajos,0-1
 Guillermo Martin Fuentes,M091,Brasil-Noruega,2-0
-Guillermo Martin Fuentes,M092,México-Croacia,1-1,México
+Guillermo Martin Fuentes,M092,México-Croacia,1-1,Croacia
 Guillermo Martin Fuentes,M093,Inglaterra-España,0-2
 Guillermo Martin Fuentes,M094,Estados Unidos-Bélgica,0-1
 Guillermo Martin Fuentes,M095,Argentina-Turquía,2-0
 Guillermo Martin Fuentes,M096,Suiza-Portugal,0-1
-Guillermo Zabaleta,M089,Brasil-Ecuador,0-2
-Guillermo Zabaleta,M090,Bosnia y Herzegovina-Alemania,1-1,Bosnia y Herzegovina
+Guillermo Zabaleta,M089,Bosnia y Herzegovina-Alemania,0-2
+Guillermo Zabaleta,M090,Brasil-Ecuador,1-1,Brasil
 Guillermo Zabaleta,M091,Marruecos-Francia,1-3
 Guillermo Zabaleta,M092,México-Inglaterra,0-1
 Guillermo Zabaleta,M093,España-Colombia,2-1
@@ -1351,8 +1351,8 @@ Ivan,M093,Croacia-España,0-2
 Ivan,M094,Estados Unidos-Bélgica,0-2
 Ivan,M095,Argentina-Turquía,1-0
 Ivan,M096,Suiza-Portugal,1-2
-Iñigo Aranguren,M089,Brasil-Ecuador,0-2
-Iñigo Aranguren,M090,Corea del Sur-Alemania,2-2,Corea del Sur
+Iñigo Aranguren,M089,Corea del Sur-Alemania,0-2
+Iñigo Aranguren,M090,Brasil-Ecuador,2-2,Brasil
 Iñigo Aranguren,M091,Países Bajos-Francia,1-2
 Iñigo Aranguren,M092,Costa de Marfil-Inglaterra,1-0
 Iñigo Aranguren,M093,España-Colombia,1-0
@@ -1592,13 +1592,13 @@ Jorge Fragua,M094,Senegal-Bélgica,2-1
 Jorge Fragua,M095,Argentina-Turquía,2-1
 Jorge Fragua,M096,Costa de Marfil-Portugal,1-2
 Jorge Garcia,M089,Canadá-Alemania,0-3
-Jorge Garcia,M090,Canadá-Alemania,2-1
-Jorge Garcia,M091,-,0-3
+Jorge Garcia,M090,Brasil-?,2-1
+Jorge Garcia,M091,Suecia-?,0-3
 Jorge Garcia,M092,México-Inglaterra,0-2
-Jorge Garcia,M093,-,2-1
+Jorge Garcia,M093,España-?,2-1
 Jorge Garcia,M094,Bélgica-Turquía,0-1
-Jorge Garcia,M095,-,1-2
-Jorge Garcia,M096,-,0-2
+Jorge Garcia,M095,Irán-?,1-2
+Jorge Garcia,M096,Suiza-?,0-2
 Jorge Manjon,M089,Alemania-Francia,1-3
 Jorge Manjon,M090,Canadá-Países Bajos,0-3
 Jorge Manjon,M091,Brasil-Noruega,2-2,Noruega
