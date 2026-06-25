@@ -49,10 +49,10 @@ Panamá-Croacia,true,0-1
 Colombia-RD_Congo,true,1-0
 Suiza-Canadá,true,2-1
 Bosnia_y_Herzegovina-Catar,true,3-1
-Escocia-Brasil,false
-Marruecos-Haití,false
-Chequia-México,false
-Sudáfrica-Corea_del_Sur,false
+Escocia-Brasil,true,0-3
+Marruecos-Haití,true,4-2
+Chequia-México,true,0-3
+Sudáfrica-Corea_del_Sur,true,1-0
 Curazao-Costa_de_Marfil,false
 Ecuador-Alemania,false
 Japón-Suecia,false
