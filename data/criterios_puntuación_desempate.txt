@@ -1,1 +1,9 @@
+Criterios de puntuación
+Fase de grupos:
+Acertar signo del partido (1-x-2)	--> 10 puntos
+Acertar resultado exacto del partido	--> 15 puntos
+Acertar el resultado exacto --> 10 puntos por gol
+Acertar primero de grupo al finalizar fase de grupos --> 10 puntos por acierto
+Acertar segundo de grupo al finalizar fase de grupos --> 10 puntos por acierto
 
+Dieciseisavos:
