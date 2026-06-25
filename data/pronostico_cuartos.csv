@@ -7,19 +7,19 @@ Pancho Zarauza,M100,Bélgica-Portugal,0-1
 001 Psv,M098,España-Bélgica,2-1
 001 Psv,M099,Brasil-Marruecos,3-2
 001 Psv,M100,Argentina-Portugal,2-2,Argentina
-002 Jfrm,M097,Noruega-Alemania,1-2
+002 Jfrm,M097,Alemania-Noruega,1-2
 002 Jfrm,M098,España-Ecuador,2-0
 002 Jfrm,M099,Marruecos-Senegal,2-1
-002 Jfrm,M100,Portugal-Argentina,1-1,Argentina
+002 Jfrm,M100,Portugal-Argentina,1-1,Portugal
 003 Psv1,M097,Noruega-Marruecos,2-1
 003 Psv1,M098,España-Bélgica,1-2
 003 Psv1,M099,Brasil-Escocia,2-0
 003 Psv1,M100,Estados Unidos-Portugal,1-2
-004 Nvr,M097,Ecuador-Chequia,0-0,Ecuador
+004 Nvr,M097,Alemania-Brasil,0-0,Alemania
 004 Nvr,M098,Croacia-México,1-2
 004 Nvr,M099,Francia-Inglaterra,1-2
 004 Nvr,M100,Colombia-España,0-0,Colombia
-005 Jlmr,M097,Noruega-Sudáfrica,1-1,Sudáfrica
+005 Jlmr,M097,Alemania-Brasil,1-1,Brasil
 005 Jlmr,M098,España-Turquía,1-1,Turquía
 005 Jlmr,M099,Francia-Inglaterra,2-1
 005 Jlmr,M100,Portugal-Argentina,2-0
@@ -147,7 +147,7 @@ Alex Garcia,M097,Francia-Marruecos,3-2
 Alex Garcia,M098,España-Turquía,2-0
 Alex Garcia,M099,Brasil-Inglaterra,2-0
 Alex Garcia,M100,Argentina-Portugal,1-0
-Alex Gonzalo,M097,Noruega-Corea del Sur,0-1
+Alex Gonzalo,M097,Alemania-Marruecos,0-1
 Alex Gonzalo,M098,Uruguay-Turquía,0-1
 Alex Gonzalo,M099,Japón-Inglaterra,0-1
 Alex Gonzalo,M100,Portugal-España,1-2
@@ -255,7 +255,7 @@ Borja Poza,M097,Francia-Marruecos,3-1
 Borja Poza,M098,España-Bélgica,3-1
 Borja Poza,M099,Brasil-Inglaterra,1-1,Brasil
 Borja Poza,M100,Argentina-Portugal,1-2
-Carlos Martinez,M097,Noruega-Corea del Sur,2-1
+Carlos Martinez,M097,Alemania-Brasil,2-1
 Carlos Martinez,M098,España-Bélgica,1-0
 Carlos Martinez,M099,Francia-México,2-1
 Carlos Martinez,M100,Portugal-Argentina,1-1,Portugal
@@ -459,7 +459,7 @@ Ecar,M097,Alemania-Chequia,3-2
 Ecar,M098,España-México,3-0
 Ecar,M099,Brasil-Inglaterra,2-2,Inglaterra
 Ecar,M100,Uruguay-Portugal,0-2
-Emilio,M097,Brasil-México,2-3
+Emilio,M097,México-Brasil,2-3
 Emilio,M098,España-Estados Unidos,4-2
 Emilio,M099,Francia-Inglaterra,4-2
 Emilio,M100,Portugal-Argentina,2-1
@@ -595,7 +595,7 @@ Guillermo Martin Fuentes,M097,Francia-Países Bajos,2-1
 Guillermo Martin Fuentes,M098,España-Bélgica,2-0
 Guillermo Martin Fuentes,M099,Brasil-Croacia,2-0
 Guillermo Martin Fuentes,M100,Argentina-Portugal,1-2
-Guillermo Zabaleta,M097,Ecuador-Bosnia y Herzegovina,2-1
+Guillermo Zabaleta,M097,Alemania-Brasil,2-1
 Guillermo Zabaleta,M098,España-Turquía,4-0
 Guillermo Zabaleta,M099,Francia-Inglaterra,2-2,Inglaterra
 Guillermo Zabaleta,M100,Portugal-Argentina,2-1
@@ -675,7 +675,7 @@ Ivan,M097,Alemania-Países Bajos,2-1
 Ivan,M098,España-Bélgica,3-0
 Ivan,M099,Noruega-Inglaterra,1-2
 Ivan,M100,Argentina-Portugal,0-2
-Iñigo Aranguren,M097,Ecuador-Corea del Sur,1-2
+Iñigo Aranguren,M097,Alemania-Brasil,1-2
 Iñigo Aranguren,M098,España-Bélgica,1-0
 Iñigo Aranguren,M099,Francia-Costa de Marfil,3-0
 Iñigo Aranguren,M100,Portugal-Argentina,1-1,Portugal
@@ -847,7 +847,7 @@ Juan Gutiérrez Baz,M097,Francia-Países Bajos,2-1
 Juan Gutiérrez Baz,M098,España-Bélgica,2-1
 Juan Gutiérrez Baz,M099,Brasil-Inglaterra,2-2,Brasil
 Juan Gutiérrez Baz,M100,Argentina-Portugal,2-1
-Juan Jose Garcia Mahecha,M097,Ecuador-Alemania,1-2
+Juan Jose Garcia Mahecha,M097,Alemania-Ecuador,1-2
 Juan Jose Garcia Mahecha,M098,España-Bélgica,2-0
 Juan Jose Garcia Mahecha,M099,Francia-Inglaterra,2-0
 Juan Jose Garcia Mahecha,M100,Colombia-Argentina,1-2
@@ -895,7 +895,7 @@ Lucas Goñi Álvaro Tapia,M097,Noruega-Países Bajos,1-2
 Lucas Goñi Álvaro Tapia,M098,España-Bélgica,2-0
 Lucas Goñi Álvaro Tapia,M099,Francia-Inglaterra,1-1,Francia
 Lucas Goñi Álvaro Tapia,M100,Argentina-Portugal,1-2
-Lucassalinero,M097,Senegal-Canadá,1-3
+Lucassalinero,M097,Alemania-Brasil,1-3
 Lucassalinero,M098,España-Bélgica,2-0
 Lucassalinero,M099,Francia-Inglaterra,3-1
 Lucassalinero,M100,Portugal-Argentina,2-1
@@ -919,7 +919,7 @@ Luis Sagaseta,M097,Alemania-Marruecos,2-1
 Luis Sagaseta,M098,España-Turquía,3-1
 Luis Sagaseta,M099,Brasil-Inglaterra,2-1
 Luis Sagaseta,M100,Argentina-Portugal,1-1,Portugal
-Luis VilariñO,M097,Noruega-Chequia,2-0
+Luis VilariñO,M097,Alemania-Brasil,2-0
 Luis VilariñO,M098,España-Bélgica,1-0
 Luis VilariñO,M099,Países Bajos-Inglaterra,0-1
 Luis VilariñO,M100,Portugal-Argentina,1-1,Argentina
@@ -1007,7 +1007,7 @@ Mario Crespo PéRez,M097,Francia-Países Bajos,2-1
 Mario Crespo PéRez,M098,España-Bélgica,2-1
 Mario Crespo PéRez,M099,Brasil-Inglaterra,1-1,Brasil
 Mario Crespo PéRez,M100,Argentina-Portugal,1-1,Portugal
-Mario Crespo Yepes,M097,Noruega-Canadá,2-1
+Mario Crespo Yepes,M097,Alemania-Marruecos,2-1
 Mario Crespo Yepes,M098,España-Bélgica,2-0
 Mario Crespo Yepes,M099,Francia-Inglaterra,3-2
 Mario Crespo Yepes,M100,Portugal-Argentina,1-1,Argentina
@@ -1015,7 +1015,7 @@ Mario Guzman,M097,Senegal-Brasil,2-3
 Mario Guzman,M098,España-Bélgica,3-1
 Mario Guzman,M099,Francia-Inglaterra,1-2
 Mario Guzman,M100,Argentina-Portugal,2-2,Portugal
-Mario Molina,M097,Senegal-Suiza,0-2
+Mario Molina,M097,Alemania-Países Bajos,0-2
 Mario Molina,M098,España-Bélgica,1-0
 Mario Molina,M099,Marruecos-Inglaterra,1-0
 Mario Molina,M100,Portugal-Argentina,2-3
@@ -1059,7 +1059,7 @@ Miguel Angel Llorente,M097,Francia-Suecia,2-1
 Miguel Angel Llorente,M098,España-Chequia,3-0
 Miguel Angel Llorente,M099,Brasil-Inglaterra,2-1
 Miguel Angel Llorente,M100,Uruguay-Portugal,1-2
-Miguel Quintana,M097,Noruega-Corea del Sur,2-2,Noruega
+Miguel Quintana,M097,Alemania-Brasil,2-2,Alemania
 Miguel Quintana,M098,España-Bélgica,2-1
 Miguel Quintana,M099,Francia-Inglaterra,2-1
 Miguel Quintana,M100,Portugal-Argentina,1-2
@@ -1139,7 +1139,7 @@ Pablo Peña Gomez,M097,Francia-Marruecos,2-0
 Pablo Peña Gomez,M098,España-Bélgica,2-0
 Pablo Peña Gomez,M099,Brasil-Inglaterra,2-2,Inglaterra
 Pablo Peña Gomez,M100,Argentina-Portugal,1-1,Portugal
-Paco De La Fuente,M097,Senegal-Chequia,2-3
+Paco De La Fuente,M097,Alemania-Brasil,2-3
 Paco De La Fuente,M098,España-Estados Unidos,2-1
 Paco De La Fuente,M099,Francia-Croacia,3-1
 Paco De La Fuente,M100,Portugal-Argentina,3-2
@@ -1407,7 +1407,7 @@ Miguel Garcia,M097,Francia-Países Bajos,2-1
 Miguel Garcia,M098,España-Bélgica,2-1
 Miguel Garcia,M099,Brasil-Inglaterra,3-1
 Miguel Garcia,M100,Argentina-Portugal,3-2
-Narciso Vaquero,M097,Senegal-Suiza,0-3
+Narciso Vaquero,M097,Costa de Marfil-Brasil,0-3
 Narciso Vaquero,M098,España-Uruguay,1-1,España
 Narciso Vaquero,M099,Francia-Colombia,2-2,Colombia
 Narciso Vaquero,M100,Portugal-Argentina,2-1
