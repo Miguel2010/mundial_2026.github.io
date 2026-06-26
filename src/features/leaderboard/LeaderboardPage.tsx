@@ -111,8 +111,6 @@ export function LeaderboardPage({
     <section className="leaderboard-panel">
       <div className="section-heading section-heading-inline">
         <div>
-          <span className="section-kicker">Clasificación</span>
-          <h2>Tabla general</h2>
           <p>
             {lastUpdated ?? 'La fecha de actualización se mostrará cuando esté disponible.'}
           </p>
