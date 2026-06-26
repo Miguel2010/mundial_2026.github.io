@@ -26,12 +26,19 @@ const commonRules: ScoringRule[] = [
 
 const phaseCriteria: PhaseCriteria[] = [
   {
+    title: 'Fase de grupos',
+    description: 'Puntua cada partido de la fase inicial.',
+    rules: [
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
+    ],
+  },
+  {
     title: 'Dieciseisavos',
     description: 'Incluye bonus por clasificacion desde la fase de grupos.',
     rules: [
       { label: 'Acertar el primero de cada grupo', points: '10 pts por acierto' },
       { label: 'Acertar el segundo de cada grupo', points: '10 pts por acierto' },
-      { label: 'Aplican las reglas comunes de eliminatorias', points: 'Ver comunes' },
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'Para puntuar el partido, debe estar acertado en el mismo orden del cuadro.',
   },
@@ -40,7 +47,7 @@ const phaseCriteria: PhaseCriteria[] = [
     description: 'Premia los equipos clasificados y los aciertos del partido.',
     rules: [
       { label: 'Acertar seleccion clasificada a octavos', points: '20 pts por acierto' },
-      { label: 'Aplican las reglas comunes de eliminatorias', points: 'Ver comunes' },
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'Para puntuar el partido, debe estar acertado en el mismo orden del cuadro.',
   },
@@ -49,7 +56,7 @@ const phaseCriteria: PhaseCriteria[] = [
     description: 'Mantiene los puntos por clasificados y resultados.',
     rules: [
       { label: 'Acertar seleccion clasificada a cuartos', points: '20 pts por acierto' },
-      { label: 'Aplican las reglas comunes de eliminatorias', points: 'Ver comunes' },
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'Para puntuar el partido, debe estar acertado en el mismo orden del cuadro.',
   },
@@ -58,7 +65,7 @@ const phaseCriteria: PhaseCriteria[] = [
     description: 'Sube el valor de acertar selecciones clasificadas.',
     rules: [
       { label: 'Acertar seleccion clasificada a semifinales', points: '40 pts por acierto' },
-      { label: 'Aplican las reglas comunes de eliminatorias', points: 'Ver comunes' },
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'Para puntuar el partido, debe estar acertado en el mismo orden del cuadro.',
   },
@@ -69,7 +76,7 @@ const phaseCriteria: PhaseCriteria[] = [
       { label: 'Acertar seleccion clasificada al partido por el tercer puesto', points: '40 pts por acierto' },
       { label: 'Acertar seleccion en el puesto 3o', points: '60 pts' },
       { label: 'Acertar seleccion en el puesto 4o', points: '45 pts' },
-      { label: 'Aplican las reglas comunes de eliminatorias', points: 'Ver comunes' },
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'El orden de los equipos puede ser cualquiera, siempre que ambos jueguen este partido.',
   },
@@ -80,7 +87,7 @@ const phaseCriteria: PhaseCriteria[] = [
       { label: 'Acertar seleccion clasificada a la final', points: '50 pts por acierto' },
       { label: 'Acertar campeon del Mundial', points: '100 pts' },
       { label: 'Acertar subcampeon del Mundial', points: '75 pts' },
-      { label: 'Aplican las reglas comunes de eliminatorias', points: 'Ver comunes' },
+      { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'El orden de los equipos puede ser cualquiera, siempre que ambos jueguen la final.',
   },
