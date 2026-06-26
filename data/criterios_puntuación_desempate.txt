@@ -18,28 +18,28 @@ Dieciseisavos:
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar la suma total de goles en toda la fase --> 20 puntos
+- Acertar la suma total de goles en toda la fase incluidas las prórrogas --> 20 puntos
 
 Octavos:
 - Acertar selección clasificada a octavos --> 20 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar la suma total de goles en toda la fase --> 20 puntos
+- Acertar la suma total de goles en toda la fase incluidas las prórrogas --> 20 puntos
 
 Cuartos:
 - Acertar selección clasificada a cuartos --> 20 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar la suma total de goles en toda la fase --> 20 puntos
+- Acertar la suma total de goles en toda la fase incluidas las prórrogas --> 20 puntos
 
 Semifinales:
 - Acertar selección clasificada a semifinales --> 40 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar la suma total de goles en toda la fase --> 20 puntos
+- Acertar la suma total de goles en toda la fase incluidas las prórrogas --> 20 puntos
 
 Puestos 3º y 4º:
 - Acertar selección clasificada a puestos 3º y 4º --> 40 puntos por acierto
@@ -48,7 +48,7 @@ Puestos 3º y 4º:
 - Acertar el resultado exacto --> 10 puntos por gol
 - Acertar selección puesto 3º --> 60 puntos
 - Acertar selección puesto 4º --> 45 puntos
-- Acertar la suma total de goles en toda la fase --> 20 puntos
+- Acertar la suma total de goles en toda la fase incluidas las prórrogas --> 20 puntos
 
 Final:
 - Acertar selección clasificada a la final --> 50 puntos por acierto
@@ -57,7 +57,7 @@ Final:
 - Acertar el resultado exacto --> 10 puntos por gol
 - Acertar selección puesto 1º --> 100 puntos
 - Acertar selección puesto 2º --> 75 puntos
-- Acertar la suma total de goles en toda la fase --> 20 puntos
+- Acertar la suma total de goles en toda la fase incluidas las prórrogas --> 20 puntos
 
 CRITERIOS DE DESEMPATE
 1	- El que haya acertado el campeón del Mundial
@@ -73,10 +73,10 @@ CRITERIOS DE DESEMPATE
 13	- El que haya acertado el mayor nº de paises clasificados a Semifinales
 14	- El que haya acertado el mayor nº de paises clasificados a Cuartos
 15	- El que haya acertado el mayor nº de paises clasificados a Octavos
-16	- El que haya acertado el nº total de goles en la final (incluyendo la proroga, si la hubiere)
-17	- El que haya acertado el nº total de goles en el partido de 3er y 4º puesto (incluyendo las prorogas, si las hubiere)
-18	- El que haya acertado el nº total de goles en semifinales (incluyendo las prorogas, si las hubiere)
-19	- El que haya acertado el nº total de goles en cuartos (incluyendo las prorogas, si las hubiere)
-20	- El que haya acertado el nº total de goles en octavos (incluyendo las prorogas, si las hubiere)
+16	- El que haya acertado el nº total de goles en la final (incluyendo la proroga, si la hubiese)
+17	- El que haya acertado el nº total de goles en el partido de 3er y 4º puesto (incluyendo las prorogas, si las hubiese)
+18	- El que haya acertado el nº total de goles en semifinales (incluyendo las prorogas, si las hubiese)
+19	- El que haya acertado el nº total de goles en cuartos (incluyendo las prorogas, si las hubiese)
+20	- El que haya acertado el nº total de goles en octavos (incluyendo las prorogas, si las hubiese)
 21	- Por sorteo
 
