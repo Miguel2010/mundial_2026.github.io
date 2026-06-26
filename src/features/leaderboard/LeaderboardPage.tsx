@@ -110,11 +110,6 @@ export function LeaderboardPage({
   return (
     <section className="leaderboard-panel">
       <div className="section-heading section-heading-inline">
-        <div>
-          <p>
-            {lastUpdated ?? 'La fecha de actualización se mostrará cuando esté disponible.'}
-          </p>
-        </div>
         <div className="section-actions">
           <span className="session-label">Conectado como {currentParticipant}</span>
           <button className="ghost-button" type="button" onClick={onLogout}>
