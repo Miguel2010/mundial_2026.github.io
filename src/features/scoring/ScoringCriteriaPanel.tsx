@@ -26,15 +26,6 @@ const commonRules: ScoringRule[] = [
 
 const phaseCriteria: PhaseCriteria[] = [
   {
-    title: 'Fase de grupos',
-    description: 'Puntua cada partido de la fase inicial.',
-    rules: [
-      { label: 'Acertar el signo del partido (1-X-2)', points: '10 pts' },
-      { label: 'Acertar el resultado exacto del partido', points: '15 pts' },
-      { label: 'Acertar goles exactos de cada equipo', points: '10 pts por gol' },
-    ],
-  },
-  {
     title: 'Dieciseisavos',
     description: 'Incluye bonus por clasificacion desde la fase de grupos.',
     rules: [
@@ -153,9 +144,8 @@ export function ScoringCriteriaPanel() {
       <section id="criterios-comunes" className="scoring-section">
         <div className="scoring-section-heading">
           <span className="summary-label">Reglas comunes</span>
-          <h3>Partidos de eliminatorias</h3>
           <p>
-            Estas reglas aplican a dieciseisavos, octavos, cuartos, semifinales, tercer puesto y final.
+            Estas reglas aplican a todas las fases del mundial.
           </p>
         </div>
         <ul className="scoring-rule-list">{commonRules.map(renderRule)}</ul>
