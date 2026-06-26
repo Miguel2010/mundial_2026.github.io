@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { LeaderboardTable } from './LeaderboardTable';
 import { PrizesPanel } from '../prizes/PrizesPanel';
 import { PredictionsPanel } from '../predictions/PredictionsPanel';
+import { ScoringCriteriaPanel } from '../scoring/ScoringCriteriaPanel';
 import { fetchPrizes, type PrizeRow } from '../../services/prize-service';
 import type { ClassificationRow } from '../../types/classification';
 import { normalizeParticipantName } from '../../utils/participants';
 
-type LeaderboardTab = 'classification' | 'prizes' | 'predictions';
+type LeaderboardTab = 'classification' | 'prizes' | 'predictions' | 'scoring';
 
 type LeaderboardPageProps = {
   rows: ClassificationRow[];
@@ -85,6 +86,10 @@ export function LeaderboardPage({
       );
     }
 
+    if (activeTab === 'scoring') {
+      return <ScoringCriteriaPanel />;
+    }
+
     return <PredictionsPanel currentParticipant={currentParticipant} />;
   }
 
@@ -146,6 +151,7 @@ export function LeaderboardPage({
         {renderTabButton('classification', 'Clasificación')}
         {renderTabButton('predictions', 'Pronóstico')}
         {renderTabButton('prizes', 'Premios')}
+        {renderTabButton('scoring', 'Puntuación y desempate')}
       </div>
 
       {renderActiveTab()}
