@@ -11,39 +11,38 @@ Fase de grupos:
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar primero de cada grupo al finalizar fase de grupos --> 10 puntos por acierto
-- Acertar segundo de cada grupo al finalizar fase de grupos --> 10 puntos por acierto
 
 Dieciseisavos:
+- Acertar primero de cada grupo al finalizar fase de grupos --> 10 puntos por acierto
+- Acertar segundo de cada grupo al finalizar fase de grupos --> 10 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar selección clasificada a octavos --> 20 puntos por acierto
 - Acertar la suma total de goles en toda la fase --> 20 puntos
 
 Octavos:
+- Acertar selección clasificada a octavos --> 20 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar selección clasificada a cuartos --> 20 puntos por acierto
 - Acertar la suma total de goles en toda la fase --> 20 puntos
 
 Cuartos:
+- Acertar selección clasificada a cuartos --> 20 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar selección clasificada a semifinales --> 40 puntos por acierto
 - Acertar la suma total de goles en toda la fase --> 20 puntos
 
 Semifinales:
+- Acertar selección clasificada a semifinales --> 40 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
-- Acertar selección clasificada a puestos 3º y 4º --> 40 puntos por acierto
-- Acertar selección clasificada a la final --> 50 puntos por acierto
 - Acertar la suma total de goles en toda la fase --> 20 puntos
 
 Puestos 3º y 4º:
+- Acertar selección clasificada a puestos 3º y 4º --> 40 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
@@ -52,6 +51,7 @@ Puestos 3º y 4º:
 - Acertar la suma total de goles en toda la fase --> 20 puntos
 
 Final:
+- Acertar selección clasificada a la final --> 50 puntos por acierto
 - Acertar signo del partido (1-x-2)	--> 10 puntos
 - Acertar resultado exacto del partido --> 15 puntos
 - Acertar el resultado exacto --> 10 puntos por gol
