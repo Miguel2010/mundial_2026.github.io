@@ -1,29 +1,29 @@
 Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis
-Pancho Zarauza,M073,Corea del Sur-Bosnia y Herzegovina,1-2
-Pancho Zarauza,M074,Alemania-Paraguay,2-0
-Pancho Zarauza,M075,Japón-Marruecos,2-1
-Pancho Zarauza,M076,Brasil-Países Bajos,1-0
-Pancho Zarauza,M077,Francia-Suecia,1-0
+Pancho Zarauza,M073,Corea del Sur-Bosnia y Herzegovina,1-2,Bosnia y Herzegovina
+Pancho Zarauza,M074,Alemania-Paraguay,2-0,Alemania
+Pancho Zarauza,M075,Japón-Marruecos,2-1,Japón
+Pancho Zarauza,M076,Brasil-Países Bajos,1-0,Brasil
+Pancho Zarauza,M077,Francia-Suecia,1-0,Francia
 Pancho Zarauza,M078,Ecuador-Senegal,1-1,Senegal
 Pancho Zarauza,M079,Chequia-Escocia,0-0,Escocia
-Pancho Zarauza,M080,Inglaterra-RD Congo,2-0
-Pancho Zarauza,M081,Estados Unidos-Costa de Marfil,1-0
+Pancho Zarauza,M080,Inglaterra-RD Congo,2-0,Inglaterra
+Pancho Zarauza,M081,Estados Unidos-Costa de Marfil,1-0,Estados Unidos
 Pancho Zarauza,M082,Egipto-México,0-0,Egipto
-Pancho Zarauza,M083,Colombia-Ghana,0-1
-Pancho Zarauza,M084,España-Argelia,2-0
-Pancho Zarauza,M085,Suiza-Austria,1-2
-Pancho Zarauza,M086,Argentina-Uruguay,1-0
-Pancho Zarauza,M087,Portugal-Noruega,1-0
+Pancho Zarauza,M083,Colombia-Ghana,0-1,Ghana
+Pancho Zarauza,M084,España-Argelia,2-0,España
+Pancho Zarauza,M085,Suiza-Austria,1-2,Australia
+Pancho Zarauza,M086,Argentina-Uruguay,1-0,Argentina
+Pancho Zarauza,M087,Portugal-Noruega,1-0,Portugal
 Pancho Zarauza,M088,Turquía-Bélgica,1-1,Bélgica
-001 Psv,M073,Chequia-Catar,2-0
-001 Psv,M074,Alemania-Paraguay,2-1
-001 Psv,M075,Países Bajos-Escocia,1-0
-001 Psv,M076,Brasil-Japón,3-0
-001 Psv,M077,Francia-Suecia,0-1
-001 Psv,M078,Costa de Marfil-Noruega,1-0
+001 Psv,M073,Chequia-Catar,2-0,Chequia
+001 Psv,M074,Alemania-Paraguay,2-1,Alemania
+001 Psv,M075,Países Bajos-Escocia,1-0,Países Bajos
+001 Psv,M076,Brasil-Japón,3-0,Brasil
+001 Psv,M077,Francia-Suecia,0-1,Suecia
+001 Psv,M078,Costa de Marfil-Noruega,1-0,Costa de Marfil
 001 Psv,M079,México-Marruecos,1-1,Marruecos
-001 Psv,M080,Inglaterra-Senegal,1-0
-001 Psv,M081,Turquía-Suiza,1-2
+001 Psv,M080,Inglaterra-Senegal,1-0,Inglaterra
+001 Psv,M081,Turquía-Suiza,1-2,Suiza
 001 Psv,M082,Bélgica-Ecuador,3-1
 001 Psv,M083,Colombia-Croacia,2-0
 001 Psv,M084,España-Austria,2-1
