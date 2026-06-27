@@ -61,10 +61,10 @@ Turquía-Estados_Unidos,true,3-2
 Paraguay-Australia,true,0-0
 Noruega-Francia,true,1-4
 Senegal-Irak,true,5-0
-Cabo_Verde-Arabia_Saudí,false
-Uruguay-España,false
-Egipto-Irán,false
-Nueva_Zelanda-Bélgica,false
+Cabo_Verde-Arabia_Saudí,true,0-0
+Uruguay-España,true,0-1
+Egipto-Irán,true,1-1
+Nueva_Zelanda-Bélgica,true,1-5
 Panamá-Inglaterra,false
 Croacia-Ghana,false
 Colombia-Portugal,false
