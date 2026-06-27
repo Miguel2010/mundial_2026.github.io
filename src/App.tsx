@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import logoUrl from '../fifa-logo-transparent-white.webp';
 import { AuthGate } from './features/auth/AuthGate';
 import {
@@ -190,8 +191,59 @@ function App() {
     lastUpdatedIsoRef.current = null;
   }
 
+  function renderTopNavigation() {
+    if (!isAuthenticated || !currentParticipant) {
+      return null;
+    }
+
+    return (
+      <header className="top-navigation" aria-label="Navegación principal">
+        <div className="top-navigation-brand">
+          <img src={logoUrl} alt="" />
+          <span>Mundial 2026</span>
+        </div>
+
+        <nav className="tabs app-navigation" aria-label="Secciones de la clasificación">
+          <NavLink
+            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+            to="/clasificacion"
+          >
+            Clasificación
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+            to="/pronostico"
+          >
+            Pronóstico
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+            to="/premios"
+          >
+            Premios
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+            to="/puntuacion"
+          >
+            Puntuación y desempate
+          </NavLink>
+        </nav>
+
+        <div className="top-navigation-session">
+          <span className="session-label">Conectado como {currentParticipant}</span>
+          <button className="ghost-button" type="button" onClick={handleLogout}>
+            Cerrar sesión
+          </button>
+        </div>
+      </header>
+    );
+  }
+
   return (
     <div className="app-shell">
+      {renderTopNavigation()}
+
       <main className="app-layout">
         <section className="hero-panel">
           <div className="hero-copy">
@@ -217,15 +269,20 @@ function App() {
           </div>
         </section>
 
-        {isAuthenticated ? (
-          <LeaderboardPage
-            rows={rows}
-            isLoading={isLoadingRows}
-            error={rowsError}
-            lastUpdated={lastUpdated}
-            currentParticipant={currentParticipant}
-            onLogout={handleLogout}
-          />
+        {isAuthenticated && currentParticipant ? (
+          <Routes>
+            <Route
+              path="/*"
+              element={
+                <LeaderboardPage
+                  rows={rows}
+                  isLoading={isLoadingRows}
+                  error={rowsError}
+                  currentParticipant={currentParticipant}
+                />
+              }
+            />
+          </Routes>
         ) : (
           <AuthGate
             error={authError}
@@ -238,6 +295,16 @@ function App() {
           />
         )}
       </main>
+      {isAuthenticated ? null : (
+        <Routes>
+          <Route path="/" element={null} />
+          <Route path="/clasificacion" element={null} />
+          <Route path="/pronostico" element={null} />
+          <Route path="/premios" element={null} />
+          <Route path="/puntuacion" element={null} />
+          <Route path="*" element={<Navigate to="/clasificacion" replace />} />
+        </Routes>
+      )}
     </div>
   );
 }
