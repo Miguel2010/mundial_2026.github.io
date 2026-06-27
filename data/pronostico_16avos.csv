@@ -1,45 +1,45 @@
-Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis
-Pancho Zarauza,M073,Corea del Sur-Bosnia y Herzegovina,1-2,Bosnia y Herzegovina
-Pancho Zarauza,M074,Alemania-Paraguay,2-0,Alemania
-Pancho Zarauza,M075,Japón-Marruecos,2-1,Japón
-Pancho Zarauza,M076,Brasil-Países Bajos,1-0,Brasil
-Pancho Zarauza,M077,Francia-Suecia,1-0,Francia
-Pancho Zarauza,M078,Ecuador-Senegal,1-1,Senegal
-Pancho Zarauza,M079,Chequia-Escocia,0-0,Escocia
-Pancho Zarauza,M080,Inglaterra-RD Congo,2-0,Inglaterra
-Pancho Zarauza,M081,Estados Unidos-Costa de Marfil,1-0,Estados Unidos
-Pancho Zarauza,M082,Egipto-México,0-0,Egipto
-Pancho Zarauza,M083,Colombia-Ghana,0-1,Ghana
-Pancho Zarauza,M084,España-Argelia,2-0,España
-Pancho Zarauza,M085,Suiza-Austria,1-2,Australia
-Pancho Zarauza,M086,Argentina-Uruguay,1-0,Argentina
-Pancho Zarauza,M087,Portugal-Noruega,1-0,Portugal
-Pancho Zarauza,M088,Turquía-Bélgica,1-1,Bélgica
-001 Psv,M073,Chequia-Catar,2-0,Chequia
-001 Psv,M074,Alemania-Paraguay,2-1,Alemania
-001 Psv,M075,Países Bajos-Escocia,1-0,Países Bajos
-001 Psv,M076,Brasil-Japón,3-0,Brasil
-001 Psv,M077,Francia-Suecia,0-1,Suecia
-001 Psv,M078,Costa de Marfil-Noruega,1-0,Costa de Marfil
-001 Psv,M079,México-Marruecos,1-1,Marruecos
-001 Psv,M080,Inglaterra-Senegal,1-0,Inglaterra
-001 Psv,M081,Turquía-Suiza,1-2,Suiza
-001 Psv,M082,Bélgica-Ecuador,3-1
-001 Psv,M083,Colombia-Croacia,2-0
-001 Psv,M084,España-Austria,2-1
-001 Psv,M085,Bosnia y Herzegovina-Nueva Zelanda,1-0
-001 Psv,M086,Argentina-Uruguay,2-0
-001 Psv,M087,Portugal-Ghana,3-1
-001 Psv,M088,Estados Unidos-Irán,2-1
-002 Jfrm,M073,Corea del Sur-Canadá,1-2
-002 Jfrm,M074,Brasil-Países Bajos,1-2
-002 Jfrm,M075,Alemania-Paraguay,3-0
-002 Jfrm,M076,Suecia-Marruecos,0-2
-002 Jfrm,M077,Costa de Marfil-Noruega,0-2
-002 Jfrm,M078,Francia-Japón,3-1
-002 Jfrm,M079,México-Escocia,1-1,México
-002 Jfrm,M080,Inglaterra-Senegal,1-3
-002 Jfrm,M081,Bélgica-Ecuador,1-2
+Nombre,ID_Partido,Partido,Resultados,Ganador_Penaltis,Ganador
+Pancho Zarauza,M073,Corea del Sur-Bosnia y Herzegovina,1-2,,Bosnia y Herzegovina
+Pancho Zarauza,M074,Alemania-Paraguay,2-0,,Alemania
+Pancho Zarauza,M075,Japón-Marruecos,2-1,,Japón
+Pancho Zarauza,M076,Brasil-Países Bajos,1-0,,Brasil
+Pancho Zarauza,M077,Francia-Suecia,1-0,,Francia
+Pancho Zarauza,M078,Ecuador-Senegal,1-1,Senegal,
+Pancho Zarauza,M079,Chequia-Escocia,0-0,Escocia,
+Pancho Zarauza,M080,Inglaterra-RD Congo,2-0,,Inglaterra
+Pancho Zarauza,M081,Estados Unidos-Costa de Marfil,1-0,,Estados Unidos
+Pancho Zarauza,M082,Egipto-México,0-0,Egipto,
+Pancho Zarauza,M083,Colombia-Ghana,0-1,,Ghana
+Pancho Zarauza,M084,España-Argelia,2-0,,España
+Pancho Zarauza,M085,Suiza-Austria,1-2,,Australia
+Pancho Zarauza,M086,Argentina-Uruguay,1-0,,Argentina
+Pancho Zarauza,M087,Portugal-Noruega,1-0,,Portugal
+Pancho Zarauza,M088,Turquía-Bélgica,1-1,Bélgica,
+001 Psv,M073,Chequia-Catar,2-0,,Chequia
+001 Psv,M074,Alemania-Paraguay,2-1,,Alemania
+001 Psv,M075,Países Bajos-Escocia,1-0,,Países Bajos
+001 Psv,M076,Brasil-Japón,3-0,,Brasil
+001 Psv,M077,Francia-Suecia,0-1,,Suecia
+001 Psv,M078,Costa de Marfil-Noruega,1-0,,Costa de Marfil
+001 Psv,M079,México-Marruecos,1-1,Marruecos,
+001 Psv,M080,Inglaterra-Senegal,1-0,,Inglaterra
+001 Psv,M081,Turquía-Suiza,1-2,,Suiza
+001 Psv,M082,Bélgica-Ecuador,3-1,,Bélgica
+001 Psv,M083,Colombia-Croacia,2-0,,Colombia
+001 Psv,M084,España-Austria,2-1,,España
+001 Psv,M085,Bosnia y Herzegovina-Nueva Zelanda,1-0,,Bosnia y Herzegovina
+001 Psv,M086,Argentina-Uruguay,2-0,,Argentina
+001 Psv,M087,Portugal-Ghana,3-1,,Portugal
+001 Psv,M088,Estados Unidos-Irán,2-1,,Estados Unidos
+002 Jfrm,M073,Corea del Sur-Canadá,1-2,,Canadá
+002 Jfrm,M074,Brasil-Países Bajos,1-2,,Países Bajos
+002 Jfrm,M075,Alemania-Paraguay,3-0,,Alemania
+002 Jfrm,M076,Suecia-Marruecos,0-2,,Marruecos
+002 Jfrm,M077,Costa de Marfil-Noruega,0-2,,Noruega
+002 Jfrm,M078,Francia-Japón,3-1,,Francia
+002 Jfrm,M079,México-Escocia,1-1,México,
+002 Jfrm,M080,Inglaterra-Senegal,1-3,,Senegal
+002 Jfrm,M081,Bélgica-Ecuador,1-2,,Ecuador
 002 Jfrm,M082,Estados Unidos-Suiza,1-0
 002 Jfrm,M083,España-Argelia,2-1
 002 Jfrm,M084,Colombia-Croacia,3-1
