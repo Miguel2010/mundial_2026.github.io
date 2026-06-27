@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
+import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import logoUrl from '../fifa-logo-transparent-white.webp';
 import { AuthGate } from './features/auth/AuthGate';
 import {
@@ -15,7 +15,15 @@ import type { ClassificationRow } from './types/classification';
 
 const UPDATE_CHECK_INTERVAL_MS = 5 * 60 * 1000;
 
+const navigationItems = [
+  { label: 'Clasificación', path: '/clasificacion' },
+  { label: 'Pronóstico', path: '/pronostico' },
+  { label: 'Premios', path: '/premios' },
+  { label: 'Puntuación y desempate', path: '/puntuacion' },
+];
+
 function App() {
+  const location = useLocation();
   const [currentParticipant, setCurrentParticipant] = useState(
     () => getActiveSession()?.participante ?? null,
   );
@@ -197,6 +205,12 @@ function App() {
     setIsMobileMenuOpen(false);
   }
 
+  function getCurrentSectionLabel() {
+    return (
+      navigationItems.find((item) => item.path === location.pathname)?.label ?? 'Clasificación'
+    );
+  }
+
   function renderTopNavigation() {
     if (!isAuthenticated || !currentParticipant) {
       return null;
@@ -208,6 +222,8 @@ function App() {
           <img src={logoUrl} alt="" />
           <span>Mundial 2026</span>
         </div>
+
+        <span className="top-navigation-current-section">{getCurrentSectionLabel()}</span>
 
         <button
           aria-controls="main-navigation-menu"
@@ -224,34 +240,16 @@ function App() {
           id="main-navigation-menu"
         >
           <nav className="tabs app-navigation" aria-label="Secciones de la clasificación">
-            <NavLink
-              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-              to="/clasificacion"
-              onClick={handleSelectNavigationItem}
-            >
-              Clasificación
-            </NavLink>
-            <NavLink
-              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-              to="/pronostico"
-              onClick={handleSelectNavigationItem}
-            >
-              Pronóstico
-            </NavLink>
-            <NavLink
-              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-              to="/premios"
-              onClick={handleSelectNavigationItem}
-            >
-              Premios
-            </NavLink>
-            <NavLink
-              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-              to="/puntuacion"
-              onClick={handleSelectNavigationItem}
-            >
-              Puntuación y desempate
-            </NavLink>
+            {navigationItems.map((item) => (
+              <NavLink
+                className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+                key={item.path}
+                to={item.path}
+                onClick={handleSelectNavigationItem}
+              >
+                {item.label}
+              </NavLink>
+            ))}
           </nav>
 
           <div className="top-navigation-session">
