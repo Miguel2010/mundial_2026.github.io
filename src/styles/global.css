@@ -70,6 +70,53 @@ button {
   gap: 24px;
 }
 
+.top-navigation {
+  position: sticky;
+  z-index: 20;
+  top: 12px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  width: min(1180px, 100%);
+  margin: 0 auto 24px;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background: rgba(18, 21, 28, 0.88);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+}
+
+.top-navigation-brand,
+.top-navigation-session {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-navigation-brand {
+  padding-left: 8px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.top-navigation-brand img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.top-navigation .tabs {
+  justify-self: center;
+  margin-bottom: 0;
+}
+
+.top-navigation-session {
+  justify-content: flex-end;
+}
+
 .hero-panel,
 .login-panel,
 .leaderboard-panel {
@@ -444,12 +491,16 @@ button {
 }
 
 .tab-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 14px;
   padding: 11px 18px;
   color: var(--color-text-muted);
   background: transparent;
   font-weight: 800;
+  text-decoration: none;
   transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
@@ -1549,6 +1600,20 @@ button.prediction-outcome-stat:focus-visible {
   .section-heading-inline {
     display: grid;
   }
+
+  .top-navigation {
+    grid-template-columns: 1fr;
+    top: 8px;
+  }
+
+  .top-navigation-brand,
+  .top-navigation-session {
+    justify-content: center;
+  }
+
+  .top-navigation .tabs {
+    justify-self: stretch;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1575,6 +1640,21 @@ button.prediction-outcome-stat:focus-visible {
     width: 100%;
     overflow-x: auto;
     scrollbar-width: thin;
+  }
+
+  .top-navigation {
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  .top-navigation-session {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .top-navigation-session .session-label {
+    text-align: center;
   }
 
   .tab-button {
