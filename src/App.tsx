@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom';
+import { Button, Menu } from 'antd';
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import logoUrl from '../fifa-logo-transparent-white.webp';
 import { AuthGate } from './features/auth/AuthGate';
 import {
@@ -24,12 +25,14 @@ const navigationItems = [
 
 function App() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [currentParticipant, setCurrentParticipant] = useState(
     () => getActiveSession()?.participante ?? null,
   );
   const isAuthenticated = currentParticipant !== null;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileViewport, setIsMobileViewport] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
   const [rows, setRows] = useState<ClassificationRow[]>([]);
   const [isLoadingRows, setIsLoadingRows] = useState(false);
@@ -43,6 +46,18 @@ function App() {
 
   useEffect(() => {
     void syncLastUpdated();
+  }, []);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 640px)');
+    const syncMobileViewport = () => setIsMobileViewport(mediaQuery.matches);
+
+    syncMobileViewport();
+    mediaQuery.addEventListener('change', syncMobileViewport);
+
+    return () => {
+      mediaQuery.removeEventListener('change', syncMobileViewport);
+    };
   }, []);
 
   useEffect(() => {
@@ -201,7 +216,8 @@ function App() {
     lastUpdatedIsoRef.current = null;
   }
 
-  function handleSelectNavigationItem() {
+  function handleSelectNavigationItem(path: string) {
+    navigate(path);
     setIsMobileMenuOpen(false);
   }
 
@@ -225,38 +241,43 @@ function App() {
 
         <span className="top-navigation-current-section">{getCurrentSectionLabel()}</span>
 
-        <button
+        <Button
           aria-controls="main-navigation-menu"
           aria-expanded={isMobileMenuOpen}
-          className="top-navigation-toggle ghost-button"
-          type="button"
+          className="top-navigation-toggle"
+          htmlType="button"
           onClick={() => setIsMobileMenuOpen((currentValue) => !currentValue)}
         >
           Menú
-        </button>
+        </Button>
 
         <div
           className={`top-navigation-menu${isMobileMenuOpen ? ' top-navigation-menu-open' : ''}`}
           id="main-navigation-menu"
         >
-          <nav className="tabs app-navigation" aria-label="Secciones de la clasificación">
-            {navigationItems.map((item) => (
-              <NavLink
-                className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-                key={item.path}
-                to={item.path}
-                onClick={handleSelectNavigationItem}
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </nav>
+          <div className="top-navigation-update">
+            <strong>
+              {isLoadingMeta
+                ? 'Consultando GitHub...'
+                : (lastUpdated ?? 'Sin datos').replace('Última actualización:', 'Ultima actualización:')}
+            </strong>
+          </div>
+
+          <Menu
+            aria-label="Secciones de la clasificación"
+            className="app-navigation"
+            items={navigationItems.map((item) => ({ key: item.path, label: item.label }))}
+            mode={isMobileViewport ? 'vertical' : 'horizontal'}
+            selectedKeys={[navigationItems.some((item) => item.path === location.pathname) ? location.pathname : '/clasificacion']}
+            theme="dark"
+            onClick={({ key }) => handleSelectNavigationItem(key)}
+          />
 
           <div className="top-navigation-session">
             <span className="session-label">Conectado como {currentParticipant}</span>
-            <button className="ghost-button" type="button" onClick={handleLogout}>
+            <Button type="default" onClick={handleLogout}>
               Cerrar sesión
-            </button>
+            </Button>
           </div>
         </div>
       </header>
@@ -264,7 +285,7 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell${isAuthenticated ? ' app-shell-authenticated' : ''}`}>
       {renderTopNavigation()}
 
       <main className="app-layout">
