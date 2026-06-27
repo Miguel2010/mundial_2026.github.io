@@ -21,6 +21,7 @@ function App() {
   );
   const isAuthenticated = currentParticipant !== null;
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
   const [rows, setRows] = useState<ClassificationRow[]>([]);
   const [isLoadingRows, setIsLoadingRows] = useState(false);
@@ -186,9 +187,14 @@ function App() {
 
   function handleLogout() {
     clearSession();
+    setIsMobileMenuOpen(false);
     setCurrentParticipant(null);
     setAuthError(null);
     lastUpdatedIsoRef.current = null;
+  }
+
+  function handleSelectNavigationItem() {
+    setIsMobileMenuOpen(false);
   }
 
   function renderTopNavigation() {
@@ -203,38 +209,57 @@ function App() {
           <span>Mundial 2026</span>
         </div>
 
-        <nav className="tabs app-navigation" aria-label="Secciones de la clasificación">
-          <NavLink
-            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-            to="/clasificacion"
-          >
-            Clasificación
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-            to="/pronostico"
-          >
-            Pronóstico
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-            to="/premios"
-          >
-            Premios
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
-            to="/puntuacion"
-          >
-            Puntuación y desempate
-          </NavLink>
-        </nav>
+        <button
+          aria-controls="main-navigation-menu"
+          aria-expanded={isMobileMenuOpen}
+          className="top-navigation-toggle ghost-button"
+          type="button"
+          onClick={() => setIsMobileMenuOpen((currentValue) => !currentValue)}
+        >
+          Menú
+        </button>
 
-        <div className="top-navigation-session">
-          <span className="session-label">Conectado como {currentParticipant}</span>
-          <button className="ghost-button" type="button" onClick={handleLogout}>
-            Cerrar sesión
-          </button>
+        <div
+          className={`top-navigation-menu${isMobileMenuOpen ? ' top-navigation-menu-open' : ''}`}
+          id="main-navigation-menu"
+        >
+          <nav className="tabs app-navigation" aria-label="Secciones de la clasificación">
+            <NavLink
+              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+              to="/clasificacion"
+              onClick={handleSelectNavigationItem}
+            >
+              Clasificación
+            </NavLink>
+            <NavLink
+              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+              to="/pronostico"
+              onClick={handleSelectNavigationItem}
+            >
+              Pronóstico
+            </NavLink>
+            <NavLink
+              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+              to="/premios"
+              onClick={handleSelectNavigationItem}
+            >
+              Premios
+            </NavLink>
+            <NavLink
+              className={({ isActive }) => `tab-button${isActive ? ' tab-button-active' : ''}`}
+              to="/puntuacion"
+              onClick={handleSelectNavigationItem}
+            >
+              Puntuación y desempate
+            </NavLink>
+          </nav>
+
+          <div className="top-navigation-session">
+            <span className="session-label">Conectado como {currentParticipant}</span>
+            <button className="ghost-button" type="button" onClick={handleLogout}>
+              Cerrar sesión
+            </button>
+          </div>
         </div>
       </header>
     );
