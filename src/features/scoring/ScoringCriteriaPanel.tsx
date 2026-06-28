@@ -36,8 +36,9 @@ const phaseCriteria: PhaseCriteria[] = [
     title: 'Dieciseisavos',
     description: 'Incluye bonus por clasificación desde la fase de grupos.',
     rules: [
-      { label: 'Acertar el primero de cada grupo', points: '10 pts por acierto' },
-      { label: 'Acertar el segundo de cada grupo', points: '10 pts por acierto' },
+      { label: 'Acertar selección clasificada como primera de grupo', points: '10 pts por acierto' },
+      { label: 'Acertar selección clasificada como segunda de grupo', points: '10 pts por acierto' },
+      { label: 'Acertar selección calsificada como tercera de grupo', points: '10 pts por acierto' },
       { label: 'Aplican las reglas comunes', points: 'Ver comunes' },
     ],
     note: 'Para puntuar el partido, debe estar acertado en el mismo orden del cuadro.',
