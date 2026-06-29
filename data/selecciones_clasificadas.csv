@@ -1,13 +1,13 @@
-Primeros_Grupo,Segundos_Grupo,Terceros_Grupo,Octavos,Cuartos,Semis,3y4,final,puesto_4,puesto_3,subcampeon,campeon
-México,Sudáfrica,,
-Suiza,Canadá,Bosnia y Herzegovina,
-Brasil,Marruecos,,
-Estados Unidos,Australia,Paraguay,
-Alemania,Costa de Marfil,Ecuador,
-Países Bajos,Japón,Suecia,
-Bélgica,Egipto,,
-España,Cabo Verde,,
-Francia,Noruega,Senegal,
-Argentina,Austria,Argelia,
-Colombia,Portugal,RD Congo,
-Inglaterra,Croacia,Ghana,
+Grupo,Primeros_Grupo,Segundos_Grupo,Terceros_Grupo
+A,México,Sudáfrica
+B,Suiza,Canadá,Bosnia y Herzegovina
+C,Brasil,Marruecos
+D,Estados Unidos,Australia,Paraguay
+E,Alemania,Costa de Marfil,Ecuador
+F,Países Bajos,Japón,Suecia
+G,Bélgica,Egipto
+H,España,Cabo Verde
+I,Francia,Noruega,Senegal
+J,Argentina,Austria,Argelia
+K,Colombia,Portugal,RD Congo
+L,Inglaterra,Croacia,Ghana
