@@ -1,4 +1,5 @@
-import type { ClassificationRow } from '../../types/classification';
+import { Alert } from 'antd';
+import type { ClassificationRow, PhasePoints } from '../../types/classification';
 import { normalizeParticipantName } from '../../utils/participants';
 
 type LeaderboardTableProps = {
@@ -73,6 +74,17 @@ function getMobileCardClassName(posicion: number, isCurrentParticipant: boolean)
   return `leaderboard-mobile-card${rankClassName ? ` ${rankClassName}` : ''}${currentParticipantClassName}`;
 }
 
+function PhasePointsValue({ points }: { points: PhasePoints }) {
+  return (
+    <span className="phase-points">
+      <span>{points.total}</span>
+      {points.classified !== null ? (
+        <span className="phase-points-classified">({points.classified})</span>
+      ) : null}
+    </span>
+  );
+}
+
 function LeaderboardTableRow({ currentParticipant, row }: LeaderboardRowProps) {
   const isCurrentParticipant = isCurrentParticipantRow(row, currentParticipant);
 
@@ -80,13 +92,13 @@ function LeaderboardTableRow({ currentParticipant, row }: LeaderboardRowProps) {
     <tr className={getRowClassName(row.posicion, isCurrentParticipant)}>
       <td>{row.posicion}</td>
       <td className="player-name">{row.participante}</td>
-      <td>{row.grupos}</td>
-      <td>{row.dieciseisavos}</td>
-      <td>{row.octavos}</td>
-      <td>{row.cuartos}</td>
-      <td>{row.semifinales}</td>
-      <td>{row.tercerCuarto}</td>
-      <td>{row.final}</td>
+      <td><PhasePointsValue points={row.grupos} /></td>
+      <td><PhasePointsValue points={row.dieciseisavos} /></td>
+      <td><PhasePointsValue points={row.octavos} /></td>
+      <td><PhasePointsValue points={row.cuartos} /></td>
+      <td><PhasePointsValue points={row.semifinales} /></td>
+      <td><PhasePointsValue points={row.tercerCuarto} /></td>
+      <td><PhasePointsValue points={row.final} /></td>
       <td>
         <strong>{row.total}</strong>
       </td>
@@ -114,7 +126,7 @@ function LeaderboardMobileCard({ currentParticipant, row }: LeaderboardRowProps)
         {phaseLabels.map((phase) => (
           <span className="leaderboard-phase-chip" key={phase.key}>
             <span>{phase.label}</span>
-            <strong>{row[phase.key]}</strong>
+            <strong><PhasePointsValue points={row[phase.key]} /></strong>
           </span>
         ))}
       </div>
@@ -128,6 +140,14 @@ export function LeaderboardTable({ rows, currentParticipant }: LeaderboardTableP
 
   return (
     <>
+      <Alert
+        className="leaderboard-breakdown-note"
+        description="Entre paréntesis se muestran los puntos obtenidos por selecciones clasificadas; fuera de los paréntesis, la suma de esos puntos más los puntos por acertar resultado y goles."
+        message="Cómo leer los puntos por fase"
+        showIcon
+        type="info"
+      />
+
       <div className="table-card">
         <div className="table-scroll">
           <table className="leaderboard-table">

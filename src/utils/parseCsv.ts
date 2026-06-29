@@ -20,6 +20,20 @@ function toNumber(value: string | undefined) {
   return Number.isFinite(parsedValue) ? parsedValue : 0;
 }
 
+function toPhasePoints(value: string | undefined) {
+  const normalizedValue = value?.trim() ?? '';
+  const match = normalizedValue.match(/^(\d+)\s*(?:\((\d+)\))?$/);
+
+  if (!match) {
+    return { total: toNumber(normalizedValue), classified: null };
+  }
+
+  return {
+    total: toNumber(match[1]),
+    classified: match[2] ? toNumber(match[2]) : null,
+  };
+}
+
 export function parseClassificationCsv(csv: string): ClassificationRow[] {
   const sanitizedCsv = csv.replace(/^\uFEFF/, '').trim();
 
@@ -47,13 +61,13 @@ export function parseClassificationCsv(csv: string): ClassificationRow[] {
     .map((values) => {
       const rowRecord = Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']));
       const posicion = toNumber(rowRecord.Posicion);
-      const grupos = toNumber(rowRecord.Pts_Fase_Grupos);
-      const dieciseisavos = toNumber(rowRecord.Pts_16avos);
-      const octavos = toNumber(rowRecord.Pts_Octavos);
-      const cuartos = toNumber(rowRecord.Pts_Cuartos);
-      const semifinales = toNumber(rowRecord.Pts_Semifinales);
-      const tercerCuarto = toNumber(rowRecord.Pts_3y4_Puesto);
-      const final = toNumber(rowRecord.Pts_Final);
+      const grupos = toPhasePoints(rowRecord.Pts_Fase_Grupos);
+      const dieciseisavos = toPhasePoints(rowRecord.Pts_16avos);
+      const octavos = toPhasePoints(rowRecord.Pts_Octavos);
+      const cuartos = toPhasePoints(rowRecord.Pts_Cuartos);
+      const semifinales = toPhasePoints(rowRecord.Pts_Semifinales);
+      const tercerCuarto = toPhasePoints(rowRecord.Pts_3y4_Puesto);
+      const final = toPhasePoints(rowRecord.Pts_Final);
       const total = toNumber(rowRecord.Puntos);
 
       return {
@@ -69,5 +83,5 @@ export function parseClassificationCsv(csv: string): ClassificationRow[] {
         total
       };
     })
-    .sort((left, right) => right.total - left.total);
+    .sort((left, right) => left.posicion - right.posicion);
 }
