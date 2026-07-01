@@ -1197,6 +1197,10 @@ button {
   margin-top: 16px;
 }
 
+.prediction-goals-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .group-stage-view-tabs {
   display: flex;
   gap: 8px;

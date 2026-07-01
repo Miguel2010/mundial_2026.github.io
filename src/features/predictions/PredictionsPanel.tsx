@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { fetchCuartosPredictions } from '../../services/cuartos-predictions-service';
 import { fetchFinalPredictions } from '../../services/final-predictions-service';
+import { fetchGoalsByPhase } from '../../services/goles-fases-service';
 import { fetchGroupStagePredictions } from '../../services/group-stage-predictions-service';
 import { fetchOctavosPredictions } from '../../services/octavos-predictions-service';
 import { fetchRoundOf16Predictions } from '../../services/round-of-16-predictions-service';
@@ -11,6 +12,7 @@ import type {
   KnockoutStagePredictions,
   ParticipantPredictions,
 } from '../../types/predictions';
+import { normalizeParticipantName } from '../../utils/participants';
 import { GroupStagePredictionsPanel } from './GroupStagePredictionsPanel';
 import { KnockoutStagePredictionsPanel } from './KnockoutStagePredictionsPanel';
 
@@ -38,7 +40,7 @@ const predictionSections: Array<{ id: PredictionSection; label: string }> = [
 ];
 
 export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) {
-  const [activeSection, setActiveSection] = useState<PredictionSection>('group-stage');
+  const [activeSection, setActiveSection] = useState<PredictionSection>('round-of-16');
   const [groupStageMatches, setGroupStageMatches] = useState<GroupStageMatch[]>([]);
   const [roundOf16Participants, setRoundOf16Participants] = useState<ParticipantPredictions[]>([]);
   const [octavosParticipants, setOctavosParticipants] = useState<ParticipantPredictions[]>([]);
@@ -60,6 +62,10 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   const [semisError, setSemisError] = useState<string | null>(null);
   const [finalError, setFinalError] = useState<string | null>(null);
   const [thirdPlaceError, setThirdPlaceError] = useState<string | null>(null);
+  const [goalsData, setGoalsData] = useState<{
+    adminGoals: Record<string, number>;
+    participantGoals: Record<string, Record<string, number>>;
+  } | null>(null);
   const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
   const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
   const [cuartosWarnings, setCuartosWarnings] = useState<string[]>([]);
@@ -110,6 +116,19 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
       void loadThirdPlacePredictions();
     }
   }, [activeSection]);
+
+  useEffect(() => {
+    async function loadGoalsData() {
+      try {
+        const data = await fetchGoalsByPhase();
+        setGoalsData(data);
+      } catch {
+        // Silently fail — goals data is non-critical
+      }
+    }
+
+    void loadGoalsData();
+  }, []);
 
   async function loadGroupStagePredictions() {
     setIsLoadingGroupStage(true);
@@ -246,6 +265,20 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     }
   }
 
+  function getSectionGoals(section: PredictionSection) {
+    if (!goalsData) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const participantEntry = Object.entries(goalsData.participantGoals).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    const predicted = participantEntry?.[1]?.[section] ?? 0;
+    const actual = goalsData.adminGoals[section] ?? 0;
+
+    return { predicted, actual };
+  }
+
   return (
     <div className="predictions-shell">
       <div className="prediction-section-tabs" role="tablist" aria-label="Secciones del pronóstico">
@@ -269,6 +302,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <GroupStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={groupStageError}
+          goalsData={getSectionGoals('group-stage')}
           isLoading={isLoadingGroupStage}
           matches={groupStageMatches}
         />
@@ -278,6 +312,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <KnockoutStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={roundOf16Error}
+          goalsData={getSectionGoals('round-of-16')}
           isLoading={isLoadingRoundOf16}
           participants={roundOf16Participants}
           title="Dieciseisavos"
@@ -289,6 +324,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <KnockoutStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={octavosError}
+          goalsData={getSectionGoals('octavos')}
           isLoading={isLoadingOctavos}
           participants={octavosParticipants}
           title="Octavos"
@@ -300,6 +336,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <KnockoutStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={cuartosError}
+          goalsData={getSectionGoals('cuartos')}
           isLoading={isLoadingCuartos}
           participants={cuartosParticipants}
           title="Cuartos"
@@ -311,6 +348,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <KnockoutStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={semisError}
+          goalsData={getSectionGoals('semis')}
           isLoading={isLoadingSemis}
           participants={semisParticipants}
           title="Semis"
@@ -322,6 +360,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <KnockoutStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={finalError}
+          goalsData={getSectionGoals('final')}
           isLoading={isLoadingFinal}
           participants={finalParticipants}
           title="Final"
@@ -333,6 +372,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
         <KnockoutStagePredictionsPanel
           currentParticipant={currentParticipant}
           error={thirdPlaceError}
+          goalsData={getSectionGoals('third-place')}
           isLoading={isLoadingThirdPlace}
           participants={thirdPlaceParticipants}
           title="3y4"

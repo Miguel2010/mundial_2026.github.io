@@ -11,6 +11,7 @@ const dataWarningVisibleParticipants = new Set(
 type KnockoutStagePredictionsPanelProps = {
   currentParticipant: string;
   error: string | null;
+  goalsData: { predicted: number; actual: number } | null;
   isLoading: boolean;
   participants: ParticipantPredictions[];
   title: string;
@@ -73,6 +74,7 @@ function getOrderedParticipants(
 export function KnockoutStagePredictionsPanel({
   currentParticipant,
   error,
+  goalsData,
   isLoading,
   participants,
   title,
@@ -107,6 +109,19 @@ export function KnockoutStagePredictionsPanel({
             ))}
           </ul>
         </details>
+      ) : null}
+
+      {goalsData ? (
+        <div className="prediction-outcome-summary prediction-goals-summary">
+          <div className="prediction-outcome-stat prediction-outcome-stat-played prediction-outcome-stat-active">
+            <strong>{goalsData.predicted}</strong>
+            <span>Goles pronosticados</span>
+          </div>
+          <div className="prediction-outcome-stat prediction-outcome-stat-played">
+            <strong>{goalsData.actual}</strong>
+            <span>Goles reales</span>
+          </div>
+        </div>
       ) : null}
 
       <div className="prediction-match-list">
