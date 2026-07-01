@@ -13,6 +13,7 @@ type GroupStageOutcomeFilter = 'all' | PredictionOutcome;
 type GroupStagePredictionsPanelProps = {
   currentParticipant: string;
   error: string | null;
+  goalsData: { predicted: number; actual: number } | null;
   isLoading: boolean;
   matches: GroupStageMatch[];
 };
@@ -20,6 +21,7 @@ type GroupStagePredictionsPanelProps = {
 export function GroupStagePredictionsPanel({
   currentParticipant,
   error,
+  goalsData,
   isLoading,
   matches,
 }: GroupStagePredictionsPanelProps) {
@@ -131,6 +133,19 @@ export function GroupStagePredictionsPanel({
           <span>Incorrectos</span>
         </button>
       </div>
+
+      {goalsData ? (
+        <div className="prediction-outcome-summary prediction-goals-summary">
+          <div className="prediction-outcome-stat prediction-outcome-stat-played prediction-outcome-stat-active">
+            <strong>{goalsData.predicted}</strong>
+            <span>Goles pronosticados</span>
+          </div>
+          <div className="prediction-outcome-stat prediction-outcome-stat-played">
+            <strong>{goalsData.actual}</strong>
+            <span>Goles reales</span>
+          </div>
+        </div>
+      ) : null}
 
       {!isLoading && !error ? (
         <>
