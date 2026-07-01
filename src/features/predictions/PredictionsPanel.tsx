@@ -38,7 +38,7 @@ const predictionSections: Array<{ id: PredictionSection; label: string }> = [
 ];
 
 export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) {
-  const [activeSection, setActiveSection] = useState<PredictionSection>('group-stage');
+  const [activeSection, setActiveSection] = useState<PredictionSection>('round-of-16');
   const [groupStageMatches, setGroupStageMatches] = useState<GroupStageMatch[]>([]);
   const [roundOf16Participants, setRoundOf16Participants] = useState<ParticipantPredictions[]>([]);
   const [octavosParticipants, setOctavosParticipants] = useState<ParticipantPredictions[]>([]);
