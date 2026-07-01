@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { fetchCuartosPredictions } from '../../services/cuartos-predictions-service';
 import { fetchFinalPredictions } from '../../services/final-predictions-service';
 import { fetchGoalsByPhase } from '../../services/goles-fases-service';
+import { fetchGroupHits } from '../../services/selecciones-clasificadas-service';
+import type { ParticipantGroupHits } from '../../services/selecciones-clasificadas-service';
 import { fetchGroupStagePredictions } from '../../services/group-stage-predictions-service';
 import { fetchOctavosPredictions } from '../../services/octavos-predictions-service';
 import { fetchRoundOf16Predictions } from '../../services/round-of-16-predictions-service';
@@ -66,6 +68,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     adminGoals: Record<string, number>;
     participantGoals: Record<string, Record<string, number>>;
   } | null>(null);
+  const [groupHits, setGroupHits] = useState<Record<string, ParticipantGroupHits> | null>(null);
   const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
   const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
   const [cuartosWarnings, setCuartosWarnings] = useState<string[]>([]);
@@ -127,7 +130,17 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
       }
     }
 
+    async function loadGroupHits() {
+      try {
+        const data = await fetchGroupHits();
+        setGroupHits(data);
+      } catch {
+        // Silently fail — group hits data is non-critical
+      }
+    }
+
     void loadGoalsData();
+    void loadGroupHits();
   }, []);
 
   async function loadGroupStagePredictions() {
@@ -279,6 +292,17 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     return { predicted, actual };
   }
 
+  function getCurrentParticipantHits(): ParticipantGroupHits | null {
+    if (!groupHits) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const entry = Object.entries(groupHits).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    return entry?.[1] ?? null;
+  }
+
   return (
     <div className="predictions-shell">
       <div className="prediction-section-tabs" role="tablist" aria-label="Secciones del pronóstico">
@@ -313,6 +337,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           currentParticipant={currentParticipant}
           error={roundOf16Error}
           goalsData={getSectionGoals('round-of-16')}
+          groupHits={getCurrentParticipantHits()}
           isLoading={isLoadingRoundOf16}
           participants={roundOf16Participants}
           title="Dieciseisavos"
@@ -325,6 +350,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           currentParticipant={currentParticipant}
           error={octavosError}
           goalsData={getSectionGoals('octavos')}
+          groupHits={null}
           isLoading={isLoadingOctavos}
           participants={octavosParticipants}
           title="Octavos"
@@ -337,6 +363,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           currentParticipant={currentParticipant}
           error={cuartosError}
           goalsData={getSectionGoals('cuartos')}
+          groupHits={null}
           isLoading={isLoadingCuartos}
           participants={cuartosParticipants}
           title="Cuartos"
@@ -349,6 +376,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           currentParticipant={currentParticipant}
           error={semisError}
           goalsData={getSectionGoals('semis')}
+          groupHits={null}
           isLoading={isLoadingSemis}
           participants={semisParticipants}
           title="Semis"
@@ -361,6 +389,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           currentParticipant={currentParticipant}
           error={finalError}
           goalsData={getSectionGoals('final')}
+          groupHits={null}
           isLoading={isLoadingFinal}
           participants={finalParticipants}
           title="Final"
@@ -373,6 +402,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           currentParticipant={currentParticipant}
           error={thirdPlaceError}
           goalsData={getSectionGoals('third-place')}
+          groupHits={null}
           isLoading={isLoadingThirdPlace}
           participants={thirdPlaceParticipants}
           title="3y4"

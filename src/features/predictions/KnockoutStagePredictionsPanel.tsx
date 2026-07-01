@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import type { ParticipantGroupHits } from '../../services/selecciones-clasificadas-service';
 import type { ParticipantPredictions } from '../../types/predictions';
 import { normalizeParticipantName } from '../../utils/participants';
 import { getTeamFlag } from '../../utils/teamFlags';
@@ -12,6 +14,7 @@ type KnockoutStagePredictionsPanelProps = {
   currentParticipant: string;
   error: string | null;
   goalsData: { predicted: number; actual: number } | null;
+  groupHits: ParticipantGroupHits | null;
   isLoading: boolean;
   participants: ParticipantPredictions[];
   title: string;
@@ -71,15 +74,61 @@ function getOrderedParticipants(
   ];
 }
 
+function GroupHitsCard({
+  label,
+  correctList,
+  className,
+  isExpanded,
+  onToggle,
+}: {
+  label: string;
+  correctList: Array<{ grupo: string; team: string }>;
+  className: string;
+  isExpanded: boolean;
+  onToggle: () => void;
+}) {
+  const hasHits = correctList.length > 0;
+
+  return (
+    <details className={`prediction-group-hits-card ${className}`} open={isExpanded}>
+      <summary
+        className="prediction-group-hits-summary"
+        onClick={(e) => {
+          e.preventDefault();
+          onToggle();
+        }}
+      >
+        <span className="prediction-group-hits-label">{label}</span>
+        <span className="prediction-group-hits-count">{correctList.length}</span>
+        <span className="prediction-group-hits-arrow">{isExpanded ? '▲' : '▼'}</span>
+      </summary>
+      {hasHits ? (
+        <ul className="prediction-group-hits-list">
+          {correctList.map((item) => (
+            <li key={item.grupo}>
+              <span className="team-flag" aria-hidden="true">{getTeamFlag(item.team)}</span>
+              <strong>Grupo {item.grupo}:</strong> {item.team}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div className="prediction-group-hits-empty">Sin aciertos</div>
+      )}
+    </details>
+  );
+}
+
 export function KnockoutStagePredictionsPanel({
   currentParticipant,
   error,
   goalsData,
+  groupHits,
   isLoading,
   participants,
   title,
   warnings,
 }: KnockoutStagePredictionsPanelProps) {
+  const [expandedCard, setExpandedCard] = useState<'primera' | 'segunda' | 'tercera' | null>(null);
   const orderedParticipants = getOrderedParticipants(participants, currentParticipant);
   const shouldShowWarnings = dataWarningVisibleParticipants.has(
     normalizeParticipantName(currentParticipant),
@@ -121,6 +170,32 @@ export function KnockoutStagePredictionsPanel({
             <strong>{goalsData.actual}</strong>
             <span>Goles reales</span>
           </div>
+        </div>
+      ) : null}
+
+      {groupHits ? (
+        <div className="prediction-group-hits-cols">
+          <GroupHitsCard
+            label="Primeras acertadas"
+            correctList={groupHits.primerasList}
+            className="prediction-group-hits-card-exact"
+            isExpanded={expandedCard === 'primera'}
+            onToggle={() => setExpandedCard(expandedCard === 'primera' ? null : 'primera')}
+          />
+          <GroupHitsCard
+            label="Segundas acertadas"
+            correctList={groupHits.segundasList}
+            className="prediction-group-hits-card-partial"
+            isExpanded={expandedCard === 'segunda'}
+            onToggle={() => setExpandedCard(expandedCard === 'segunda' ? null : 'segunda')}
+          />
+          <GroupHitsCard
+            label="Terceras acertadas"
+            correctList={groupHits.tercerasList}
+            className="prediction-group-hits-card-incorrect"
+            isExpanded={expandedCard === 'tercera'}
+            onToggle={() => setExpandedCard(expandedCard === 'tercera' ? null : 'tercera')}
+          />
         </div>
       ) : null}
 
