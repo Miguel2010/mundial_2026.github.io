@@ -21,11 +21,26 @@ type KnockoutStagePredictionsPanelProps = {
   warnings: string[];
 };
 
-function getDisplayMatchLabel(matchLabel: string) {
-  return matchLabel === '-' ? 'Sin definir' : matchLabel;
-}
+type GroupHitKey = 'primera' | 'segunda' | 'tercera';
 
-function MatchLabel({ matchLabel }: { matchLabel: string }) {
+type GroupHit = {
+  grupo: string;
+  team: string;
+};
+
+type GroupHitCard = {
+  key: GroupHitKey;
+  label: string;
+  shortLabel: string;
+  correctList: GroupHit[];
+  className: string;
+};
+
+const getDisplayMatchLabel = (matchLabel: string) => {
+  return matchLabel === '-' ? 'Sin definir' : matchLabel;
+};
+
+const MatchLabel = ({ matchLabel }: { matchLabel: string }) => {
   const displayMatchLabel = getDisplayMatchLabel(matchLabel);
   const [homeTeam, awayTeam, ...rest] = displayMatchLabel.split('-');
 
@@ -49,12 +64,12 @@ function MatchLabel({ matchLabel }: { matchLabel: string }) {
       </span>
     </span>
   );
-}
+};
 
-function getOrderedParticipants(
+const getOrderedParticipants = (
   participants: ParticipantPredictions[],
   currentParticipant: string,
-) {
+) => {
   const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
   const currentParticipantPredictions = participants.find(
     (participant) =>
@@ -72,39 +87,80 @@ function getOrderedParticipants(
         normalizeParticipantName(participant.participante) !== normalizedCurrentParticipant,
     ),
   ];
-}
+};
 
-function GroupHitsCard({
-  label,
-  correctList,
-  className,
-  isExpanded,
+const getGroupHitCards = (groupHits: ParticipantGroupHits): GroupHitCard[] => [
+  {
+    key: 'primera',
+    label: 'Primeras acertadas',
+    shortLabel: '1ras',
+    correctList: groupHits.primerasList,
+    className: 'prediction-group-hits-card-first',
+  },
+  {
+    key: 'segunda',
+    label: 'Segundas acertadas',
+    shortLabel: '2das',
+    correctList: groupHits.segundasList,
+    className: 'prediction-group-hits-card-second',
+  },
+  {
+    key: 'tercera',
+    label: 'Terceras acertadas',
+    shortLabel: '3ras',
+    correctList: groupHits.tercerasList,
+    className: 'prediction-group-hits-card-third',
+  },
+];
+
+const GroupHitsCardButton = ({
+  card,
+  isSelected,
   onToggle,
 }: {
-  label: string;
-  correctList: Array<{ grupo: string; team: string }>;
-  className: string;
-  isExpanded: boolean;
+  card: GroupHitCard;
+  isSelected: boolean;
   onToggle: () => void;
-}) {
-  const hasHits = correctList.length > 0;
+}) => {
+  const selectedClassName = isSelected ? 'prediction-group-hits-card-selected' : '';
 
   return (
-    <details className={`prediction-group-hits-card ${className}`} open={isExpanded}>
-      <summary
-        className="prediction-group-hits-summary"
-        onClick={(e) => {
-          e.preventDefault();
-          onToggle();
-        }}
-      >
-        <span className="prediction-group-hits-label">{label}</span>
-        <span className="prediction-group-hits-count">{correctList.length}</span>
-        <span className="prediction-group-hits-arrow">{isExpanded ? '▲' : '▼'}</span>
-      </summary>
+    <button
+      type="button"
+      className={`prediction-group-hits-card ${card.className} ${selectedClassName}`}
+      aria-expanded={isSelected}
+      onClick={onToggle}
+    >
+      <span className="prediction-group-hits-label prediction-group-hits-label-full">
+        {card.label}
+      </span>
+      <span className="prediction-group-hits-label prediction-group-hits-label-short">
+        {card.shortLabel}
+      </span>
+      <span className="prediction-group-hits-count">{card.correctList.length}</span>
+      <span className="prediction-group-hits-arrow" aria-hidden="true">
+        {isSelected ? '▲' : '▼'}
+      </span>
+    </button>
+  );
+};
+
+const GroupHitsDetails = ({ selectedCard }: { selectedCard: GroupHitCard | null }) => {
+  if (!selectedCard) {
+    return null;
+  }
+
+  const hasHits = selectedCard.correctList.length > 0;
+
+  return (
+    <div className="prediction-group-hits-details">
+      <div className="prediction-group-hits-details-heading">
+        <span>{selectedCard.label}</span>
+        <strong>{selectedCard.correctList.length}</strong>
+      </div>
       {hasHits ? (
         <ul className="prediction-group-hits-list">
-          {correctList.map((item) => (
+          {selectedCard.correctList.map((item) => (
             <li key={item.grupo}>
               <span className="team-flag" aria-hidden="true">{getTeamFlag(item.team)}</span>
               <strong>Grupo {item.grupo}:</strong> {item.team}
@@ -114,11 +170,35 @@ function GroupHitsCard({
       ) : (
         <div className="prediction-group-hits-empty">Sin aciertos</div>
       )}
-    </details>
+    </div>
   );
-}
+};
 
-export function KnockoutStagePredictionsPanel({
+const GroupHitsSummary = ({ groupHits }: { groupHits: ParticipantGroupHits }) => {
+  const [selectedCardKey, setSelectedCardKey] = useState<GroupHitKey | null>(null);
+  const cards = getGroupHitCards(groupHits);
+  const selectedCard = cards.find((card) => card.key === selectedCardKey) ?? null;
+
+  return (
+    <div className="prediction-group-hits">
+      <div className="prediction-group-hits-cols">
+        {cards.map((card) => (
+          <GroupHitsCardButton
+            key={card.key}
+            card={card}
+            isSelected={selectedCardKey === card.key}
+            onToggle={() => {
+              setSelectedCardKey(selectedCardKey === card.key ? null : card.key);
+            }}
+          />
+        ))}
+      </div>
+      <GroupHitsDetails selectedCard={selectedCard} />
+    </div>
+  );
+};
+
+export const KnockoutStagePredictionsPanel = ({
   currentParticipant,
   error,
   goalsData,
@@ -127,8 +207,7 @@ export function KnockoutStagePredictionsPanel({
   participants,
   title,
   warnings,
-}: KnockoutStagePredictionsPanelProps) {
-  const [expandedCard, setExpandedCard] = useState<'primera' | 'segunda' | 'tercera' | null>(null);
+}: KnockoutStagePredictionsPanelProps) => {
   const orderedParticipants = getOrderedParticipants(participants, currentParticipant);
   const shouldShowWarnings = dataWarningVisibleParticipants.has(
     normalizeParticipantName(currentParticipant),
@@ -173,31 +252,7 @@ export function KnockoutStagePredictionsPanel({
         </div>
       ) : null}
 
-      {groupHits ? (
-        <div className="prediction-group-hits-cols">
-          <GroupHitsCard
-            label="Primeras acertadas"
-            correctList={groupHits.primerasList}
-            className="prediction-group-hits-card-exact"
-            isExpanded={expandedCard === 'primera'}
-            onToggle={() => setExpandedCard(expandedCard === 'primera' ? null : 'primera')}
-          />
-          <GroupHitsCard
-            label="Segundas acertadas"
-            correctList={groupHits.segundasList}
-            className="prediction-group-hits-card-partial"
-            isExpanded={expandedCard === 'segunda'}
-            onToggle={() => setExpandedCard(expandedCard === 'segunda' ? null : 'segunda')}
-          />
-          <GroupHitsCard
-            label="Terceras acertadas"
-            correctList={groupHits.tercerasList}
-            className="prediction-group-hits-card-incorrect"
-            isExpanded={expandedCard === 'tercera'}
-            onToggle={() => setExpandedCard(expandedCard === 'tercera' ? null : 'tercera')}
-          />
-        </div>
-      ) : null}
+      {groupHits ? <GroupHitsSummary groupHits={groupHits} /> : null}
 
       <div className="prediction-match-list">
         {orderedParticipants.map((participant, index) => (
@@ -220,8 +275,8 @@ export function KnockoutStagePredictionsPanel({
                   </tr>
                 </thead>
                 <tbody>
-                    {participant.predictions.map((prediction) => (
-                      <tr key={`${participant.participante}-${prediction.matchId}`}>
+                  {participant.predictions.map((prediction) => (
+                    <tr key={`${participant.participante}-${prediction.matchId}`}>
                       <td className="prediction-knockout-match-cell">
                         <div className="prediction-knockout-match-content">
                           <MatchLabel matchLabel={prediction.matchLabel} />
@@ -248,4 +303,4 @@ export function KnockoutStagePredictionsPanel({
       </div>
     </div>
   );
-}
+};
