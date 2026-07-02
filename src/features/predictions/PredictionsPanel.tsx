@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { fetchClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
 import type { ClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
+import { fetchCuartosClasificadasHits } from '../../services/clasificadas-cuartos-service';
+import type { ClasificadasCuartosHits } from '../../services/clasificadas-cuartos-service';
 import { fetchCuartosPredictions } from '../../services/cuartos-predictions-service';
 import { fetchFinalPredictions } from '../../services/final-predictions-service';
 import { fetchGoalsByPhase } from '../../services/goles-fases-service';
@@ -71,6 +73,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     participantGoals: Record<string, Record<string, number>>;
   } | null>(null);
   const [clasificadasHits, setClasificadasHits] = useState<Record<string, ClasificadasHits> | null>(null);
+  const [cuartosClasificadasHits, setCuartosClasificadasHits] = useState<Record<string, ClasificadasCuartosHits> | null>(null);
   const [groupHits, setGroupHits] = useState<Record<string, ParticipantGroupHits> | null>(null);
   const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
   const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
@@ -151,9 +154,19 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
       }
     }
 
+    async function loadCuartosClasificadasHits() {
+      try {
+        const data = await fetchCuartosClasificadasHits();
+        setCuartosClasificadasHits(data);
+      } catch {
+        // Silently fail — cuartos clasificadas hits data is non-critical
+      }
+    }
+
     void loadGoalsData();
     void loadGroupHits();
     void loadClasificadasHits();
+    void loadCuartosClasificadasHits();
   }, []);
 
   async function loadGroupStagePredictions() {
@@ -327,6 +340,17 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     return entry?.[1] ?? null;
   }
 
+  function getCurrentCuartosClasificadasHits(): ClasificadasCuartosHits | null {
+    if (!cuartosClasificadasHits) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const entry = Object.entries(cuartosClasificadasHits).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    return entry?.[1] ?? null;
+  }
+
   return (
     <div className="predictions-shell">
       <div className="prediction-section-tabs" role="tablist" aria-label="Secciones del pronóstico">
@@ -386,7 +410,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'cuartos' ? (
         <KnockoutStagePredictionsPanel
-          clasificadasHits={null}
+          clasificadasHits={getCurrentCuartosClasificadasHits()}
           currentParticipant={currentParticipant}
           error={cuartosError}
           goalsData={getSectionGoals('cuartos')}
