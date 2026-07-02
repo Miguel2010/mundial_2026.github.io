@@ -200,8 +200,10 @@ const GroupHitsSummary = ({ groupHits }: { groupHits: ParticipantGroupHits }) =>
   );
 };
 
-const ClasificadasHitsSummary = ({ hits }: { hits: ClasificadasHits }) => {
+const ClasificadasHitsSummary = ({ hits, phaseLabel }: { hits: ClasificadasHits; phaseLabel: string }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const fullLabel = `Clasificadas a ${phaseLabel.toLowerCase()} acertadas`;
+  const shortLabel = phaseLabel.toLowerCase();
 
   return (
     <div className="prediction-group-hits">
@@ -212,10 +214,10 @@ const ClasificadasHitsSummary = ({ hits }: { hits: ClasificadasHits }) => {
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <span className="prediction-group-hits-label prediction-group-hits-label-full">
-          Clasificadas acertadas
+          {fullLabel}
         </span>
         <span className="prediction-group-hits-label prediction-group-hits-label-short">
-          Clas
+          {shortLabel}
         </span>
         <span className="prediction-group-hits-count">{hits.count}</span>
         <span className="prediction-group-hits-arrow" aria-hidden="true">
@@ -225,7 +227,7 @@ const ClasificadasHitsSummary = ({ hits }: { hits: ClasificadasHits }) => {
       {isExpanded ? (
         <div className="prediction-group-hits-details">
           <div className="prediction-group-hits-details-heading">
-            <span>Clasificadas acertadas</span>
+            <span>{fullLabel}</span>
             <strong>{hits.count}</strong>
           </div>
           {hits.teams.length > 0 ? (
@@ -303,7 +305,7 @@ export const KnockoutStagePredictionsPanel = ({
 
       {groupHits ? <GroupHitsSummary groupHits={groupHits} /> : null}
 
-      {clasificadasHits ? <ClasificadasHitsSummary hits={clasificadasHits} /> : null}
+      {clasificadasHits ? <ClasificadasHitsSummary hits={clasificadasHits} phaseLabel={title} /> : null}
 
       <div className="prediction-match-list">
         {orderedParticipants.map((participant, index) => (
