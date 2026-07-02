@@ -3,6 +3,8 @@ import { fetchClasificadasHits } from '../../services/clasificadas-eliminatorias
 import type { ClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
 import { fetchCuartosClasificadasHits } from '../../services/clasificadas-cuartos-service';
 import type { ClasificadasCuartosHits } from '../../services/clasificadas-cuartos-service';
+import { fetchSemisClasificadasHits } from '../../services/clasificadas-semis-service';
+import type { ClasificadasSemisHits } from '../../services/clasificadas-semis-service';
 import { fetchCuartosPredictions } from '../../services/cuartos-predictions-service';
 import { fetchFinalPredictions } from '../../services/final-predictions-service';
 import { fetchGoalsByPhase } from '../../services/goles-fases-service';
@@ -74,6 +76,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   } | null>(null);
   const [clasificadasHits, setClasificadasHits] = useState<Record<string, ClasificadasHits> | null>(null);
   const [cuartosClasificadasHits, setCuartosClasificadasHits] = useState<Record<string, ClasificadasCuartosHits> | null>(null);
+  const [semisClasificadasHits, setSemisClasificadasHits] = useState<Record<string, ClasificadasSemisHits> | null>(null);
   const [groupHits, setGroupHits] = useState<Record<string, ParticipantGroupHits> | null>(null);
   const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
   const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
@@ -163,10 +166,20 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
       }
     }
 
+    async function loadSemisClasificadasHits() {
+      try {
+        const data = await fetchSemisClasificadasHits();
+        setSemisClasificadasHits(data);
+      } catch {
+        // Silently fail — semis clasificadas hits data is non-critical
+      }
+    }
+
     void loadGoalsData();
     void loadGroupHits();
     void loadClasificadasHits();
     void loadCuartosClasificadasHits();
+    void loadSemisClasificadasHits();
   }, []);
 
   async function loadGroupStagePredictions() {
@@ -351,6 +364,17 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     return entry?.[1] ?? null;
   }
 
+  function getCurrentSemisClasificadasHits(): ClasificadasSemisHits | null {
+    if (!semisClasificadasHits) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const entry = Object.entries(semisClasificadasHits).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    return entry?.[1] ?? null;
+  }
+
   return (
     <div className="predictions-shell">
       <div className="prediction-section-tabs" role="tablist" aria-label="Secciones del pronóstico">
@@ -424,7 +448,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'semis' ? (
         <KnockoutStagePredictionsPanel
-          clasificadasHits={null}
+          clasificadasHits={getCurrentSemisClasificadasHits()}
           currentParticipant={currentParticipant}
           error={semisError}
           goalsData={getSectionGoals('semis')}
