@@ -20,7 +20,7 @@ const summaryItems = [
 const commonRules: ScoringRule[] = [
   { label: 'Acertar el signo del partido (1-X-2)', points: '10 pts' },
   { label: 'Acertar el resultado exacto del partido', points: '15 pts' },
-  { label: 'Acertar goles exactos de cada equipo', points: '10 pts por gol' },
+  { label: 'Acertar goles exactos de cada equipo', points: '3 pts por gol' },
   { label: 'Acertar la suma total de goles de la fase, prórroga incluida', points: '20 pts' },
 ];
 
