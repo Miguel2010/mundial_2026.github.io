@@ -5,6 +5,10 @@ import { fetchCuartosClasificadasHits } from '../../services/clasificadas-cuarto
 import type { ClasificadasCuartosHits } from '../../services/clasificadas-cuartos-service';
 import { fetchSemisClasificadasHits } from '../../services/clasificadas-semis-service';
 import type { ClasificadasSemisHits } from '../../services/clasificadas-semis-service';
+import { fetchFinalClasificadasHits } from '../../services/clasificadas-final-service';
+import type { ClasificadasFinalHits } from '../../services/clasificadas-final-service';
+import { fetch3y4ClasificadasHits } from '../../services/clasificadas-3y4-service';
+import type { Clasificadas3y4Hits } from '../../services/clasificadas-3y4-service';
 import { fetchCuartosPredictions } from '../../services/cuartos-predictions-service';
 import { fetchFinalPredictions } from '../../services/final-predictions-service';
 import { fetchGoalsByPhase } from '../../services/goles-fases-service';
@@ -77,6 +81,8 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   const [clasificadasHits, setClasificadasHits] = useState<Record<string, ClasificadasHits> | null>(null);
   const [cuartosClasificadasHits, setCuartosClasificadasHits] = useState<Record<string, ClasificadasCuartosHits> | null>(null);
   const [semisClasificadasHits, setSemisClasificadasHits] = useState<Record<string, ClasificadasSemisHits> | null>(null);
+  const [finalClasificadasHits, setFinalClasificadasHits] = useState<Record<string, ClasificadasFinalHits> | null>(null);
+  const [terceraClasificadasHits, setTerceraClasificadasHits] = useState<Record<string, Clasificadas3y4Hits> | null>(null);
   const [groupHits, setGroupHits] = useState<Record<string, ParticipantGroupHits> | null>(null);
   const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
   const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
@@ -175,11 +181,31 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
       }
     }
 
+    async function loadFinalClasificadasHits() {
+      try {
+        const data = await fetchFinalClasificadasHits();
+        setFinalClasificadasHits(data);
+      } catch {
+        // Silently fail — final clasificadas hits data is non-critical
+      }
+    }
+
+    async function loadTerceraClasificadasHits() {
+      try {
+        const data = await fetch3y4ClasificadasHits();
+        setTerceraClasificadasHits(data);
+      } catch {
+        // Silently fail — 3y4 clasificadas hits data is non-critical
+      }
+    }
+
     void loadGoalsData();
     void loadGroupHits();
     void loadClasificadasHits();
     void loadCuartosClasificadasHits();
     void loadSemisClasificadasHits();
+    void loadFinalClasificadasHits();
+    void loadTerceraClasificadasHits();
   }, []);
 
   async function loadGroupStagePredictions() {
@@ -375,6 +401,28 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     return entry?.[1] ?? null;
   }
 
+  function getCurrentFinalClasificadasHits(): ClasificadasFinalHits | null {
+    if (!finalClasificadasHits) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const entry = Object.entries(finalClasificadasHits).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    return entry?.[1] ?? null;
+  }
+
+  function getCurrentTerceraClasificadasHits(): Clasificadas3y4Hits | null {
+    if (!terceraClasificadasHits) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const entry = Object.entries(terceraClasificadasHits).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    return entry?.[1] ?? null;
+  }
+
   return (
     <div className="predictions-shell">
       <div className="prediction-section-tabs" role="tablist" aria-label="Secciones del pronóstico">
@@ -462,7 +510,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'final' ? (
         <KnockoutStagePredictionsPanel
-          clasificadasHits={null}
+          clasificadasHits={getCurrentFinalClasificadasHits()}
           currentParticipant={currentParticipant}
           error={finalError}
           goalsData={getSectionGoals('final')}
@@ -476,7 +524,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'third-place' ? (
         <KnockoutStagePredictionsPanel
-          clasificadasHits={null}
+          clasificadasHits={getCurrentTerceraClasificadasHits()}
           currentParticipant={currentParticipant}
           error={thirdPlaceError}
           goalsData={getSectionGoals('third-place')}
