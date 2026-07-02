@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { fetchClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
+import type { ClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
 import { fetchCuartosPredictions } from '../../services/cuartos-predictions-service';
 import { fetchFinalPredictions } from '../../services/final-predictions-service';
 import { fetchGoalsByPhase } from '../../services/goles-fases-service';
@@ -68,6 +70,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     adminGoals: Record<string, number>;
     participantGoals: Record<string, Record<string, number>>;
   } | null>(null);
+  const [clasificadasHits, setClasificadasHits] = useState<Record<string, ClasificadasHits> | null>(null);
   const [groupHits, setGroupHits] = useState<Record<string, ParticipantGroupHits> | null>(null);
   const [roundOf16Warnings, setRoundOf16Warnings] = useState<string[]>([]);
   const [octavosWarnings, setOctavosWarnings] = useState<string[]>([]);
@@ -139,8 +142,18 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
       }
     }
 
+    async function loadClasificadasHits() {
+      try {
+        const data = await fetchClasificadasHits();
+        setClasificadasHits(data);
+      } catch {
+        // Silently fail — clasificadas hits data is non-critical
+      }
+    }
+
     void loadGoalsData();
     void loadGroupHits();
+    void loadClasificadasHits();
   }, []);
 
   async function loadGroupStagePredictions() {
@@ -303,6 +316,17 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
     return entry?.[1] ?? null;
   }
 
+  function getCurrentClasificadasHits(): ClasificadasHits | null {
+    if (!clasificadasHits) return null;
+
+    const normalizedName = normalizeParticipantName(currentParticipant);
+    const entry = Object.entries(clasificadasHits).find(
+      ([name]) => normalizeParticipantName(name) === normalizedName,
+    );
+
+    return entry?.[1] ?? null;
+  }
+
   return (
     <div className="predictions-shell">
       <div className="prediction-section-tabs" role="tablist" aria-label="Secciones del pronóstico">
@@ -334,6 +358,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'round-of-16' ? (
         <KnockoutStagePredictionsPanel
+          clasificadasHits={null}
           currentParticipant={currentParticipant}
           error={roundOf16Error}
           goalsData={getSectionGoals('round-of-16')}
@@ -347,6 +372,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'octavos' ? (
         <KnockoutStagePredictionsPanel
+          clasificadasHits={getCurrentClasificadasHits()}
           currentParticipant={currentParticipant}
           error={octavosError}
           goalsData={getSectionGoals('octavos')}
@@ -360,6 +386,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'cuartos' ? (
         <KnockoutStagePredictionsPanel
+          clasificadasHits={null}
           currentParticipant={currentParticipant}
           error={cuartosError}
           goalsData={getSectionGoals('cuartos')}
@@ -373,6 +400,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'semis' ? (
         <KnockoutStagePredictionsPanel
+          clasificadasHits={null}
           currentParticipant={currentParticipant}
           error={semisError}
           goalsData={getSectionGoals('semis')}
@@ -386,6 +414,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'final' ? (
         <KnockoutStagePredictionsPanel
+          clasificadasHits={null}
           currentParticipant={currentParticipant}
           error={finalError}
           goalsData={getSectionGoals('final')}
@@ -399,6 +428,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
 
       {activeSection === 'third-place' ? (
         <KnockoutStagePredictionsPanel
+          clasificadasHits={null}
           currentParticipant={currentParticipant}
           error={thirdPlaceError}
           goalsData={getSectionGoals('third-place')}
