@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { ClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
 import type { ParticipantGroupHits } from '../../services/selecciones-clasificadas-service';
 import type { ParticipantPredictions } from '../../types/predictions';
 import { normalizeParticipantName } from '../../utils/participants';
@@ -11,6 +12,7 @@ const dataWarningVisibleParticipants = new Set(
 );
 
 type KnockoutStagePredictionsPanelProps = {
+  clasificadasHits: ClasificadasHits | null;
   currentParticipant: string;
   error: string | null;
   goalsData: { predicted: number; actual: number } | null;
@@ -198,7 +200,54 @@ const GroupHitsSummary = ({ groupHits }: { groupHits: ParticipantGroupHits }) =>
   );
 };
 
+const ClasificadasHitsSummary = ({ hits }: { hits: ClasificadasHits }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="prediction-group-hits">
+      <button
+        type="button"
+        className={`prediction-group-hits-card prediction-group-hits-card-fourth${isExpanded ? ' prediction-group-hits-card-selected' : ''}`}
+        aria-expanded={isExpanded}
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        <span className="prediction-group-hits-label prediction-group-hits-label-full">
+          Clasificadas acertadas
+        </span>
+        <span className="prediction-group-hits-label prediction-group-hits-label-short">
+          Clas
+        </span>
+        <span className="prediction-group-hits-count">{hits.count}</span>
+        <span className="prediction-group-hits-arrow" aria-hidden="true">
+          {isExpanded ? '▲' : '▼'}
+        </span>
+      </button>
+      {isExpanded ? (
+        <div className="prediction-group-hits-details">
+          <div className="prediction-group-hits-details-heading">
+            <span>Clasificadas acertadas</span>
+            <strong>{hits.count}</strong>
+          </div>
+          {hits.teams.length > 0 ? (
+            <ul className="prediction-group-hits-list">
+              {hits.teams.map((team) => (
+                <li key={team}>
+                  <span className="team-flag" aria-hidden="true">{getTeamFlag(team)}</span>
+                  <strong>{team}</strong>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="prediction-group-hits-empty">Sin aciertos</div>
+          )}
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
 export const KnockoutStagePredictionsPanel = ({
+  clasificadasHits,
   currentParticipant,
   error,
   goalsData,
@@ -253,6 +302,8 @@ export const KnockoutStagePredictionsPanel = ({
       ) : null}
 
       {groupHits ? <GroupHitsSummary groupHits={groupHits} /> : null}
+
+      {clasificadasHits ? <ClasificadasHitsSummary hits={clasificadasHits} /> : null}
 
       <div className="prediction-match-list">
         {orderedParticipants.map((participant, index) => (
