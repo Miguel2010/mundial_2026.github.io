@@ -16,6 +16,7 @@ type GroupStagePredictionsPanelProps = {
   goalsData: { predicted: number; actual: number } | null;
   isLoading: boolean;
   matches: GroupStageMatch[];
+  participantRanking: string[];
 };
 
 export function GroupStagePredictionsPanel({
@@ -24,6 +25,7 @@ export function GroupStagePredictionsPanel({
   goalsData,
   isLoading,
   matches,
+  participantRanking,
 }: GroupStagePredictionsPanelProps) {
   const [activeView, setActiveView] = useState<GroupStageView>('pending');
   const [activeOutcomeFilter, setActiveOutcomeFilter] = useState<GroupStageOutcomeFilter>('all');
@@ -178,6 +180,7 @@ export function GroupStagePredictionsPanel({
         error={error}
         isLoading={isLoading}
         matches={visibleMatches}
+        participantRanking={participantRanking}
         showHeading={false}
         title="Fase de Grupos"
       />
