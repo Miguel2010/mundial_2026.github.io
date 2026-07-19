@@ -53,7 +53,7 @@ const predictionSections: Array<{ id: PredictionSection; label: string }> = [
   { id: 'final', label: 'Final' },
 ];
 
-export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) {
+export function PredictionsPanel({ classificationRows, currentParticipant }: PredictionsPanelProps) {
   const [activeSection, setActiveSection] = useState<PredictionSection>('final'); 
   const [groupStageMatches, setGroupStageMatches] = useState<GroupStageMatch[]>([]);
   const [roundOf16Participants, setRoundOf16Participants] = useState<ParticipantPredictions[]>([]);
