@@ -2,7 +2,10 @@ import { useState } from 'react';
 import type { ClasificadasHits } from '../../services/clasificadas-eliminatorias-service';
 import type { ParticipantGroupHits } from '../../services/selecciones-clasificadas-service';
 import type { ParticipantPredictions } from '../../types/predictions';
-import { normalizeParticipantName } from '../../utils/participants';
+import {
+  normalizeParticipantName,
+  orderParticipantsByRanking,
+} from '../../utils/participants';
 import { getTeamFlag } from '../../utils/teamFlags';
 
 const DATA_WARNING_VISIBLE_PARTICIPANTS = ['Mario Pines', 'Juan Navarro', 'Miguel Garcia'];
@@ -18,6 +21,7 @@ type KnockoutStagePredictionsPanelProps = {
   goalsData: { predicted: number; actual: number } | null;
   groupHits: ParticipantGroupHits | null;
   isLoading: boolean;
+  participantRanking: string[];
   participants: ParticipantPredictions[];
   title: string;
   warnings: string[];
@@ -71,24 +75,14 @@ const MatchLabel = ({ matchLabel }: { matchLabel: string }) => {
 const getOrderedParticipants = (
   participants: ParticipantPredictions[],
   currentParticipant: string,
+  participantRanking: string[],
 ) => {
-  const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
-  const currentParticipantPredictions = participants.find(
-    (participant) =>
-      normalizeParticipantName(participant.participante) === normalizedCurrentParticipant,
+  return orderParticipantsByRanking(
+    participants,
+    participantRanking,
+    currentParticipant,
+    (participant) => participant.participante,
   );
-
-  if (!currentParticipantPredictions) {
-    return participants;
-  }
-
-  return [
-    currentParticipantPredictions,
-    ...participants.filter(
-      (participant) =>
-        normalizeParticipantName(participant.participante) !== normalizedCurrentParticipant,
-    ),
-  ];
 };
 
 const getGroupHitCards = (groupHits: ParticipantGroupHits): GroupHitCard[] => [
@@ -255,11 +249,16 @@ export const KnockoutStagePredictionsPanel = ({
   goalsData,
   groupHits,
   isLoading,
+  participantRanking,
   participants,
   title,
   warnings,
 }: KnockoutStagePredictionsPanelProps) => {
-  const orderedParticipants = getOrderedParticipants(participants, currentParticipant);
+  const orderedParticipants = getOrderedParticipants(
+    participants,
+    currentParticipant,
+    participantRanking,
+  );
   const shouldShowWarnings = dataWarningVisibleParticipants.has(
     normalizeParticipantName(currentParticipant),
   );

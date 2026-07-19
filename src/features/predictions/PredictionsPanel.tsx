@@ -19,6 +19,7 @@ import { fetchOctavosPredictions } from '../../services/octavos-predictions-serv
 import { fetchRoundOf16Predictions } from '../../services/round-of-16-predictions-service';
 import { fetchSemisPredictions } from '../../services/semis-predictions-service';
 import { fetchThirdPlacePredictions } from '../../services/third-place-predictions-service';
+import type { ClassificationRow } from '../../types/classification';
 import type {
   GroupStageMatch,
   KnockoutStagePredictions,
@@ -29,6 +30,7 @@ import { GroupStagePredictionsPanel } from './GroupStagePredictionsPanel';
 import { KnockoutStagePredictionsPanel } from './KnockoutStagePredictionsPanel';
 
 type PredictionsPanelProps = {
+  classificationRows: ClassificationRow[];
   currentParticipant: string;
 };
 
@@ -97,6 +99,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   const hasRequestedSemisRef = useRef(false);
   const hasRequestedFinalRef = useRef(false);
   const hasRequestedThirdPlaceRef = useRef(false);
+  const participantRanking = classificationRows.map((row) => row.participante);
 
   useEffect(() => {
     if (activeSection === 'group-stage' && !hasRequestedGroupStageRef.current) {
@@ -449,6 +452,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('group-stage')}
           isLoading={isLoadingGroupStage}
           matches={groupStageMatches}
+          participantRanking={participantRanking}
         />
       ) : null}
 
@@ -460,6 +464,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('round-of-16')}
           groupHits={getCurrentParticipantHits()}
           isLoading={isLoadingRoundOf16}
+          participantRanking={participantRanking}
           participants={roundOf16Participants}
           title="Dieciseisavos"
           warnings={roundOf16Warnings}
@@ -474,6 +479,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('octavos')}
           groupHits={null}
           isLoading={isLoadingOctavos}
+          participantRanking={participantRanking}
           participants={octavosParticipants}
           title="Octavos"
           warnings={octavosWarnings}
@@ -488,6 +494,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('cuartos')}
           groupHits={null}
           isLoading={isLoadingCuartos}
+          participantRanking={participantRanking}
           participants={cuartosParticipants}
           title="Cuartos"
           warnings={cuartosWarnings}
@@ -502,6 +509,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('semis')}
           groupHits={null}
           isLoading={isLoadingSemis}
+          participantRanking={participantRanking}
           participants={semisParticipants}
           title="Semis"
           warnings={semisWarnings}
@@ -516,6 +524,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('final')}
           groupHits={null}
           isLoading={isLoadingFinal}
+          participantRanking={participantRanking}
           participants={finalParticipants}
           title="Final"
           warnings={finalWarnings}
@@ -530,6 +539,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
           goalsData={getSectionGoals('third-place')}
           groupHits={null}
           isLoading={isLoadingThirdPlace}
+          participantRanking={participantRanking}
           participants={thirdPlaceParticipants}
           title="3y4"
           warnings={thirdPlaceWarnings}

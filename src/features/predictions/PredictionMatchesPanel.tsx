@@ -1,12 +1,12 @@
 import type { PredictionMatch } from '../../types/predictions';
-import { normalizeParticipantName } from '../../utils/participants';
+import {
+  normalizeParticipantName,
+  orderParticipantsByRanking,
+} from '../../utils/participants';
 import {
   getPredictionOutcome,
   getPredictionOutcomeLabel,
-  type PredictionOutcome,
 } from './prediction-outcomes';
-
-type Prediction = PredictionMatch['predictions'][number];
 
 type PredictionMatchesPanelProps = {
   currentParticipant: string;
@@ -14,6 +14,7 @@ type PredictionMatchesPanelProps = {
   error: string | null;
   isLoading: boolean;
   matches: PredictionMatch[];
+  participantRanking: string[];
   showHeading?: boolean;
   title: string;
 };
@@ -25,62 +26,17 @@ function getPredictionRowClassName(participante: string, currentParticipant: str
   return isCurrentParticipant ? 'prediction-row prediction-row-current-user' : 'prediction-row';
 }
 
-function getOrderedPredictions(match: PredictionMatch, currentParticipant: string) {
-  const normalizedCurrentParticipant = normalizeParticipantName(currentParticipant);
-  const currentParticipantPrediction = match.predictions.find(
-    (prediction) =>
-      normalizeParticipantName(prediction.participante) === normalizedCurrentParticipant,
+function getOrderedPredictions(
+  match: PredictionMatch,
+  currentParticipant: string,
+  participantRanking: string[],
+) {
+  return orderParticipantsByRanking(
+    match.predictions,
+    participantRanking,
+    currentParticipant,
+    (prediction) => prediction.participante,
   );
-  const remainingPredictions = match.predictions.filter(
-    (prediction) =>
-      normalizeParticipantName(prediction.participante) !== normalizedCurrentParticipant,
-  );
-
-  if (!currentParticipantPrediction) {
-    return match.predictions;
-  }
-
-  if (!match.played || !match.result) {
-    return [currentParticipantPrediction, ...remainingPredictions];
-  }
-
-  const groupedPredictions = remainingPredictions.reduce(
-    (groups, prediction) => {
-      const outcome = getPredictionOutcome(prediction.score, match.result);
-
-      if (outcome === 'exact') {
-        groups.exact.push(prediction);
-        return groups;
-      }
-
-      if (outcome === 'partial') {
-        groups.partial.push(prediction);
-        return groups;
-      }
-
-      if (outcome === 'incorrect') {
-        groups.incorrect.push(prediction);
-        return groups;
-      }
-
-      groups.unknown.push(prediction);
-      return groups;
-    },
-    {
-      exact: [] as Prediction[],
-      partial: [] as Prediction[],
-      incorrect: [] as Prediction[],
-      unknown: [] as Prediction[],
-    },
-  );
-
-  return [
-    currentParticipantPrediction,
-    ...groupedPredictions.exact,
-    ...groupedPredictions.partial,
-    ...groupedPredictions.incorrect,
-    ...groupedPredictions.unknown,
-  ];
 }
 
 function TeamName({ flag, name }: { flag: string; name: string }) {
@@ -98,6 +54,7 @@ export function PredictionMatchesPanel({
   error,
   isLoading,
   matches,
+  participantRanking,
   showHeading = true,
   title,
 }: PredictionMatchesPanelProps) {
@@ -129,7 +86,11 @@ export function PredictionMatchesPanel({
 
       <div className="prediction-match-list">
         {matches.map((match) => {
-          const orderedPredictions = getOrderedPredictions(match, currentParticipant);
+          const orderedPredictions = getOrderedPredictions(
+            match,
+            currentParticipant,
+            participantRanking,
+          );
           const cardClassName = match.played
             ? 'prediction-match-card prediction-match-card-played'
             : 'prediction-match-card';

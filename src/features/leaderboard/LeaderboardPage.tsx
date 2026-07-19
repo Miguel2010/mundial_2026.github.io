@@ -92,7 +92,15 @@ export function LeaderboardPage({
       <Routes>
         <Route path="/" element={<Navigate to="/clasificacion" replace />} />
         <Route path="/clasificacion" element={renderClassificationRoute()} />
-        <Route path="/pronostico" element={<PredictionsPanel currentParticipant={currentParticipant} />} />
+        <Route
+          path="/pronostico"
+          element={
+            <PredictionsPanel
+              classificationRows={rows}
+              currentParticipant={currentParticipant}
+            />
+          }
+        />
         <Route
           path="/premios"
           element={
