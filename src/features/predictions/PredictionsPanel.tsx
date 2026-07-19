@@ -54,7 +54,7 @@ const predictionSections: Array<{ id: PredictionSection; label: string }> = [
 ];
 
 export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) {
-  const [activeSection, setActiveSection] = useState<PredictionSection>('final');
+  const [activeSection, setActiveSection] = useState<PredictionSection>('final'); 
   const [groupStageMatches, setGroupStageMatches] = useState<GroupStageMatch[]>([]);
   const [roundOf16Participants, setRoundOf16Participants] = useState<ParticipantPredictions[]>([]);
   const [octavosParticipants, setOctavosParticipants] = useState<ParticipantPredictions[]>([]);
@@ -66,8 +66,8 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   const [isLoadingRoundOf16, setIsLoadingRoundOf16] = useState(false);
   const [isLoadingOctavos, setIsLoadingOctavos] = useState(false);
   const [isLoadingCuartos, setIsLoadingCuartos] = useState(false);
-  const [isLoadingSemis, setIsLoadingSemis] = useState(false);
-  const [isLoadingFinal, setIsLoadingFinal] = useState(false);
+  const [isLoadingSemis, setIsLoadingSemis] = useState(false);  
+  const [isLoadingFinal, setIsLoadingFinal] = useState(false); 
   const [isLoadingThirdPlace, setIsLoadingThirdPlace] = useState(false);
   const [groupStageError, setGroupStageError] = useState<string | null>(null);
   const [roundOf16Error, setRoundOf16Error] = useState<string | null>(null);
