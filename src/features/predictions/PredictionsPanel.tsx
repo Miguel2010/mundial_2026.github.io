@@ -65,7 +65,7 @@ export function PredictionsPanel({ currentParticipant }: PredictionsPanelProps) 
   const [isLoadingOctavos, setIsLoadingOctavos] = useState(false);
   const [isLoadingCuartos, setIsLoadingCuartos] = useState(false);
   const [isLoadingSemis, setIsLoadingSemis] = useState(false);  
-  const [isLoadingFinal, setIsLoadingFinal] = useState(false);
+  const [isLoadingFinal, setIsLoadingFinal] = useState(false); 
   const [isLoadingThirdPlace, setIsLoadingThirdPlace] = useState(false);
   const [groupStageError, setGroupStageError] = useState<string | null>(null);
   const [roundOf16Error, setRoundOf16Error] = useState<string | null>(null);
